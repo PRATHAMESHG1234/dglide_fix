@@ -1,0 +1,11 @@
+.main_container {
+  height: calc(100vh - 65px);
+}
+
+.view_container {
+  height: calc(100vh - 155px);
+}
+
+.current_view {
+  height: calc(100vh - 175px);
+}

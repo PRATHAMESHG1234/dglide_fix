@@ -1,0 +1,6 @@
+.executionProcess .djs-palette{
+    display: none;
+}
+.executionProcess .djs-context-pad.open {
+    display: none !important;
+}

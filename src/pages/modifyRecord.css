@@ -1,0 +1,54 @@
+/* RecordCount.module.css */
+.recordCountBg {
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 3px;
+  min-width: 15px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.xxx {
+  border-width: 0 !important;
+  border: white;
+}
+
+
+element.style {
+  height: 5px;
+  width: 17px;
+  background-color: rgb(141, 179, 232);
+  border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+  .recordCountBg {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
+
+@media (max-width: 992px) {
+  .recordCountBg {
+    font-size: 14px;
+    padding: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recordCountBg {
+    font-size: 16px;
+    padding: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .recordCountBg {
+    font-size: 18px;
+    padding: 13px;
+  }
+}

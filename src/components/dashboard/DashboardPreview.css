@@ -1,0 +1,10 @@
+.container canvas {
+  display: inline !important;
+  flex-grow: 1 !important;
+  width: calc(50% - 50px) !important;
+  height: auto !important;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+}

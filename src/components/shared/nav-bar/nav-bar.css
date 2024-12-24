@@ -1,0 +1,39 @@
+.topbar-bg {
+  /* background-color: var(--bg-clr); */
+  /* box-shadow: 0px 4px 4px 0px #0000001a; */
+}
+
+.topbar-toolbar {
+  height: 65px;
+  padding-right: 0;
+  margin-right: 0;
+  background-color: var(--navbar-bg-clr);
+  box-shadow: 0px 0.3320707678794861px 2.2138051986694336px 0px #00000003,
+    0px 0.7980122566223145px 5.32008171081543px 0px #00000004,
+    0px 1.5025862455368042px 10.017241477966309px 0px #00000005,
+    0px 2.680356979370117px 17.869047164916992px 0px #00000006;
+}
+.topbar-menu-button {
+  width: 65px;
+}
+
+.topbar-brand-name {
+  color: var(--text-color);
+}
+
+.topbar-primary-forms-list {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 35px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.topbar-serbar-search-icon {
+  background-color: var(--global-search-search-icon-bg-color);
+  color: var(--text-color);
+  border-radius: 50px;
+  padding: 4px;
+  margin-right: 3px;
+}

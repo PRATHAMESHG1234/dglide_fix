@@ -1,0 +1,89 @@
+.more-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.more-text {
+  font-size: '15px';
+  color: #1c7dff;
+  margin: 0;
+}
+
+.more-icon {
+  color: #1c7dff;
+  font-size: 20px;
+}
+
+.column-data {
+  color: #808080;
+  font-weight: 500;
+}
+
+.card-cover {
+  position: relative;
+  min-height: 50px;
+  padding: 10px 15px;
+  background-color: #f6faff;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+  font-size: 13px;
+  margin-right: 10px;
+  width: 400px;
+}
+.card-cover > div:first-child {
+  top: 10px;
+  left: -10px;
+}
+.expandable {
+  transition: all 0.5s ease-in-out;
+  height: 0;
+}
+
+.expandable:target {
+  height: 50px;
+}
+
+/* RecordCount.module.css */
+.record-count-bg {
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  min-width: 15px;
+  padding-top: 2px;
+  text-align: center;
+  height: 15px;
+  margin-bottom: 3px;
+}
+
+@media (min-width: 1200px) {
+  .record-count-bg {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .record-count-bg {
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 992px) {
+  .record-count-bg {
+    padding-bottom: 4.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .record-count-bg {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .record-count-bg {
+    padding-bottom: 8px;
+  }
+}

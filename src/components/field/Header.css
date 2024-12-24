@@ -1,0 +1,13 @@
+.header_container {
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+.header_form_select {
+  height: 30px;
+  font-size: 13px;
+}
+
+.header_form_select_menu {
+  font-size: 13px;
+}

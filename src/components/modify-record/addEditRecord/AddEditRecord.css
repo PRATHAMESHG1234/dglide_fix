@@ -1,0 +1,31 @@
+/* .ql-container {
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  background-color: #fff;
+}
+
+.ql-snow.ql-toolbar {
+  display: block;
+  background: #eaecec00;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  border: '1px solid green';
+}
+
+.ql-editor {
+  height: 100px !important;
+  max-height: 100px !important;
+  overflow-y: scroll;
+}
+
+.Add-edit-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.detail-container-inner-Box {
+  width: 50%;
+} */

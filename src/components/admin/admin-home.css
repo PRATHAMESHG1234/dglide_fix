@@ -1,0 +1,57 @@
+.sidebar {
+  background-color: #2c3e50;
+  height: calc(100vh - 157px);
+  color: #fff;
+}
+
+.sidebar .nav-link {
+  color: #fff;
+}
+
+.header {
+  background-color: #2c3e50;
+  color: #fff;
+  width: 100vw;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.card img {
+  margin-left: 10px;
+}
+
+.card-body {
+  padding: 0.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  line-height: 1.1;
+  max-height: 3.6em;
+  overflow: hidden;
+}
+
+.input-group {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.adminCard {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.adminCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

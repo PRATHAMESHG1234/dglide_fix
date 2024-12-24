@@ -1,0 +1,17 @@
+.modal_container {
+  border-radius: 5px;
+  max-height: 700px;
+}
+
+.modal_form_label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.modal_form_select {
+  font-size: 13px;
+}
+
+.modal_form_select_menu {
+  font-size: 13px;
+}

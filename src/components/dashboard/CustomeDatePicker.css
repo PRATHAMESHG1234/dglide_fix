@@ -1,0 +1,29 @@
+/* .rs-input-group.rs-input-group-inside .rs-input {
+  display: none;
+  width: 500px;
+  max-height: 1px;
+} */
+
+/* .rs-input-group-addon {
+  display: none;
+  width: 500px;
+  max-height: 1px;
+} */
+
+.rs-picker-popup.rs-picker-popup-daterange {
+  margin-top: 20px;
+  /* left: 1028px !important; */
+  z-index: 9999;
+}
+
+.rs-picker-daterange-header {
+  padding: 11px 12px;
+}
+
+/* .rs-calendar-table-cell-selected .rs-calendar-table-cell-content {
+  background-color: #8061b6;
+} */
+
+.rs-btn-primary {
+  background-color: #673ab7;
+}

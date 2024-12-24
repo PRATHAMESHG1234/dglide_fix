@@ -1,0 +1,18 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore build folder
+build
+
+# Ignore all text files
+*.txt
+
+# Ignore SASS config files
+.sass-cache
+
+CODE_OF_CONDUCT.md
+LICENSE
+_config.yml

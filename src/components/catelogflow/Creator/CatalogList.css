@@ -1,0 +1,48 @@
+.main_catalog_container {
+  height: calc(100vh - 140px);
+  border-radius: 10px;
+}
+
+.view_catalog_container {
+  border-radius: 10px;
+  height: calc(100vh - 185px);
+}
+
+.current_catalog_view {
+  border-radius: 10px;
+  height: calc(100vh - 215px);
+}
+
+.status-btn {
+  width: fit-content;
+  border-radius: 20px;
+  padding: 5px 17px;
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.status-new {
+  background: #EEF3F7;
+  color: #399FE1;
+}
+
+.status-Assigned {
+  background: #FAF6FA;
+  color: #D372DC;
+}
+
+.status-InProgress {
+  background: #FAF6FA;
+  color: #D372DC;
+}
+
+.status-Fulfilled {
+  background: #FAF6FA;
+  color: #D372DC;
+}
+
+.status-Completed {
+  background: #ECF4E7;
+  color: #6AAB43;
+}

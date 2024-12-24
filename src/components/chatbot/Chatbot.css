@@ -1,0 +1,69 @@
+li.listItem_none {
+  list-style: none;
+  margin: 5px 8px;
+  display: flex;
+  width: 100%;
+  color: rgb(9, 33, 72);
+}
+
+/* .option-list {
+  border-radius: 19px;
+  padding: 5px 19px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  margin: 3px;
+  box-shadow: rgba(9, 33, 72, 0.2) 0px 3px 12px;
+} */
+
+.card-container {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.chatbot-option-container {
+  /* display: flex;
+    flex-wrap: wrap; */
+  margin-left: -30px;
+}
+
+button.MuiButton-root.MuiButton-variantSolid.MuiButton-colorPrimary.MuiButton-sizeMd.css-5xiqd9-JoyButton-root {
+  height: 40px;
+}
+
+.chatbot-header {
+  background-color: #99d398;
+  padding: 20px 10px;
+}
+
+.ticket-container {
+  height: 75vh;
+  /* width: 32%; */
+  position: absolute;
+  top: 22%;
+  left: 6%;
+  z-index: 99;
+  background-color: rgb(245, 236, 236);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px sold gray;
+}
+
+.ticket-box {
+  position: relative;
+  /* width: 97%; */
+
+  /* z-index: -1; */
+}
+
+.chatbot-container {
+  height: calc(100vh - 94px);
+  overflow: scroll;
+  background-color: white;
+  padding: 10px;
+  width: 37%;
+}
+
+.card-close-btn {
+  display: flex;
+  justify-content: flex-end !important;
+}

@@ -1,0 +1,14 @@
+.selector_container {
+  max-width: 258px;
+  min-width: 258px;
+}
+
+.dragDropContext_container {
+  max-height: calc(100vh - 190px);
+  overflow-y: auto;
+}
+
+.fields_container {
+  border-radius: 10px;
+  height: calc(100vh - 140px);
+}
