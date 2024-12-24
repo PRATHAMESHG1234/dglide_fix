@@ -1,12 +1,12 @@
 import { Grid } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
 
-import AccountCircleTwoTone from '@mui/icons-material/AccountCircleTwoTone';
-import GroupAddOutlinedIcon from '@mui/icons-material/GroupAddOutlined';
+import { UserCircle } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
 
-import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+import { Award } from 'lucide-react';
 import { colors } from '../../../common/constants/styles';
-import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+import { Users } from 'lucide-react';
 
 import { useLocation } from 'react-router-dom';
 import SubCard from '../../../elements/SubCard';

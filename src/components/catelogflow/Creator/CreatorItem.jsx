@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
+import { Trash } from 'lucide-react';
+import { GripHorizontal } from 'lucide-react';
 import { TextField } from '@mui/material';
 
 import Icon from '../../../elements/Icon';

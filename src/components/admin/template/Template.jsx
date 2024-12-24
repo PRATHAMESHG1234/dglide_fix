@@ -13,7 +13,7 @@ import {
   TableRow,
   Tooltip
 } from '@mui/material';
-import { Add, DeleteForever, Edit } from '@mui/icons-material';
+import { Plus } from 'lucide-react';
 import { Button } from '@/componentss/ui/button';
 import ConfirmationModal from '../../shared/ConfirmationModal';
 import {

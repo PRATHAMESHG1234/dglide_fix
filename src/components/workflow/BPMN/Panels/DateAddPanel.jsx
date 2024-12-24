@@ -9,11 +9,11 @@ import {
   Typography
 } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
-import AddBoxIcon from '@mui/icons-material/AddBox';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonthOutlined';
+import { BoxPlus } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { colors } from '../../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
-import ErrorIcon from '@mui/icons-material/Error';
+import { X } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 export const DateAddPanel = ({

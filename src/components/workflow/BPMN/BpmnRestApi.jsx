@@ -10,13 +10,13 @@ import {
 } from '@mui/material';
 import React, { useRef, useState } from 'react';
 import { COLORS, colors } from '../../../common/constants/styles';
-import { Add } from '@mui/icons-material';
+import { Plus } from 'lucide-react';
 import TextArea from '../../../elements/TextArea';
 import RadioField from '../../../elements/RadioField';
 import TextField from '../../../elements/TextField';
 import SelectField from '../../../elements/SelectField';
-import DeleteIcon from '@mui/icons-material/DeleteOutlined';
-import AddIcon from '@mui/icons-material/Add';
+import { Trash } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { Button } from '@/componentss/ui/button';
 

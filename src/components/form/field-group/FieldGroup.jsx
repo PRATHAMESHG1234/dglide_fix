@@ -1,7 +1,7 @@
 import { useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Add } from '@mui/icons-material';
+import { Plus } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -24,7 +24,7 @@ import {
   deleteFieldGroup,
   updateFieldGroup
 } from '../../../redux/slices/fieldGroupSlice';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import FieldGroupList from './FieldGroupList';
 
 const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {

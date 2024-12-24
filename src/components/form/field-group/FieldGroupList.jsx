@@ -1,7 +1,7 @@
 import './FieldGroup.css';
 
-import DeleteForever from '@mui/icons-material/DeleteForever';
-import Edit from '@mui/icons-material/Edit';
+import { Trash2 } from 'lucide-react';
+import { Edit } from 'lucide-react';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {

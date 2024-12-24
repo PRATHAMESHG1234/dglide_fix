@@ -1,7 +1,7 @@
 import { Grid, IconButton, Button as Buttons } from '@mui/material';
 import React from 'react';
 import { colors } from '../../../../../common/constants/styles';
-import AddIcon from '@mui/icons-material/Add';
+import { Plus } from 'lucide-react';
 import { useLocalStorage } from '../../custom/useLocalStorage';
 
 export const NotifyPanel = ({

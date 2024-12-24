@@ -8,11 +8,11 @@ import {
 } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { colors } from '../../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import { fetchAllTemplateByFormInfoId } from '../../../../services/formTemplate';
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
-import { Add } from '@mui/icons-material';
+import { Minus } from 'lucide-react';
+import { Plus } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 export const TempaltePanel = ({

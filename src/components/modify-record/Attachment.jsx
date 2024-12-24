@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Attachment.css';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
-import DeleteIcon from '@mui/icons-material/HighlightOff';
-// import FileIcon from '@mui/icons-material/FilePresentOutlined';
-import PreviewIcon from '@mui/icons-material/Preview';
-import UploadFileIcon from '@mui/icons-material/UploadFile';
+import { DownloadCloud } from 'lucide-react';
+import { XCircle } from 'lucide-react';
+// import { FileCheck } from 'lucide-react';
+import { Eye } from 'lucide-react';
+import { Upload } from 'lucide-react';
 import { FileIcon, defaultStyles } from 'react-file-icon';
 import {
   Box,
@@ -24,9 +24,9 @@ import {
   Typography,
   alpha
 } from '@mui/material';
-import { DeleteForever } from '@mui/icons-material';
-import CloseIcon from '@mui/icons-material/Close';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import { Trash } from 'lucide-react';
+import { X } from 'lucide-react';
+import { File } from 'lucide-react';
 import Modal from '@mui/joy/Modal';
 import { BsFiletypeXlsx } from 'react-icons/bs';
 import { FaFileCsv } from 'react-icons/fa';

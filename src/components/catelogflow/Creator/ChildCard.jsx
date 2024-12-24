@@ -17,19 +17,19 @@ import {
 } from '@mui/material';
 
 // assets
-import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
-import PersonAddTwoToneIcon from '@mui/icons-material/PersonAddTwoTone';
-import PeopleAltTwoToneIcon from '@mui/icons-material/PeopleAltTwoTone';
-import PinDropTwoToneIcon from '@mui/icons-material/PinDropTwoTone';
+import { MoreHorizontal } from 'lucide-react';
+import { UserPlus } from 'lucide-react';
+import { Users } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 
-import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
-import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
-import GroupTwoToneIcon from '@mui/icons-material/GroupTwoTone';
+import { Heart } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
+import { Users } from 'lucide-react';
 import { colors } from '../../../common/constants/styles';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import CancelIcon from '@mui/icons-material/Cancel';
+import { CheckCircle } from 'lucide-react';
+import { XCircle } from 'lucide-react';
 // ==============================|| SOCIAL PROFILE - FOLLOWER CARD ||============================== //
 
 const ChildCard = ({

@@ -1,7 +1,7 @@
 import './Action.css';
 
-import DeleteForever from '@mui/icons-material/DeleteForever';
-import Edit from '@mui/icons-material/Edit';
+import { Trash2 } from 'lucide-react';
+import { Edit } from 'lucide-react';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {
@@ -20,9 +20,9 @@ import { colors, COLORS } from '../../../common/constants/styles';
 import { MODAL } from '../../../common/utils/modal-toggle';
 import { useSelector } from 'react-redux';
 import Avatar from '../../../elements/Avatars';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { CheckCircle } from 'lucide-react';
+import { Edit } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 
 const ODD_OPACITY = 0.9;
 

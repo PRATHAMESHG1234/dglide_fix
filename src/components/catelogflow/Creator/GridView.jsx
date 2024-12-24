@@ -14,10 +14,10 @@ import {
 } from '@mui/material';
 import MainCard from '../../../elements/MainCard';
 import { IconSearch } from '@tabler/icons-react';
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import { ChevronDown } from 'lucide-react';
 import GridCard from './GridCard';
 import { colors } from '../../../common/constants/styles';
-import { Height } from '@mui/icons-material';
+import { ResizeVertical } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 

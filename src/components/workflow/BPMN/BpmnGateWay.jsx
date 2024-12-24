@@ -11,7 +11,7 @@ import { alpha } from '@mui/material/styles';
 import { COLORS, colors } from '../../../common/constants/styles';
 import SelectField from '../../../elements/SelectField';
 import TextField from '../../../elements/TextField';
-import AddIcon from '@mui/icons-material/Add';
+import { Plus } from 'lucide-react';
 // import {Button} from '@/componentss/ui/button'
 
 const operators = {

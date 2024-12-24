@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Add } from '@mui/icons-material';
+import { Plus } from 'lucide-react';
 import { FormLabel } from '@mui/material';
 
 import { COLORS } from '../../../common/constants/styles';

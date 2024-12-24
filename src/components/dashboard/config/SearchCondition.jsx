@@ -1,5 +1,5 @@
 import React from 'react';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { Trash } from 'lucide-react';
 import SelectField from '../../../elements/SelectField';
 import ConditionValueInput from '../../records/preference/search-preference/ConditionValueInput';
 import { colors } from '../../../common/constants/styles';

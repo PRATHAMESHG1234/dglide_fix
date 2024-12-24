@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useReducer, useState } from 'react';
-import Add from '@mui/icons-material/Add';
+import { Plus } from 'lucide-react';
 import { Box, Typography } from '@mui/joy';
 import { Tooltip } from '@mui/material';
 import GroupList from './GroupList';

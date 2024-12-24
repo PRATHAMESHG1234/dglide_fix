@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './ViewSelecter.css';
-import Add from '@mui/icons-material/Add';
-import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
-import GridViewIcon from '@mui/icons-material/GridView';
+import { Plus } from 'lucide-react';
+import { List } from 'lucide-react';
+import { Grid } from 'lucide-react';
 import { Button as Buttons, Stack, Tooltip } from '@mui/material';
 
 import { COLORS, colors } from '../../common/constants/styles';

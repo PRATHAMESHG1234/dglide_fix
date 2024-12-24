@@ -10,7 +10,7 @@ import {
   TableHead,
   TableRow
 } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 
 const TablePreviewModal = ({ open, onClose, selectedItemData }) => {
   return (

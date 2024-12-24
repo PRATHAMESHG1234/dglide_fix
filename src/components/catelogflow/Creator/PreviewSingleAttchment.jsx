@@ -13,15 +13,15 @@ import {
   Box
 } from '@mui/material';
 import { COLORS } from '../../../common/constants/styles';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
-import FileIcon from '@mui/icons-material/FilePresentOutlined';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { DownloadCloud } from 'lucide-react';
+import { FileCheck } from 'lucide-react';
+import { File } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import { BsFiletypeXlsx } from 'react-icons/bs';
 import { FaFileCsv } from 'react-icons/fa';
 import '../../modify-record/Attachment.css';
 import Modal from '@mui/joy/Modal';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 
 const ODD_OPACITY = 0.5;
 

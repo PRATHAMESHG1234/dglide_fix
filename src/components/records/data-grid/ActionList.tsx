@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import { useSelector } from 'react-redux';
-import CreateIcon from '@mui/icons-material/AddBoxOutlined';
+import { BoxPlus } from 'lucide-react';
 import { ExecutionProcess } from './ExecutionProcess';
 import { Button } from '@/componentss/ui/button';
 import {

@@ -5,7 +5,7 @@ import SelectField from '../../elements/SelectField';
 import TextArea from '../../elements/TextArea';
 import { Button } from '@/componentss/ui/button';
 import { COLORS } from '../../common/constants/styles';
-import AddIcon from '@mui/icons-material/AddBox';
+import { BoxPlus } from 'lucide-react';
 import MultipleSelect from '../../elements/MultipleSelect';
 
 const UIRuleActionForm = ({

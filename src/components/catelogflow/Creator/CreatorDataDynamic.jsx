@@ -1,5 +1,5 @@
-import AddIcon from '@mui/icons-material/AddBox';
-import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import { BoxPlus } from 'lucide-react';
+import { Trash } from 'lucide-react';
 import { Typography } from '@mui/joy';
 import {
   Checkbox,

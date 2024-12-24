@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 // third-party
 import 'react-quill/dist/quill.snow.css';
 
-import AttachmentTwoToneIcon from '@mui/icons-material/AttachmentTwoTone';
+import { Paperclip } from 'lucide-react';
 
 import moment from 'moment';
 import avatarImage from '../assets/users/user-1.png';

@@ -1,13 +1,5 @@
 import React, { useState } from 'react';
-import {
-  AddBoxRounded as AddIcon,
-  Edit as EditIcon,
-  Delete as DeleteIcon,
-  ExpandMore as ExpandMoreIcon,
-  ChevronRight as ChevronRightIcon,
-  Save as SaveIcon,
-  Cancel as CancelIcon
-} from '@mui/icons-material';
+import { Plus } from 'lucide-react';
 import IconButton from '@mui/material/IconButton';
 import NodeContainedFields from './NodeContainedFields';
 import TextField from '../../elements/TextField';

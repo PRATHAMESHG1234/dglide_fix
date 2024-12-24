@@ -19,14 +19,14 @@ import {
 import { buildChart, buildStackChart } from '../ChartJson';
 import DashboardPreview from '../DashboardPreview';
 import IconButton from '@mui/material/IconButton';
-import DeleteIcon from '@mui/icons-material/Delete';
+import { Trash } from 'lucide-react';
 import CardSection from './CardSection';
 import ListSection from './ListSection';
 import TableRecordSection from './TableRecordSection';
 import './CreateDashboard.css';
 import Loader from '../../shared/Loader';
 
-import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import { Trash } from 'lucide-react';
 import TableDataGrid from '../../../elements/TableDataGrid';
 import ChartSection from './ChartSection';
 import { Input } from '@/componentss/ui/input';

@@ -1,8 +1,8 @@
 import { forwardRef, useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import HighlightOffTwoToneIcon from '@mui/icons-material/HighlightOffTwoTone';
-import UploadFileIcon from '@mui/icons-material/UploadFile';
+import { XCircle } from 'lucide-react';
+import { Upload } from 'lucide-react';
 import Select from 'react-select';
 import {
   Autocomplete,

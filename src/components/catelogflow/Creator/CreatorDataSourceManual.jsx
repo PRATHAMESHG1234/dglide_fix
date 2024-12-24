@@ -1,9 +1,9 @@
 import { memo, useEffect, useRef, useState } from 'react';
 
-import AddIcon from '@mui/icons-material/AddBox';
-import RemoveIcon from '@mui/icons-material/HighlightOff';
-import RadioCheckedIcon from '@mui/icons-material/RadioButtonChecked';
-import RadioUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
+import { BoxPlus } from 'lucide-react';
+import { XCircle } from 'lucide-react';
+import { DotCircle } from 'lucide-react';
+import { Circle } from 'lucide-react';
 import { Typography } from '@mui/joy';
 import {
   Badge,
@@ -17,7 +17,7 @@ import {
   TextField,
   Tooltip
 } from '@mui/material';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { Paperclip } from 'lucide-react';
 import { generateUId, optionUniqeUId } from '../../../common/utils/helpers';
 import { COLORS } from '../../../common/constants/styles';
 import { uploadImage } from '../../../services/catalogFlow';

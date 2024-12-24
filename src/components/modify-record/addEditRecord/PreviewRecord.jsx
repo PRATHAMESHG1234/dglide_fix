@@ -5,7 +5,7 @@ import 'react-quill/dist/quill.snow.css';
 import { useSelector } from 'react-redux';
 import './AddEditRecord.css';
 
-import Add from '@mui/icons-material/Add';
+import { Plus } from 'lucide-react';
 import {
   Autocomplete,
   Box,
@@ -42,15 +42,15 @@ import { createTableRecord } from '../../../redux/slices/tableSlice';
 import { useDispatch } from 'react-redux';
 import { fetchFieldGroups } from '../../../redux/slices/fieldGroupSlice';
 
-import InfoIcon from '@mui/icons-material/InfoOutlined';
+import { Info } from 'lucide-react';
 import DefaultFields from '../DefaultFields';
 import Avatar from '../../../elements/Avatar';
 import { IconForOption } from '../../field/OptionFieldIcon';
 import { Button } from '@/componentss/ui/button';
-import CloseIcon from '@mui/icons-material/Close';
-import EmailIcon from '@mui/icons-material/EmailOutlined';
-import CallIcon from '@mui/icons-material/CallOutlined';
-import CreateIcon from '@mui/icons-material/CreateOutlined';
+import { X } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { PhoneCall } from 'lucide-react';
+import { Edit } from 'lucide-react';
 import { catalogType } from '../../../common/utils/fields';
 import CreatorAddAttachment from '../../catelogflow/Creator/CreatorAddAttachment';
 import { PreviewSingleAttchment } from '../../catelogflow/Creator/PreviewSingleAttchment';

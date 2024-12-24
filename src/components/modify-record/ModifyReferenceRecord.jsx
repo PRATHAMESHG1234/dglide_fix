@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import LaunchIcon from '@mui/icons-material/Launch';
-import CloseIcon from '@mui/icons-material/Close';
+import { ExternalLink } from 'lucide-react';
+import { X } from 'lucide-react';
 import { Box } from '@mui/joy';
 import { Grid, Tooltip, Button as Buttons } from '@mui/material';
 import IconButton from '@mui/material/IconButton';

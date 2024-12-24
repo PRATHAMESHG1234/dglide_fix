@@ -10,7 +10,7 @@ import {
   TooltipContent,
   TooltipTrigger
 } from '@/componentss/ui/tooltip';
-import SortIcon from '@mui/icons-material/UnfoldMore';
+import { ChevronDown } from 'lucide-react';
 
 import { AgGridReact } from 'ag-grid-react';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -18,9 +18,9 @@ import ColumnPreferenceX from '../components/records/preference/ColumnPreference
 import { colors } from '../common/constants/styles';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import FilterListIcon from '@mui/icons-material/FilterList';
-import ArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import ArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import { Filter } from 'lucide-react';
+import { ChevronsUp } from 'lucide-react';
+import { ChevronsDown } from 'lucide-react';
 import { Dropdown } from '@/componentss/ui/dropdown';
 // import 'ag-grid-community/styles/ag-grid.css';
 // import 'ag-grid-community/styles/ag-theme-quartz.css';

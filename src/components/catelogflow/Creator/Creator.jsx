@@ -19,12 +19,12 @@ import ConfirmationModal from '../../shared/ConfirmationModal';
 import { fetchCatalogFlow } from '../../../services/catalogFlow';
 import { updateCatalogFlow } from '../../../redux/slices/catalogFlowSlice';
 import { useNavigate } from 'react-router-dom';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import Property from './CreatorProperty';
-import { ChevronRight } from '@mui/icons-material';
+import { ChevronRight } from 'lucide-react';
 import { optionUniqeUId } from '../../../common/utils/helpers';
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { ArrowLeft } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import CreatorAddAttachment from './CreatorAddAttachment';
 import { notify } from '../../../hooks/toastUtils';
 

@@ -10,7 +10,7 @@ import {
 import { COLORS } from '../../../common/constants/styles';
 import '../../modify-record/Attachment.css';
 import { FaFileCsv } from 'react-icons/fa';
-import { DeleteForever } from '@mui/icons-material';
+import { Trash } from 'lucide-react';
 
 const AttachFile = ({
   files,

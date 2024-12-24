@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import BarChartIcon from '@mui/icons-material/BarChart';
-import PieChartIcon from '@mui/icons-material/PieChart';
-import ShowChartIcon from '@mui/icons-material/ShowChart';
+import { BarChart } from 'lucide-react';
+import { PieChart } from 'lucide-react';
+import { LineChart } from 'lucide-react';
 import {
   ArcElement,
   BarElement,

@@ -5,7 +5,7 @@ import TextField from '../../../elements/TextField';
 import { fetchRecordById, updateTableRecord } from '../../../services/table';
 import { IconButton, Tooltip, Typography } from '@mui/material';
 import { Button } from '@/componentss/ui/button';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
+import { DownloadCloud } from 'lucide-react';
 import { COLORS } from '../../../common/constants/styles';
 import CreatorAddAttachment from './CreatorAddAttachment';
 import { PreviewSingleAttchment } from './PreviewSingleAttchment';

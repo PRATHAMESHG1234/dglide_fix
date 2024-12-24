@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { fetchConfigDetail } from '../../../services/chart';
 
 import { Grid, Typography } from '@mui/material';
-import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import { CheckSquare } from 'lucide-react';
 
 import { COLORS, colors } from '../../../common/constants/styles';
 import ChartCard from '../ChartCard';

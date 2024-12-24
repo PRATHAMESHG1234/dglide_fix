@@ -13,7 +13,7 @@ import { DateRangePicker } from 'rsuite';
 import { FaClock } from 'react-icons/fa';
 import TextField from '../../elements/TextField';
 import moment from 'moment';
-import AddIcon from '@mui/icons-material/Add';
+import { Plus } from 'lucide-react';
 import { notify } from '../../hooks/toastUtils';
 
 const dayMapping = {

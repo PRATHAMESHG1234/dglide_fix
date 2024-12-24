@@ -16,7 +16,7 @@ import MultipleSelect from '../../../elements/CreatorMultiSelect';
 import SelectField from '../../../elements/CreatorSelectField';
 import RadioField from '../../../elements/CreatorRadioField';
 import CheckboxField from '../../../elements/CreatorCheckboxField';
-import InfoIcon from '@mui/icons-material/Info';
+import { Info } from 'lucide-react';
 import ReactQuill, { Quill } from 'react-quill';
 import { Textarea } from '@mui/joy';
 import TextArea from '../../../elements/CreatorTextArea';

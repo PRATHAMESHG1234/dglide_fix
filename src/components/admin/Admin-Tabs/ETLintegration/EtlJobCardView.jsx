@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
-import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
-import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import { Clock } from 'lucide-react';
+import { Edit } from 'lucide-react';
+import { MoreHorizontal } from 'lucide-react';
 import {
   Avatar,
   Badge,

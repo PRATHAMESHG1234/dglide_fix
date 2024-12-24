@@ -15,8 +15,8 @@ import {
 } from '@mui/lab';
 
 // assets
-import LaptopMacIcon from '@mui/icons-material/LaptopMacTwoTone';
-import RepeatIcon from '@mui/icons-material/RepeatTwoTone';
+import { Monitor } from 'lucide-react';
+import { Repeat } from 'lucide-react';
 import Dialog from '../../../elements/Dialog';
 import MailDetails from '../../../pages/MailDetails';
 import { fetchTableReferenceDataByUUID } from '../../../services/table';

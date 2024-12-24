@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import SyncAltIcon from '@mui/icons-material/SyncAlt';
+import { SwapHorizontal } from 'lucide-react';
 import { Box } from '@mui/material';
 
 import { COLORS } from '../../../common/constants/styles';

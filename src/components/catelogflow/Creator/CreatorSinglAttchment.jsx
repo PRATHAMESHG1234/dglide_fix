@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import '../../modify-record/Attachment.css';
-import DeleteIcon from '@mui/icons-material/HighlightOff';
-import FileIcon from '@mui/icons-material/FilePresentOutlined';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { XCircle } from 'lucide-react';
+import { FileCheck } from 'lucide-react';
+import { Paperclip } from 'lucide-react';
 
 import {
   Box,
@@ -13,7 +13,7 @@ import {
   Typography,
   Button
 } from '@mui/material';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import { File } from 'lucide-react';
 import { BsFiletypeXlsx } from 'react-icons/bs';
 import { FaFileCsv } from 'react-icons/fa';
 import { IoDocumentTextOutline } from 'react-icons/io5';

@@ -15,11 +15,11 @@ import {
   Typography
 } from '@mui/material';
 
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import MoveUpIcon from '@mui/icons-material/MoveUp';
-import AddCardIcon from '@mui/icons-material/AddCard';
+import { Edit } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+import { CreditCard } from 'lucide-react';
 import Avatar from '../../elements/Avatars';
 import { colors } from '../../common/constants/styles';
 import { MODAL } from '../../common/utils/modal-toggle';

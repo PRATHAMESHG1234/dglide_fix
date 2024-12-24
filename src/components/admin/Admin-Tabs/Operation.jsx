@@ -1,14 +1,14 @@
 import React, { useRef, useState } from 'react';
 
-import EmailIcon from '@mui/icons-material/Email';
-import ArticleIcon from '@mui/icons-material/Article';
+import { Mail } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
-import TravelExploreOutlinedIcon from '@mui/icons-material/TravelExploreOutlined';
-import HourglassBottomOutlinedIcon from '@mui/icons-material/HourglassBottomOutlined';
-import HowToRegOutlinedIcon from '@mui/icons-material/HowToRegOutlined';
-import EditCalendarIcon from '@mui/icons-material/EditCalendar';
+import { Compass } from 'lucide-react';
+import { Hourglass } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
+import { CalendarEdit } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
-import PolicyIcon from '@mui/icons-material/Policy';
+import { Shield } from 'lucide-react';
 import { colors } from '../../../common/constants/styles';
 import { Grid } from '@mui/material';
 import SideIconCard from '../SideIconCard';

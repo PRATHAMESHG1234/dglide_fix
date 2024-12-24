@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import CalendarIcon from '@mui/icons-material/CalendarMonth';
-import RefreshIcon from '@mui/icons-material/Refresh';
+import { Calendar } from 'lucide-react';
+import { RefreshCcw } from 'lucide-react';
 import { colors } from '../../common/constants/styles';
 import CustomeDatePicker from './CustomeDatePicker';
 

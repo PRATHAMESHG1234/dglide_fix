@@ -13,11 +13,11 @@ import {
 import DialogModal from '@mui/material/Dialog';
 import React from 'react';
 import { colors, COLORS } from '../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 
-import Add from '@mui/icons-material/AddCircleOutline';
+import { PlusCircle } from 'lucide-react';
 import { useSelector } from 'react-redux';
-import { BorderColor } from '@mui/icons-material';
+import { Pen } from 'lucide-react';
 import Chip from '../../elements/Chip';
 import { color } from 'framer-motion';
 const ODD_OPACITY = 0.1;

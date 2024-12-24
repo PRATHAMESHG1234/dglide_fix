@@ -11,7 +11,7 @@ import {
   useMediaQuery,
   IconButton
 } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import { colors } from '../common/constants/styles';
 
 // ===============================|| UI DIALOG - RESPONSIVE ||=============================== //

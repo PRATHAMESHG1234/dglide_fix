@@ -2,8 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import RefreshIcon from '@mui/icons-material/Refresh';
-import SendIcon from '@mui/icons-material/Send';
+import { RefreshCcw } from 'lucide-react';
+import { Send } from 'lucide-react';
 import {
   FormControlLabel,
   IconButton,
@@ -31,10 +31,10 @@ import CreatorSinglAttchment from '../catelogflow/Creator/CreatorSinglAttchment'
 import { fetchRecords, updateTableRecord } from '../../services/table';
 import MyRequestGridView from '../catelogflow/Creator/MyRequestGridView ';
 // import { fetchRecords } from '../../redux/slices/tableSlice';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { Paperclip } from 'lucide-react';
 import RequestDefaultAttachment from '../catelogflow/Creator/RequestDefaultAttchment';
-import { Padding } from '@mui/icons-material';
-import CloseIcon from '@mui/icons-material/Close';
+import { Box } from 'lucide-react';
+import { X } from 'lucide-react';
 
 let rootIndex = 0;
 

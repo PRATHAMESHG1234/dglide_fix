@@ -5,7 +5,7 @@ import { useTheme } from '@mui/material/styles';
 import { Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 
 // assets
-import DownloadForOfflineTwoToneIcon from '@mui/icons-material/DownloadForOfflineTwoTone';
+import { Download } from 'lucide-react';
 import { colors } from '../common/constants/styles';
 import { ArrowDownToLine } from 'lucide-react';
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 // material-ui
 
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { Trash2 } from 'lucide-react';
 
 import { Label } from '@/componentss/ui/label';
 import { Switch } from '@/componentss/ui/switch';
@@ -18,7 +18,7 @@ import {
 import { useState } from 'react';
 
 import { useSelector } from 'react-redux';
-import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
+import { Edit } from 'lucide-react';
 import { colors } from '../../common/constants/styles';
 
 const WorkflowCard = ({

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import SplitPane, { Pane } from 'split-pane-react';
 
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import { ArrowLeft } from 'lucide-react';
 import {
   Box,
   CircularProgress,
@@ -22,7 +22,7 @@ import {
   fetchFieldLookupValues
 } from '../../../services/catalogFlow';
 // import AddEditPreview from './AddEditPreview';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { Paperclip } from 'lucide-react';
 import { catalogType } from '../../../common/utils/fields';
 import Questionnaire from './Questionnaire';
 import { generateChild } from '../../../common/utils/helpers';

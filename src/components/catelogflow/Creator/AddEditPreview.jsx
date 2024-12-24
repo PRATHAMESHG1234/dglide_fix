@@ -22,7 +22,7 @@
 // import TextField from '../../../elements/CreatorTextField';
 // import { COLORS } from '../../../common/constants/styles';
 // import ReactQuill, { Quill } from 'react-quill';
-// import InfoIcon from '@mui/icons-material/Info';
+// import { Info } from 'lucide-react';
 // import { fetchCreatorLookupValues, fetchFieldLookupValues } from '../../../services/catalogFlow';
 // import CreatorAddAttachment from '../../catelogflow/Creator/CreatorAddAttachment';
 // import { Textarea } from '@mui/joy';

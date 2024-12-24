@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import DeleteForever from '@mui/icons-material/DeleteForever';
-import Edit from '@mui/icons-material/Edit';
-import PreviewIcon from '@mui/icons-material/Preview';
-import MoreVert from '@mui/icons-material/MoreVert';
+import { Trash2 } from 'lucide-react';
+import { Edit } from 'lucide-react';
+import { Eye } from 'lucide-react';
+import { MoreVertical } from 'lucide-react';
 import { Divider, Stack, Tooltip, Typography } from '@mui/joy';
 
 import Box from '@mui/joy/Box';
@@ -21,8 +21,8 @@ import { colors, COLORS } from '../../../common/constants/styles';
 import { Avatar, Button, Chip, Grid, Pagination } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
-import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
+import { ChevronDown } from 'lucide-react';
+import { Store } from 'lucide-react';
 
 import {
   IconUserCircle,

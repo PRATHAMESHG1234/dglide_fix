@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Box, Stack } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import EditIcon from "@mui/icons-material/Edit";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import { Edit } from 'lucide-react';
+import { Trash } from 'lucide-react';
 import { MODAL } from "../../../common/utils/modal-toggle";
 import Button from "../../../elements/Button";
 

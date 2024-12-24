@@ -1,9 +1,9 @@
-import EmailIcon from "@mui/icons-material/EmailOutlined";
-import WebIcon from "@mui/icons-material/LanguageOutlined";
-import WalkInIcon from "@mui/icons-material/DirectionsWalkOutlined";
-import PhoneIcon from "@mui/icons-material/PhoneOutlined";
-import SocialIcon from "@mui/icons-material/Diversity2Outlined";
-import APIIcon from "@mui/icons-material/CloudSyncOutlined";
+import { Mail } from 'lucide-react';
+import { Globe } from 'lucide-react';
+import { Walk } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { Users } from 'lucide-react';
+import { Sync } from 'lucide-react';
 const style = {
   fontSize: "inherit",
   color: "inherit",

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { Add, DeleteForever } from '@mui/icons-material';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import Edit from '@mui/icons-material/Edit';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { Plus } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import { Edit } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import { ListItemDecorator } from '@mui/joy';
 import { Box, FormLabel, Menu, MenuItem, Typography } from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
@@ -15,7 +15,7 @@ import {
   GridToolbarDensitySelector,
   gridClasses
 } from '@mui/x-data-grid';
-import ViewWeekIcon from '@mui/icons-material/ViewWeek';
+import { Calendar } from 'lucide-react';
 
 import { colors, COLORS } from '../../../common/constants/styles';
 import { MODAL } from '../../../common/utils/modal-toggle';

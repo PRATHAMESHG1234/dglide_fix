@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { ChevronDown } from 'lucide-react';
 import { Tooltip, Zoom, tooltipClasses } from '@mui/material';
-import Edit from '@mui/icons-material/Edit';
-import MoreVert from '@mui/icons-material/MoreVert';
+import { Edit } from 'lucide-react';
+import { MoreVertical } from 'lucide-react';
 import Dropdown from '@mui/joy/Dropdown';
 import IconButton from '@mui/joy/IconButton';
 import ListItemDecorator from '@mui/joy/ListItemDecorator';
