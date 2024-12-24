@@ -210,7 +210,7 @@ const ColumnPreference = ({
                           )}
                         >
                           <Box className="flex items-center">
-                            <DragIcon sx={{ color: COLORS.SECONDARY }} />
+                            <GripHorizontal sx={{ color: COLORS.SECONDARY }} />
                             <FormControlLabel
                               sx={{
                                 '& .MuiFormControlLabel-label': {

@@ -168,7 +168,7 @@ const AuthResetPassword = ({ ...others }) => {
                     edge="end"
                     size="large"
                   >
-                    {showPassword ? <Visibility /> : <VisibilityOff />}
+                    {showPassword ? <Eye /> : <EyeOff />}
                   </IconButton>
                 </InputAdornment>
               }

@@ -52,7 +52,7 @@ const QuestionComponent = ({
       case 'password':
       case 'number':
         return (
-          <div className=" mb-4">
+          <div className="mb-4">
             <TextField
               key={field.name}
               labelname={field.label}
@@ -99,9 +99,7 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
-                  sx={{ color: COLORS.GRAY, cursor: 'pointer' }}
-                ></InfoIcon>
+                <Info sx={{ color: COLORS.GRAY, cursor: 'pointer' }}></Info>
               </Tooltip>
             )}
           </div>
@@ -109,9 +107,9 @@ const QuestionComponent = ({
       case 'textarea':
         if (!field.variant || field.variant.toLowerCase() === 'plaintext') {
           return (
-            <div className="flex  flex-col -reverse">
+            <div className="-reverse flex flex-col">
               {field.readOnly === true ? (
-                <div className="input-wrapper flex  flex-col ">
+                <div className="input-wrapper flex flex-col">
                   <FormLabel
                     sx={{
                       fontSize: '13px',
@@ -170,16 +168,16 @@ const QuestionComponent = ({
                   }
                   arrow
                 >
-                  <InfoIcon
+                  <Info
                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                  ></InfoIcon>
+                  ></Info>
                 </Tooltip>
               )}
             </div>
           );
         } else {
           return (
-            <div className="ReactQuill flex  flex-col  reactQuillExtra mb-4 ">
+            <div className="ReactQuill reactQuillExtra mb-4 flex flex-col">
               <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
                 {field.label}
                 {field.mandatory && <span className="text-danger"> *</span>}
@@ -212,9 +210,9 @@ const QuestionComponent = ({
                   }
                   arrow
                 >
-                  <InfoIcon
+                  <Info
                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                  ></InfoIcon>
+                  ></Info>
                 </Tooltip>
               )}
             </div>
@@ -231,7 +229,7 @@ const QuestionComponent = ({
         }
         return (
           <>
-            <div className=" mb-4">
+            <div className="mb-4">
               <RadioField
                 key={field.name}
                 submitFlag={onClickSubmit}
@@ -282,9 +280,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </>
@@ -301,7 +299,7 @@ const QuestionComponent = ({
         }
         if (!field.variant || field.variant.toLowerCase() === 'single') {
           return (
-            <div className=" mb-4">
+            <div className="mb-4">
               <SelectField
                 key={field.name}
                 labelname={field.label}
@@ -333,9 +331,9 @@ const QuestionComponent = ({
                   }
                   arrow
                 >
-                  <InfoIcon
+                  <Info
                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                  ></InfoIcon>
+                  ></Info>
                 </Tooltip>
               )}
               {field.options.map((option) => (
@@ -398,9 +396,9 @@ const QuestionComponent = ({
                     }
                     arrow
                   >
-                    <InfoIcon
+                    <Info
                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                    ></InfoIcon>
+                    ></Info>
                   </Tooltip>
                 )}
               </div>
@@ -422,7 +420,7 @@ const QuestionComponent = ({
           }
         }
         return (
-          <div className="flex mb-4" key={field.name}>
+          <div className="mb-4 flex" key={field.name}>
             <CheckboxField
               labelname={field.label}
               name={field.name}
@@ -448,16 +446,16 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </div>
         );
       case 'date':
         return (
-          <div className="flex mb-4">
+          <div className="mb-4 flex">
             <TextField
               key={field.name}
               labelname={field.label}
@@ -503,9 +501,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </div>
@@ -513,7 +511,7 @@ const QuestionComponent = ({
 
       case 'lookup':
         return (
-          <div className=" mb-4">
+          <div className="mb-4">
             <SelectField
               key={field.name}
               labelname={field.label}
@@ -544,9 +542,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </div>
@@ -637,9 +635,9 @@ const QuestionComponent = ({
                     }
                     arrow
                   >
-                    <InfoIcon
+                    <Info
                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                    ></InfoIcon>
+                    ></Info>
                   </Tooltip>
                 )}
               </div>

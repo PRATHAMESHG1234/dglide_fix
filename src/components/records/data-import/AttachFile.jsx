@@ -10,7 +10,7 @@ import {
 import { COLORS } from '../../../common/constants/styles';
 import '../../modify-record/Attachment.css';
 import { FaFileCsv } from 'react-icons/fa';
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 
 const AttachFile = ({
   files,
@@ -235,7 +235,7 @@ const AttachFile = ({
                 }
               }}
             >
-              <DeleteForever
+              <Trash2
                 sx={{
                   color: 'darkred'
                 }}

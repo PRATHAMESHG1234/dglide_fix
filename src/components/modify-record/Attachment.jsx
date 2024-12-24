@@ -4,7 +4,6 @@ import './Attachment.css';
 import { DownloadCloud } from 'lucide-react';
 import { XCircle } from 'lucide-react';
 // import { FileCheck } from 'lucide-react';
-import { Eye } from 'lucide-react';
 import { Upload } from 'lucide-react';
 import { FileIcon, defaultStyles } from 'react-file-icon';
 import {
@@ -25,7 +24,6 @@ import {
   alpha
 } from '@mui/material';
 import { Trash } from 'lucide-react';
-import { X } from 'lucide-react';
 import { File } from 'lucide-react';
 import Modal from '@mui/joy/Modal';
 import { BsFiletypeXlsx } from 'react-icons/bs';
@@ -147,7 +145,7 @@ const Attachment = ({
             overflow: 'auto'
           }}
         >
-          <CloseIcon
+          <X
             onClick={() => closePreviewModal()}
             sx={{
               position: 'absolute',
@@ -368,7 +366,7 @@ const Attachment = ({
                       />
                     ) : (
                       <div className="flex h-12 w-12 items-center justify-center rounded bg-white">
-                        <FileIcon
+                        <File
                           extension={fileExtension}
                           {...(defaultStyles[fileExtension] || {
                             labelColor: '#AAA',

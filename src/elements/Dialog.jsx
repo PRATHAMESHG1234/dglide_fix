@@ -62,7 +62,7 @@ export default function Dialog({
                 color: (theme) => colors.grey[500]
               }}
             >
-              <CloseIcon />
+              <X />
             </IconButton>
           </DialogTitle>
           <DialogContent>

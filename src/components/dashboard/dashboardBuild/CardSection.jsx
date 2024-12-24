@@ -5,7 +5,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
-import { Bank } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 import { UserCircle } from 'lucide-react';
 import { CheckSquare } from 'lucide-react';
 import { FileText } from 'lucide-react';
@@ -234,7 +234,7 @@ const CardSection = ({
           (item) => item?.type === 'card' && item?.result !== null
         ).length === 0 ? (
           <Typography sx={{ color: colors.grey[500], fontSize: '16px' }}>
-            Select cards using the <CheckBoxIcon sx={{ fontSize: 'inherit' }} />{' '}
+            Select cards using the <CheckSquare sx={{ fontSize: 'inherit' }} />{' '}
             checkbox.
           </Typography>
         ) : (

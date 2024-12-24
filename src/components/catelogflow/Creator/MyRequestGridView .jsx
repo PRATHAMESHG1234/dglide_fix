@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { Trash2 } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Eye } from 'lucide-react';
 import { MoreVertical } from 'lucide-react';
 import { Divider, Stack, Tooltip, Typography } from '@mui/joy';
@@ -76,7 +76,7 @@ const MyRequestGridView = ({
   }
   return (
     <>
-      <Grid container className="flex  flex-col   mt-3">
+      <Grid container className="mt-3 flex flex-col">
         <Grid className={`flex flex-row flex-wrap`}>
           {paginatedItems.map((filteredItem, index) => (
             <Card
@@ -118,9 +118,9 @@ const MyRequestGridView = ({
                       color: colors.warning.dark
                     }}
                   >
-                    <StorefrontTwoToneIcon fontSize="inherit" />
+                    <Store fontSize="inherit" />
                   </Avatar>
-                  <div className="flex  flex-col  mx-2">
+                  <div className="mx-2 flex flex-col">
                     <Typography
                       level="title-lg"
                       sx={{
@@ -194,7 +194,7 @@ const MyRequestGridView = ({
               size="large"
               sx={{ color: colors.grey[900] }}
               color="inherit"
-              endIcon={<ExpandMoreRoundedIcon />}
+              endIcon={<ChevronDown />}
               onClick={handleClick}
             >
               {rowsPerPage} Rows

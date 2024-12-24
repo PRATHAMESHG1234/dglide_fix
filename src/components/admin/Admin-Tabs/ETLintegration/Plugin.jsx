@@ -20,7 +20,7 @@ import { Dropdown } from '@/componentss/ui/dropdown';
 import { Label } from '@/componentss/ui/label';
 import { ObjectLanding } from './ObjectLanding';
 import { EnvironMentGrid } from './EnvironMentGrid';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { notify } from '../../../../hooks/toastUtils';
 
 export const Plugin = ({

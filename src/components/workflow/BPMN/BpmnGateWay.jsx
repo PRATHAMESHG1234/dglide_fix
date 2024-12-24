@@ -11,7 +11,7 @@ import { alpha } from '@mui/material/styles';
 import { COLORS, colors } from '../../../common/constants/styles';
 import SelectField from '../../../elements/SelectField';
 import TextField from '../../../elements/TextField';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 // import {Button} from '@/componentss/ui/button'
 
 const operators = {
@@ -148,7 +148,7 @@ export const BpmnGateWay = ({
                         )
                       }
                     >
-                      <AddIcon
+                      <PlusCircle
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,
@@ -228,7 +228,7 @@ export const BpmnGateWay = ({
                         )
                       }
                     >
-                      <AddIcon
+                      <PlusCircle
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,

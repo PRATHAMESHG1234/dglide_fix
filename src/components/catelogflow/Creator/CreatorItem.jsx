@@ -31,8 +31,7 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
                 <>
                   {field.inDependent === false ? (
                     <>
-                      <DragIndicatorIcon
-                        sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                      <GripHorizontal sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                       />
                       <Icon
                         fontSize="22px"
@@ -64,8 +63,7 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
                       onClick={() => setShowDeleteModal(!showdDeleteModal)}
                       className="px-2"
                     >
-                      <DeleteOutlineIcon
-                        style={{
+                      <Trash style={{
                           color: showStyle ? 'red' : '',
                           visibility: showStyle ? 'visible' : 'hidden',
                           fontSize: '25px'

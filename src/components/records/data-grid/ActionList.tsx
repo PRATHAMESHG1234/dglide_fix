@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import { useSelector } from 'react-redux';
-import { BoxPlus } from 'lucide-react';
+import { Edit2 } from 'lucide-react';
 import { ExecutionProcess } from './ExecutionProcess';
 import { Button } from '@/componentss/ui/button';
 import {
@@ -88,7 +88,7 @@ const ActionList: React.FC<ActionListProps> = ({
                 }}
                 className="flex cursor-pointer items-center gap-x-2"
               >
-                <CreateIcon className="text-primary" /> Create New Record
+                <Edit2 className="text-primary" /> Create New Record
               </MenubarItem>
             )}
             {filterActionsByKey(actions, Key)?.map((action) => (

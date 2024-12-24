@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { X } from 'lucide-react';
 import { DownloadCloud } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
@@ -120,7 +120,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
             overflow: 'auto'
           }}
         >
-          <CloseIcon
+          <X
             onClick={() => closePreviewModal()}
             sx={{
               position: 'absolute',
@@ -367,7 +367,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             }}
                           />
                         ) : attachment.fileExtension === 'pdf' ? (
-                          <PictureAsPdfIcon
+                          <File
                             sx={{
                               fontSize: '50px',
                               marginRight: '7px',
@@ -392,7 +392,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             }}
                           />
                         ) : (
-                          <FileIcon
+                          <File
                             sx={{
                               color: 'lightgrey',
                               fontSize: '50px',
@@ -431,7 +431,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <PreviewIcon />
+                                <Eye />
                               </IconButton>
                             </Tooltip>
                           ) : null}
@@ -445,7 +445,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                 color: COLORS.PRIMARY
                               }}
                             >
-                              <DownloadIcon />
+                              <DownloadCloud />
                             </IconButton>
                           </Tooltip>
                           {catlogFlag === 'catlogFlagTrue' ? (
@@ -465,7 +465,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                   }
                                 }}
                               >
-                                <DeleteForever
+                                <Trash2
                                   sx={{
                                     color: 'darkred'
                                   }}
@@ -545,7 +545,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                               }}
                             />
                           ) : file.type === 'application/pdf' ? (
-                            <PictureAsPdfIcon
+                            <File
                               sx={{
                                 fontSize: '30px',
                                 marginRight: '7px',
@@ -573,7 +573,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           ) : (
                             file.type ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                              <FileIcon
+                              <File
                                 sx={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
@@ -601,7 +601,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           aria-label="delete"
                           onClick={() => deleteSelectedFileHandler(fileIndex)}
                         >
-                          <DeleteIcon
+                          <Trash
                             sx={{
                               color: 'darkred',
                               fontSize: '20px'

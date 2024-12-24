@@ -5,7 +5,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Button } from '@/componentss/ui/button';
 import { Trash2 } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Avatar, Stack, Tooltip } from '@mui/material';
 import IconButton from '@mui/joy/IconButton';
 import { X } from 'lucide-react';
@@ -70,7 +70,7 @@ const DetailViewModal = ({
                   }
                 }}
               >
-                <Edit sx={{ color: 'primary' }} />
+                <Edit2 sx={{ color: 'primary' }} />
               </IconButton>
             </Tooltip>
             <Stack spacing={1.5} direction="row" sx={{ zIndex: 1 }}>
@@ -86,7 +86,7 @@ const DetailViewModal = ({
                       }
                     }}
                   >
-                    <MoreHorizIcon />
+                    <MoreHorizontal />
                   </MenuButton>
                 </Tooltip>
                 <Menu placement="bottom-end" sx={{ zIndex: '11111' }}>
@@ -94,7 +94,7 @@ const DetailViewModal = ({
                     onClick={() => onActionClick(MODAL.edit, state.selected.id)}
                   >
                     <ListItemDecorator>
-                      <Edit />
+                      <Edit2 />
                     </ListItemDecorator>
                     Edit
                   </MenuItem>
@@ -102,7 +102,7 @@ const DetailViewModal = ({
                   <ListDivider />
                   <MenuItem variant="soft" color="danger">
                     <ListItemDecorator sx={{ color: 'inherit' }}>
-                      <DeleteForever />
+                      <Trash2 />
                     </ListItemDecorator>
                     Delete
                   </MenuItem>
@@ -121,10 +121,7 @@ const DetailViewModal = ({
                   }
                 }}
               >
-                <ClearIcon
-                  sx={{ color: COLORS.SECONDARY }}
-                  onClick={onCancel}
-                />
+                <X sx={{ color: COLORS.SECONDARY }} onClick={onCancel} />
               </IconButton>
             </Tooltip>
           </Stack>

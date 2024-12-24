@@ -1,5 +1,5 @@
 import { memo, useEffect, useState } from 'react';
-import { BoxPlus } from 'lucide-react';
+import { PlusSquare, PlusCircle } from 'lucide-react';
 import { Divider, FormControl, Typography } from '@mui/joy';
 import {
   Checkbox,
@@ -681,7 +681,7 @@ const Property = ({
               </Typography>
 
               <Tooltip title="Add" variant="solid">
-                <AddIcon
+                <PlusCircle
                   fontSize="medium"
                   onClick={addCondition}
                   sx={{
@@ -701,7 +701,7 @@ const Property = ({
                   >
                     <div className="bg-light flex items-center justify-end p-1">
                       <Tooltip title="Delete">
-                        <DeleteOutlinedIcon
+                        <Trash
                           className="pointer"
                           color="error"
                           onClick={() => deleteCondition(condition, i)}

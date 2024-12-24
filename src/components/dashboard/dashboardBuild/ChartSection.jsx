@@ -145,7 +145,7 @@ const ChartSection = ({
           >
             <Typography sx={{ color: colors.grey[500], fontSize: '16px' }}>
               Select charts using the{' '}
-              <CheckBoxIcon sx={{ fontSize: 'inherit' }} /> checkbox.
+              <CheckSquare sx={{ fontSize: 'inherit' }} /> checkbox.
             </Typography>
           </Grid>
         ) : (

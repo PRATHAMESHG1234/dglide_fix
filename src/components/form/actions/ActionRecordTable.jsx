@@ -1,7 +1,7 @@
 import './Action.css';
 
 import { Trash2 } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {
@@ -21,7 +21,7 @@ import { MODAL } from '../../../common/utils/modal-toggle';
 import { useSelector } from 'react-redux';
 import Avatar from '../../../elements/Avatars';
 import { CheckCircle } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Trash2 } from 'lucide-react';
 
 const ODD_OPACITY = 0.9;
@@ -103,7 +103,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                         }}
                       >
                         {item?.name} {/* {row.active === true && ( */}
-                        <CheckCircleIcon
+                        <CheckCircle
                           sx={{
                             color: colors.success.dark,
                             width: 14,
@@ -144,7 +144,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.edit, item.id);
                     }}
                   >
-                    <EditIcon sx={{ fontSize: '1.1rem' }} />
+                    <Edit2 sx={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
                 <Tooltip placement="top" title="Delete">
@@ -161,7 +161,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.delete, item.id);
                     }}
                   >
-                    <DeleteForeverIcon sx={{ fontSize: '1.1rem' }} />
+                    <Trash2 sx={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
               </TableCell>

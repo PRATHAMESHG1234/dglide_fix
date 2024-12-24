@@ -2147,7 +2147,7 @@ const BpmnNew = () => {
                 onClick={() => navigate('/workflow')}
                 variant="outline"
               >
-                <CloseIcon />
+                <X />
               </Button>
             </Tooltip>
           </Box>

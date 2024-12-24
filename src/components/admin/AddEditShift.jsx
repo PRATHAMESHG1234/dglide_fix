@@ -13,7 +13,7 @@ import { DateRangePicker } from 'rsuite';
 import { FaClock } from 'react-icons/fa';
 import TextField from '../../elements/TextField';
 import moment from 'moment';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { notify } from '../../hooks/toastUtils';
 
 const dayMapping = {
@@ -473,7 +473,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                       }}
                       onClick={() => addSlotes(dayObj, subIndex)} // Adding a new slot
                     >
-                      <AddIcon
+                      <PlusCircle
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,
@@ -579,8 +579,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                             }}
                             onClick={() => addSlotes(dayObj, i)} // Ensure this adds one slot
                           >
-                            <AddIcon
-                              sx={{
+                            <PlusCircle sx={{
                                 fontSize: '25px',
                                 color: colors.primary.main,
                                 '&:hover': {

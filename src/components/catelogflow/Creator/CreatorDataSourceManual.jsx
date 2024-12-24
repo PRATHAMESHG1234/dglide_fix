@@ -1,8 +1,7 @@
 import { memo, useEffect, useRef, useState } from 'react';
 
-import { BoxPlus } from 'lucide-react';
+import { PlusSquare, CheckCircle2, Minus, PlusCircle } from 'lucide-react';
 import { XCircle } from 'lucide-react';
-import { DotCircle } from 'lucide-react';
 import { Circle } from 'lucide-react';
 import { Typography } from '@mui/joy';
 import {
@@ -165,7 +164,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             <IconButton
                               onClick={() => setDefaultOption(option)}
                             >
-                              <RadioCheckedIcon
+                              <CheckCircle2
                                 fontSize="medium"
                                 sx={{ color: COLORS.PRIMARY }}
                               />
@@ -174,7 +173,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             <IconButton
                               onClick={() => setDefaultOption(option)}
                             >
-                              <RadioUncheckedIcon fontSize="medium" />
+                              <Circle fontSize="medium" />
                             </IconButton>
                           )}
                         </>
@@ -202,7 +201,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                                   onClick={() =>
                                     handleButtonClick(option.optionId)
                                   }
-                                  startIcon={<AttachFileIcon />}
+                                  startIcon={<Paperclip />}
                                 ></Button>
                               </Tooltip>
                             </>
@@ -211,7 +210,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             className="btn p-0"
                             onClick={() => deleteOption(option)}
                           >
-                            <RemoveIcon
+                            <Minus
                               fontSize="medium"
                               sx={{
                                 color: '#bc3c3c'

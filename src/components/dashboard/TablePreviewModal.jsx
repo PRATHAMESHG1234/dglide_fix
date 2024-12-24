@@ -47,7 +47,7 @@ const TablePreviewModal = ({ open, onClose, selectedItemData }) => {
               zIndex: 999
             }}
           >
-            <CloseIcon />
+            <X />
           </IconButton>
 
           <h2 id="modal-modal-title">Table Preview</h2>

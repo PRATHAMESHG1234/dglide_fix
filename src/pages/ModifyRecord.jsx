@@ -683,7 +683,7 @@ const ModifyRecord = () => {
           onChange={(e, expanded) => handleAccordionChange(asset, expanded)}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ChevronDown />}
             aria-controls="panel1-content"
             id="panel1-header"
             style={{

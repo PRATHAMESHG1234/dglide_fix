@@ -466,8 +466,7 @@
 //                   }
 //                   arrow
 //                 >
-//                   <InfoIcon
-//                     sx={{ color: COLORS.GRAY, cursor: 'pointer' }}
+//                   <Info //                     sx={{ color: COLORS.GRAY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -521,8 +520,7 @@
 //                   }
 //                   arrow
 //                 >
-//                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                   <Info //                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -593,8 +591,7 @@
 //                     }
 //                     arrow
 //                   >
-//                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     <Info //                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -635,8 +632,7 @@
 //                     }
 //                     arrow
 //                   >
-//                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     <Info //                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -685,8 +681,7 @@
 //                   }
 //                   arrow
 //                 >
-//                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                   <Info //                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -737,8 +732,7 @@
 //                     }
 //                     arrow
 //                   >
-//                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     <Info //                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -782,8 +776,7 @@
 //                     }
 //                     arrow
 //                   >
-//                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     <Info //                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -827,8 +820,7 @@
 //                   }
 //                   arrow
 //                 >
-//                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                   <Info //                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -869,8 +861,7 @@
 //                   }
 //                   arrow
 //                 >
-//                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                   <Info //                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -958,8 +949,7 @@
 //                     }
 //                     arrow
 //                   >
-//                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     <Info //                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}

@@ -8,7 +8,7 @@ import {
   Typography
 } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
-import { BoxPlus } from 'lucide-react';
+import { PlusSquare, PlusCircle } from 'lucide-react';
 import { colors } from '../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { AlertCircle } from 'lucide-react';
@@ -83,7 +83,7 @@ export const DateFetchPanel = ({
             color: colors.grey[500]
           }}
         >
-          <CloseIcon />
+          <X />
         </IconButton>
         <Tooltip
           title="Output variable name: 'datetime', use it as id.out.datetime"
@@ -100,10 +100,10 @@ export const DateFetchPanel = ({
               color: colors.primary.dark
             }}
           >
-            <ErrorIcon />
+            <AlertCircle />
           </IconButton>
         </Tooltip>
-        <div className="flex  flex-col ">
+        <div className="flex flex-col">
           <Typography
             sx={{
               fontSize: '12px',
@@ -134,7 +134,7 @@ export const DateFetchPanel = ({
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
-                  <CalendarMonthIcon
+                  <Calendar
                     sx={{
                       color: colors.primary.dark,
                       fontSize: '25px',
@@ -149,7 +149,7 @@ export const DateFetchPanel = ({
                       setDatePickerShow(true);
                     }}
                   />
-                  <AddBoxIcon
+                  <PlusSquare
                     sx={{
                       color: colors.primary.dark,
                       fontSize: '25px',
@@ -191,7 +191,7 @@ export const DateFetchPanel = ({
           </div>
         </div>
 
-        <div className="flex mt-4">
+        <div className="mt-4 flex">
           <Grid container spacing={2}>
             <Grid item>
               <Button

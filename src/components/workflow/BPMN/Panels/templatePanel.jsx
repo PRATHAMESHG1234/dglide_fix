@@ -11,8 +11,7 @@ import { colors } from '../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { fetchAllTemplateByFormInfoId } from '../../../../services/formTemplate';
 import { Minus } from 'lucide-react';
-import { Plus } from 'lucide-react';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 export const TempaltePanel = ({
@@ -112,7 +111,7 @@ export const TempaltePanel = ({
             cursor: 'pointer'
           }}
         >
-          <CloseIcon sx={{ fontSize: '15px' }} />
+          <X sx={{ fontSize: '15px' }} />
         </IconButton>
         <div
           style={{
@@ -199,7 +198,7 @@ export const TempaltePanel = ({
                         addExpression(index, 'template', item?.value)
                       }
                     >
-                      <AddIcon
+                      <PlusCircle
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,
@@ -221,7 +220,7 @@ export const TempaltePanel = ({
                       }}
                       onClick={() => removeSelectedField(item?.fieldInfoId)}
                     >
-                      <RemoveIcon
+                      <Minus
                         sx={{
                           fontSize: '25px',
                           color: colors.secondary.main,
@@ -253,7 +252,7 @@ export const TempaltePanel = ({
                     backgroundColor: 'lightgrey'
                   }}
                 >
-                  <Add sx={{ fontSize: '13px' }} />
+                  <Plus sx={{ fontSize: '13px' }} />
                 </IconButton>
                 <Typography
                   sx={{

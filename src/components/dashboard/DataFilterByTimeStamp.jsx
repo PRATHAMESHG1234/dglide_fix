@@ -44,12 +44,11 @@ const timeOptions = [
     value: 'custom',
     label: 'Custom',
     icon: (
-      <CalendarIcon
-        sx={{ fontSize: '17px', position: 'absolute', right: 8, top: 13 }}
+      <Calendar sx={{ fontSize: '17px', position: 'absolute', right: 8, top: 13 }}
       />
     )
   },
-  { value: 'all', label: '', icon: <RefreshIcon /> }
+  { value: 'all', label: '', icon: <RefreshCcw /> }
 ];
 
 const DataFilterByTimeStamp = ({

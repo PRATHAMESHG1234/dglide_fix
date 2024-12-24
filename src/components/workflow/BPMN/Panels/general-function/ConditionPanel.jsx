@@ -9,8 +9,8 @@ import React from 'react';
 import { COLORS, colors } from '../../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { Minus } from 'lucide-react';
-import { Plus } from 'lucide-react';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
+
 import { Typography } from '@mui/joy';
 import SelectField from '../../../../../elements/SelectField';
 import TextField from '../../../../../elements/TextField';
@@ -152,7 +152,7 @@ export const ConditionPanel = ({
                         addExpression(index, 'conditionPanel', condition.value)
                       }
                     >
-                      <AddIcon
+                      <PlusCircle
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,

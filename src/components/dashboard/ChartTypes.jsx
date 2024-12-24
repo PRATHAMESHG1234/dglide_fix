@@ -274,15 +274,15 @@ const ChartTypes = ({ defaultSelectedRecords, chartData }) => {
 
   const chartTypes = [
     {
-      label: <BarChartIcon sx={{ color: 'rgba(88, 150, 233, 0.69)' }} />,
+      label: <BarChart sx={{ color: 'rgba(88, 150, 233, 0.69)' }} />,
       value: 'Bar'
     },
     {
-      label: <ShowChartIcon sx={{ color: 'rgba(155, 199, 132, 1)' }} />,
+      label: <LineChart sx={{ color: 'rgba(155, 199, 132, 1)' }} />,
       value: 'Line'
     },
     {
-      label: <PieChartIcon sx={{ color: 'rgba(255, 159, 64, 0.79)' }} />,
+      label: <PieChart sx={{ color: 'rgba(255, 159, 64, 0.79)' }} />,
       value: 'Pie'
     }
   ];

@@ -31,7 +31,7 @@ import { CheckboxGroup } from '@/componentss/ui/checkbox-group';
 import { RadioGroup } from '@/componentss/ui/radio-group';
 import { MultiSelect } from '@/componentss/ui/multi-select';
 import { Textarea } from '@/componentss/ui/textarea';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { Label } from '@/componentss/ui/label';
 import { useSidebar } from '@/componentss/ui/sidebar';
 import { notify } from '../../../hooks/toastUtils';

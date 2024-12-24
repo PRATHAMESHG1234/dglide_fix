@@ -50,7 +50,7 @@ const Accordions = ({
                 expandIcon || expandIcon === false ? (
                   expandIcon
                 ) : (
-                  <ExpandMoreIcon />
+                  <ChevronDown />
                 )
               }
               sx={{

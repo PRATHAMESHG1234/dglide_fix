@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Alarm } from 'lucide-react';
+import { Alarm, Bell, Disc, Filter } from 'lucide-react';
 import { Circle } from 'lucide-react';
 import { FileText } from 'lucide-react';
 import { Settings } from 'lucide-react';
@@ -386,7 +386,7 @@ const TabInfo = ({ TabsData }) => {
                       width: '20%'
                     }}
                   >
-                    <RecordIcon
+                    <Disc
                       sx={{ fontSize: '40px', color: '#0000001D', marginX: 2 }}
                     />
                     <Typography
@@ -529,7 +529,7 @@ const TabInfo = ({ TabsData }) => {
                         padding: 6
                       }}
                     >
-                      <Reminder />
+                      <Bell />
                       <Typography
                         sx={{
                           fontSize: '14px',
@@ -561,7 +561,7 @@ const TabInfo = ({ TabsData }) => {
                       >
                         Signed
                       </Typography>
-                      <CircleIcon
+                      <Circle
                         sx={{ color: '#1cdc75', fontSize: '15px', mt: 0.3 }}
                       />
                     </Box>

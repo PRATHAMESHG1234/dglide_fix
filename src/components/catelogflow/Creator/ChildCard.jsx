@@ -24,7 +24,6 @@ import { MapPin } from 'lucide-react';
 
 import { Heart } from 'lucide-react';
 import { Trash2 } from 'lucide-react';
-import { Users } from 'lucide-react';
 import { colors } from '../../../common/constants/styles';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
@@ -173,7 +172,7 @@ const ChildCard = ({
                 >
                   {filteredItem.status === 'Enabled' ||
                   filteredItem.status === '1' ? (
-                    <CheckCircleIcon
+                    <CheckCircle
                       sx={{
                         color: colors.success.main,
                         mr: '6px',
@@ -181,7 +180,7 @@ const ChildCard = ({
                       }}
                     />
                   ) : (
-                    <CancelIcon
+                    <XCircle
                       sx={{
                         color: colors.error.main,
                         mr: '6px',
@@ -190,8 +189,7 @@ const ChildCard = ({
                     />
                   )}
                 </Tooltip>
-                {/* <PinDropTwoToneIcon
-                  sx={{
+                {/* <MapPin sx={{
                     mr: '6px',
                     fontSize: '16px',
                     verticalAlign: 'text-top'
@@ -211,7 +209,7 @@ const ChildCard = ({
                   sx={{ mt: -0.75, mr: -0.75 }}
                   onClick={(e) => handleClick(e, filteredItem.uuid)}
                 >
-                  <MoreHorizOutlinedIcon
+                  <MoreHorizontal
                     fontSize="small"
                     sx={{
                       color: colors.primary[200],

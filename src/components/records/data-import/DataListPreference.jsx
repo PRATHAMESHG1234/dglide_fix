@@ -52,7 +52,7 @@ const DataListPreference = ({
             {field.label}
           </span>
           <span style={{ width: '7%', color: COLORS.SECONDARY }}>
-            <ArrowIcon sx={{ fontSize: '15px' }} />
+            <ArrowRight sx={{ fontSize: '15px' }} />
           </span>
 
           <SelectField

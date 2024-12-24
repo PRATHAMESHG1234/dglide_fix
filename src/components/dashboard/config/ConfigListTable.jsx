@@ -16,7 +16,7 @@
 // } from "@mui/material";
 
 // import { Trash2 } from 'lucide-react';
-// import { Edit } from 'lucide-react';
+// import { Edit,Edit2 } from 'lucide-react';
 // import { CheckCircle } from 'lucide-react';
 // import { ArrowUpRight } from 'lucide-react';
 // import { CreditCard } from 'lucide-react';
@@ -169,8 +169,7 @@
 //                           },
 //                         }}
 //                       >
-//                         <Edit
-//                           sx={{
+//                         <Edit2 //                           sx={{
 //                             color: COLORS.PRIMARY,
 //                           }}
 //                           onClick={(e) => {
@@ -192,8 +191,7 @@
 //                           },
 //                         }}
 //                       >
-//                         <DeleteForever
-//                           sx={{ color: "danger" }}
+//                         <Trash2 //                           sx={{ color: "danger" }}
 //                           onClick={(e) => {
 //                             e.stopPropagation();
 //                             onChartClick(MODAL.delete, row.id);

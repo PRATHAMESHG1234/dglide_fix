@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { X } from 'lucide-react';
 import { DownloadCloud } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
@@ -127,7 +127,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
             overflow: 'auto'
           }}
         >
-          <CloseIcon
+          <X
             onClick={() => closePreviewModal()}
             sx={{
               position: 'absolute',
@@ -427,7 +427,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                               }}
                             />
                           ) : attachment.fileExtension === 'pdf' ? (
-                            <PictureAsPdfIcon
+                            <File
                               sx={{
                                 fontSize: '50px',
                                 marginRight: '7px',
@@ -452,7 +452,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                               }}
                             />
                           ) : (
-                            <FileIcon
+                            <File
                               sx={{
                                 color: 'lightgrey',
                                 fontSize: '50px',
@@ -496,7 +496,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <PreviewIcon />
+                                <Eye />
                               </IconButton>
                             </Tooltip>
 
@@ -509,7 +509,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <DownloadIcon />
+                                <DownloadCloud />
                               </IconButton>
                             </Tooltip>
 
@@ -529,7 +529,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                   }
                                 }}
                               >
-                                <DeleteForever
+                                <Trash2
                                   sx={{
                                     color: 'darkred'
                                   }}
@@ -608,7 +608,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                 }}
                               />
                             ) : file.type === 'application/pdf' ? (
-                              <PictureAsPdfIcon
+                              <File
                                 sx={{
                                   fontSize: '30px',
                                   marginRight: '7px',
@@ -636,7 +636,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             ) : (
                               file.type ===
                                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                                <FileIcon
+                                <File
                                   sx={{
                                     color: 'lightgrey',
                                     fontSize: '30px',
@@ -664,7 +664,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             aria-label="delete"
                             onClick={() => deleteSelectedFileHandler(fileIndex)}
                           >
-                            <DeleteIcon
+                            <Trash
                               sx={{
                                 color: 'darkred',
                                 fontSize: '20px'

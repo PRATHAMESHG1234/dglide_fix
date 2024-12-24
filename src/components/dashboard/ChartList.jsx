@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
 import { Trash2 } from 'lucide-react';
-import { Edit } from 'lucide-react';
-import { Stack, Tooltip } from "@mui/joy";
-import IconButton from "@mui/joy/IconButton";
+import { Edit, Edit2 } from 'lucide-react';
+import { Stack, Tooltip } from '@mui/joy';
+import IconButton from '@mui/joy/IconButton';
 import {
   Table,
   TableBody,
@@ -10,15 +10,15 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  alpha,
-} from "@mui/material";
+  alpha
+} from '@mui/material';
 
-import { colors, COLORS } from "../../common/constants/styles";
-import { MODAL } from "../../common/utils/modal-toggle";
-import { buildChart, buildFieldMapById, buildList } from "./ChartJson";
-import { fetchConfigDetail } from "../../services/chart";
-import { useSelector } from "react-redux";
-import GridTableSimple from "../../elements/GridTableSimple";
+import { colors, COLORS } from '../../common/constants/styles';
+import { MODAL } from '../../common/utils/modal-toggle';
+import { buildChart, buildFieldMapById, buildList } from './ChartJson';
+import { fetchConfigDetail } from '../../services/chart';
+import { useSelector } from 'react-redux';
+import GridTableSimple from '../../elements/GridTableSimple';
 
 const ODD_OPACITY = 0.9;
 
@@ -42,14 +42,14 @@ const ChartList = ({ headers, items, onChartClick }) => {
 
   const previewHandler = async (item) => {
     const result = await fetchConfigDetail(item?.dashboardItemInfoId);
-    if (result && result["type"]) {
-      if (result["type"].toLowerCase() === "chart") {
+    if (result && result['type']) {
+      if (result['type'].toLowerCase() === 'chart') {
         chartPreviewHandler(result);
-      } else if (result["type"].toLowerCase() === "list") {
+      } else if (result['type'].toLowerCase() === 'list') {
         listPreviewHandler(result);
-      } else if (result["type"].toLowerCase() === "table") {
+      } else if (result['type'].toLowerCase() === 'table') {
         tablePreviewHandler(result);
-      } else if (result["type"].toLowerCase() === "card") {
+      } else if (result['type'].toLowerCase() === 'card') {
         cardPreviewHandler(result);
       }
     }
@@ -73,13 +73,13 @@ const ChartList = ({ headers, items, onChartClick }) => {
 
   const cardPreviewHandler = (item) => {
     setSelectedItemData(item);
-    let options = item && item["options"] ? item["options"] : [];
+    let options = item && item['options'] ? item['options'] : [];
     let option = options && options.length > 0 ? options[0] : null;
     if (option) {
       const fieldMapById = buildFieldMapById(
-        item["fields"] && item["fields"].length > 0 ? item["fields"] : []
+        item['fields'] && item['fields'].length > 0 ? item['fields'] : []
       );
-      let selectedField = fieldMapById[option["fieldInfoId"]];
+      let selectedField = fieldMapById[option['fieldInfoId']];
       setSelectedFieldName(selectedField?.label);
       setOpenCardPreview(true);
     }
@@ -105,7 +105,7 @@ const ChartList = ({ headers, items, onChartClick }) => {
   const onRowSelectionModelChange = (rowId) => {
     setCurrentId(rowId.data.id);
     previewHandler(rowId.data);
-    onChartClick(MODAL.edit,rowId.data.id);
+    onChartClick(MODAL.edit, rowId.data.id);
   };
   const handleRowsPerPageChange = (newRowsPerPage) => {
     setRowsPerPage(newRowsPerPage);
@@ -114,23 +114,22 @@ const ChartList = ({ headers, items, onChartClick }) => {
   };
   return (
     <>
-           <GridTableSimple
-          currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
-          rowsPerPage={rowsPerPage}
-          setRowsPerPage={setRowsPerPage}
-          totalRecords={items.length}
-          headers={headers}
-          // refField={refField}
-          handledRowClick={onRowSelectionModelChange}
-          setSelectedRows={setSelectedRows}
-          setRefetch={setRefetch}
-          rows={items}
-          handleRowsPerPageChange={handleRowsPerPageChange}
-          usedElements={['table', 'pagination']}
-          rowTooltip="Double click to edit record"
-        />
-
+      <GridTableSimple
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+        rowsPerPage={rowsPerPage}
+        setRowsPerPage={setRowsPerPage}
+        totalRecords={items.length}
+        headers={headers}
+        // refField={refField}
+        handledRowClick={onRowSelectionModelChange}
+        setSelectedRows={setSelectedRows}
+        setRefetch={setRefetch}
+        rows={items}
+        handleRowsPerPageChange={handleRowsPerPageChange}
+        usedElements={['table', 'pagination']}
+        rowTooltip="Double click to edit record"
+      />
     </>
   );
 };

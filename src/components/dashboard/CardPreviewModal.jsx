@@ -33,7 +33,7 @@ const CardPreviewModal = ({ open, onClose, selectedItemData }) => {
               right: '10px'
             }}
           >
-            <CloseIcon />
+            <X />
           </IconButton>
           <h2 id="modal-modal-title">Card Preview</h2>
 

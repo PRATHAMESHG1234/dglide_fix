@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { FormLabel } from '@mui/material';
 
 import { COLORS } from '../../../common/constants/styles';
@@ -85,7 +85,7 @@ const Schema = () => {
               backgroundColor: COLORS.PRIMARY
             }}
           >
-            <Add />
+            <Plus />
           </Button>
         </div>
       </div>

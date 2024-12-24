@@ -1,7 +1,7 @@
 import { Grid, IconButton, Button as Buttons } from '@mui/material';
 import React from 'react';
 import { colors } from '../../../../../common/constants/styles';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { useLocalStorage } from '../../custom/useLocalStorage';
 
 export const NotifyPanel = ({
@@ -84,7 +84,7 @@ export const NotifyPanel = ({
               }}
               onClick={() => addExpression('to', 'notify', notifyData.to)}
             >
-              <AddIcon
+              <PlusCircle
                 sx={{
                   fontSize: '25px',
                   color: colors.primary.main,
@@ -118,7 +118,7 @@ export const NotifyPanel = ({
               }}
               onClick={() => addExpression('cc', 'notify', notifyData.cc)}
             >
-              <AddIcon
+              <PlusCircle
                 sx={{
                   fontSize: '25px',
                   color: colors.primary.main,
@@ -152,7 +152,7 @@ export const NotifyPanel = ({
               }}
               onClick={() => addExpression('bcc', 'notify', notifyData.bcc)}
             >
-              <AddIcon
+              <PlusCircle
                 sx={{
                   fontSize: '25px',
                   color: colors.primary.main,
@@ -187,7 +187,7 @@ export const NotifyPanel = ({
                 addExpression('subject', 'notify', notifyData.subject)
               }
             >
-              <AddIcon
+              <PlusCircle
                 sx={{
                   fontSize: '25px',
                   color: colors.primary.main,
@@ -224,7 +224,7 @@ export const NotifyPanel = ({
                 addExpression('messageText', 'notify', notifyData.messageText)
               }
             >
-              <AddIcon
+              <PlusCircle
                 sx={{
                   fontSize: '25px',
                   color: colors.primary.main,

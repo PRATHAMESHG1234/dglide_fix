@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle, Trash2 } from 'lucide-react';
 import { ChevronDown } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Eye } from 'lucide-react';
 import { ListItemDecorator } from '@mui/joy';
 import { Box, FormLabel, Menu, MenuItem, Typography } from '@mui/material';
@@ -136,7 +136,7 @@ export const MyDataTable = ({
                   aria-controls="simple-menu"
                   aria-haspopup="true"
                   onClick={handleClick}
-                  endDecorator={<ArrowDropDownIcon sx={{ color: 'inherit' }} />}
+                  endDecorator={<ChevronDown sx={{ color: 'inherit' }} />}
                   color={COLORS.SECONDARY}
                   sx={{
                     backgroundColor:
@@ -174,7 +174,7 @@ export const MyDataTable = ({
                     onClick={() => handleChangeAction('edit')}
                   >
                     <ListItemDecorator>
-                      <Edit />
+                      <Edit2 />
                     </ListItemDecorator>
                     Edit
                   </MenuItem>
@@ -187,7 +187,7 @@ export const MyDataTable = ({
                   onClick={() => handleChangeAction('delete')}
                 >
                   <ListItemDecorator sx={{ color: 'inherit' }}>
-                    <DeleteForever />
+                    <Trash2 />
                   </ListItemDecorator>
                   Delete
                 </MenuItem>
@@ -198,7 +198,7 @@ export const MyDataTable = ({
                     onClick={() => handleChangeAction('preview')}
                   >
                     <ListItemDecorator>
-                      <PreviewIcon />
+                      <Eye />
                     </ListItemDecorator>
                     Preview
                   </MenuItem>
@@ -213,7 +213,7 @@ export const MyDataTable = ({
                   height: '35px'
                 }}
               >
-                <Add />
+                <Plus />
               </Button>
             ) : null}
 
@@ -226,7 +226,7 @@ export const MyDataTable = ({
                   }}
                   onClick={() => setShowColumnPreference(true)}
                 >
-                  <ViewWeekIcon sx={{ fontSize: '18px' }} />
+                  <Calendar sx={{ fontSize: '18px' }} />
                   <Typography
                     sx={{
                       color: COLORS.PRIMARY,

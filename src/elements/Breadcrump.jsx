@@ -113,8 +113,8 @@ const Breadcrumbs = ({
               separator={separatorIcon}
             >
               <Typography component={Link} to="#" color="inherit" sx={linkSX}>
-                {icons && <HomeTwoToneIcon sx={iconStyle} />}
-                {icon && <HomeIcon sx={{ ...iconStyle, mr: 0 }} />}
+                {icons && <Home sx={iconStyle} />}
+                {icon && <Home sx={{ ...iconStyle, mr: 0 }} />}
                 {!icon && 'Dashboard'}
               </Typography>
               {breadcrumbItems}

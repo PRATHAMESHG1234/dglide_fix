@@ -575,8 +575,7 @@ const ProfileSection = () => {
                                       color="error"
                                     >
                                       {' '}
-                                      <CancelIcon
-                                        sx={{
+                                      <XCircle sx={{
                                           color: colors.error.main,
                                           width: 16,
                                           height: 16,
@@ -590,8 +589,7 @@ const ProfileSection = () => {
                                       color="success"
                                       onClick={() => handleApprove(approval)}
                                     >
-                                      <CheckCircleIcon
-                                        sx={{
+                                      <CheckCircle sx={{
                                           color: colors.success.main,
                                           width: 16,
                                           height: 16,

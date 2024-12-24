@@ -8,7 +8,7 @@ import UserCountCard from '../../elements/UserCountCard';
 import { DollarSign } from 'lucide-react';
 import { UserCircle } from 'lucide-react';
 import { FileText } from 'lucide-react';
-import { Bank } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 import { useSidebar } from '@/componentss/ui/sidebar';
 import { useNavigate } from 'react-router-dom';
 import ChartCard from './ChartCard';
@@ -98,12 +98,7 @@ const DashboardPreview = ({
       }
     });
   };
-  const icons = [
-    AccountCircleTwoTone,
-    DescriptionTwoToneIcon,
-    MonetizationOnTwoToneIcon,
-    AccountBalanceRoundedIcon
-  ];
+  const icons = [UserCircle, FileText, DollarSign, Building2];
 
   const color = [colors.primary.main];
   const getIconByIndex = (index) => {

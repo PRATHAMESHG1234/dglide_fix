@@ -1,6 +1,6 @@
 import { Button, Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { BoxPlus } from 'lucide-react';
+import { PlusSquare, PlusCircle } from 'lucide-react';
 import { colors } from '../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { AlertCircle } from 'lucide-react';
@@ -75,7 +75,7 @@ function TrimPanel({
             color: colors.grey[500]
           }}
         >
-          <CloseIcon />
+          <X />
         </IconButton>
         <Tooltip
           title="Output variable name: 'string', use it as id.out.string"
@@ -92,7 +92,7 @@ function TrimPanel({
               color: colors.primary.dark
             }}
           >
-            <ErrorIcon />
+            <AlertCircle />
           </IconButton>
         </Tooltip>
         <div
@@ -131,7 +131,7 @@ function TrimPanel({
                   minWidth: '170px'
                 }}
               />
-              <AddBoxIcon
+              <PlusSquare
                 sx={{
                   color: colors.primary.dark,
                   fontSize: '25px',

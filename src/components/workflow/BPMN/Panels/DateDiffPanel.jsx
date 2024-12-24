@@ -8,7 +8,7 @@ import {
   Typography
 } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
-import { BoxPlus } from 'lucide-react';
+import { PlusSquare, PlusCircle } from 'lucide-react';
 import { colors } from '../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { AlertCircle } from 'lucide-react';
@@ -76,7 +76,7 @@ export const DateDiffPanel = ({
             color: colors.grey[500]
           }}
         >
-          <CloseIcon />
+          <X />
         </IconButton>
         <Tooltip
           title="Output variable name: 'datetime', use it as id.out.datetime"
@@ -93,7 +93,7 @@ export const DateDiffPanel = ({
               color: colors.primary.dark
             }}
           >
-            <ErrorIcon />
+            <AlertCircle />
           </IconButton>
         </Tooltip>
         <div className="flex flex-col">
@@ -129,7 +129,7 @@ export const DateDiffPanel = ({
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
-                      <CalendarMonthIcon
+                      <Calendar
                         sx={{
                           color: colors.primary.dark,
                           fontSize: '25px',
@@ -144,7 +144,7 @@ export const DateDiffPanel = ({
                           setDatePickerShow(true);
                         }}
                       />
-                      <AddBoxIcon
+                      <PlusSquare
                         sx={{
                           color: colors.primary.dark,
                           fontSize: '25px',
@@ -198,7 +198,7 @@ export const DateDiffPanel = ({
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
-                      <CalendarMonthIcon
+                      <Calendar
                         sx={{
                           color: colors.primary.dark,
                           fontSize: '25px',
@@ -213,7 +213,7 @@ export const DateDiffPanel = ({
                           setDatePickerShow(true);
                         }}
                       />
-                      <AddBoxIcon
+                      <PlusSquare
                         sx={{
                           color: colors.primary.dark,
                           fontSize: '25px',

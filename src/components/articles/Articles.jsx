@@ -21,7 +21,6 @@ import { useSelector } from 'react-redux';
 import { IconSearch } from '@tabler/icons-react';
 import { ChevronDown } from 'lucide-react';
 import { Input } from '@/componentss/ui/input';
-import { Search } from 'lucide-react';
 const Articles = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [allArticle, setAllArticle] = useState(true);

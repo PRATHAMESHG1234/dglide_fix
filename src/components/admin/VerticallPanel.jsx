@@ -335,7 +335,7 @@
 //           >
 //             <Tab
 //               sx={{ boxShadow: 'none' }}
-//               icon={<PersonOutlineTwoToneIcon />}
+//               icon={<User />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
@@ -365,7 +365,7 @@
 //               {...a11yProps(0)}
 //             />
 //             <Tab
-//               icon={<DvrOutlinedIcon />}
+//               icon={<Tv />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
@@ -395,7 +395,7 @@
 //               {...a11yProps(1)}
 //             />
 //             <Tab
-//               icon={<ManageAccountsOutlinedIcon />}
+//               icon={<Settings />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
@@ -425,7 +425,7 @@
 //               {...a11yProps(2)}
 //             />
 //              <Tab
-//               icon={<ManageAccountsOutlinedIcon />}
+//               icon={<Settings />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography

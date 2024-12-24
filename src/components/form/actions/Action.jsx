@@ -19,7 +19,7 @@ import ActionModal from './ActionModal';
 import ConfirmationModal from '../../shared/ConfirmationModal';
 import GridTableSimple from '../../../elements/GridTableSimple';
 import { fetchFormsByModuleId } from '../../../services/form';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 
 const Action = () => {
   const dispatch = useDispatch();

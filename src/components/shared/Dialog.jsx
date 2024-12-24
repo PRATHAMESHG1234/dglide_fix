@@ -13,7 +13,7 @@ import {
 import DialogModal from '@mui/material/Dialog';
 import React from 'react';
 import { colors, COLORS } from '../../common/constants/styles';
-import { X } from 'lucide-react';
+import { Plus, X } from 'lucide-react';
 
 import { PlusCircle } from 'lucide-react';
 import { useSelector } from 'react-redux';
@@ -84,7 +84,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
                   : COLORS.WHITESMOKE
             }}
           >
-            <CloseIcon />
+            <X />
           </IconButton>
         </Tooltip>
       </span>
@@ -112,7 +112,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
         >
           {actionButton && (
             <div
-              className="flex cursor-pointer absolute"
+              className="absolute flex cursor-pointer"
               onClick={actionButton}
               style={{
                 left: 18,
@@ -125,7 +125,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
                 chipcolor="secondary"
                 label={
                   <>
-                    <Add
+                    <Plus
                       sx={{
                         fontSize: '22px',
                         marginRight: '5px'

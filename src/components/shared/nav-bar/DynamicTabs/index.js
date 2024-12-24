@@ -140,7 +140,7 @@ export default function DynamicTabs({ children, components = {}, ...props }) {
             color="inherit"
           >
             {' '}
-            <MoreHorizIcon stroke={1.5} size="20px" />
+            <MoreHorizontal stroke={1.5} size="20px" />
           </Avatar>
 
           {menuIsOpen && (

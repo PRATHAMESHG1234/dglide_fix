@@ -91,8 +91,7 @@ const CreatorPreview = () => {
     <>
       <div className="mb-3 flex justify-between">
         <div className="flex items-center px-1">
-          <KeyboardBackspaceIcon
-            onClick={() => navigate(-1)}
+          <ArrowLeft onClick={() => navigate(-1)}
             style={{ marginRight: '7px', color: 'grey' }}
           />
           <Typography
@@ -118,8 +117,7 @@ const CreatorPreview = () => {
                   border: '1px solid #1976d1'
                 }}
               >
-                <AttachFileIcon
-                  sx={{ transform: 'rotate(135deg)', color: 'inherit' }}
+                <Paperclip sx={{ transform: 'rotate(135deg)', color: 'inherit' }}
                 />
               </IconButton>
             </Tooltip>

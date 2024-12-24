@@ -34,7 +34,7 @@ import Chart from 'chart.js/auto';
 import { DollarSign } from 'lucide-react';
 import { UserCircle } from 'lucide-react';
 import { FileText } from 'lucide-react';
-import { Bank } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 import ConfigItemDisplay from './ConfigItemDisplay';
 import FormConfiguration from './FormConfiguration';
 import SearchCondition from './SearchCondition';
@@ -115,12 +115,7 @@ const ChartModal = ({ state, onCancel, onConfirm, onChartClick }) => {
     }
   };
 
-  const icons = [
-    AccountCircleTwoTone,
-    DescriptionTwoToneIcon,
-    MonetizationOnTwoToneIcon,
-    AccountBalanceRoundedIcon
-  ];
+  const icons = [UserCircle, FileText, DollarSign, Building2];
 
   const color = ['#2196F3', '#673AB7', '#00C853', '#FFC107', '#F44336'];
   const getIconByIndex = (index) => {

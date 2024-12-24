@@ -210,7 +210,7 @@ export const ExecutionProcess = ({ onCancel, actionModal }) => {
                     : COLORS.WHITESMOKE,
               }}
             >
-              <CloseIcon />
+              <X />
             </IconButton>
           </Tooltip>
         </span>

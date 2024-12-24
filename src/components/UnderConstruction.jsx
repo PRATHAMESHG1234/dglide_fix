@@ -182,7 +182,7 @@ const UnderConstruction = () => {
     //                     }
     //                   }}
     //                 >
-    //                   <HomeTwoToneIcon sx={{ fontSize: '1.3rem', mr: 0.75 }} />{' '}
+    //                   <Home sx={{ fontSize: '1.3rem', mr: 0.75 }} />{' '}
     //                   Go to login page
     //                 </Button>
     //               </AnimateButton>

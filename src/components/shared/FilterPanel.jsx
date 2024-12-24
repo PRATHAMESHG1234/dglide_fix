@@ -27,7 +27,7 @@ const FilterPanel = () => {
           }}
         >
           <div className="flex items-center">
-            <SearchIcon sx={{ color: COLORS.SECONDARY }} />
+            <Search sx={{ color: COLORS.SECONDARY }} />
             <h6
               style={{
                 color: 'grey',
@@ -40,12 +40,12 @@ const FilterPanel = () => {
               Search
             </h6>
           </div>
-          <HighlightOffIcon sx={{ color: COLORS.SECONDARY }} />
+          <XCircle sx={{ color: COLORS.SECONDARY }} />
         </form>
 
         <Button
           variant="plain"
-          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
+          endDecorator={<ChevronDown sx={{ color: COLORS.SECONDARY }} />}
           sx={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
@@ -56,7 +56,7 @@ const FilterPanel = () => {
         </Button>
         <Button
           variant="plain"
-          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
+          endDecorator={<ChevronDown sx={{ color: COLORS.SECONDARY }} />}
           sx={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
@@ -67,7 +67,7 @@ const FilterPanel = () => {
         </Button>
         <Button
           variant="plain"
-          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
+          endDecorator={<ChevronDown sx={{ color: COLORS.SECONDARY }} />}
           sx={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
@@ -80,13 +80,13 @@ const FilterPanel = () => {
       <Stack spacing={2} direction="row">
         <Button
           variant="plain"
-          startDecorator={<CheckCircleIcon sx={{ color: COLORS.SECONDARY }} />}
+          startDecorator={<CheckCircle sx={{ color: COLORS.SECONDARY }} />}
         >
           All Task
         </Button>
         <Button
           variant="plain"
-          startDecorator={<ArrowUpwardIcon sx={{ color: COLORS.SECONDARY }} />}
+          startDecorator={<ArrowUp sx={{ color: COLORS.SECONDARY }} />}
         >
           By Name
         </Button>

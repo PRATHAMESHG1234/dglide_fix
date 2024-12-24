@@ -5,7 +5,7 @@ import 'react-quill/dist/quill.snow.css';
 import { useSelector } from 'react-redux';
 import './AddEditRecord.css';
 
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import {
   Autocomplete,
   Box,
@@ -50,7 +50,7 @@ import { Button } from '@/componentss/ui/button';
 import { X } from 'lucide-react';
 import { Mail } from 'lucide-react';
 import { PhoneCall } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { catalogType } from '../../../common/utils/fields';
 import CreatorAddAttachment from '../../catelogflow/Creator/CreatorAddAttachment';
 import { PreviewSingleAttchment } from '../../catelogflow/Creator/PreviewSingleAttchment';
@@ -490,7 +490,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                         TransitionComponent={Zoom}
                                       >
                                         <span className="ps-1">
-                                          <InfoIcon
+                                          <Info
                                             sx={{
                                               fontSize: '18px',
                                               color: COLORS.PRIMARY
@@ -1060,7 +1060,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                         )}
                                       </Select>
 
-                                      <Add
+                                      <Plus
                                         sx={{
                                           border: `1px solid ${COLORS.GRAYSCALE}`,
                                           borderRadius: '0px 8px 8px 0px',
@@ -1365,7 +1365,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
             >
               <Tooltip title="Close" placement="bottom">
                 <IconButton onClick={() => setOpenInfo(false)}>
-                  <CloseIcon fontSize="small" />
+                  <X fontSize="small" />
                 </IconButton>
               </Tooltip>
             </div>
@@ -1396,7 +1396,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                         width: '15px'
                       }}
                     >
-                      <CreateIcon sx={{ fontSize: '16px' }} />
+                      <Edit2 sx={{ fontSize: '16px' }} />
                     </IconButton>
                   </Tooltip>
                 </label>
@@ -1410,7 +1410,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                       backgroundColor: COLORS.PRIMARY
                     }}
                   >
-                    <EmailIcon />
+                    <Mail />
                   </Button>
                   <Button
                     tooltipTitle={'call'}
@@ -1418,7 +1418,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                       backgroundColor: COLORS.PRIMARY
                     }}
                   >
-                    <CallIcon />
+                    <PhoneCall />
                   </Button>
                 </div>
               </div>

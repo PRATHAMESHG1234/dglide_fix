@@ -164,8 +164,7 @@ export const ApprovalDetail = ({
               onClick={() => handleReject(selectedIdData)}
             >
               {' '}
-              <CancelIcon
-                sx={{
+              <XCircle sx={{
                   color: colors.error.main,
                   width: 16,
                   height: 16,
@@ -179,8 +178,7 @@ export const ApprovalDetail = ({
               color="success"
               onClick={() => handleApprove(selectedIdData)}
             >
-              <CheckCircleIcon
-                sx={{
+              <CheckCircle sx={{
                   color: colors.success.main,
                   width: 16,
                   height: 16,

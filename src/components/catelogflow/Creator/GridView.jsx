@@ -151,7 +151,7 @@ const GridView = ({
                   size="large"
                   sx={{ color: colors.grey[900] }}
                   color="secondary"
-                  endIcon={<ExpandMoreRoundedIcon />}
+                  endIcon={<ChevronDown />}
                   onClick={handleClick}
                 >
                   {itemsPerPage} Rows

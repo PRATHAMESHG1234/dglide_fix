@@ -40,23 +40,15 @@ def replace_jsx_usage(file_path, mappings):
         for old_use, new_use in mappings:
             patterns = [
                 # Self-closing tag with props
-                (rf'<{re.escape(old_use)}\s+([^>]*?)/?>', f'<{new_use} \\1>'),
-                
-                # Self-closing tag without props
-                (rf'<{re.escape(old_use)}\s*/>', f'<{new_use} />'),
-                
-                # Opening tag with props
-                (rf'<{re.escape(old_use)}\s+([^>]*)>', f'<{new_use} \\1>'),
-                
-                # Opening tag without props
-                (rf'<{re.escape(old_use)}>', f'<{new_use}>'),
-                
-                # Closing tag
-                (rf'</{re.escape(old_use)}>', f'</{new_use}>'),
-                
-                # Component reference in JSX (but not in imports)
-                (rf'(?<!from\s*[\'"]@mui/icons-material/){re.escape(old_use)}(?!\s*from)', new_use)
-            ]
+                (rf'<{re.escape(old_use)}\s+([^>]*?)>', f'<{new_use} \\1>'),
+    
+    # Self-closing tag without props or with just a space
+                (rf'<{re.escape(old_use)}\s*>', f'<{new_use}>'),
+    
+    # Handle tags that are already self-closing
+                 (rf'<{re.escape(old_use)}\s*/>', f'<{new_use} />')
+                    ]
+
             
             for pattern, replacement in patterns:
                 content = re.sub(pattern, replacement, content)
@@ -71,7 +63,6 @@ def replace_jsx_usage(file_path, mappings):
     except Exception as e:
         logging.error(f"Error processing {file_path}: {str(e)}")
         return False
-
 def main():
     MAPPING_FILE = "usage-replacements.txt"
     FILES_LIST = "mui-icon-files.txt"

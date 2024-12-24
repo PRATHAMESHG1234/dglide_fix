@@ -83,8 +83,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
             overflow: 'auto'
           }}
         >
-          <CloseIcon
-            onClick={() => closePreviewModal()}
+          <X onClick={() => closePreviewModal()}
             sx={{
               position: 'absolute',
               top: 16,
@@ -163,8 +162,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                   }}
                 />
               ) : attachmnetData.fileExtension === 'pdf' ? (
-                <PictureAsPdfIcon
-                  sx={{
+                <File sx={{
                     fontSize: '50px',
                     marginRight: '30px',
                     color: 'lightgrey'
@@ -188,8 +186,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                   }}
                 />
               ) : (
-                <FileIcon
-                  sx={{
+                <File sx={{
                     color: 'lightgrey',
                     fontSize: '50px',
                     marginRight: '30px'
@@ -225,7 +222,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                         color: COLORS.PRIMARY
                       }}
                     >
-                      <PreviewIcon />
+                      <Eye />
                     </IconButton>
                   </Tooltip>
                 ) : null}
@@ -237,7 +234,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                       color: COLORS.PRIMARY
                     }}
                   >
-                    <DownloadIcon />
+                    <DownloadCloud />
                   </IconButton>
                 </Tooltip>
                 {/* {catlogFlag !== 'DocumentType' ? (
@@ -257,8 +254,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                               }
                             }}
                           >
-                            <DeleteForever
-                              sx={{
+                            <Trash2 sx={{
                                 color: 'darkred'
                               }}
                             />

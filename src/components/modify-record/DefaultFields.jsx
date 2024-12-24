@@ -124,8 +124,7 @@ const DefaultFields = () => {
                     }
                   }}
                 >
-                  <LinkIcon
-                    sx={{
+                  <Link sx={{
                       color: COLORS.BLUEGRAY,
                       cursor: 'pointer',
                       transform: 'rotate(-60deg)'

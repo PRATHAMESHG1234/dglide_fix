@@ -11,8 +11,8 @@ import React, { useRef, useState } from 'react';
 import { COLORS, colors } from '../../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { Minus } from 'lucide-react';
-import { Plus } from 'lucide-react';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
+
 import { Typography } from '@mui/joy';
 import SelectField from '../../../../../elements/SelectField';
 import TextField from '../../../../../elements/TextField';
@@ -259,7 +259,7 @@ export const ExpressionPanel = ({
                         });
                       }}
                     >
-                      <OpenInFullIcon />
+                      <Maximize />
                     </IconButton>
                   ) : null}
                 </div>

@@ -15,7 +15,7 @@ import {
   Typography
 } from '@mui/material';
 
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Trash2 } from 'lucide-react';
 import { CheckCircle } from 'lucide-react';
 import { ArrowUpRight } from 'lucide-react';
@@ -110,7 +110,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                       >
                         {row.displayName}{' '}
                         {row.active === true && (
-                          <CheckCircleIcon
+                          <CheckCircle
                             sx={{
                               color: colors.success.dark,
                               width: 14,
@@ -191,7 +191,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                               onActionClick(MODAL.moveTo, row.id);
                             }}
                           >
-                            <MoveUpIcon sx={{ fontSize: '1.1rem' }} />
+                            <ArrowUpRight sx={{ fontSize: '1.1rem' }} />
                           </IconButton>
                         </Tooltip>
                         <Tooltip placement="top" title="Add Action">
@@ -208,7 +208,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                               navigate('/app/actions');
                             }}
                           >
-                            <AddCardIcon sx={{ fontSize: '1.1rem' }} />
+                            <CreditCard sx={{ fontSize: '1.1rem' }} />
                           </IconButton>
                         </Tooltip>
                       </>
@@ -223,7 +223,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                           onActionClick(MODAL.edit, row.id);
                         }}
                       >
-                        <EditIcon sx={{ fontSize: '1.1rem' }} />
+                        <Edit2 sx={{ fontSize: '1.1rem' }} />
                       </IconButton>
                     </Tooltip>
                     <Tooltip placement="top" title="Delete">
@@ -240,7 +240,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                           onActionClick(MODAL.delete, row.id);
                         }}
                       >
-                        <DeleteForeverIcon sx={{ fontSize: '1.1rem' }} />
+                        <Trash2 sx={{ fontSize: '1.1rem' }} />
                       </IconButton>
                     </Tooltip>
                   </Stack>

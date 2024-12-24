@@ -9,8 +9,8 @@ import React from 'react';
 import { COLORS, colors } from '../../../../../common/constants/styles';
 import { X } from 'lucide-react';
 import { Minus } from 'lucide-react';
-import { Plus } from 'lucide-react';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
+
 import { Typography } from '@mui/joy';
 import { useLocalStorage } from '../../custom/useLocalStorage';
 

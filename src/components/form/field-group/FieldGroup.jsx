@@ -1,7 +1,7 @@
 import { useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -111,7 +111,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
       >
         <Tooltip title="Close" placement="bottom">
           <IconButton onClick={close}>
-            <CloseIcon fontSize="small" sx={{ color: COLORS.BLACK }} />
+            <X fontSize="small" sx={{ color: COLORS.BLACK }} />
           </IconButton>
         </Tooltip>
       </div>
@@ -134,7 +134,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
               onClick={() => modalActionHandler(MODAL.create)}
             >
               <Button tooltipTitle={'Add Group'}>
-                <Add /> Add group
+                <Plus /> Add group
               </Button>
             </div>
           </div>

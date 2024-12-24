@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import '../../modify-record/Attachment.css';
-import { XCircle } from 'lucide-react';
+import { Trash, XCircle } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
 import { Paperclip } from 'lucide-react';
 
@@ -136,7 +136,7 @@ const CreatorSinglAttchment = ({
                   id="attach-btn"
                   style={{ backgroundColor: 'white', width: '30px' }}
                 >
-                  <Button startIcon={<AttachFileIcon />}>
+                  <Button startIcon={<Paperclip />}>
                     <input
                       type="file"
                       onChange={(e) => uploadAttachmentsHandler(e, field)}
@@ -209,7 +209,7 @@ const CreatorSinglAttchment = ({
                                   />
                                 ) : attachment.files?.type ===
                                   'application/pdf' ? (
-                                  <PictureAsPdfIcon
+                                  <File
                                     sx={{
                                       fontSize: '30px',
                                       marginRight: '7px',
@@ -237,7 +237,7 @@ const CreatorSinglAttchment = ({
                                 ) : (
                                   attachment.files?.type ===
                                     'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                                    <FileIcon
+                                    <File
                                       sx={{
                                         color: 'lightgrey',
                                         fontSize: '30px',
@@ -269,7 +269,7 @@ const CreatorSinglAttchment = ({
                                   )
                                 }
                               >
-                                <DeleteIcon
+                                <Trash
                                   sx={{
                                     color: 'darkred',
                                     fontSize: '20px'

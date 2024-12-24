@@ -4,7 +4,7 @@ import { Button, Grid, Menu, MenuItem } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Trash2 } from 'lucide-react';
-import { Edit } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 
 import { Eye } from 'lucide-react';
 import { MoreVertical } from 'lucide-react';

@@ -254,7 +254,7 @@ const MailDetails = ({
                       <div className="grid grid-cols-1 gap-6">
                         <div className="col-span-1">
                           <div className="flex items-center gap-2">
-                            <AttachmentTwoToneIcon fontSize="small" />
+                            <Paperclip fontSize="small" />
                             <p className="text-sm font-medium text-gray-600">
                               {attachments && attachments?.length}{' '}
                             </p>

@@ -391,9 +391,9 @@ export const Creator = ({ catalogFlowInfoId }) => {
                         <label style={{ marginLeft: '28px', fontSize: '13px' }}>
                           {field.child?.length > 0 &&
                           field?.collapsed === true ? (
-                            <KeyboardArrowDownIcon
+                            <ChevronDown
                               onClick={() => handleToggle(field)}
-                            ></KeyboardArrowDownIcon>
+                            ></ChevronDown>
                           ) : (
                             <ChevronRight
                               onClick={() => handleToggle(field)}
@@ -438,7 +438,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
       <div className="mx-3 mb-3 flex justify-between">
         <div className="flex items-center px-1">
           {' '}
-          <KeyboardBackspaceIcon
+          <ArrowLeft
             onClick={() => navigate(-1)}
             style={{ marginRight: '7px', color: 'grey' }}
           />
@@ -473,7 +473,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
               }}
               onClick={() => setCloseConfirmatn(true)}
             >
-              <CloseIcon />
+              <X />
             </Button>
           </Stack>
         </div>

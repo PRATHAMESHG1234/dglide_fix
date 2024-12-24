@@ -519,7 +519,7 @@ const MyChatbot = () => {
       <div className="chat-history">
         {/* <div className="flex  justify-between chatbot-header">
           <Button onClick={RefreshBot}>
-            <RefreshIcon></RefreshIcon>
+            <RefreshCcw></RefreshIcon>
           </Button>
           <Tooltip title="Attachments">
             <IconButton
@@ -531,8 +531,7 @@ const MyChatbot = () => {
                 border: '1px solid #1976d1'
               }}
             >
-              <AttachFileIcon
-                sx={{ transform: 'rotate(135deg)', color: 'inherit' }}
+              <Paperclip sx={{ transform: 'rotate(135deg)', color: 'inherit' }}
               />
             </IconButton>
           </Tooltip>
@@ -622,7 +621,7 @@ const MyChatbot = () => {
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
                       >
-                        <SendIcon />
+                        <Send />
                       </Button>
                     </li>
                   );
@@ -663,7 +662,7 @@ const MyChatbot = () => {
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
                       >
-                        <SendIcon />
+                        <Send />
                       </Button>
                     </li>
                   );
@@ -704,8 +703,7 @@ const MyChatbot = () => {
                             }
                           }}
                           endIcon={
-                            <SendIcon
-                              sx={{
+                            <Send sx={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -754,8 +752,7 @@ const MyChatbot = () => {
                             }
                           }}
                           endIcon={
-                            <SendIcon
-                              sx={{
+                            <Send sx={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -802,8 +799,7 @@ const MyChatbot = () => {
                             }
                           }}
                           endIcon={
-                            <SendIcon
-                              sx={{
+                            <Send sx={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -863,7 +859,7 @@ const MyChatbot = () => {
                             }}
                             onClick={(e) => handleOptionSelect(e, {})}
                           >
-                            <SendIcon />
+                            <Send />
                           </Button>
                         </>
                       )}
@@ -892,7 +888,7 @@ const MyChatbot = () => {
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
                       >
-                        <SendIcon />
+                        <Send />
                       </Button>
                     </li>
                   );
@@ -993,7 +989,7 @@ const MyChatbot = () => {
               }}
               onClick={() => setTicketCard(false)}
             >
-              <CloseIcon />
+              <X />
             </Button>
           </div>
           <div className="">
