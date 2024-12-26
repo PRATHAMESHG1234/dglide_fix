@@ -1,3 +1,9 @@
+/*
+ * This component was automatically commented out as it was detected as unused.
+ * Original file is preserved with .backup extension.
+ * Date: 2024-12-26T07:34:02.894Z
+ */
+
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateTheme } from '../../../../../redux/slices/authSlice';

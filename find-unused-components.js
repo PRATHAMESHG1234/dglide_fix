@@ -5,15 +5,14 @@ const traverse = require('@babel/traverse').default;
 const glob = require('glob');
 
 // Configuration
-const PROJECT_ROOT = './src'; // Adjust this to your project's source directory
+const PROJECT_ROOT = './src';
 const IGNORED_DIRS = ['node_modules', 'build', 'dist', '.git'];
 
 // Store component definitions and usages
-const componentDefinitions = new Map(); // Map<string, { path: string, used: boolean }>
+const componentDefinitions = new Map();
 const componentImports = new Set();
 
 function isReactComponent(node) {
-  // Check if it's a component (PascalCase naming convention)
   const name = node.id?.name;
   return name && /^[A-Z]/.test(name);
 }
@@ -21,13 +20,66 @@ function isReactComponent(node) {
 function parseFile(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
-    return parser.parse(content, {
-      sourceType: 'module',
-      plugins: ['jsx', 'typescript', 'decorators-legacy']
-    });
+    return {
+      ast: parser.parse(content, {
+        sourceType: 'module',
+        plugins: ['jsx', 'typescript', 'decorators-legacy']
+      }),
+      content
+    };
   } catch (error) {
     console.error(`Error parsing ${filePath}:`, error.message);
     return null;
+  }
+}
+
+function commentOutCode(filePath) {
+  try {
+    // Read the file content
+    const content = fs.readFileSync(filePath, 'utf-8');
+
+    // Create backup of original file
+    const backupPath = filePath + '.backup';
+    fs.writeFileSync(backupPath, content);
+
+    // Split the content into lines
+    const lines = content.split('\n');
+
+    // Process each line
+    const commentedLines = lines.map((line) => {
+      // Skip empty lines
+      if (line.trim() === '') return line;
+
+      // If it's already a comment, leave it as is
+      if (line.trim().startsWith('//') || line.trim().startsWith('/*')) {
+        return line;
+      }
+
+      // Add comment to the beginning of the line while preserving indentation
+      const indentation = line.match(/^\s*/)[0];
+      return `${indentation}// ${line.trim()}`;
+    });
+
+    // Join the lines back together
+    const commentedContent = commentedLines.join('\n');
+
+    // Add a header comment
+    const header = `/*
+ * This component was automatically commented out as it was detected as unused.
+ * Original file is preserved with .backup extension.
+ * Date: ${new Date().toISOString()}
+ */\n\n`;
+
+    // Write the commented content back to the file
+    fs.writeFileSync(filePath, header + commentedContent);
+
+    console.log(`✓ Successfully commented out code in: ${filePath}`);
+    console.log(`  Backup created at: ${backupPath}`);
+
+    return true;
+  } catch (error) {
+    console.error(`✗ Error processing file ${filePath}:`, error.message);
+    return false;
   }
 }
 
@@ -39,70 +91,65 @@ function findComponents() {
 
   // First pass: collect component definitions
   files.forEach((filePath) => {
-    const ast = parseFile(filePath);
-    if (!ast) return;
+    const parseResult = parseFile(filePath);
+    if (!parseResult) return;
 
-    // traverse(ast, {
-    //   // Find component class definitions
-    //   ClassDeclaration(path) {
-    //     if (isReactComponent(path.node)) {
-    //       componentDefinitions.set(path.node.id.name, {
-    //         path: filePath,
-    //         used: false
-    //       });
-    //     }
-    //   },
-    //   // Find functional component definitions
-    //   FunctionDeclaration(path) {
-    //     if (isReactComponent(path.node)) {
-    //       componentDefinitions.set(path.node.id.name, {
-    //         path: filePath,
-    //         used: false
-    //       });
-    //     }
-    //   },
-    //   // Find arrow function components
-    //   VariableDeclarator(path) {
-    //     if (
-    //       path.node.id.type === 'Identifier' &&
-    //       isReactComponent(path.node) &&
-    //       path.node.init?.type === 'ArrowFunctionExpression'
-    //     ) {
-    //       componentDefinitions.set(path.node.id.name, {
-    //         path: filePath,
-    //         used: false
-    //       });
-    //     }
-    //   }
-    // });
+    traverse(parseResult.ast, {
+      ClassDeclaration(path) {
+        if (isReactComponent(path.node)) {
+          componentDefinitions.set(path.node.id.name, {
+            path: filePath,
+            used: false
+          });
+        }
+      },
+      FunctionDeclaration(path) {
+        if (isReactComponent(path.node)) {
+          componentDefinitions.set(path.node.id.name, {
+            path: filePath,
+            used: false
+          });
+        }
+      },
+      VariableDeclarator(path) {
+        if (
+          path.node.id.type === 'Identifier' &&
+          isReactComponent(path.node) &&
+          path.node.init?.type === 'ArrowFunctionExpression'
+        ) {
+          componentDefinitions.set(path.node.id.name, {
+            path: filePath,
+            used: false
+          });
+        }
+      }
+    });
   });
 
   // Second pass: find component usage
-  //   files.forEach((filePath) => {
-  //     const ast = parseFile(filePath);
-  //     if (!ast) return;
+  files.forEach((filePath) => {
+    const parseResult = parseFile(filePath);
+    if (!parseResult) return;
 
-  //     // traverse(ast, {
-  //     //   // Track imported components
-  //     //   ImportDeclaration(path) {
-  //     //     path.node.specifiers.forEach((specifier) => {
-  //     //       if (
-  //     //         specifier.type === 'ImportSpecifier' ||
-  //     //         specifier.type === 'ImportDefaultSpecifier'
-  //     //       ) {
-  //     //         componentImports.add(specifier.local.name);
-  //     //       }
-  //     //     });
-  //     //   },
-  //     //   // Track JSX usage
-  //     //   JSXIdentifier(path) {
-  //     //     const name = path.node.name;
-  //     //     if (componentDefinitions.has(name)) {
-  //     //       componentDefinitions.get(name).used = true;
-  //     //     }
-  //     //   }
-  //     // });
-  //   });
+    traverse(parseResult.ast, {
+      ImportDeclaration(path) {
+        path.node.specifiers.forEach((specifier) => {
+          if (
+            specifier.type === 'ImportSpecifier' ||
+            specifier.type === 'ImportDefaultSpecifier'
+          ) {
+            componentImports.add(specifier.local.name);
+          }
+        });
+      },
+      JSXIdentifier(path) {
+        const name = path.node.name;
+        if (componentDefinitions.has(name)) {
+          componentDefinitions.get(name).used = true;
+        }
+      }
+    });
+  });
 
   // Find unused components
   const unusedComponents = [];
@@ -118,18 +165,40 @@ function findComponents() {
   return unusedComponents;
 }
 
-// Run the analysis
+// Main execution
+console.log('Starting analysis of unused components...\n');
+
 const unusedComponents = findComponents();
 
-// Output results
-console.log('\nUnused Components Found:');
+// Output results and process files
+console.log('Unused Components Found:');
 console.log('=======================');
+
 if (unusedComponents.length === 0) {
   console.log('No unused components found!');
 } else {
+  console.log(`Found ${unusedComponents.length} unused components.\n`);
+
+  // Ask for confirmation before commenting out code
+  console.log('The following components will be commented out:');
   unusedComponents.forEach(({ name, path }) => {
     console.log(`\nComponent: ${name}`);
     console.log(`File: ${path}`);
   });
-  console.log(`\nTotal unused components: ${unusedComponents.length}`);
+
+  console.log('\nCommenting out unused components...');
+
+  // Comment out each unused component
+  unusedComponents.forEach(({ path: componentPath }) => {
+    const absolutePath = path.resolve(process.cwd(), componentPath);
+    if (fs.existsSync(absolutePath)) {
+      commentOutCode(absolutePath);
+    } else {
+      console.error(`✗ File not found: ${path}`);
+    }
+  });
+
+  console.log('\nProcess completed!');
+  console.log('Note: Backup files have been created with .backup extension');
+  console.log('To restore any file, copy the content from the .backup file.');
 }
