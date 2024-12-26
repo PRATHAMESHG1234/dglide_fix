@@ -1,7 +1,5 @@
 import './Action.css';
 
-import { Trash2 } from 'lucide-react';
-import { Edit, Edit2 } from 'lucide-react';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {
