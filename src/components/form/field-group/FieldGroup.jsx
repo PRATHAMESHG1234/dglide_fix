@@ -1,7 +1,7 @@
 import { useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Plus, PlusCircle } from 'lucide-react';
+import { Add } from '@mui/icons-material';
 import {
   Dialog,
   DialogContent,
@@ -24,7 +24,7 @@ import {
   deleteFieldGroup,
   updateFieldGroup
 } from '../../../redux/slices/fieldGroupSlice';
-import { X } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
 import FieldGroupList from './FieldGroupList';
 
 const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
@@ -111,7 +111,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
       >
         <Tooltip title="Close" placement="bottom">
           <IconButton onClick={close}>
-            <X fontSize="small" sx={{ color: COLORS.BLACK }} />
+            <CloseIcon fontSize="small" sx={{ color: COLORS.BLACK }} />
           </IconButton>
         </Tooltip>
       </div>
@@ -134,7 +134,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
               onClick={() => modalActionHandler(MODAL.create)}
             >
               <Button tooltipTitle={'Add Group'}>
-                <Plus /> Add group
+                <Add /> Add group
               </Button>
             </div>
           </div>
@@ -161,11 +161,12 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
           {state.show && state.type === MODAL.delete && (
             <ConfirmationModal
               open={state.show}
-              heading={`Are you sure you want to delete this action?`}
+              heading={`Delete this action?`}
+              message={'Are you sure you want to delete this action?'}
               onConfirm={deleteHandler}
               onCancel={() => modalActionHandler(MODAL.cancel)}
-              firstButtonText="Delete"
-              buttonPosition="reversed"
+              secondButtonText="Confirm"
+              firstButtonText="Cancel"
             />
           )}
         </div>

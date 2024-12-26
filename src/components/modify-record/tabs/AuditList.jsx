@@ -112,13 +112,7 @@ const AuditList = ({ currentForm, selectedRecordId }) => {
                 </span>
                 <span>{form_display}</span>
               </div>
-              <span
-                className="inline-flex items-center rounded-full px-2 py-1 text-xs font-medium"
-                style={{
-                  color: colors.primary.main,
-                  backgroundColor: colors.primary.light
-                }}
-              >
+              <span className="inline-flex items-center rounded-full bg-secondary/30 px-2 py-1 text-xs font-medium text-secondary">
                 {action.charAt(0).toUpperCase() + action.slice(1).toLowerCase()}
               </span>
             </div>

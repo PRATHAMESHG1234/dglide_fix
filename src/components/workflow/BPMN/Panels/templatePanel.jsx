@@ -8,10 +8,11 @@ import {
 } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import { colors } from '../../../../common/constants/styles';
-import { X } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
 import { fetchAllTemplateByFormInfoId } from '../../../../services/formTemplate';
-import { Minus } from 'lucide-react';
-import { Plus, PlusCircle } from 'lucide-react';
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
+import { Add } from '@mui/icons-material';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 export const TempaltePanel = ({
@@ -111,7 +112,7 @@ export const TempaltePanel = ({
             cursor: 'pointer'
           }}
         >
-          <X sx={{ fontSize: '15px' }} />
+          <CloseIcon sx={{ fontSize: '15px' }} />
         </IconButton>
         <div
           style={{
@@ -198,7 +199,7 @@ export const TempaltePanel = ({
                         addExpression(index, 'template', item?.value)
                       }
                     >
-                      <PlusCircle
+                      <AddIcon
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,
@@ -220,7 +221,7 @@ export const TempaltePanel = ({
                       }}
                       onClick={() => removeSelectedField(item?.fieldInfoId)}
                     >
-                      <Minus
+                      <RemoveIcon
                         sx={{
                           fontSize: '25px',
                           color: colors.secondary.main,
@@ -252,7 +253,7 @@ export const TempaltePanel = ({
                     backgroundColor: 'lightgrey'
                   }}
                 >
-                  <Plus sx={{ fontSize: '13px' }} />
+                  <Add sx={{ fontSize: '13px' }} />
                 </IconButton>
                 <Typography
                   sx={{

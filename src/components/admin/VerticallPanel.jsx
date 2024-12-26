@@ -8,40 +8,40 @@
 // // project imports
 
 // // assets
-// import { User } from 'lucide-react';
-// import { FileText } from 'lucide-react';
-// import { CreditCard } from 'lucide-react';
-// import { UserCircle } from 'lucide-react';
-// import { Key } from 'lucide-react';
-// import { UserPlus } from 'lucide-react';
-// import { List } from 'lucide-react';
-// import { Users } from 'lucide-react';
-// import { Tv } from 'lucide-react';
-// import { Award } from 'lucide-react';
-// import { Mail } from 'lucide-react';
-// import { Settings } from 'lucide-react';
+// import PersonOutlineTwoToneIcon from '@mui/icons-material/PersonOutlineTwoTone';
+// import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
+// import CreditCardTwoToneIcon from '@mui/icons-material/CreditCardTwoTone';
+// import AccountCircleTwoTone from '@mui/icons-material/AccountCircleTwoTone';
+// import VpnKeyTwoToneIcon from '@mui/icons-material/VpnKeyTwoTone';
+// import GroupAddOutlinedIcon from '@mui/icons-material/GroupAddOutlined';
+// import BallotOutlinedIcon from '@mui/icons-material/BallotOutlined';
+// import GroupsIcon from '@mui/icons-material/Groups';
+// import DvrOutlinedIcon from '@mui/icons-material/DvrOutlined';
+// import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+// import EmailIcon from '@mui/icons-material/Email';
+// import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
 // import { colors } from '../../common/constants/styles';
 
 // import { useSelector } from 'react-redux';
 // import SubCard from '../../elements/SubCard';
 // import SideIconCard from './SideIconCard';
-// import { Accessibility } from 'lucide-react';
-// import { FileText } from 'lucide-react';
-// import { Users } from 'lucide-react';
+// import AccessibilityIcon from '@mui/icons-material/Accessibility';
+// import ArticleIcon from '@mui/icons-material/Article';
+// import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
 // import DataTable from './DataTable';
-// import { Facebook } from 'lucide-react';
-// import { MailCheck } from 'lucide-react';
-// import { Lock } from 'lucide-react';
-// import { Compass } from 'lucide-react';
-// import { Hourglass } from 'lucide-react';
-// import { CheckCircle } from 'lucide-react';
+// import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+// import MarkEmailReadOutlinedIcon from '@mui/icons-material/MarkEmailReadOutlined';
+// import MailLockOutlinedIcon from '@mui/icons-material/MailLockOutlined';
+// import TravelExploreOutlinedIcon from '@mui/icons-material/TravelExploreOutlined';
+// import HourglassBottomOutlinedIcon from '@mui/icons-material/HourglassBottomOutlined';
+// import HowToRegOutlinedIcon from '@mui/icons-material/HowToRegOutlined';
 // import { IconChevronRight } from '@tabler/icons-react';
 // import Breadcrumbs from '../../elements/Breadcrump';
 // import { replaceUnderscore } from '../../common/constants/helperFunction';
 // import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
-// import { CalendarEdit } from 'lucide-react';
+// import EditCalendarIcon from '@mui/icons-material/EditCalendar';
 // import ImportExportData from '../import-Export/ImportExportData';
-// import { Shield } from 'lucide-react';
+// import PolicyIcon from '@mui/icons-material/Policy';
 // // tab content
 // function TabPanel({ children, value, index, ...other }) {
 //   return (
@@ -335,7 +335,7 @@
 //           >
 //             <Tab
 //               sx={{ boxShadow: 'none' }}
-//               icon={<User />}
+//               icon={<PersonOutlineTwoToneIcon />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
@@ -365,7 +365,7 @@
 //               {...a11yProps(0)}
 //             />
 //             <Tab
-//               icon={<Tv />}
+//               icon={<DvrOutlinedIcon />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
@@ -395,7 +395,7 @@
 //               {...a11yProps(1)}
 //             />
 //             <Tab
-//               icon={<Settings />}
+//               icon={<ManageAccountsOutlinedIcon />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
@@ -425,7 +425,7 @@
 //               {...a11yProps(2)}
 //             />
 //              <Tab
-//               icon={<Settings />}
+//               icon={<ManageAccountsOutlinedIcon />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography

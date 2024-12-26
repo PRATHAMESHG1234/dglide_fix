@@ -86,7 +86,7 @@ export const EtlLanding = () => {
     },
     {
       label: 'Jobs',
-      value: 'jobs',
+      value: 'Jobs',
       content: (
         <div className="rounded-lg bg-gray-100 py-4">
           <EtlJobs

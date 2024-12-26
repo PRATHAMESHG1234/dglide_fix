@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Fab,
+  Grid,
   InputAdornment,
   Menu,
   MenuItem,
@@ -17,7 +18,7 @@ import { colors } from '../../common/constants/styles';
 
 // assets
 import { IconSearch } from '@tabler/icons-react';
-import { ChevronDown } from 'lucide-react';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import React from 'react';
 import MainCard from '../../elements/MainCard';
 import ListTable from './ListTable';
@@ -25,9 +26,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import AnimateButton from '../../pages/Login/AnimateButton';
 import { setCurrentView } from '../../redux/slices/currentSlice';
 import { useLocation } from 'react-router-dom';
-import { List } from 'lucide-react';
-import { Grid } from 'lucide-react';
-import { Plus, PlusCircle } from 'lucide-react';
+import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
+import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
+import Add from '@mui/icons-material/Add';
 import { Separator } from '@/componentss/ui/separator';
 import PaginationComponent from '@/componentss/ui/paginationcomponent';
 const ListView = ({

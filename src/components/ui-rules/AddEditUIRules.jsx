@@ -13,7 +13,7 @@ import { Dropdown } from '@/componentss/ui/dropdown';
 import { RadioGroup } from '@/componentss/ui/radio-group';
 import { MultiSelect } from '@/componentss/ui/multi-select';
 import { Textarea } from '@/componentss/ui/textarea';
-import { Plus, PlusCircle } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { Label } from '@/componentss/ui/label';
 import { Button } from '@/componentss/ui/button';
 import { Checkbox } from '@/componentss/ui/checkbox';
@@ -415,15 +415,7 @@ const AddEditUIRules = ({
 
   const deleteSearchCondition = (conditionId) => {
     setConditions((prev) => {
-      const index = prev.findIndex((cond) => cond.conditionId === conditionId);
-      if (index !== -1) {
-        if (index > 0) {
-          return prev.filter((_, i) => i !== index && i !== index - 1);
-        } else {
-          return prev.filter((_, i) => i !== index);
-        }
-      }
-      return prev;
+      return prev.filter((cond) => cond.conditionId !== conditionId);
     });
   };
 
@@ -448,11 +440,11 @@ const AddEditUIRules = ({
     >
       <SheetContent
         side={'right'}
-        className="w-[700px] min-w-[700px] max-w-[700px] sm:max-w-[700px]"
+        className="w-[850px] min-w-[850px] max-w-[850px] sm:max-w-[850px]"
       >
-        <SheetHeader className="flex w-full flex-row items-center justify-between pt-3">
+        <SheetHeader className="flex w-full flex-row items-center justify-between py-6">
           <SheetTitle className="flex w-full flex-row items-center justify-between text-lg font-semibold">
-            Add edit UI rule
+            {selectedRuleId ? 'Edit UI Rule' : 'Create UI Rule'}
             <div className="">
               <div
                 alignItems="center"
@@ -464,12 +456,15 @@ const AddEditUIRules = ({
                     <Button
                       variant="outline"
                       type="submit"
+                      size="sm"
                       onClick={(e) => handleSubmit(e, 'enabled')}
                     >
                       Enable & Submit
                     </Button>
 
-                    <Button onClick={handleSubmit}>Submit</Button>
+                    <Button onClick={handleSubmit} size="sm">
+                      Submit
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -479,7 +474,7 @@ const AddEditUIRules = ({
         <div className="py-2">
           <Separator className="h-[1px]" />
         </div>
-        <div className="p-[12px 15px 0 12px] flex h-[calc(100vh-90px)] flex-col gap-x-2.5 overflow-auto">
+        <div className="flex h-[calc(100vh-90px)] w-full flex-col gap-x-2.5 overflow-auto pb-12 pr-5">
           {loading ? (
             <div className="flex h-[calc(100vh-150px)] items-center justify-center">
               <div class="flex items-center justify-center">
@@ -488,7 +483,7 @@ const AddEditUIRules = ({
             </div>
           ) : (
             <>
-              <div className="flex w-full flex-col gap-y-2 px-1">
+              <div className="flex w-full flex-col gap-y-4 px-1">
                 {' '}
                 <Input
                   label={'Name'}
@@ -534,16 +529,18 @@ const AddEditUIRules = ({
                 />
               </div>
 
-              <div className="flex flex-col">
-                <div className="flex justify-between pb-2">
+              <div className="flex flex-col pt-2">
+                <div className="flex justify-between pb-2 pr-2">
                   <Label sx={{ fontSize: '0.875rem' }}>Conditions</Label>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <Plus
-                        size={16}
-                        onClick={() => addSearchCondition('AND')}
-                        className="cursor-pointer rounded bg-gray-600 p-[1px] font-semibold text-white"
-                      />
+                      <div className="">
+                        <Plus
+                          size={16}
+                          onClick={() => addSearchCondition('AND')}
+                          className="cursor-pointer rounded font-semibold text-secondary outline outline-secondary"
+                        />
+                      </div>
                     </TooltipTrigger>
                     <TooltipContent>
                       <span>Add</span>
@@ -577,16 +574,18 @@ const AddEditUIRules = ({
                   />
                 </div>
               </div>
-              <div className="flex flex-col">
-                <div className="flex justify-between py-2">
+              <div className="flex flex-col pt-4">
+                <div className="flex justify-between pb-2 pr-2">
                   <Label className="text-sm">Actions</Label>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <Plus
-                        size={16}
-                        onClick={addActionsHandler}
-                        className="cursor-pointer rounded bg-gray-600 p-[1px] font-semibold text-white"
-                      />
+                      <div>
+                        <Plus
+                          size={16}
+                          onClick={addActionsHandler}
+                          className="cursor-pointer rounded font-semibold text-secondary outline outline-secondary"
+                        />
+                      </div>
                     </TooltipTrigger>
                     <TooltipContent>
                       <span>Add</span>
@@ -615,11 +614,11 @@ const AddEditUIRules = ({
                             onChange={(e) => onChangeActionHandler(e, action)}
                             options={[
                               {
-                                label: 'Display Action',
+                                label: 'Perform an Action',
                                 value: 'displayAction'
                               },
                               {
-                                label: 'Validation Action',
+                                label: 'Validate Form on Submission',
                                 value: 'validationAction'
                               }
                             ]}

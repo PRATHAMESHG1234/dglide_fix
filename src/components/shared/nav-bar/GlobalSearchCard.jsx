@@ -80,13 +80,7 @@ export const GlobalSearchCard = ({ searchData }) => {
                                 </Label>
                               </div>
                             ))}
-                          <span
-                            className="text-initial mr-2 cursor-pointer rounded-xl bg-[#f9dccf] px-4 py-1 text-sm hover:shadow"
-                            sx={{
-                              fontSize: 12,
-                              fontWeight: 'inherit'
-                            }}
-                          >
+                          <span className="text-initial mr-2 cursor-pointer rounded-xl bg-[#f9dccf] px-4 py-1 text-sm hover:shadow">
                             {tableName}
                           </span>
                         </div>

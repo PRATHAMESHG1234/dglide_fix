@@ -2,7 +2,7 @@ import { FormLabel, Tooltip, Zoom } from '@mui/material';
 import React, { useState } from 'react';
 import { COLORS } from '../../common/constants/styles';
 import TextField from '../../elements/TextField';
-import { Link } from 'lucide-react';
+import LinkIcon from '@mui/icons-material/InsertLink';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { notify } from '../../hooks/toastUtils';
@@ -124,7 +124,8 @@ const DefaultFields = () => {
                     }
                   }}
                 >
-                  <Link sx={{
+                  <LinkIcon
+                    sx={{
                       color: COLORS.BLUEGRAY,
                       cursor: 'pointer',
                       transform: 'rotate(-60deg)'

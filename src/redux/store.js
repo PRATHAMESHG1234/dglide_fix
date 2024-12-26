@@ -17,6 +17,7 @@ import workflowReducer from './slices/workflowSlice';
 import dumpReducer from './slices/dumpSlice';
 import SidebarReducer from './slices/sidebarSlice';
 import uiRuleReducer from './slices/UIRuleSlice';
+import notificationReducer from './slices/notificationSlice';
 
 const store = configureStore({
   reducer: {
@@ -36,7 +37,8 @@ const store = configureStore({
     catalogFlow: catalogflowReducer,
     dump: dumpReducer,
     sidebar: SidebarReducer,
-    uiRule: uiRuleReducer
+    uiRule: uiRuleReducer,
+    notification: notificationReducer
   }
 });
 

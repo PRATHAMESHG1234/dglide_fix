@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import {
-  ChevronDown,
-  ChevronRight,
-  Edit2,
-  Plus,
-  PlusCircle,
-  Save,
-  Trash,
-  XCircle
-} from 'lucide-react';
+  AddBoxRounded as AddIcon,
+  Edit as EditIcon,
+  Delete as DeleteIcon,
+  ExpandMore as ExpandMoreIcon,
+  ChevronRight as ChevronRightIcon,
+  Save as SaveIcon,
+  Cancel as CancelIcon
+} from '@mui/icons-material';
 import IconButton from '@mui/material/IconButton';
 import NodeContainedFields from './NodeContainedFields';
 import TextField from '../../elements/TextField';
@@ -66,9 +65,9 @@ const TreeNode = ({
             }}
           >
             {isOpen ? (
-              <ChevronDown fontSize="small" />
+              <ExpandMoreIcon fontSize="small" />
             ) : (
-              <ChevronRight fontSize="small" />
+              <ChevronRightIcon fontSize="small" />
             )}
           </span>
           {!isEditing ? (
@@ -90,7 +89,7 @@ const TreeNode = ({
                         onToggle();
                       }}
                     >
-                      <PlusCircle fontSize="small" />
+                      <AddIcon fontSize="small" />
                     </IconButton>
                   </Tooltip>
 
@@ -106,7 +105,7 @@ const TreeNode = ({
                             handleEditClick();
                           }}
                         >
-                          <Edit2 fontSize="small" />
+                          <EditIcon fontSize="small" />
                         </IconButton>
                       </Tooltip>
 
@@ -120,7 +119,7 @@ const TreeNode = ({
                             onDeleteNode(node.id);
                           }}
                         >
-                          <Trash fontSize="small" />
+                          <DeleteIcon fontSize="small" />
                         </IconButton>
                       </Tooltip>
                     </>
@@ -150,7 +149,7 @@ const TreeNode = ({
               />
               <Tooltip title="Save Changes" arrow>
                 <IconButton onClick={handleSaveEdit} size="small">
-                  <Save
+                  <SaveIcon
                     fontSize="small"
                     style={{ color: colors.primary.main }}
                   />
@@ -159,7 +158,7 @@ const TreeNode = ({
 
               <Tooltip title="Cancel Edit" arrow>
                 <IconButton onClick={handleCancelEdit} size="small">
-                  <XCircle
+                  <CancelIcon
                     fontSize="small"
                     style={{ color: colors.error.light }}
                   />

@@ -13,7 +13,7 @@ import {
   TableRow,
   Tooltip
 } from '@mui/material';
-import { Edit2, Plus, PlusCircle, Trash2 } from 'lucide-react';
+import { Add, DeleteForever, Edit } from '@mui/icons-material';
 import { Button } from '@/componentss/ui/button';
 import ConfirmationModal from '../../shared/ConfirmationModal';
 import {
@@ -86,7 +86,7 @@ const Template = () => {
         </FormLabel>
         <div className="flex items-center" onClick={addTemplateHandler}>
           <Button tooltipTitle={'Add Action'}>
-            <Plus />
+            <Add />
           </Button>
         </div>
       </div>
@@ -162,7 +162,7 @@ const Template = () => {
                           }
                         }}
                       >
-                        <Edit2
+                        <Edit
                           sx={{ color: COLORS.PRIMARY }}
                           onClick={(e) => {
                             e.stopPropagation();
@@ -185,7 +185,7 @@ const Template = () => {
                           }
                         }}
                       >
-                        <Trash2
+                        <DeleteForever
                           sx={{ color: 'darkred' }}
                           onClick={(e) => {
                             e.stopPropagation();

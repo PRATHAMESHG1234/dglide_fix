@@ -199,7 +199,6 @@ const AddEditTemplate = ({ formName, selectedRecordId }) => {
     height: 'calc(50vh - 100px)'
   };
 
-
   return (
     <>
       <div className="flex flex-col gap-2 px-1">
@@ -229,6 +228,7 @@ const AddEditTemplate = ({ formName, selectedRecordId }) => {
           value={
             Number(fieldsData.formInfoId) || Number(selectedRecordId) || null
           }
+          onChange={onFormValueChanged}
         />
         <RadioGroup
           id={`radioGroup-availablity_index`}
@@ -259,6 +259,7 @@ const AddEditTemplate = ({ formName, selectedRecordId }) => {
               onSubmit={submitHandler}
               activeFormId={selectedFormId}
               fieldGroups={fieldGroups}
+              toggles="Format-1"
               style={{
                 height: 'calc(100vh - 500px)'
               }}

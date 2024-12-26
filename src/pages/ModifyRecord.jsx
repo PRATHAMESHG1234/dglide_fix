@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
-import { ChevronDown } from 'lucide-react';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import {
   Accordion,
@@ -484,6 +484,14 @@ const ModifyRecord = () => {
       localStorage.setItem('Format', JSON.stringify(formatData));
     }
   };
+  const togglebarStyle = (format) => ({
+    backgroundColor:
+      toggle === format
+        ? 'hsl(var(--secondary-foreground)) !important' // 50% opacity
+        : 'transparent',
+
+    color: 'hsl(var(--secondary)) !important'
+  });
   const fieldFormats = (
     <Menubar>
       <MenubarMenu>
@@ -497,6 +505,7 @@ const ModifyRecord = () => {
                   : 'cursor-pointer dark:text-white'
               }`}
               aria-label="format 1"
+              style={togglebarStyle('Format-1')}
             >
               <Columns2 size={14} />
             </MenubarTrigger>
@@ -517,6 +526,7 @@ const ModifyRecord = () => {
                   : 'cursor-pointer dark:text-white'
               }`}
               aria-label="format 2"
+              style={togglebarStyle('Format-2')}
             >
               <Columns3 size={14} />
             </MenubarTrigger>
@@ -683,7 +693,7 @@ const ModifyRecord = () => {
           onChange={(e, expanded) => handleAccordionChange(asset, expanded)}
         >
           <AccordionSummary
-            expandIcon={<ChevronDown />}
+            expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1-content"
             id="panel1-header"
             style={{
@@ -836,7 +846,13 @@ const ModifyRecord = () => {
                     )}
 
                     {!searchParam.has('id') && (
-                      <div className="bg-background px-2">
+                      <div
+                        className="bg-background px-2"
+                        style={{
+                          height: 'calc(100vh - 9.5rem)',
+                          overflowY: 'scroll'
+                        }}
+                      >
                         <AddEditRecord
                           mode={'new-record'}
                           formId="normal"
@@ -862,7 +878,12 @@ const ModifyRecord = () => {
                             )
                           }
                           hasDataTableTabs={hasTabs}
-                          style={{ height: 'calc(100vh - 9.5rem)' }}
+                          style={{
+                            height:
+                              currentForm?.name === 'assets'
+                                ? 'calc(50vh)'
+                                : 'calc(100vh - 9.5rem)'
+                          }}
                           otherFields={
                             <>
                               {!showAttachmentField && showAttachmentField && (
@@ -893,7 +914,6 @@ const ModifyRecord = () => {
                             </>
                           }
                           indentType={'row'}
-                          height={height}
                         />
                         {assetsTreeStructure}
                       </div>
@@ -939,21 +959,23 @@ const ModifyRecord = () => {
       {deleteRecordData && (
         <ConfirmationModal
           open={deleteRecordData}
-          heading="Are you sure you want to delete this record ?"
+          heading="Delete record"
           onConfirm={deleteRecord}
           onCancel={() => setDeleteRecordData(false)}
-          secondButtonText="Delete"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
+          message={'Are you sure you want to delete this record ?'}
         />
       )}
       {updateRecordData && (
         <ConfirmationModal
           open={updateRecordData}
-          heading="Are you sure you want to update this record ?"
-          message="Once you update a repository, there is no going back. Please be certain."
+          heading="Update record"
+          message="Are you sure you want to update this record ?"
           onConfirm={() => handleUpdateRecord(selectedActionData)}
           onCancel={() => setUpdateRecordData(false)}
-          firstButtonText="Submit"
-          buttonPosition="reversed"
+          secondButtonText="Update"
+          firstButtonText="Cancel"
         />
       )}
     </>

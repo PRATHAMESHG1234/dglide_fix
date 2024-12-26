@@ -11,7 +11,7 @@ import {
   useMediaQuery,
   IconButton
 } from '@mui/material';
-import { X } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
 import { colors } from '../common/constants/styles';
 
 // ===============================|| UI DIALOG - RESPONSIVE ||=============================== //
@@ -62,7 +62,7 @@ export default function Dialog({
                 color: (theme) => colors.grey[500]
               }}
             >
-              <X />
+              <CloseIcon />
             </IconButton>
           </DialogTitle>
           <DialogContent>

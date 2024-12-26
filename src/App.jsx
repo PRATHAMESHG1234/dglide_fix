@@ -16,33 +16,31 @@ const App = () => {
   const { isLogin } = useSelector((state) => state.auth);
   const { currentTheme } = useSelector((state) => state.auth);
   const { currentModule } = useSelector((state) => state.current);
-  const [theme, setTheme] = useState('');
+
   const location = useLocation();
   const excludedUrls = ['/login', '/website', '/forgot-password'];
   const isExcluded = excludedUrls.includes(location.pathname);
+  const [theme, setTheme] = useState(() => {
+    // Load initial value from local storage
+    return localStorage.getItem('mode') || '';
+  });
 
   useEffect(() => {
     if (isLogin) {
-      dispatch(getLoggedInUser());
+      dispatch(getLoggedInUser()).then((res) => {
+        const mode = res?.payload?.theme;
+        localStorage.setItem('mode', mode);
+      });
     }
   }, [isLogin]);
 
   useEffect(() => {
-    if (currentTheme) {
-      setTheme(currentTheme);
+    if (theme) {
+      const themeMode = localStorage.getItem('mode') || theme;
+      const themes = ['default', 'forest', 'ruby', 'solar', 'ocean'];
+      document.documentElement.className = themes[themeMode - 1] || 'default';
     }
-  }, [currentTheme]);
-
-  useEffect(() => {
-    const selectedTheme =
-      localStorage.getItem('theme') !== 'undefined'
-        ? localStorage.getItem('theme')
-        : 'Light';
-
-    if (selectedTheme) {
-      setTheme(selectedTheme);
-    }
-  }, []);
+  }, [theme]);
 
   return (
     <SidebarProvider>

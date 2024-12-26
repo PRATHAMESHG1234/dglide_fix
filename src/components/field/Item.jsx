@@ -94,13 +94,12 @@ const Item = ({ field, onSelect, onDelete }) => {
       {showDeleteModal && (
         <ConfirmationModal
           open={showDeleteModal}
-          heading={`Are you sure you want to delete this field ?`}
+          heading={`Delete field ?`}
+          message={'Are you sure you want to delete this field ?'}
           onConfirm={() => onDelete(field)}
           onCancel={() => setShowDeleteModal(!showDeleteModal)}
           firstButtonText="Cancel"
           secondButtonText="Confirm"
-          // secondButtonText={'Delete'}
-          // buttonPosition={'reversed'}
         />
       )}
     </>

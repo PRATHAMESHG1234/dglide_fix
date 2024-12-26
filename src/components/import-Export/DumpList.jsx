@@ -213,10 +213,12 @@ export const DumpList = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this dump?`}
+          heading={`Delete this dump?`}
+          message={'Are you sure you want to delete this dump?'}
           onConfirm={deleteHandler}
           onCancel={() => modalActionHandler(MODAL.cancel)}
-          firstButtonText="Delete"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
         />
       )}
     </>

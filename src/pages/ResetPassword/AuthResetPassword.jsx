@@ -13,8 +13,8 @@ import {
 } from '@mui/material';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
-import { Eye } from 'lucide-react';
-import { EyeOff } from 'lucide-react';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import AnimateButton from '../Login/AnimateButton';
 import { colors } from '../../common/constants/styles';
 import { strengthColor, strengthIndicatorNumFunc } from './PasswordStrength';
@@ -168,7 +168,7 @@ const AuthResetPassword = ({ ...others }) => {
                     edge="end"
                     size="large"
                   >
-                    {showPassword ? <Eye /> : <EyeOff />}
+                    {showPassword ? <Visibility /> : <VisibilityOff />}
                   </IconButton>
                 </InputAdornment>
               }

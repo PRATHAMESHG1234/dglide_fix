@@ -4,18 +4,18 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Button } from '@/componentss/ui/button';
-import { Trash2 } from 'lucide-react';
-import { Edit, Edit2 } from 'lucide-react';
+import DeleteForever from '@mui/icons-material/DeleteForever';
+import Edit from '@mui/icons-material/Edit';
 import { Avatar, Stack, Tooltip } from '@mui/material';
 import IconButton from '@mui/joy/IconButton';
-import { X } from 'lucide-react';
+import ClearIcon from '@mui/icons-material/Clear';
 import Dropdown from '@mui/joy/Dropdown';
 import ListDivider from '@mui/joy/ListDivider';
 import ListItemDecorator from '@mui/joy/ListItemDecorator';
 import Menu from '@mui/joy/Menu';
 import MenuButton from '@mui/joy/MenuButton';
 import MenuItem from '@mui/joy/MenuItem';
-import { MoreHorizontal } from 'lucide-react';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { MODAL } from '../../common/utils/modal-toggle';
 import { COLORS } from '../../common/constants/styles';
 
@@ -70,7 +70,7 @@ const DetailViewModal = ({
                   }
                 }}
               >
-                <Edit2 sx={{ color: 'primary' }} />
+                <Edit sx={{ color: 'primary' }} />
               </IconButton>
             </Tooltip>
             <Stack spacing={1.5} direction="row" sx={{ zIndex: 1 }}>
@@ -86,7 +86,7 @@ const DetailViewModal = ({
                       }
                     }}
                   >
-                    <MoreHorizontal />
+                    <MoreHorizIcon />
                   </MenuButton>
                 </Tooltip>
                 <Menu placement="bottom-end" sx={{ zIndex: '11111' }}>
@@ -94,7 +94,7 @@ const DetailViewModal = ({
                     onClick={() => onActionClick(MODAL.edit, state.selected.id)}
                   >
                     <ListItemDecorator>
-                      <Edit2 />
+                      <Edit />
                     </ListItemDecorator>
                     Edit
                   </MenuItem>
@@ -102,7 +102,7 @@ const DetailViewModal = ({
                   <ListDivider />
                   <MenuItem variant="soft" color="danger">
                     <ListItemDecorator sx={{ color: 'inherit' }}>
-                      <Trash2 />
+                      <DeleteForever />
                     </ListItemDecorator>
                     Delete
                   </MenuItem>
@@ -121,7 +121,10 @@ const DetailViewModal = ({
                   }
                 }}
               >
-                <X sx={{ color: COLORS.SECONDARY }} onClick={onCancel} />
+                <ClearIcon
+                  sx={{ color: COLORS.SECONDARY }}
+                  onClick={onCancel}
+                />
               </IconButton>
             </Tooltip>
           </Stack>

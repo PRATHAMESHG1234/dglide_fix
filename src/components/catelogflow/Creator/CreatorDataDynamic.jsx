@@ -1,5 +1,5 @@
-import { PlusSquare, PlusCircle } from 'lucide-react';
-import { Trash } from 'lucide-react';
+import AddIcon from '@mui/icons-material/AddBox';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import { Typography } from '@mui/joy';
 import {
   Checkbox,
@@ -216,7 +216,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
           </Typography>
 
           <Tooltip title="Add" variant="solid">
-            <PlusCircle
+            <AddIcon
               fontSize="medium"
               onClick={addCondition}
               sx={{
@@ -258,7 +258,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                   />
                 </div>
                 <Tooltip title="Delete">
-                  <Trash
+                  <DeleteOutlinedIcon
                     className="pointer"
                     color="error"
                     onClick={() => deleteCondition(condition)}

@@ -1,8 +1,9 @@
 import { memo, useEffect, useRef, useState } from 'react';
 
-import { PlusSquare, CheckCircle2, Minus, PlusCircle } from 'lucide-react';
-import { XCircle } from 'lucide-react';
-import { Circle } from 'lucide-react';
+import AddIcon from '@mui/icons-material/AddBox';
+import RemoveIcon from '@mui/icons-material/HighlightOff';
+import RadioCheckedIcon from '@mui/icons-material/RadioButtonChecked';
+import RadioUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import { Typography } from '@mui/joy';
 import {
   Badge,
@@ -16,7 +17,7 @@ import {
   TextField,
   Tooltip
 } from '@mui/material';
-import { Paperclip } from 'lucide-react';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 import { generateUId, optionUniqeUId } from '../../../common/utils/helpers';
 import { COLORS } from '../../../common/constants/styles';
 import { uploadImage } from '../../../services/catalogFlow';
@@ -164,7 +165,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             <IconButton
                               onClick={() => setDefaultOption(option)}
                             >
-                              <CheckCircle2
+                              <RadioCheckedIcon
                                 fontSize="medium"
                                 sx={{ color: COLORS.PRIMARY }}
                               />
@@ -173,7 +174,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             <IconButton
                               onClick={() => setDefaultOption(option)}
                             >
-                              <Circle fontSize="medium" />
+                              <RadioUncheckedIcon fontSize="medium" />
                             </IconButton>
                           )}
                         </>
@@ -201,7 +202,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                                   onClick={() =>
                                     handleButtonClick(option.optionId)
                                   }
-                                  startIcon={<Paperclip />}
+                                  startIcon={<AttachFileIcon />}
                                 ></Button>
                               </Tooltip>
                             </>
@@ -210,7 +211,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             className="btn p-0"
                             onClick={() => deleteOption(option)}
                           >
-                            <Minus
+                            <RemoveIcon
                               fontSize="medium"
                               sx={{
                                 color: '#bc3c3c'

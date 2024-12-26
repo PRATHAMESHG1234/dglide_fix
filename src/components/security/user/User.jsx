@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useReducer, useState } from 'react';
-import { Plus, PlusCircle } from 'lucide-react';
+import Add from '@mui/icons-material/Add';
 import { Box, Typography } from '@mui/joy';
 import { useDispatch, useSelector } from 'react-redux';
 import { Tooltip } from '@mui/material';
@@ -104,7 +104,7 @@ const User = () => {
           >
             <Tooltip title="Add User">
               <Button>
-                <Plus />
+                <Add />
               </Button>
             </Tooltip>
           </Box>
@@ -124,10 +124,12 @@ const User = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this user ?`}
+          message={'Are you sure you want to delete this user ?'}
+          heading={`Delete user`}
           onConfirm={deleteUserRecord}
           onCancel={() => modalActionHandler(MODAL.cancel)}
-          firstButtonText="Delete"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
         />
       )}
     </>

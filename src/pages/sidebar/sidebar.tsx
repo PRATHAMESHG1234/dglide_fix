@@ -29,7 +29,8 @@ import {
   Blocks,
   ChartSpline,
   Newspaper,
-  ChevronUp
+  ChevronUp,
+  Bell
 } from 'lucide-react';
 
 import {
@@ -199,10 +200,16 @@ export function AppSidebar({ currentModule }) {
       icon: BookImage,
       condition: true
     },
-    { path: '/workflow', name: 'Workflow', icon: Workflow, condition: true }
     // { path: '/portal', name: 'Portal', icon: CircleCheckBig, condition: true },
+    { path: '/workflow', name: 'Workflow', icon: Workflow, condition: true },
     // { path: '/chatbot', name: 'Chatbot', icon: Bot, condition: true },
     // { path: '/ai', name: 'AI', icon: BrainCircuit, condition: true }
+    {
+      path: '/admin/notification',
+      name: 'Notification',
+      icon: Bell,
+      condition: true
+    }
   ];
 
   const redirect = (item) => {

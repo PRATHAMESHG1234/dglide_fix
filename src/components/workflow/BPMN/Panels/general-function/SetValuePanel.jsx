@@ -7,10 +7,10 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { colors } from '../../../../../common/constants/styles';
-import { X } from 'lucide-react';
-import { Minus } from 'lucide-react';
-import { Plus, PlusCircle } from 'lucide-react';
-
+import CloseIcon from '@mui/icons-material/Close';
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
+import { Add } from '@mui/icons-material';
 import { Typography } from '@mui/joy';
 import { useLocalStorage } from '../../custom/useLocalStorage';
 
@@ -57,7 +57,7 @@ export const SetValuePanel = ({
               cursor: 'pointer'
             }}
           >
-            <X sx={{ fontSize: '15px' }} />
+            <CloseIcon sx={{ fontSize: '15px' }} />
           </IconButton>
           {variableValue.columns.length > 0 && (
             <>
@@ -116,7 +116,7 @@ export const SetValuePanel = ({
                             addExpression(index, 'setValue', item.value)
                           }
                         >
-                          <PlusCircle
+                          <AddIcon
                             sx={{
                               fontSize: '25px',
                               color: colors.primary.main,
@@ -137,7 +137,7 @@ export const SetValuePanel = ({
                           }}
                           onClick={() => removeVariable(index)}
                         >
-                          <Minus
+                          <RemoveIcon
                             sx={{
                               fontSize: '25px',
                               color: colors.secondary.main,
@@ -168,7 +168,7 @@ export const SetValuePanel = ({
                           backgroundColor: 'lightgrey'
                         }}
                       >
-                        <Plus sx={{ fontSize: '13px' }} />
+                        <Add sx={{ fontSize: '13px' }} />
                       </IconButton>
                       <Typography
                         sx={{ fontSize: '10px', cursor: 'pointer' }}

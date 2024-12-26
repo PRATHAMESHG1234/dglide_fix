@@ -13,7 +13,7 @@ import {
 import Dialog from '../shared/Dialog';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { CloudUpload, Upload } from 'lucide-react';
+import UploadIcon from '@mui/icons-material/BackupOutlined';
 import React, { useEffect, useState } from 'react';
 import { MODAL } from '../../common/utils/modal-toggle';
 import { COLORS } from '../../common/constants/styles';
@@ -240,7 +240,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
                 />
                 <Chip
                   onClick={onImportFile}
-                  icon={<Upload />}
+                  icon={<UploadIcon />}
                   label="Upload Picture"
                   sx={{
                     height: '40px',

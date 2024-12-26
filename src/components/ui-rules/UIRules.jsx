@@ -154,10 +154,12 @@ const UIRules = () => {
       {conformationForDelete && (
         <ConfirmationModal
           open={conformationForDelete}
-          heading="Are you sure you want to delete this record ?"
+          message={'Are you sure you want to delete this record ?'}
+          heading="Delete record"
           onConfirm={deleteHandler}
           onCancel={() => setConformationForDelete(false)}
-          secondButtonText="Delete"
+          firstButtonText="Cancel"
+          secondButtonText="Confirm"
         />
       )}
     </div>

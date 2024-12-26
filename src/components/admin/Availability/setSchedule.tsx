@@ -1,7 +1,11 @@
 import moment from 'moment';
 import React, { ReactElement, useEffect, useRef, useState } from 'react';
 import Select from 'react-select';
-
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger
+} from '@/componentss/ui/popover';
 import CheckIcon from './CheckIcon.svg';
 import { Button } from '@/componentss/ui/button';
 import { Label } from '@/componentss/ui/label';
@@ -12,6 +16,7 @@ import {
   TooltipContent
 } from '@/componentss/ui/tooltip';
 import { Copy, Plus, Trash2 } from 'lucide-react';
+
 type ScheduleType = {
   isOn: boolean;
   day: string;
@@ -533,7 +538,7 @@ function SetSchedule({
 
       <div className="mb-3 mt-4 h-px w-full bg-gray-300" />
 
-      <div>
+      <div className="h-[calc(100vh-200px)] overflow-y-auto pb-4">
         {fields?.map((scheduleItem: ScheduleType, index) => {
           const isLastIndex = index === fields.length - 1;
           return (
@@ -700,7 +705,7 @@ function SetSchedule({
                               >
                                 <Tooltip>
                                   <TooltipTrigger>
-                                    <Plus />
+                                    <Plus className="h-5 w-5" />
                                   </TooltipTrigger>
                                   <TooltipContent className="rounded-md bg-gray-800 px-2 py-1 text-white">
                                     Add
@@ -708,93 +713,30 @@ function SetSchedule({
                                 </Tooltip>
                               </div>
                               {/* Copy items */}
-                              <div
-                                className={`relative mt-[7px] cursor-pointer px-2 py-2 ${
-                                  copyDropdownOpen[index]
-                                    ? 'rounded-[8px] bg-[#E6E8EA]'
-                                    : 'bg-transparent'
-                                } hover:rounded-[8px] hover:bg-[#E6E8EA]`}
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  copyDropDownToggle(e, index);
-                                }}
-                                onMouseEnter={() => setFlag(true)}
-                                onMouseLeave={() => setFlag(false)}
-                                // sx={{
-                                //   cursor: 'pointer',
-                                //   mt: '7px',
-                                //   px: 2,
-                                //   py: 2,
-                                //   backgroundColor: copyDropdownOpen[index]
-                                //     ? '#E6E8EA'
-                                //     : 'transparent',
-                                //   borderRadius: copyDropdownOpen[index]
-                                //     ? '8px'
-                                //     : 0,
-                                //   '&:hover': {
-                                //     backgroundColor: '#E6E8EA',
-                                //     borderRadius: '8px'
-                                //   },
-                                //   position: 'relative' // for positioning if needed
-                                // }}
-                              >
+                              <Popover>
                                 <Tooltip>
-                                  <TooltipTrigger>
-                                    <Copy />
+                                  <TooltipTrigger asChild>
+                                    <PopoverTrigger asChild>
+                                      <div
+                                        className={`mt-[2px] cursor-pointer px-2 py-2 ${
+                                          copyDropdownOpen[index]
+                                            ? 'rounded-[8px] bg-[#E6E8EA]'
+                                            : 'bg-transparent'
+                                        } hover:rounded-[8px] hover:bg-[#E6E8EA]`}
+                                      >
+                                        <Copy className="h-5 w-5" />
+                                      </div>
+                                    </PopoverTrigger>
                                   </TooltipTrigger>
                                   <TooltipContent className="rounded-md bg-gray-800 px-2 py-1 text-white">
                                     Copy
                                   </TooltipContent>
                                 </Tooltip>
-
-                                {copyDropdownOpen[index] && (
-                                  <div
-                                    className={`relative mt-[7px] cursor-pointer px-2 py-2 ${
-                                      copyDropdownOpen[index]
-                                        ? 'rounded-[8px] bg-[#E6E8EA]'
-                                        : 'bg-transparent'
-                                    } hover:rounded-[8px] hover:bg-[#E6E8EA]`}
-                                    // sx={{
-                                    //   position: 'absolute',
-                                    //   ml: '-138px',
-                                    //   mt: 2,
-                                    //   width: '148px',
-                                    //   height: 'auto',
-                                    //   p: 1,
-                                    //   left: '-20px',
-                                    //   zIndex: 50,
-                                    //   backgroundColor: '#fff',
-                                    //   border: '1px solid #cbcaca',
-                                    //   borderRadius: '8px',
-                                    //   top: position(index)
-                                    // }}
-                                    ref={!flag ? modalRefs[index] : null}
-                                  >
-                                    <span
-                                      onClick={(e) => {
-                                        e.preventDefault();
-                                        e.stopPropagation();
-                                      }}
-                                    >
-                                      <Label
-                                      // sx={{
-                                      //   color: '#707B84',
-                                      //   fontSize: '14px',
-
-                                      //   px: '8px',
-                                      //   lineHeight: '20px',
-                                      //   fontWeight: 600
-                                      // }}
-                                      >
-                                        Copy times to
-                                      </Label>
-                                      <div
-                                        style={{
-                                          display: 'flex',
-                                          flexDirection: 'column',
-                                          gap: 1
-                                        }}
-                                      >
+                                <PopoverContent className="w-56">
+                                  <div className="space-y-4">
+                                    <div>
+                                      <Label>Copy times to</Label>
+                                      <div className="mt-2 flex flex-col space-y-2">
                                         {daysOfWeek.map(
                                           (data: any, subIndex: any) => (
                                             <div
@@ -802,89 +744,58 @@ function SetSchedule({
                                                 getDayOfWeek(index) === data.day
                                                   ? 'hidden'
                                                   : 'flex'
-                                              } items-center`}
+                                              } items-center space-x-2`}
                                               key={subIndex}
-                                              // sx={{
-                                              //   display:
-                                              //     getDayOfWeek(index) ===
-                                              //     data.day
-                                              //       ? 'none'
-                                              //       : 'flex',
-                                              //   alignItems: 'center'
-                                              // }}
                                             >
-                                              <input
-                                                type="checkbox"
-                                                id={`check-${subIndex}`}
-                                                checked={data.isOn}
-                                                className="sr-only"
-                                                onChange={(e) => {
+                                              <div
+                                                className="flex h-4 w-4 cursor-pointer items-center justify-center rounded"
+                                                style={{
+                                                  backgroundColor: data.isOn
+                                                    ? '#2096f3'
+                                                    : '#fff',
+                                                  border: data.isOn
+                                                    ? 'none'
+                                                    : '2px solid #8C9196'
+                                                }}
+                                                onClick={(e) => {
                                                   handleCheckboxChange(
                                                     subIndex,
                                                     index,
                                                     e
                                                   );
                                                 }}
-                                                style={{ display: 'none' }}
-                                              />
-                                              <Label>
-                                                <span>{data.day}</span>
-
-                                                <div
-                                                  className="flex h-4 w-4 cursor-pointer items-center justify-center rounded"
-                                                  style={{
-                                                    backgroundColor: data.isOn
-                                                      ? '#2096f3'
-                                                      : '#fff',
-                                                    border: data.isOn
-                                                      ? 'none'
-                                                      : '2px solid #8C9196'
-                                                  }}
-                                                  onClick={(e) => {
-                                                    handleCheckboxChange(
-                                                      subIndex,
-                                                      index,
-                                                      e
-                                                    );
-                                                  }}
-                                                >
-                                                  {data.isOn && (
-                                                    <img
-                                                      src={CheckIcon}
-                                                      alt="Check Icon"
-                                                      style={
-                                                        {
-                                                          //   width: "100%",
-                                                          //   height: "100%",
-                                                        }
-                                                      }
-                                                    />
-                                                  )}
-                                                </div>
+                                              >
+                                                {data.isOn && (
+                                                  <img
+                                                    src={CheckIcon}
+                                                    alt="Check Icon"
+                                                  />
+                                                )}
+                                              </div>
+                                              <Label className="text-sm font-normal">
+                                                {data.day}
                                               </Label>
                                             </div>
                                           )
                                         )}
                                       </div>
-                                    </span>
-
-                                    <div>
-                                      <Button
-                                        onClick={(e) => {
-                                          copyDropDownToggle(e, index);
-                                          reflectCopyData(e, index);
-                                        }}
-                                      >
-                                        Apply
-                                      </Button>
                                     </div>
+                                    <Button
+                                      className="w-full"
+                                      onClick={(e) => {
+                                        copyDropDownToggle(e, index);
+                                        reflectCopyData(e, index);
+                                      }}
+                                    >
+                                      Apply
+                                    </Button>
                                   </div>
-                                )}
-                              </div>
+                                </PopoverContent>
+                              </Popover>
                             </div>
                           </>
                         ) : (
-                          <div>
+                          <div className="mt-4">
                             <Tooltip>
                               <TooltipTrigger>
                                 <Trash2

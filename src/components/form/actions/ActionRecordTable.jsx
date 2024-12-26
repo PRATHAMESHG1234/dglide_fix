@@ -1,5 +1,7 @@
 import './Action.css';
 
+import DeleteForever from '@mui/icons-material/DeleteForever';
+import Edit from '@mui/icons-material/Edit';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {
@@ -18,9 +20,9 @@ import { colors, COLORS } from '../../../common/constants/styles';
 import { MODAL } from '../../../common/utils/modal-toggle';
 import { useSelector } from 'react-redux';
 import Avatar from '../../../elements/Avatars';
-import { CheckCircle } from 'lucide-react';
-import { Edit, Edit2 } from 'lucide-react';
-import { Trash2 } from 'lucide-react';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
 
 const ODD_OPACITY = 0.9;
 
@@ -101,7 +103,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                         }}
                       >
                         {item?.name} {/* {row.active === true && ( */}
-                        <CheckCircle
+                        <CheckCircleIcon
                           sx={{
                             color: colors.success.dark,
                             width: 14,
@@ -142,7 +144,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.edit, item.id);
                     }}
                   >
-                    <Edit2 sx={{ fontSize: '1.1rem' }} />
+                    <EditIcon sx={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
                 <Tooltip placement="top" title="Delete">
@@ -159,7 +161,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.delete, item.id);
                     }}
                   >
-                    <Trash2 sx={{ fontSize: '1.1rem' }} />
+                    <DeleteForeverIcon sx={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
               </TableCell>

@@ -141,11 +141,12 @@ const CatalogFlow = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this Workflow ?`}
+          heading={`Delete workflow`}
           onConfirm={deleteWorkflowRecord}
           onCancel={() => modalActionHandler(MODAL.cancel)}
           firstButtonText="Cancel"
           secondButtonText="Confirm"
+          message={'Are you sure you want to delete this Workflow ?'}
         />
       )}
     </>

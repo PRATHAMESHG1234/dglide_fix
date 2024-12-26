@@ -5,10 +5,10 @@ import { buildList } from './ChartJson';
 import { colors } from '../../common/constants/styles';
 import { useDispatch, useSelector } from 'react-redux';
 import UserCountCard from '../../elements/UserCountCard';
-import { DollarSign } from 'lucide-react';
-import { UserCircle } from 'lucide-react';
-import { FileText } from 'lucide-react';
-import { Building2 } from 'lucide-react';
+import MonetizationOnTwoToneIcon from '@mui/icons-material/MonetizationOnTwoTone';
+import AccountCircleTwoTone from '@mui/icons-material/AccountCircleTwoTone';
+import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
+import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
 import { useSidebar } from '@/componentss/ui/sidebar';
 import { useNavigate } from 'react-router-dom';
 import ChartCard from './ChartCard';
@@ -98,7 +98,12 @@ const DashboardPreview = ({
       }
     });
   };
-  const icons = [UserCircle, FileText, DollarSign, Building2];
+  const icons = [
+    AccountCircleTwoTone,
+    DescriptionTwoToneIcon,
+    MonetizationOnTwoToneIcon,
+    AccountBalanceRoundedIcon
+  ];
 
   const color = [colors.primary.main];
   const getIconByIndex = (index) => {

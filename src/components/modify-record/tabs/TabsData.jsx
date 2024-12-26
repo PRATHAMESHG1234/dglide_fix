@@ -3,7 +3,7 @@ import TimeLine from './TimeLine';
 import Timeline from './time-line';
 import CalendarView from './CalendarView';
 import Loader from '../../shared/Loader';
-import { Plus, PlusCircle } from 'lucide-react';
+import { Add as AddIcon } from '@mui/icons-material';
 import GridTable from '../../../elements/GridTable';
 import { fetchFieldsWithValuesForReference } from '../../../services/field';
 import { useSelector } from 'react-redux';
@@ -235,7 +235,9 @@ const TabsData = ({
               </div>
             ) : (
               <>
-                <div className="px-3 text-xl text-black">Lookup Table</div>
+                <div className="px-3 text-xl text-black">
+                  {tab?.label || 'Records'}
+                </div>
                 <GridTable
                   currentPage={currentPage}
                   setCurrentPage={setCurrentPage}

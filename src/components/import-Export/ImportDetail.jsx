@@ -65,9 +65,9 @@ export const ImportDetail = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="w-96 px-4">
       <div>
-        <div className="my-3">
+        <div className="mb-3">
           <Dropdown
             label="Please select Module for Import schema"
             name="formInfoId"
@@ -95,17 +95,17 @@ export const ImportDetail = () => {
           />
           {selectedSchema ? (
             <div className="my-3">
-              <div className="flex items-center">
-                {/* Avatar Component */}
+              <div className="flex">
                 <span
-                  className="flex rounded-2xl text-sm"
+                  className="text-initial mr-2 flex cursor-pointer items-center rounded-xl bg-[#f9dccf] px-4 py-2 text-sm hover:shadow"
                   style={{ boxFlexGroup: 'hsl(19deg 53.03% 83.57%);' }}
                 >
                   {truncateStringByWords(fileName, 2)}
 
-                  <Avatar className="bg-primary-light" onClick={handleDelete}>
-                    <X />
-                  </Avatar>
+                  <X
+                    className="ms-5 rounded-full bg-primary p-1 text-xs"
+                    onClick={handleDelete}
+                  />
                 </span>
               </div>
             </div>
@@ -116,7 +116,7 @@ export const ImportDetail = () => {
           ) : null}
         </div>
       </div>
-      <Button onClick={handleImportSchema} disabled={loading}>
+      <Button onClick={handleImportSchema} disabled={loading} className="mt-2">
         {loading ? (
           <>
             <div className="mx-auto flex min-w-full max-w-screen-lg items-center justify-center">

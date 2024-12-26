@@ -181,7 +181,7 @@ export const ExportDetail = () => {
             />
             {dataExport && (
               <MultiSelect
-                className="mx-2 mt-5"
+                className=""
                 id="demo-multiple-select-label"
                 label="Select Fields"
                 name="shift_name"

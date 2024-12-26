@@ -637,11 +637,12 @@ const DataGridTableX = ({
       {conformationForDelete && (
         <ConfirmationModal
           open={conformationForDelete}
-          heading="Are you sure you want to delete this record ?"
+          heading="Delete record"
+          message={'Are you sure you want to delete this record ?'}
           onConfirm={handleDeleteAll}
           onCancel={() => setConformationForDelete(false)}
-          secondButtonText="Delete"
-          buttonPosition="reversed"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
         />
       )}
 
@@ -649,12 +650,12 @@ const DataGridTableX = ({
         <ConfirmationModal
           open={updateRecordData}
           data={predictField}
-          heading="Are you sure you want to update this record ?"
-          message="Once you update a repository, there is no going back. Please be certain."
+          heading="Update record"
+          message="Are you sure you want to update this record ?"
           onConfirm={() => handleUpdateRecord(selectedActionData)}
           onCancel={() => setUpdateRecordData(false)}
-          firstButtonText="Submit"
-          buttonPosition="reversed"
+          secondButtonText="Update"
+          firstButtonText="Cancel"
         />
       )}
 

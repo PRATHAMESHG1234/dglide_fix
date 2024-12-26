@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from 'react';
 import { useSelector } from 'react-redux';
-import { Edit2 } from 'lucide-react';
+import CreateIcon from '@mui/icons-material/AddBoxOutlined';
 import { ExecutionProcess } from './ExecutionProcess';
 import { Button } from '@/componentss/ui/button';
 import {
@@ -88,7 +88,7 @@ const ActionList: React.FC<ActionListProps> = ({
                 }}
                 className="flex cursor-pointer items-center gap-x-2"
               >
-                <Edit2 className="text-primary" /> Create New Record
+                <CreateIcon className="text-primary" /> Create New Record
               </MenubarItem>
             )}
             {filterActionsByKey(actions, Key)?.map((action) => (
@@ -112,17 +112,19 @@ const ActionList: React.FC<ActionListProps> = ({
                 {tab}
               </MenubarItem>
             ))}
-            <MenubarItem
-              onClick={() => {
-                setDeleteRecordData(true);
-                handleClose();
-              }}
-              className={`flex cursor-pointer items-center gap-x-2 text-destructive ${
-                selectedRowsLength ? 'bg-[COLORS.LAVENDER]' : ''
-              }`}
-            >
-              {`Delete ${selectedRowsLength ? selectedRowsLength : ''} Records`}
-            </MenubarItem>
+            {selectedRowsLength > 0 && (
+              <MenubarItem
+                onClick={() => {
+                  setDeleteRecordData(true);
+                  handleClose();
+                }}
+                className={`flex cursor-pointer items-center gap-x-2 text-destructive ${
+                  selectedRowsLength ? 'bg-[COLORS.LAVENDER]' : ''
+                }`}
+              >
+                {`Delete ${selectedRowsLength ? selectedRowsLength : ''} Records`}
+              </MenubarItem>
+            )}
             {currentForm?.name === 'requests' && (
               <MenubarItem
                 onClick={() => {

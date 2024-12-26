@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import { Box, Card, Divider, Grid, Typography } from '@mui/material';
 import MuiBreadcrumbs from '@mui/material/Breadcrumbs';
-import { Home } from 'lucide-react';
+import HomeIcon from '@mui/icons-material/Home';
+import HomeTwoToneIcon from '@mui/icons-material/HomeTwoTone';
 import { IconTallymark1 } from '@tabler/icons-react';
 import { colors } from '../common/constants/styles';
-import { GitMerge } from 'lucide-react';
+import AccountTreeTwoToneIcon from '@mui/icons-material/AccountTreeTwoTone';
 
 const linkSX = {
   display: 'flex',
@@ -112,8 +113,8 @@ const Breadcrumbs = ({
               separator={separatorIcon}
             >
               <Typography component={Link} to="#" color="inherit" sx={linkSX}>
-                {icons && <Home sx={iconStyle} />}
-                {icon && <Home sx={{ ...iconStyle, mr: 0 }} />}
+                {icons && <HomeTwoToneIcon sx={iconStyle} />}
+                {icon && <HomeIcon sx={{ ...iconStyle, mr: 0 }} />}
                 {!icon && 'Dashboard'}
               </Typography>
               {breadcrumbItems}

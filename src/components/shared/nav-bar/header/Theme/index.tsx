@@ -1,9 +1,3 @@
-/*
- * This component was automatically commented out as it was detected as unused.
- * Original file is preserved with .backup extension.
- * Date: 2024-12-26T07:34:02.894Z
- */
-
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { updateTheme } from '../../../../../redux/slices/authSlice';
@@ -44,11 +38,11 @@ const ThemeSection: React.FC = () => {
     dispatch(updateTheme({ theme: nextTheme.value }));
     setTheme(theme?.toLowerCase() === 'light' ? 'dark' : 'Light');
   };
-  useEffect(() => {
-    if (currentTheme) {
-      setTheme(currentTheme?.toLowerCase() === 'light' ? 'Light' : 'dark');
-    }
-  }, [currentTheme]);
+  // useEffect(() => {
+  //   if (currentTheme) {
+  //     setTheme(currentTheme?.toLowerCase() === 'light' ? 'Light' : 'dark');
+  //   }
+  // }, [currentTheme]);
 
   return (
     <Button

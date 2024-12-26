@@ -19,12 +19,12 @@ import ConfirmationModal from '../../shared/ConfirmationModal';
 import { fetchCatalogFlow } from '../../../services/catalogFlow';
 import { updateCatalogFlow } from '../../../redux/slices/catalogFlowSlice';
 import { useNavigate } from 'react-router-dom';
-import { X } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
 import Property from './CreatorProperty';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight } from '@mui/icons-material';
 import { optionUniqeUId } from '../../../common/utils/helpers';
-import { ArrowLeft } from 'lucide-react';
-import { ChevronDown } from 'lucide-react';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import CreatorAddAttachment from './CreatorAddAttachment';
 import { notify } from '../../../hooks/toastUtils';
 
@@ -391,9 +391,9 @@ export const Creator = ({ catalogFlowInfoId }) => {
                         <label style={{ marginLeft: '28px', fontSize: '13px' }}>
                           {field.child?.length > 0 &&
                           field?.collapsed === true ? (
-                            <ChevronDown
+                            <KeyboardArrowDownIcon
                               onClick={() => handleToggle(field)}
-                            ></ChevronDown>
+                            ></KeyboardArrowDownIcon>
                           ) : (
                             <ChevronRight
                               onClick={() => handleToggle(field)}
@@ -438,7 +438,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
       <div className="mx-3 mb-3 flex justify-between">
         <div className="flex items-center px-1">
           {' '}
-          <ArrowLeft
+          <KeyboardBackspaceIcon
             onClick={() => navigate(-1)}
             style={{ marginRight: '7px', color: 'grey' }}
           />
@@ -473,7 +473,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
               }}
               onClick={() => setCloseConfirmatn(true)}
             >
-              <X />
+              <CloseIcon />
             </Button>
           </Stack>
         </div>
@@ -549,22 +549,23 @@ export const Creator = ({ catalogFlowInfoId }) => {
       {compile && (
         <ConfirmationModal
           open={compile}
-          heading="Are you sure you want to save & create Question Form ?"
+          heading="Save & create Question Form"
           message="This action will create Question Form"
           onConfirm={saveFieldsHandler}
           onCancel={() => setCompile(false)}
-          firstButtonText="Submit"
-          ButtonPosition="reversed"
+          secondButtonText="Submit"
+          firstButtonText="Cancel"
         />
       )}
       {closeConfirmatn && (
         <ConfirmationModal
           open={closeConfirmatn}
-          heading="Are you sure you want to Close Form ?"
-          message="This action will Close Question Form"
+          heading="Close form"
+          message="Are you sure you want to Close Form ?"
           onConfirm={() => navigate('/catalogflow')}
           onCancel={() => setCloseConfirmatn(false)}
-          firstButtonText="Confirm"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
         />
       )}
     </div>

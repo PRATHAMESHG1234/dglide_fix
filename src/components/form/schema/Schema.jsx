@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Plus, PlusCircle } from 'lucide-react';
+import { Add } from '@mui/icons-material';
 import { FormLabel } from '@mui/material';
 
 import { COLORS } from '../../../common/constants/styles';
@@ -85,7 +85,7 @@ const Schema = () => {
               backgroundColor: COLORS.PRIMARY
             }}
           >
-            <Plus />
+            <Add />
           </Button>
         </div>
       </div>
@@ -104,10 +104,12 @@ const Schema = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this dump?`}
+          heading={`Delete this dump?`}
+          message={'Are you sure you want to delete this dump?'}
           onConfirm={deleteHandler}
           onCancel={() => modalActionHandler(MODAL.cancel)}
-          firstButtonText="Delete"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
         />
       )}
     </div>

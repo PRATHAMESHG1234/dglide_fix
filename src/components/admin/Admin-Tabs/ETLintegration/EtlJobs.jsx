@@ -87,7 +87,7 @@ export const EtlJobs = ({ open, setOpen, jobClickHandler }) => {
           className="flex w-full flex-row flex-wrap items-start justify-start overflow-auto"
           style={{ overflowY: 'scroll', backgroundColor: '' }}
         >
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-col gap-2">
             {etlJobList?.length > 0 &&
               etlJobList?.map((item) => (
                 <EtlJobCardView

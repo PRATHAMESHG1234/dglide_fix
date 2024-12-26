@@ -1,6 +1,6 @@
 // import "./FieldGroup.css";
 
-import { Trash2 } from 'lucide-react';
+import DeleteForever from "@mui/icons-material/DeleteForever";
 
 import { Stack, Tooltip } from "@mui/joy";
 import IconButton from "@mui/joy/IconButton";
@@ -17,7 +17,7 @@ import { saveAs } from "file-saver";
 
 import { colors, COLORS } from "../../../common/constants/styles";
 import { MODAL } from "../../../common/utils/modal-toggle";
-import { DownloadCloud } from 'lucide-react';
+import DownloadIcon from "@mui/icons-material/CloudDownload";
 import { downloadDump } from "../../../services/dump";
 import { IconDownload, IconTrash } from "@tabler/icons-react";
 import GridTableSimple from "../../../elements/GridTableSimple";

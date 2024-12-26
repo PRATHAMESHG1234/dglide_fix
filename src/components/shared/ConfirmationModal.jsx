@@ -25,7 +25,9 @@ function ConfirmationModal(props) {
       secondButtonText={secondButtonText}
       width={'32rem'}
       // firstButtonVariant={buttonPosition === 'delete' ? 'Delete' : ''}
-    ></Modal>
+    >
+      {message}
+    </Modal>
   );
 }
 

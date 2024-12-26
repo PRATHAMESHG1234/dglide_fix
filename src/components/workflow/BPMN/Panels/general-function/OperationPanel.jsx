@@ -7,10 +7,10 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { COLORS, colors } from '../../../../../common/constants/styles';
-import { X } from 'lucide-react';
-import { Minus } from 'lucide-react';
-import { Plus, PlusCircle } from 'lucide-react';
-
+import CloseIcon from '@mui/icons-material/Close';
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
+import { Add } from '@mui/icons-material';
 import { Typography } from '@mui/joy';
 import SelectField from '../../../../../elements/SelectField';
 import TextField from '../../../../../elements/TextField';
@@ -198,7 +198,7 @@ export const OperationPanel = ({
                               addExpression(index, 'operation', item.value)
                             }
                           >
-                            <PlusCircle
+                            <AddIcon
                               sx={{
                                 fontSize: '25px',
                                 color: colors.primary.main,
@@ -221,7 +221,7 @@ export const OperationPanel = ({
                           }}
                           onClick={() => removeSelectedField(item?.fieldInfoId)}
                         >
-                          <Minus
+                          <RemoveIcon
                             sx={{
                               fontSize: '25px',
                               color: colors.secondary.main,
@@ -255,7 +255,7 @@ export const OperationPanel = ({
                         backgroundColor: 'lightgrey'
                       }}
                     >
-                      <Plus sx={{ fontSize: '13px' }} />
+                      <Add sx={{ fontSize: '13px' }} />
                     </IconButton>
                     <Typography
                       sx={{

@@ -1,8 +1,8 @@
-import { ChevronDown } from 'lucide-react';
-import { ArrowUp } from 'lucide-react';
-import { CheckCircle } from 'lucide-react';
-import { XCircle } from 'lucide-react';
-import { Search } from 'lucide-react';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
+import SearchIcon from '@mui/icons-material/Search';
 import { Stack } from '@mui/material';
 
 import { Button } from '@/componentss/ui/button';
@@ -27,7 +27,7 @@ const FilterPanel = () => {
           }}
         >
           <div className="flex items-center">
-            <Search sx={{ color: COLORS.SECONDARY }} />
+            <SearchIcon sx={{ color: COLORS.SECONDARY }} />
             <h6
               style={{
                 color: 'grey',
@@ -40,12 +40,12 @@ const FilterPanel = () => {
               Search
             </h6>
           </div>
-          <XCircle sx={{ color: COLORS.SECONDARY }} />
+          <HighlightOffIcon sx={{ color: COLORS.SECONDARY }} />
         </form>
 
         <Button
           variant="plain"
-          endDecorator={<ChevronDown sx={{ color: COLORS.SECONDARY }} />}
+          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
           sx={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
@@ -56,7 +56,7 @@ const FilterPanel = () => {
         </Button>
         <Button
           variant="plain"
-          endDecorator={<ChevronDown sx={{ color: COLORS.SECONDARY }} />}
+          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
           sx={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
@@ -67,7 +67,7 @@ const FilterPanel = () => {
         </Button>
         <Button
           variant="plain"
-          endDecorator={<ChevronDown sx={{ color: COLORS.SECONDARY }} />}
+          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
           sx={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
@@ -80,13 +80,13 @@ const FilterPanel = () => {
       <Stack spacing={2} direction="row">
         <Button
           variant="plain"
-          startDecorator={<CheckCircle sx={{ color: COLORS.SECONDARY }} />}
+          startDecorator={<CheckCircleIcon sx={{ color: COLORS.SECONDARY }} />}
         >
           All Task
         </Button>
         <Button
           variant="plain"
-          startDecorator={<ArrowUp sx={{ color: COLORS.SECONDARY }} />}
+          startDecorator={<ArrowUpwardIcon sx={{ color: COLORS.SECONDARY }} />}
         >
           By Name
         </Button>

@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { Alarm, Bell, Disc, Filter } from 'lucide-react';
-import { Circle } from 'lucide-react';
-import { FileText } from 'lucide-react';
-import { Settings } from 'lucide-react';
+import Reminder from '@mui/icons-material/AlarmOutlined';
+import CircleIcon from '@mui/icons-material/Circle';
+import RecordIcon from '@mui/icons-material/DescriptionOutlined';
+import Filter from '@mui/icons-material/Tune';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
@@ -386,7 +386,7 @@ const TabInfo = ({ TabsData }) => {
                       width: '20%'
                     }}
                   >
-                    <Disc
+                    <RecordIcon
                       sx={{ fontSize: '40px', color: '#0000001D', marginX: 2 }}
                     />
                     <Typography
@@ -529,7 +529,7 @@ const TabInfo = ({ TabsData }) => {
                         padding: 6
                       }}
                     >
-                      <Bell />
+                      <Reminder />
                       <Typography
                         sx={{
                           fontSize: '14px',
@@ -561,7 +561,7 @@ const TabInfo = ({ TabsData }) => {
                       >
                         Signed
                       </Typography>
-                      <Circle
+                      <CircleIcon
                         sx={{ color: '#1cdc75', fontSize: '15px', mt: 0.3 }}
                       />
                     </Box>

@@ -15,11 +15,11 @@
 //   Typography,
 // } from "@mui/material";
 
-// import { Trash2 } from 'lucide-react';
-// import { Edit,Edit2 } from 'lucide-react';
-// import { CheckCircle } from 'lucide-react';
-// import { ArrowUpRight } from 'lucide-react';
-// import { CreditCard } from 'lucide-react';
+// import DeleteForever from "@mui/icons-material/DeleteForever";
+// import Edit from "@mui/icons-material/Edit";
+// import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+// import MoveUpIcon from "@mui/icons-material/MoveUp";
+// import AddCardIcon from "@mui/icons-material/AddCard";
 // // import Avatar from "../../elements/Avatars";
 // import { COLORS, colors } from "../../../common/constants/styles";
 // import { MODAL } from "../../../common/utils/modal-toggle";
@@ -169,7 +169,8 @@
 //                           },
 //                         }}
 //                       >
-//                         <Edit2 //                           sx={{
+//                         <Edit
+//                           sx={{
 //                             color: COLORS.PRIMARY,
 //                           }}
 //                           onClick={(e) => {
@@ -191,7 +192,8 @@
 //                           },
 //                         }}
 //                       >
-//                         <Trash2 //                           sx={{ color: "danger" }}
+//                         <DeleteForever
+//                           sx={{ color: "danger" }}
 //                           onClick={(e) => {
 //                             e.stopPropagation();
 //                             onChartClick(MODAL.delete, row.id);

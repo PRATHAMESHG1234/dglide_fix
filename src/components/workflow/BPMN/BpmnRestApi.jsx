@@ -10,12 +10,13 @@ import {
 } from '@mui/material';
 import React, { useRef, useState } from 'react';
 import { COLORS, colors } from '../../../common/constants/styles';
+import { Add } from '@mui/icons-material';
 import TextArea from '../../../elements/TextArea';
 import RadioField from '../../../elements/RadioField';
 import TextField from '../../../elements/TextField';
 import SelectField from '../../../elements/SelectField';
-import { Trash } from 'lucide-react';
-import { Plus, PlusCircle } from 'lucide-react';
+import DeleteIcon from '@mui/icons-material/DeleteOutlined';
+import AddIcon from '@mui/icons-material/Add';
 import { useSelector } from 'react-redux';
 import { Button } from '@/componentss/ui/button';
 
@@ -166,7 +167,7 @@ const RestApi = ({
                       handleExpresionPanel('url', 'restApi', restApiObj?.url)
                     }
                   >
-                    <PlusCircle
+                    <AddIcon
                       sx={{
                         fontSize: '25px',
                         color: colors.primary.main,
@@ -255,7 +256,7 @@ const RestApi = ({
                             )
                           }
                         >
-                          <PlusCircle
+                          <AddIcon
                             sx={{
                               fontSize: '25px',
                               color: colors.primary.main,
@@ -374,7 +375,7 @@ const RestApi = ({
                         )
                       }
                     >
-                      <PlusCircle
+                      <AddIcon
                         sx={{
                           fontSize: '25px',
                           color: colors.primary.main,
@@ -430,7 +431,7 @@ const RestApi = ({
                       )
                     }
                   >
-                    <PlusCircle
+                    <AddIcon
                       sx={{
                         fontSize: '25px',
                         color: colors.primary.main,
@@ -530,7 +531,7 @@ const RestApi = ({
                                 );
                               }}
                             >
-                              <PlusCircle
+                              <AddIcon
                                 sx={{
                                   fontSize: '25px',
                                   color: colors.primary.main,
@@ -557,7 +558,7 @@ const RestApi = ({
                                 cursor: 'pointer'
                               }}
                             >
-                              <Trash />
+                              <DeleteIcon />
                             </div>
                           </Tooltip>
                         </div>
@@ -582,7 +583,7 @@ const RestApi = ({
                               backgroundColor: 'lightgrey'
                             }}
                           >
-                            <Plus sx={{ fontSize: '13px' }} />
+                            <Add sx={{ fontSize: '13px' }} />
                           </IconButton>
                           <Typography
                             sx={{ fontSize: '10px', cursor: 'pointer' }}

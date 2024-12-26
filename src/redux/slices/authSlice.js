@@ -92,14 +92,14 @@ export const authSlice = createSlice({
       state.isLoading = false;
       state.currentUser = action.payload;
       state.themeLabel = action.payload?.themeLabel;
-      localStorage.setItem(
-        'theme',
-        action.payload?.themeLabel === 'System'
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'Dark'
-            : 'Light'
-          : action.payload?.themeLabel
-      );
+      // localStorage.setItem(
+      //   'theme',
+      //   action.payload?.themeLabel === 'System'
+      //     ? window.matchMedia('(prefers-color-scheme: dark)').matches
+      //       ? 'Dark'
+      //       : 'Light'
+      //     : action.payload?.themeLabel
+      // );
 
       // state.currentTheme = localStorage.getItem('theme');
       state.isLogin = true;
@@ -117,14 +117,14 @@ export const authSlice = createSlice({
       state.isLoading = false;
       state.themeLabel = theme.payload?.themeLabel;
 
-      localStorage.setItem(
-        'theme',
-        theme.payload?.themeLabel === 'System'
-          ? window.matchMedia('(prefers-color-scheme: dark)').matches
-            ? 'Dark'
-            : 'Light'
-          : theme.payload?.themeLabel
-      );
+      // localStorage.setItem(
+      //   'theme',
+      //   theme.payload?.themeLabel === 'System'
+      //     ? window.matchMedia('(prefers-color-scheme: dark)').matches
+      //       ? 'Dark'
+      //       : 'Light'
+      //     : theme.payload?.themeLabel
+      // );
 
       // state.currentTheme = localStorage.getItem('theme');
     });

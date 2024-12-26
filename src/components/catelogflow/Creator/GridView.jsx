@@ -14,10 +14,10 @@ import {
 } from '@mui/material';
 import MainCard from '../../../elements/MainCard';
 import { IconSearch } from '@tabler/icons-react';
-import { ChevronDown } from 'lucide-react';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import GridCard from './GridCard';
 import { colors } from '../../../common/constants/styles';
-import { ResizeVertical } from 'lucide-react';
+import { Height } from '@mui/icons-material';
 import { useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
@@ -151,7 +151,7 @@ const GridView = ({
                   size="large"
                   sx={{ color: colors.grey[900] }}
                   color="secondary"
-                  endIcon={<ChevronDown />}
+                  endIcon={<ExpandMoreRoundedIcon />}
                   onClick={handleClick}
                 >
                   {itemsPerPage} Rows

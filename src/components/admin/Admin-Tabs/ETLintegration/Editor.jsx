@@ -739,7 +739,6 @@ const JobEditor = ({}) => {
   const handleSubmit = async () => {
     localStorage.setItem(`etlCoType`, '');
     localStorage.setItem(`etlType`, '');
-    console.log(selectedJob);
     const formateKey = Object.fromEntries(
       Object.entries(destObjectDetail).map(([key, value]) => [
         `{destination_object.${key}}`,
@@ -904,7 +903,7 @@ const JobEditor = ({}) => {
 
   const AddExternalJsontoJob = (data) => {
     setSelectedJob((prev) => ({ ...prev, ['externalJson']: data }));
-    console.log(data);
+    // console.log(data);
   };
   const renderInputByType = (key, value) => {
     const type = value.type;

@@ -62,13 +62,8 @@ const ImportExportData = () => {
   return (
     <>
       <div className="min-h-screen w-full bg-accent">
-        <div className="px-4 py-3">
-          <div className="flex items-center justify-between space-x-6">
-            <div className="flex items-center">
-              <CustomTabs items={tabItems} />
-            </div>
-          </div>
-        </div>
+        <div className="px-4 py-3"></div>
+        <CustomTabs items={tabItems} />
 
         <div className="flex"></div>
       </div>

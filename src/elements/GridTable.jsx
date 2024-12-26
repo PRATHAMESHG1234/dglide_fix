@@ -10,6 +10,7 @@ import {
   TooltipContent,
   TooltipTrigger
 } from '@/componentss/ui/tooltip';
+import SortIcon from '@mui/icons-material/UnfoldMore';
 
 import { AgGridReact } from 'ag-grid-react';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -17,17 +18,9 @@ import ColumnPreferenceX from '../components/records/preference/ColumnPreference
 import { colors } from '../common/constants/styles';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import {
-  ArrowDown,
-  ArrowDownCircle,
-  ArrowDownUp,
-  ArrowUp,
-  ArrowUpCircle,
-  ArrowUpDown,
-  Filter
-} from 'lucide-react';
-import { ChevronsUp } from 'lucide-react';
-import { ChevronsDown } from 'lucide-react';
+import FilterListIcon from '@mui/icons-material/FilterList';
+import ArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
+import ArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import { Dropdown } from '@/componentss/ui/dropdown';
 // import 'ag-grid-community/styles/ag-grid.css';
 // import 'ag-grid-community/styles/ag-theme-quartz.css';
@@ -172,53 +165,82 @@ const GridTable = ({
 
   const CustomHeader = (props) => {
     const { displayName, columnKey, onFilterIconClick, isActive } = props;
+
+    const [sortOrder, setSortOrder] = useState(null);
     const iconRef = useRef(null);
 
     const handleClick = () => {
       const iconPosition = iconRef.current.getBoundingClientRect();
       onFilterIconClick(columnKey, iconPosition);
     };
-
-    const renderSortIcon = (sortedColumn) => {
-      if (sortedColumn?.order === 'asc') {
-        return <ArrowUpCircle className="h-4 w-4" />;
-      } else if (sortedColumn?.order === 'desc') {
-        return <ArrowDownCircle className="h-4 w-4" />;
-      }
-      return <ArrowUpDown className="h-4 w-4" />;
-    };
-
-    const sortedColumn = sort?.find((srt) => srt.columnName === columnKey);
-
     return (
-      <span className="flex w-full cursor-pointer flex-row items-start justify-between px-1">
-        <div>{displayName}</div>
-        <div className="flex flex-row items-end justify-end gap-2">
-          <Tooltip>
-            <TooltipTrigger>{renderSortIcon(sortedColumn)}</TooltipTrigger>
-            <TooltipContent>
-              {sortedColumn?.order === 'asc'
-                ? 'Sort Ascending'
-                : sortedColumn?.order === 'desc'
-                  ? 'Sort Descending'
-                  : 'Sort'}
-            </TooltipContent>
-          </Tooltip>
-          <Tooltip>
-            <TooltipTrigger>
-              <Filter
-                ref={iconRef}
-                onClick={handleClick}
-                className="h-4 w-4 cursor-pointer"
-              />
-            </TooltipTrigger>
-            <TooltipContent>Filter</TooltipContent>
-          </Tooltip>
-        </div>
-      </span>
+      <div
+        className="flex w-full items-center justify-between px-1 font-semibold"
+        style={{
+          color: isActive && colors.primary.main,
+          backgroundColor: isActive ? colors.primary.light : 'transparent'
+        }}
+      >
+        <span
+          onClick={() => handleSortClick(columnKey)}
+          className="flex cursor-pointer items-center"
+        >
+          {displayName}
+          {(() => {
+            const sortedColumn = sort?.find(
+              (srt) => srt.columnName === columnKey
+            );
+
+            if (sortedColumn?.order === 'asc') {
+              return (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <ArrowUpIcon
+                      fontSize="18px"
+                      style={{ marginLeft: '5px' }}
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>Sort Asc</TooltipContent>
+                </Tooltip>
+              );
+            } else if (sortedColumn?.order === 'desc') {
+              return (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <ArrowDownIcon
+                      fontSize="18px"
+                      style={{ marginLeft: '5px' }}
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>Sort desc</TooltipContent>
+                </Tooltip>
+              );
+            } else {
+              return (
+                <Tooltip>
+                  <TooltipTrigger>
+                    <SortIcon fontSize="18px" style={{ marginLeft: '5px' }} />
+                  </TooltipTrigger>
+                  <TooltipContent>Sort</TooltipContent>
+                </Tooltip>
+              );
+            }
+          })()}
+        </span>
+        <Tooltip>
+          <TooltipTrigger>
+            <FilterListIcon
+              ref={iconRef}
+              onClick={handleClick}
+              fontSize="18px"
+              style={{ marginLeft: '5px', cursor: 'pointer' }}
+            />
+          </TooltipTrigger>
+          <TooltipContent>Filter</TooltipContent>
+        </Tooltip>
+      </div>
     );
   };
-
   function truncateString(str) {
     if (str.length > 10) {
       return str.substring(0, 10) + '...';
@@ -325,7 +347,7 @@ const GridTable = ({
                       }}
                     >
                       {initial ? (
-                        <div className="relative line-clamp-1 flex h-[29px] max-w-[125px] items-center gap-x-2 rounded-full bg-[#e3f2fd] px-3 text-sm font-normal text-secondary">
+                        <div className="relative line-clamp-1 flex h-[29px] max-w-[125px] items-center gap-x-2 rounded-full bg-secondary/10 px-3 text-sm font-normal text-secondary">
                           <Avatar className="absolute left-1 top-1/2 h-6 w-6 -translate-y-1/2 bg-secondary">
                             <AvatarFallback className="bg-secondary text-xs text-white">
                               {initial}
@@ -586,7 +608,7 @@ const GridTable = ({
                       {usedElements?.includes('columnPreference') && (
                         <>
                           <div
-                            className="border-primary-light hover:text-primary-main absolute left-full top-0 z-10 flex h-[30px] w-full origin-top-left rotate-90 transform cursor-pointer select-none items-center border bg-white px-1 pl-4 text-xs text-[#047eae]"
+                            className="border-primary-light hover:text-primary-main absolute left-full top-0 z-10 flex h-[30px] w-full origin-top-left rotate-90 transform cursor-pointer select-none items-center border bg-white px-1 pl-4 text-xs text-secondary"
                             onClick={() =>
                               setShowPreference((prev) => !showPreferernces)
                             }

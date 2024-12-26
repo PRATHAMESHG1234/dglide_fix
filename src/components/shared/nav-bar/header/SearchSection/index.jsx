@@ -77,14 +77,14 @@ function SeachSection() {
     setTableList(data.data);
   };
 
-  // const prevOpen = useRef(open);
+  // const prevOpen = useRef(filterPopUp.open);
   // useEffect(() => {
-  //   if (prevOpen.current === true && open === false) {
+  //   if (prevOpen.current === true && filterPopUp.open === false) {
   //     anchorRef.current.focus();
   //   }
 
-  //   prevOpen.current = open;
-  // }, [open]);
+  //   prevOpen.current = filterPopUp.open;
+  // }, [filterPopUp.open]);
 
   const fetchData = async (value) => {
     const controller = new AbortController();
@@ -103,9 +103,6 @@ function SeachSection() {
       const responseJson = await response.json();
       setRecordData(responseJson);
       setError(null);
-      if (anchorRef.current) {
-        anchorRef.current.blur();
-      }
     } catch (err) {
       if (err.name !== 'AbortError') {
         setError(err.message || 'Error fetching data');
@@ -207,7 +204,9 @@ function SeachSection() {
               value={search || ''}
               onChange={(e) => searchValue(e.target.value)}
               onKeyDown={(e) => handleKeyDown(e)}
-              onBlur={() => setFilterPopUp((prev) => ({ ...prev, open: true }))}
+              onBlur={() =>
+                setFilterPopUp((prev) => ({ ...prev, open: false }))
+              }
               ref={anchorRef}
               onFocus={handleToggle}
               className="w-full bg-background text-black sm:w-[300px] md:w-[400px] lg:w-[600px]"
@@ -215,7 +214,7 @@ function SeachSection() {
             />
           </PopoverTrigger>
           <PopoverContent
-            className={`border-none bg-white shadow-none top-${filterPopUp.position.top} left-${filterPopUp.position.left} z-[1300]`}
+            className={`max-h-[30vh] min-h-fit border-none bg-white shadow-none lg:w-[600px] top-${filterPopUp.position.top} left-${filterPopUp.position.left} z-[1300]`}
           >
             <div className="min-h-fit w-full">
               <div className="px-3 py-1">

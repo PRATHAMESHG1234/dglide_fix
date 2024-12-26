@@ -31,7 +31,7 @@ import { CheckboxGroup } from '@/componentss/ui/checkbox-group';
 import { RadioGroup } from '@/componentss/ui/radio-group';
 import { MultiSelect } from '@/componentss/ui/multi-select';
 import { Textarea } from '@/componentss/ui/textarea';
-import { Plus, PlusCircle } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { Label } from '@/componentss/ui/label';
 import { useSidebar } from '@/componentss/ui/sidebar';
 import { notify } from '../../../hooks/toastUtils';
@@ -40,7 +40,7 @@ const NUMERIC_REGEX = /^[0-9-]+$/;
 const AddEditRecord = ({
   formId,
   fieldData,
-  toggles = 'Format-1',
+  toggles,
   fieldValues,
   onSubmit,
   mode = '',
@@ -54,7 +54,7 @@ const AddEditRecord = ({
   setTaggedEmails,
   setTreeListValues,
   activeFormId,
-  fieldGroups,
+  fieldGroups = [],
   showEditRecord,
   indentType = 'col',
   style: compstyle
@@ -71,7 +71,6 @@ const AddEditRecord = ({
 
   const { currentForm, currentModule } = useSelector((state) => state.current);
   const { rules } = useSelector((state) => state.uiRule);
-
   const { currentTheme } = useSelector((state) => state.auth);
   const { isMobile } = useSidebar();
   const [loading, setLoading] = useState(true);
@@ -185,7 +184,6 @@ const AddEditRecord = ({
     const fetchDataWithValues = async () => {
       try {
         const data = await fetchFieldsWithValues(fieldData);
-
         const enabledRulesArr = await rules
           ?.filter((r) => r.enable)
           .map((rule) => {
@@ -217,7 +215,7 @@ const AddEditRecord = ({
     if (fieldData?.length > 0) {
       fetchDataWithValues();
     }
-  }, []);
+  }, [rules]);
 
   useEffect(() => {
     const checkFormErrors = () => {
@@ -834,8 +832,8 @@ const AddEditRecord = ({
     });
   }
 
-  function validateField(field) {
-    const validationForField = field?.validation;
+  function validateField(fieldData) {
+    const validationForField = fieldData?.validation;
     const validation =
       validationForField &&
       evaluateActionConditions(validationForField, formObj);
@@ -854,9 +852,9 @@ const AddEditRecord = ({
 
     const infoObj = validation?.find((field) => field.info);
 
-    const error = formObj[field.name] ? false : errorObj?.error;
+    const error = formObj[fieldData.name] ? false : errorObj?.error;
 
-    const info = formObj[field.name] ? false : infoObj?.info;
+    const info = formObj[fieldData.name] ? false : infoObj?.info;
 
     return {
       hidden,

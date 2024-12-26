@@ -61,7 +61,7 @@ import {
 } from '@/componentss/ui/menubar';
 import { notify } from '../../hooks/toastUtils';
 
-const DataTable = ({ FormName }) => {
+const DataTable = ({ FormName, title, isBackArrowEnabled = true }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -273,6 +273,7 @@ const DataTable = ({ FormName }) => {
   };
   const handleDrawerOpen = () => {
     setDrawer(false);
+    setCurrentId(null);
   };
   const submitHandler = (values) => {
     setSubmitFlag(true);
@@ -536,17 +537,19 @@ const DataTable = ({ FormName }) => {
                 className={`hover:bg-primary-dark z-10 mx-2 flex cursor-pointer items-center justify-center rounded-md bg-accent hover:text-primary`}
                 onClick={() => handleBackNavigation()}
               >
-                <Tooltip>
-                  <TooltipTrigger>
-                    <ArrowLeft size={16} className="cursor-pointer" />
-                  </TooltipTrigger>
-                  <TooltipContent side="bottom" className="mt-2">
-                    <p>Back</p>
-                  </TooltipContent>
-                </Tooltip>{' '}
+                {isBackArrowEnabled && (
+                  <Tooltip>
+                    <TooltipTrigger>
+                      <ArrowLeft size={16} className="cursor-pointer" />
+                    </TooltipTrigger>
+                    <TooltipContent side="bottom" className="mt-2">
+                      <p>Back</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )}
               </div>
               {/* <Label className="text-base font-medium"> */}
-              {replaceUnderscore(FormName)}
+              {title || formdetail?.displayName}
               {/* </Label> */}
             </div>
           }
@@ -555,11 +558,12 @@ const DataTable = ({ FormName }) => {
 
       <ConfirmationModal
         open={selectedRecordAction?.type === 'delete'}
-        heading={`Are you sure you want to delete this record?`}
+        heading={`Delete record`}
         onConfirm={deleteActionHandler}
         onCancel={() => setSelectedRecordAction({})}
-        buttonPosition="reversed"
-        firstButtonText="Delete"
+        firstButtonText="Cancel"
+        secondButtonText="Confirm"
+        message={'Are you sure you want to delete this record?'}
       />
       <Sheet key={'right'} open={drawer} onOpenChange={handleDrawerOpen}>
         <SheetContent
@@ -571,7 +575,9 @@ const DataTable = ({ FormName }) => {
               <div className="py-1.5 pr-4 dark:border-gray-700">
                 <div className="flex items-center justify-between">
                   <Label className={`text-lg font-medium text-gray-700`}>
-                    Overview
+                    {newRecord
+                      ? `Add ${title || 'record'} `
+                      : `Edit ${title || 'record'} `}
                   </Label>
                   <div className="space-x-2">
                     <Button form="system_user" type="submit">
@@ -647,12 +653,15 @@ const DataTable = ({ FormName }) => {
                     fieldGroups={fieldGroups}
                   />
                 ) : FormName === 'system_slots' ? (
-                  <Availability
-                    newRecord={newRecord}
-                    apiData={newRecord ? null : editFormData}
-                    formId="system_user"
-                    onSubmit={handleBulkSave}
-                  />
+                  (console.log(editFormData, '1111'),
+                  (
+                    <Availability
+                      newRecord={newRecord}
+                      apiData={newRecord ? null : editFormData}
+                      formId="system_user"
+                      onSubmit={handleBulkSave}
+                    />
+                  ))
                 ) : FormName === 'system_holidays' ? (
                   <AddEditHolidays
                     newRecord={newRecord}

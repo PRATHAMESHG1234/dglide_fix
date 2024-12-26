@@ -27,11 +27,11 @@ export const AddEditHolidays = ({ fieldData, onSubmit, formId, newRecord }) => {
     fetchRecordsBytableName('system_shift').then((data) => {
       let fetchedFormData = data?.data;
       let shiftArr = [];
-
       fetchedFormData.forEach((elem) => {
         if (!shiftArr.some((item) => item.name === elem.name)) {
           shiftArr.push(elem);
         }
+
         setShiftList(shiftArr);
       });
     });
@@ -39,15 +39,19 @@ export const AddEditHolidays = ({ fieldData, onSubmit, formId, newRecord }) => {
 
   useEffect(() => {
     if (fieldData) {
+      const shiftName = shiftList.filter(
+        (o) => o.uuid === fieldData.shift_name
+      );
       const newObj = {
         uuid: fieldData.uuid,
-        shift_name: fieldData.shift_name,
         holiday_name: fieldData.holiday_name,
+        shift_name: shiftName[0]?.name,
         date: fieldData.date
       };
+
       setHolidayList(newObj);
     }
-  }, [fieldData]);
+  }, [fieldData, shiftList]);
 
   const handleChange = (event) => {
     const value = event.target.value;
@@ -92,7 +96,6 @@ export const AddEditHolidays = ({ fieldData, onSubmit, formId, newRecord }) => {
     copyOfObj[field] = value;
     setHolidayList(copyOfObj);
   };
-
   return (
     <form id={formId} onSubmit={submitHandler} style={{ marginTop: '40px' }}>
       <div className="my-3">
@@ -103,57 +106,61 @@ export const AddEditHolidays = ({ fieldData, onSubmit, formId, newRecord }) => {
               variant="outlined"
               name="holiday_name"
               type="text"
-              className="mb-4"
+              className=""
               value={holidayList.holiday_name}
               onChange={(e) =>
                 onHandleChange(e.target.value, 'holiday_name', holidayList)
               }
             />
-
-            <Input
-              label="Date"
-              id="date"
-              type="date"
-              className="h-10 w-full rounded-md border border-gray-300 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-              value={
-                holidayList.date
-                  ? format(
-                      parse(holidayList.date, 'dd-MM-yyyy', new Date()),
-                      'yyyy-MM-dd'
-                    )
-                  : ''
-              }
-              onChange={(e) => {
-                const newValue = e.target.value; // ISO date format (YYYY-MM-DD)
-                const formattedDate = format(new Date(newValue), 'dd-MM-yyyy'); // Reformat to "dd-MM-yyyy"
-                onHandleChange(formattedDate, 'date', holidayList);
-              }}
-            />
-            {newRecord ? (
-              <MultiSelect
-                id={`multiSelect-shift"`}
-                label="Select shift"
-                name="shift_name"
-                selectedValues={selectedItems}
-                onChange={handleChange}
-                options={shiftList.map((shift) => ({
-                  label: shift.name,
-                  value: shift.uuid
-                }))}
-              />
-            ) : (
+            <div className="mt-2">
               <Input
-                label="Shift Name"
-                variant="outlined"
-                name="shift_name"
-                disabled
-                type="text"
-                value={holidayList.shift_name}
-                sx={{
-                  maxWidth: '550px',
-                  marginX: '12px'
+                label="Date"
+                id="date"
+                type="date"
+                className="h-10 w-full rounded-md border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                value={
+                  holidayList.date
+                    ? format(
+                        parse(holidayList.date, 'dd-MM-yyyy', new Date()),
+                        'yyyy-MM-dd'
+                      )
+                    : ''
+                }
+                onChange={(e) => {
+                  const newValue = e.target.value; // ISO date format (YYYY-MM-DD)
+                  const formattedDate = format(
+                    new Date(newValue),
+                    'dd-MM-yyyy'
+                  ); // Reformat to "dd-MM-yyyy"
+                  onHandleChange(formattedDate, 'date', holidayList);
                 }}
               />
+            </div>
+            {newRecord ? (
+              <div className="mt-2">
+                <MultiSelect
+                  id={`multiSelect-shift"`}
+                  label="Select shift"
+                  name="shift_name"
+                  selectedValues={selectedItems}
+                  onChange={handleChange}
+                  options={shiftList.map((shift) => ({
+                    label: shift.name,
+                    value: shift.uuid
+                  }))}
+                />
+              </div>
+            ) : (
+              <div className="mt-2">
+                <Input
+                  label="Shift Name"
+                  variant="outlined"
+                  name="shift_name"
+                  disabled
+                  type="text"
+                  value={holidayList.shift_name}
+                />
+              </div>
             )}
           </div>
         </div>

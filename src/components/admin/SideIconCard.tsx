@@ -49,8 +49,8 @@ const SideIconCard: React.FC<SideIconCardProps> = ({
         }}
       >
         <div
-          className="flex h-20 w-2/5 items-center justify-center px-0"
-          style={{ backgroundColor: color }}
+          className="flex h-20 w-2/5 items-center justify-center bg-secondary px-0"
+          // style={{ backgroundColor: color }}
         >
           <div className="text-center text-white">
             <span className="flex h-12 w-12 items-center justify-center">

@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useReducer, useState } from 'react';
-import { Plus, PlusCircle } from 'lucide-react';
+import Add from '@mui/icons-material/Add';
 import { Box, Typography } from '@mui/joy';
 import { Tooltip } from '@mui/material';
 import GroupList from './GroupList';
@@ -103,7 +103,7 @@ const Group = () => {
           >
             <Tooltip title="Add WorkFlow">
               <Button>
-                <Plus />
+                <Add />
               </Button>
             </Tooltip>
           </Box>
@@ -124,10 +124,12 @@ const Group = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this group ?`}
+          heading={`Delete group`}
+          message={'Are you sure you want to delete this group ?'}
           onConfirm={deleteGroupRecord}
           onCancel={() => modalActionHandler(MODAL.cancel)}
-          firstButtonText="Delete"
+          secondButtonText="Confirm"
+          firstButtonText="Cancel"
         />
       )}
     </>

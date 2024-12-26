@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { Tooltip, Zoom, tooltipClasses } from '@mui/material';
-import { Edit, Edit2 } from 'lucide-react';
-import { MoreVertical } from 'lucide-react';
+import Edit from '@mui/icons-material/Edit';
+import MoreVert from '@mui/icons-material/MoreVert';
 import Dropdown from '@mui/joy/Dropdown';
 import IconButton from '@mui/joy/IconButton';
 import ListItemDecorator from '@mui/joy/ListItemDecorator';
@@ -66,7 +66,7 @@ const CardView = ({
                                 padding: 0
                               }}
                             >
-                              <MoreVertical
+                              <MoreVert
                                 sx={{
                                   color: COLORS.SECONDARY
                                 }}
@@ -78,7 +78,7 @@ const CardView = ({
                               onClick={() => onRecordSelected(item?.id, tab)}
                             >
                               <ListItemDecorator>
-                                <Edit2 />
+                                <Edit />
                               </ListItemDecorator>
                               Edit
                             </MenuItem>
@@ -109,7 +109,7 @@ const CardView = ({
                           >
                             More
                           </p>
-                          <ChevronDown className="more-icon" />
+                          <KeyboardArrowDownIcon className="more-icon" />
                         </div>
                       )}
                     </div>

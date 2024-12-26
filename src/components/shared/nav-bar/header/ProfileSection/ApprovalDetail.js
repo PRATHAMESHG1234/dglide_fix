@@ -3,8 +3,8 @@ import Dialog from '../../../Dialog';
 import { Avatar, Box, Button, Link, Typography } from '@mui/material';
 import { colors } from '../../../../../common/constants/styles';
 import { useSelector } from 'react-redux';
-import { CheckCircle } from 'lucide-react';
-import { XCircle } from 'lucide-react';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
 import approveImage from '../../../../../assets/approv.png';
 export const ApprovalDetail = ({
   openDetailPanel,
@@ -164,7 +164,8 @@ export const ApprovalDetail = ({
               onClick={() => handleReject(selectedIdData)}
             >
               {' '}
-              <XCircle sx={{
+              <CancelIcon
+                sx={{
                   color: colors.error.main,
                   width: 16,
                   height: 16,
@@ -178,7 +179,8 @@ export const ApprovalDetail = ({
               color="success"
               onClick={() => handleApprove(selectedIdData)}
             >
-              <CheckCircle sx={{
+              <CheckCircleIcon
+                sx={{
                   color: colors.success.main,
                   width: 16,
                   height: 16,

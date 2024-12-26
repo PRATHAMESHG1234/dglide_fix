@@ -8,6 +8,7 @@ import {
   TabsTrigger
 } from '@/componentss/ui/tabs';
 import { Separator } from './separator';
+import { ArrowLeft } from 'lucide-react';
 
 interface TabItem {
   label: string;
@@ -28,6 +29,14 @@ export function CustomTabs({ items, defaultValue }: CustomTabsProps) {
   return (
     <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
       <TabsList className="mb-4 w-full justify-start">
+        {/* <ArrowLeft
+          size={16}
+          className="cursor-pointer"
+          onClick={() => {
+            setOpen(false);
+            setpluginEdit({ type: '' });
+          }}
+        /> */}
         {items.map((item) => (
           <TabsTrigger
             key={item.value}

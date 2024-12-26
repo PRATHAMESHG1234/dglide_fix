@@ -183,18 +183,14 @@ const Home = () => {
         />
       )}
       {state.show && state.type === MODAL.delete && (
-        <Dialog
+        <ConfirmationModal
           open={state.show}
-          setOpen={() => modalActionHandler(MODAL.cancel)}
-          title={'Are you sure you want to delete this form ?'}
-          firstButtonText={'Delete'}
-          secondButtonText={'Cancel'}
-          onClick={deleteFormHandler}
-          width="sm"
-          body={
-            'Once you delete a repository, there is no going back. Please be certain.'
-          }
-          variant="delete"
+          heading={`Delete form`}
+          onConfirm={deleteFormHandler}
+          onCancel={() => modalActionHandler(MODAL.cancel)}
+          firstButtonText="Cancel"
+          secondButtonText="Confirm"
+          message={'Are you sure you want to delete this form ?'}
         />
       )}
     </>

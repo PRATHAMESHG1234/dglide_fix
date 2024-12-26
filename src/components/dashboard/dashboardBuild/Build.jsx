@@ -304,14 +304,15 @@ const Build = () => {
           {deleteDialog && (
             <ConfirmationModal
               open={deleteDialog}
-              heading={`Are you sure you want to delete ${currentDashboard?.displayName} ?`}
+              heading={`Delete dashboard`}
+              message={`Are you sure you want to delete ${currentDashboard?.displayName} ?`}
               onConfirm={() => {
                 handleDeleteDashboard(currentDashboard.dashboardInfoId);
                 handleClose();
               }}
               onCancel={() => setDeleteDialog(false)}
               firstButtonText="cancel"
-              secondButtonText="Delete"
+              secondButtonText="Confirm"
             />
           )}
 

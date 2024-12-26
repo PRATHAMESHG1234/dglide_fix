@@ -21,7 +21,7 @@ import {
 } from '../../../services/field';
 import { fetchFormsByModuleId } from '../../../services/form';
 import Dialog from '../../shared/Dialog';
-import { X } from 'lucide-react';
+import ClearIcon from '@mui/icons-material/Clear';
 import { fetchConfigDetail, getPreviewDetail } from '../../../services/chart';
 import {
   buildChart,
@@ -31,10 +31,10 @@ import {
 } from '../ChartJson';
 import Chart from 'chart.js/auto';
 
-import { DollarSign } from 'lucide-react';
-import { UserCircle } from 'lucide-react';
-import { FileText } from 'lucide-react';
-import { Building2 } from 'lucide-react';
+import MonetizationOnTwoToneIcon from '@mui/icons-material/MonetizationOnTwoTone';
+import AccountCircleTwoTone from '@mui/icons-material/AccountCircleTwoTone';
+import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
+import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
 import ConfigItemDisplay from './ConfigItemDisplay';
 import FormConfiguration from './FormConfiguration';
 import SearchCondition from './SearchCondition';
@@ -115,7 +115,12 @@ const ChartModal = ({ state, onCancel, onConfirm, onChartClick }) => {
     }
   };
 
-  const icons = [UserCircle, FileText, DollarSign, Building2];
+  const icons = [
+    AccountCircleTwoTone,
+    DescriptionTwoToneIcon,
+    MonetizationOnTwoToneIcon,
+    AccountBalanceRoundedIcon
+  ];
 
   const color = ['#2196F3', '#673AB7', '#00C853', '#FFC107', '#F44336'];
   const getIconByIndex = (index) => {

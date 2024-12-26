@@ -20,6 +20,10 @@ export const userLogin = async (data) => {
         'auth-token',
         JSON.stringify(response.result.tokenDetail)
       );
+      const themeMode = response?.result?.auth?.theme;
+      const themes = ['default', 'forest', 'ruby', 'solar', 'ocean'];
+      document.documentElement.className = themes[themeMode - 1] || 'default';
+      localStorage.setItem('mode', themeMode);
       window.location.href = '/';
 
       if (data?.persistent !== undefined && data?.persistent) {

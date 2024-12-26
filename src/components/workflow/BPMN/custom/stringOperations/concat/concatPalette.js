@@ -1,65 +1,59 @@
-/*
- * This component was automatically commented out as it was detected as unused.
- * Original file is preserved with .backup extension.
- * Date: 2024-12-26T07:34:02.874Z
- */
+import { operationUniqId } from '../../../../../../common/utils/helpers';
 
-// import { operationUniqId } from '../../../../../../common/utils/helpers';
+export default class Concatpalette {
+  constructor(bpmnFactory, create, elementFactory, palette, translate) {
+    this.bpmnFactory = bpmnFactory;
+    this.create = create;
+    this.elementFactory = elementFactory;
+    this.translate = translate;
 
-// export default class Concatpalette {
-  // constructor(bpmnFactory, create, elementFactory, palette, translate) {
-    // this.bpmnFactory = bpmnFactory;
-    // this.create = create;
-    // this.elementFactory = elementFactory;
-    // this.translate = translate;
+    palette.registerProvider(this);
+  }
 
-    // palette.registerProvider(this);
-  // }
+  getPaletteEntries(element) {
+    const { bpmnFactory, create, elementFactory, translate } = this;
 
-  // getPaletteEntries(element) {
-    // const { bpmnFactory, create, elementFactory, translate } = this;
+    function createConcatOperation(suitabilityScore) {
+      return function (event) {
+        const newId = operationUniqId('concatOperation');
+        const businessObject = bpmnFactory.create('bpmn:Task');
+        businessObject.varibales = suitabilityScore;
+        businessObject.elementData = 'concatOperation';
+        businessObject.type = 'concatOperation';
+        businessObject.name = 'Concat';
+        businessObject.elementType = 'concatOperation';
+        businessObject.id = newId;
+        const shape = elementFactory.createShape({
+          type: 'bpmn:Task',
+          name: 'concat Operation',
+          businessObject: businessObject
+        });
 
-    // function createConcatOperation(suitabilityScore) {
-      // return function (event) {
-        // const newId = operationUniqId('concatOperation');
-        // const businessObject = bpmnFactory.create('bpmn:Task');
-        // businessObject.varibales = suitabilityScore;
-        // businessObject.elementData = 'concatOperation';
-        // businessObject.type = 'concatOperation';
-        // businessObject.name = 'Concat';
-        // businessObject.elementType = 'concatOperation';
-        // businessObject.id = newId;
-        // const shape = elementFactory.createShape({
-          // type: 'bpmn:Task',
-          // name: 'concat Operation',
-          // businessObject: businessObject
-        // });
+        create.start(event, shape);
+      };
+    }
+    return {
+      'create.concatOperation': {
+        group: 'stringOperations',
+        className: 'bpmn-concat-operation',
+        title: translate('Concat Operation'),
+        action: {
+          dragstart: createConcatOperation({
+            elementData: 'concatOperation'
+          }),
+          click: createConcatOperation({
+            elementData: 'concatOperation'
+          })
+        }
+      }
+    };
+  }
+}
 
-        // create.start(event, shape);
-      // };
-    // }
-    // return {
-      // 'create.concatOperation': {
-        // group: 'stringOperations',
-        // className: 'bpmn-concat-operation',
-        // title: translate('Concat Operation'),
-        // action: {
-          // dragstart: createConcatOperation({
-            // elementData: 'concatOperation'
-          // }),
-          // click: createConcatOperation({
-            // elementData: 'concatOperation'
-          // })
-        // }
-      // }
-    // };
-  // }
-// }
-
-// Concatpalette.$inject = [
-  // 'bpmnFactory',
-  // 'create',
-  // 'elementFactory',
-  // 'palette',
-  // 'translate'
-// ];
+Concatpalette.$inject = [
+  'bpmnFactory',
+  'create',
+  'elementFactory',
+  'palette',
+  'translate'
+];

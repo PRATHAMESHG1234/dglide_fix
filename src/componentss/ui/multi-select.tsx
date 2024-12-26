@@ -119,7 +119,7 @@ const MultiSelect: React.FC<MultiSelectProps> = ({
                       return (
                         <Label
                           key={value}
-                          className="shrink-0 rounded-sm bg-[#62636436] px-2 py-1 text-xs"
+                          className="shrink-0 rounded-sm bg-secondary/30 px-2 py-1 text-xs"
                         >
                           {option?.label}
                         </Label>

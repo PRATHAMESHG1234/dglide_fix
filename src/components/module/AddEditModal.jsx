@@ -125,7 +125,7 @@ const AddEditModule = ({ state, onConfirm, onCancel }) => {
       }
     }, 500);
   };
-  console.log(state.show, 'show');
+
   return (
     <Sheet key={'right'} open={state.show} onOpenChange={onCancel}>
       <SheetContent
@@ -133,12 +133,15 @@ const AddEditModule = ({ state, onConfirm, onCancel }) => {
         className="w-[800px] max-w-[600px] sm:max-w-[600px]"
       >
         <div className="flex flex-col gap-2">
+          <div className="text-lg font-semibold">
+            {state.selected ? 'Edit module' : 'Create module'}
+          </div>
           <div className="flex justify-center">
             <div className="logo_file_container flex flex-col items-center justify-center gap-2">
               <div className="flex items-center justify-center">
                 {preview ? (
                   <>
-                    <Avatar className="h-20 w-20">
+                    <Avatar className="h-20 w-20 shadow-sm">
                       <AvatarImage src={preview} />
                       <AvatarFallback className="text-2xl">
                         {formik?.values?.displayName[0]?.toUpperCase()}
@@ -146,7 +149,7 @@ const AddEditModule = ({ state, onConfirm, onCancel }) => {
                     </Avatar>
                   </>
                 ) : (
-                  <Avatar className="h-20 w-20">
+                  <Avatar className="h-20 w-20 shadow-sm">
                     <AvatarImage src={preview} />
                     <AvatarFallback>
                       <IconUserScan

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import { Trash2 } from 'lucide-react';
-import { Edit, Edit2 } from 'lucide-react';
-import { Eye } from 'lucide-react';
-import { MoreVertical } from 'lucide-react';
+import DeleteForever from '@mui/icons-material/DeleteForever';
+import Edit from '@mui/icons-material/Edit';
+import PreviewIcon from '@mui/icons-material/Preview';
+import MoreVert from '@mui/icons-material/MoreVert';
 import { Divider, Stack, Tooltip, Typography } from '@mui/joy';
 
 import Box from '@mui/joy/Box';
@@ -21,8 +21,8 @@ import { colors, COLORS } from '../../../common/constants/styles';
 import { Avatar, Button, Chip, Grid, Pagination } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { ChevronDown } from 'lucide-react';
-import { Store } from 'lucide-react';
+import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import StorefrontTwoToneIcon from '@mui/icons-material/StorefrontTwoTone';
 
 import {
   IconUserCircle,
@@ -76,7 +76,7 @@ const MyRequestGridView = ({
   }
   return (
     <>
-      <Grid container className="mt-3 flex flex-col">
+      <Grid container className="flex  flex-col   mt-3">
         <Grid className={`flex flex-row flex-wrap`}>
           {paginatedItems.map((filteredItem, index) => (
             <Card
@@ -118,9 +118,9 @@ const MyRequestGridView = ({
                       color: colors.warning.dark
                     }}
                   >
-                    <Store fontSize="inherit" />
+                    <StorefrontTwoToneIcon fontSize="inherit" />
                   </Avatar>
-                  <div className="mx-2 flex flex-col">
+                  <div className="flex  flex-col  mx-2">
                     <Typography
                       level="title-lg"
                       sx={{
@@ -194,7 +194,7 @@ const MyRequestGridView = ({
               size="large"
               sx={{ color: colors.grey[900] }}
               color="inherit"
-              endIcon={<ChevronDown />}
+              endIcon={<ExpandMoreRoundedIcon />}
               onClick={handleClick}
             >
               {rowsPerPage} Rows

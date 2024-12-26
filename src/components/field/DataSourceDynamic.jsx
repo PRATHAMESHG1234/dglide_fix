@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { PlusSquare, PlusCircle } from 'lucide-react';
-import { Trash } from 'lucide-react';
+import AddIcon from '@mui/icons-material/AddBox';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import { Typography } from '@mui/joy';
 import { Checkbox, FormControlLabel, Tooltip } from '@mui/material';
 
@@ -614,7 +614,7 @@ const DataSourceDynamic = ({
           </Typography>
 
           <Tooltip title="Add" variant="solid">
-            <PlusCircle
+            <AddIcon
               fontSize="medium"
               onClick={addCondition}
               sx={{
@@ -692,7 +692,7 @@ const DataSourceDynamic = ({
                   </div>
                 )}
                 <Tooltip title="Delete">
-                  <Trash
+                  <DeleteOutlinedIcon
                     className="pointer"
                     color="error"
                     onClick={() => {

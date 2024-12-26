@@ -91,7 +91,8 @@ export const EmailInboundSytem = ({
     setConditions(copyOfCondition);
   };
 
-  const addConditionText = () => {
+  const addConditionText = (e) => {
+    e.preventDefault();
     setConditionText((prev) =>
       prev
         ? `${prev} {${conditions.fieldName}} ${conditions.operator} ${conditions.value}`
@@ -186,7 +187,7 @@ export const EmailInboundSytem = ({
                       <div className="mt-2 flex items-center justify-center">
                         <Button
                           className="mx-1 my-2"
-                          onClick={addConditionText}
+                          onClick={(e) => addConditionText(e)}
                         >
                           Add Condition
                         </Button>

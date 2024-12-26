@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import './Attachment.css';
-import { DownloadCloud } from 'lucide-react';
-import { XCircle } from 'lucide-react';
-// import { FileCheck } from 'lucide-react';
-import { Upload } from 'lucide-react';
+import DownloadIcon from '@mui/icons-material/CloudDownload';
+import DeleteIcon from '@mui/icons-material/HighlightOff';
+// import FileIcon from '@mui/icons-material/FilePresentOutlined';
+import PreviewIcon from '@mui/icons-material/Preview';
+import UploadFileIcon from '@mui/icons-material/UploadFile';
 import { FileIcon, defaultStyles } from 'react-file-icon';
 import {
   Box,
@@ -23,8 +24,9 @@ import {
   Typography,
   alpha
 } from '@mui/material';
-import { Trash } from 'lucide-react';
-import { File } from 'lucide-react';
+import { DeleteForever } from '@mui/icons-material';
+import CloseIcon from '@mui/icons-material/Close';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import Modal from '@mui/joy/Modal';
 import { BsFiletypeXlsx } from 'react-icons/bs';
 import { FaFileCsv } from 'react-icons/fa';
@@ -145,7 +147,7 @@ const Attachment = ({
             overflow: 'auto'
           }}
         >
-          <X
+          <CloseIcon
             onClick={() => closePreviewModal()}
             sx={{
               position: 'absolute',
@@ -366,7 +368,7 @@ const Attachment = ({
                       />
                     ) : (
                       <div className="flex h-12 w-12 items-center justify-center rounded bg-white">
-                        <File
+                        <FileIcon
                           extension={fileExtension}
                           {...(defaultStyles[fileExtension] || {
                             labelColor: '#AAA',

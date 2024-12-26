@@ -9,11 +9,11 @@ import {
   Typography
 } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
-import { PlusSquare, PlusCircle } from 'lucide-react';
-import { Calendar } from 'lucide-react';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonthOutlined';
 import { colors } from '../../../../common/constants/styles';
-import { X } from 'lucide-react';
-import { AlertCircle } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
+import ErrorIcon from '@mui/icons-material/Error';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 export const DateAddPanel = ({
@@ -81,7 +81,7 @@ export const DateAddPanel = ({
             color: colors.grey[500]
           }}
         >
-          <X />
+          <CloseIcon />
         </IconButton>
         <Tooltip
           title="Output variable name: 'datetime', use it as id.out.datetime"
@@ -98,7 +98,7 @@ export const DateAddPanel = ({
               color: colors.primary.dark
             }}
           >
-            <AlertCircle />
+            <ErrorIcon />
           </IconButton>
         </Tooltip>
         <div
@@ -149,7 +149,7 @@ export const DateAddPanel = ({
                 InputProps={{
                   endAdornment: (
                     <InputAdornment position="end">
-                      <Calendar
+                      <CalendarMonthIcon
                         sx={{
                           color: colors.primary.dark,
                           fontSize: '25px',
@@ -164,7 +164,7 @@ export const DateAddPanel = ({
                           setDatePickerShow(true);
                         }}
                       />
-                      <PlusSquare
+                      <AddBoxIcon
                         sx={{
                           color: colors.primary.dark,
                           fontSize: '25px',

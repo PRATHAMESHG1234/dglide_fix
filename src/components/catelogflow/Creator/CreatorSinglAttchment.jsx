@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import '../../modify-record/Attachment.css';
-import { Trash, XCircle } from 'lucide-react';
-import { FileCheck } from 'lucide-react';
-import { Paperclip } from 'lucide-react';
+import DeleteIcon from '@mui/icons-material/HighlightOff';
+import FileIcon from '@mui/icons-material/FilePresentOutlined';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 import {
   Box,
@@ -13,7 +13,7 @@ import {
   Typography,
   Button
 } from '@mui/material';
-import { File } from 'lucide-react';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import { BsFiletypeXlsx } from 'react-icons/bs';
 import { FaFileCsv } from 'react-icons/fa';
 import { IoDocumentTextOutline } from 'react-icons/io5';
@@ -136,7 +136,7 @@ const CreatorSinglAttchment = ({
                   id="attach-btn"
                   style={{ backgroundColor: 'white', width: '30px' }}
                 >
-                  <Button startIcon={<Paperclip />}>
+                  <Button startIcon={<AttachFileIcon />}>
                     <input
                       type="file"
                       onChange={(e) => uploadAttachmentsHandler(e, field)}
@@ -209,7 +209,7 @@ const CreatorSinglAttchment = ({
                                   />
                                 ) : attachment.files?.type ===
                                   'application/pdf' ? (
-                                  <File
+                                  <PictureAsPdfIcon
                                     sx={{
                                       fontSize: '30px',
                                       marginRight: '7px',
@@ -237,7 +237,7 @@ const CreatorSinglAttchment = ({
                                 ) : (
                                   attachment.files?.type ===
                                     'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                                    <File
+                                    <FileIcon
                                       sx={{
                                         color: 'lightgrey',
                                         fontSize: '30px',
@@ -269,7 +269,7 @@ const CreatorSinglAttchment = ({
                                   )
                                 }
                               >
-                                <Trash
+                                <DeleteIcon
                                   sx={{
                                     color: 'darkred',
                                     fontSize: '20px'

@@ -715,8 +715,12 @@ const DataTableTabs = ({
     }
   };
   const togglebarStyle = (format) => ({
-    backgroundColor: toggle === format ? '#BFDBFE' : 'transparent',
-    color: '#047eae'
+    backgroundColor:
+      toggle === format
+        ? 'hsl(var(--secondary-foreground)) !important' // 50% opacity
+        : 'transparent',
+
+    color: 'hsl(var(--secondary)) !important'
   });
 
   const fieldFormats = (

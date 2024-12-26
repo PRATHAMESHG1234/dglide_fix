@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { MoreVertical } from 'lucide-react';
+import MoreIcon from '@mui/icons-material/MoreVert';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 
 import { colors, COLORS } from '../../../common/constants/styles';
@@ -40,7 +40,7 @@ const MoreOption = ({ children }) => {
           color: 'inherit'
         }}
       >
-        <MoreVertical fontSize="medium" />
+        <MoreIcon fontSize="medium" />
       </IconButton>
       <Menu
         keepMounted

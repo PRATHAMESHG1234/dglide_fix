@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { Clock } from 'lucide-react';
-import { Edit, Edit2 } from 'lucide-react';
-import { MoreHorizontal } from 'lucide-react';
+import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import {
   Avatar,
   Badge,
@@ -107,7 +107,7 @@ export const EtlJobCardView = ({
                         horizontal: 'right'
                       }}
                       badgeContent={
-                        <Clock
+                        <AccessTimeFilledIcon
                           sx={{
                             color: colors.success.main,
                             width: 19,
@@ -191,7 +191,7 @@ export const EtlJobCardView = ({
                     sx={{ mt: '5px', mr: -0.75 }}
                     onClick={handleClick}
                   >
-                    <MoreHorizontal
+                    <MoreHorizOutlinedIcon
                       fontSize="small"
                       color="inherit"
                       aria-controls="menu-friend-card"
@@ -233,7 +233,10 @@ export const EtlJobCardView = ({
                         }}
                       >
                         <ListItemIcon>
-                          <Edit fontSize="small" color="primary" />
+                          <ModeEditOutlineIcon
+                            fontSize="small"
+                            color="primary"
+                          />
                         </ListItemIcon>
                         <Typography
                           sx={{
@@ -259,7 +262,8 @@ export const EtlJobCardView = ({
                       >
                         <ListItemIcon>
                           {' '}
-                          <Trash2 fontSize="small"
+                          <DeleteForeverIcon
+                            fontSize="small"
                             color="primary"
                             sx={{
                               color: colors.error.main

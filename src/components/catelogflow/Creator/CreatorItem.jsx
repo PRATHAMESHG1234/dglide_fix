@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import { Trash } from 'lucide-react';
-import { GripHorizontal } from 'lucide-react';
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import DragIndicatorIcon from '@mui/icons-material/DragIndicator';
 import { TextField } from '@mui/material';
 
 import Icon from '../../../elements/Icon';
@@ -31,7 +31,8 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
                 <>
                   {field.inDependent === false ? (
                     <>
-                      <GripHorizontal sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                      <DragIndicatorIcon
+                        sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                       />
                       <Icon
                         fontSize="22px"
@@ -63,7 +64,8 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
                       onClick={() => setShowDeleteModal(!showdDeleteModal)}
                       className="px-2"
                     >
-                      <Trash style={{
+                      <DeleteOutlineIcon
+                        style={{
                           color: showStyle ? 'red' : '',
                           visibility: showStyle ? 'visible' : 'hidden',
                           fontSize: '25px'
@@ -94,10 +96,12 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
         {showdDeleteModal && (
           <ConfirmationModal
             open={showdDeleteModal}
-            heading={`Are you sure you want to delete this Question ?`}
+            heading={`Delete Question ?`}
+            message={'Are you sure you want to delete this Question ?'}
             onConfirm={() => onDelete(field)}
             onCancel={() => setShowDeleteModal(!showdDeleteModal)}
-            firstButtonText="Delete"
+            secondButtonText="Confirm"
+            firstButtonText="Cancel"
           />
         )}
       </div>

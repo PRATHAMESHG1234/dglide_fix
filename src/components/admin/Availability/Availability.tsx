@@ -34,6 +34,10 @@ interface ApiDataItem {
   uuid?: string;
   slot_1_start?: string;
   slot_1_end?: string;
+  slot_2_start?: string;
+  slot_2_end?: string;
+  slot_3_start?: string;
+  slot_3_end?: string;
 }
 
 interface AvailabilityProps {
@@ -49,6 +53,7 @@ function Availability({
   onSubmit,
   newRecord
 }: AvailabilityProps) {
+  console.log(apiData);
   const [scheduleInfo, setSchedule] = useState<ScheduleItem[]>([]);
   const [postData, setPostData] = useState<any[]>([]);
   const [timeZone, setTimeZone] = useState<TimeZone>({
@@ -94,6 +99,16 @@ function Availability({
   };
 
   const transformSchedule = (apiData: ApiDataItem[]): ScheduleItem[] => {
+    const createSlot = (start: string, end: string) => ({
+      start: {
+        value: convertTo12HourFormat(start) || '10:00 am',
+        label: convertTo12HourFormat(start) || '10:00 am'
+      },
+      end: {
+        value: convertTo12HourFormat(end) || '10:00 am',
+        label: convertTo12HourFormat(end) || '10:00 am'
+      }
+    });
     const daysOfWeek = [
       'Monday',
       'Tuesday',
@@ -103,27 +118,25 @@ function Availability({
       'Saturday',
       'Sunday'
     ];
-
     return daysOfWeek.map((day) => {
       const apiDay = apiData.find((item) => item.day === day);
-
+      console.log(apiDay);
+      const slotArr = [];
+      if (apiDay?.slot_1_start) {
+        slotArr.push(createSlot(apiDay.slot_1_start, apiDay.slot_1_end));
+      }
+      if (apiDay?.slot_2_start) {
+        slotArr.push(createSlot(apiDay.slot_2_start, apiDay.slot_2_end));
+      }
+      if (apiDay?.slot_3_start) {
+        slotArr.push(createSlot(apiDay.slot_3_start, apiDay.slot_3_end));
+      }
       return {
         isOn: apiDay ? apiDay.ison === 'True' : true,
         day,
         name: apiDay?.name,
         uuid: apiDay?.uuid,
-        slots: [
-          {
-            start: {
-              value: convertTo12HourFormat(apiDay?.slot_1_start) || '10:00 am',
-              label: convertTo12HourFormat(apiDay?.slot_1_start) || '10:00 am'
-            },
-            end: {
-              value: convertTo12HourFormat(apiDay?.slot_1_end) || '7:00 pm',
-              label: convertTo12HourFormat(apiDay?.slot_1_end) || '7:00 pm'
-            }
-          }
-        ]
+        slots: slotArr
       };
     });
   };
@@ -150,7 +163,6 @@ function Availability({
         slot_1_end: end,
         ison: isOn ? 1 : 0
       };
-
       if (entry.slots?.[1]) {
         result.slot_2_start = convertTo24h(entry.slots[1].start.value);
         result.slot_2_end = convertTo24h(entry.slots[1].end.value);
@@ -164,6 +176,7 @@ function Availability({
       if (!newRecord) {
         result.uuid = entry?.uuid;
       }
+      console.log(result);
 
       return result;
     });
@@ -195,6 +208,7 @@ function Availability({
     if (newRecord) {
       setSchedule(getDefaultSchedule());
     } else if (apiData && apiData.length > 0) {
+      console.log(apiData);
       const transformedSchedule = transformSchedule(apiData);
       setSchedule(transformedSchedule);
       setShiftName(scheduleInfo[0]?.name || '');
@@ -212,6 +226,7 @@ function Availability({
   }, [scheduleInfo]);
 
   const submitHandler = (e: React.FormEvent) => {
+    console.log(postData, '2222');
     onSubmit('system_slots', postData);
     e.preventDefault();
   };

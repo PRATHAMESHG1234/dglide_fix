@@ -59,7 +59,9 @@ import Website from './website/Website';
 import { EtlLanding } from './components/admin/Admin-Tabs/ETLintegration/EtlLanding';
 import JobEditor from './components/admin/Admin-Tabs/ETLintegration/Editor';
 import { useSelector } from 'react-redux';
+import Notification from './components/notification/Notification';
 import CreateDashboard from './components/dashboard/dashboardBuild/CreateDashboard';
+import { DataGridNotification } from './components/notification/DataGridNotification';
 
 const Routers = () => {
   const { currentUser } = useSelector((state) => state.auth);
@@ -103,9 +105,9 @@ const Routers = () => {
             path=""
             element={
               <AuthGuard>
-                {/* <RoleGuard allowedRoles={['Super Admin']}> */}
-                <Outlet />
-                {/* </RoleGuard> */}
+                <RoleGuard allowedRoles={['Super Admin']}>
+                  <Outlet />
+                </RoleGuard>
               </AuthGuard>
             }
           >
@@ -143,15 +145,19 @@ const Routers = () => {
               <Route path="dump" element={<DumpList />} />
             </Route>
             <Route path="ai" element={<ArtificialInteligents />} />
+
+            {/* <Route path="notification" element={<Outlet />}>
+              <Route path="" element={<Notification />} />
+            </Route> */}
           </Route>
 
           <Route
             path="admin"
             element={
               <AuthGuard>
-                {/* <RoleGuard allowedRoles={['Super Admin']}> */}
-                <Outlet />
-                {/* </RoleGuard> */}
+                <RoleGuard allowedRoles={['Super Admin']}>
+                  <Outlet />
+                </RoleGuard>
               </AuthGuard>
             }
           >
@@ -164,6 +170,11 @@ const Routers = () => {
             <Route path="importExport" element={<ImportExport />} />
             <Route path="integration" element={<EtlLanding />} />
             <Route path="integration/job/:jobId" element={<JobEditor />} />
+            <Route path="notification" element={<Notification />} />
+            <Route
+              path="notification/:formname"
+              element={<DataGridNotification />}
+            />
 
             <Route path="user" element={<Outlet />}>
               <Route path="datatable" element={<DataTable />} />
@@ -179,9 +190,9 @@ const Routers = () => {
             path="app"
             element={
               <AuthGuard>
-                {/* <RoleGuard allowedRoles={['Super Admin']}> */}
-                <Outlet />
-                {/* </RoleGuard> */}
+                <RoleGuard allowedRoles={['Super Admin']}>
+                  <Outlet />
+                </RoleGuard>
               </AuthGuard>
             }
           >

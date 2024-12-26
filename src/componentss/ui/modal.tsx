@@ -69,7 +69,9 @@ const Modal: React.FC<ReusableModalProps> = ({
                 </Button>
               )}
               {secondButtonText && (
-                <Button onClick={onConfirm}>{secondButtonText}</Button>
+                <Button onClick={onConfirm} className="font-bold">
+                  {secondButtonText}
+                </Button>
               )}
             </div>
           </DialogFooter>

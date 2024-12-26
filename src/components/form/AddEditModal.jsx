@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { XCircle } from 'lucide-react';
+import CancelIcon from '@mui/icons-material/CancelOutlined';
 import { IconUserScan } from '@tabler/icons-react';
 
 import { colors } from '../../common/constants/styles';
@@ -165,12 +165,15 @@ const AddEditModal = ({ state, onConfirm, onCancel }) => {
         className="max-w-[600px] overflow-auto sm:max-w-[600px]"
       >
         <div className="flex flex-col gap-2">
+          <div className="text-lg font-semibold">
+            {state.selected ? 'Edit form' : 'Create form'}
+          </div>
           <div className="flex justify-center">
             <div className="logo_file_container flex flex-col items-center justify-center gap-2">
               <div className="flex items-center justify-center">
                 {preview ? (
                   <>
-                    <Avatar className="h-20 w-20">
+                    <Avatar className="h-20 w-20 shadow-sm">
                       <AvatarImage src={preview} />
                       <AvatarFallback className="text-2xl">
                         {formik?.values?.displayName[0]?.toUpperCase()}
@@ -178,7 +181,7 @@ const AddEditModal = ({ state, onConfirm, onCancel }) => {
                     </Avatar>
                   </>
                 ) : (
-                  <Avatar className="h-20 w-20">
+                  <Avatar className="h-20 w-20 shadow-sm">
                     <AvatarImage src={preview} />
                     <AvatarFallback>
                       <IconUserScan

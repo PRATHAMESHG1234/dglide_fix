@@ -55,9 +55,30 @@ const Profile = ({ userDetail, getUserData }) => {
   });
 
   const fetchOption = async () => {
-    const result = await fetchOptionByfieldName('system_user', 'mode');
+    const result = await fetchOptionByfieldName('system_user', 'theme');
     if (result.statusCode === 200) {
-      setTheamOption(result.result);
+      const optionsWithColors = result.result.map((option: any) => {
+        let color = '#000'; // Default color
+        switch (option.label) {
+          case 'Ocean':
+            color = '#2463eb'; // Gold
+            break;
+          case 'Forest':
+            color = '#0b8636'; // Indigo
+            break;
+          case 'Ruby':
+            color = '#e11d47'; // Dodger Blue
+            break;
+            case 'Solar':
+            color = '#e9c368'; // Dodger Blue
+            break;
+          default:
+            color = '#808080'; // Grey for unspecified
+            break;
+        }
+        return { ...option, color }; // Add the color property
+      });
+      setTheamOption(optionsWithColors);
     }
   };
 
@@ -80,21 +101,30 @@ const Profile = ({ userDetail, getUserData }) => {
         mobile: userDetail?.mobile || '',
         department: userDetail?.department || '',
         address: userDetail?.address || '',
-        department: userDetail?.department || ''
+        theme:userDetail?.theme || ''
         // submit: null
       });
+      const mode=localStorage.getItem('mode')  || userDetail.theme;
+      console.log(mode,"modexxx")
+      const themeMode = mode;
+      const themes = ['default', 'forest', 'ruby', 'solar', 'ocean'];
+      document.documentElement.className = themes[themeMode - 1] || 'default';
     }
   }, [userDetail]);
 
   const handleChangeTheam = async (e) => {
     const newObj = {
       uuid: currentUserDetail?.userUUID,
-      mode: e.target.value
+      theme: e.target.value || localStorage.getItem('mode')
     };
+    const themeMode =  e.target.value;
+    const themes = ['default', 'forest', 'ruby', 'solar', 'ocean'];
+    document.documentElement.className = themes[themeMode - 1] || 'default';
+    localStorage.setItem('mode', themeMode);
     const result = await dispatch(
       updateFormData({
         formname: 'system_user',
-        data: newObj
+        data: newObj 
       })
     );
     if (result.payload.statusCode === 200) {
@@ -147,7 +177,7 @@ const Profile = ({ userDetail, getUserData }) => {
       }) => {
         return (
           <form noValidate onSubmit={handleSubmit}>
-            <div className="mx-auto p-6">
+            <div className="mx-auto">
               <div className="grid gap-6 md:grid-cols-12">
                 <div className="md:col-span-4">
                   <Card className="">
@@ -167,21 +197,38 @@ const Profile = ({ userDetail, getUserData }) => {
                       <Button>Upload Avatar</Button>
                     </CardContent>
                   </Card>
-                  <Card className="mt-4">
+                  <Card className="mt-4 min-h-52">
                     <CardHeader>
                       <CardTitle className="border-b-2 pb-2 text-lg font-medium">
                         Change theme Color
                       </CardTitle>
                     </CardHeader>
-                    {console.log(currentUserDetail)}
+                    
                     <CardContent className="flex flex-col items-start space-y-4">
                       <div className="">
                         <Dropdown
-                          label="FieldName"
+                          label="Theme"
                           type="text"
-                          value={userDetail?.mode ? userDetail?.mode : ''}
+                          value={userDetail?.theme ? userDetail?.theme : ''}
                           onChange={(e) => handleChangeTheam(e)}
-                          options={theamOption}
+                          options={theamOption.map((option) => ({
+                            ...option,
+                            label: (
+                              <span className="flex items-center">
+                                <span
+                                  style={{
+                                    backgroundColor: option.color,
+                                    borderRadius: '50%',
+                                    width: '10px',
+                                    height: '10px',
+                                    display: 'inline-block',
+                                    marginRight: '8px',
+                                  }}
+                                ></span>
+                                {option.label}
+                              </span>
+                            ),
+                          }))}
                         />
                       </div>
                     </CardContent>

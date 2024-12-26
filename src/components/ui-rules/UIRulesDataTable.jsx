@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useSelector } from 'react-redux';
 import UIRuleCard from './UIRuleCard';
-import { Plus, PlusCircle } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { Button } from '@/componentss/ui/button';
 import { Separator } from '@/componentss/ui/separator';
 import PaginationComponent from '@/componentss/ui/paginationcomponent';

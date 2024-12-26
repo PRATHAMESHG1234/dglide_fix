@@ -17,18 +17,19 @@ import {
 } from '@mui/material';
 
 // assets
-import { MoreHorizontal } from 'lucide-react';
-import { UserPlus } from 'lucide-react';
-import { Users } from 'lucide-react';
-import { MapPin } from 'lucide-react';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import PersonAddTwoToneIcon from '@mui/icons-material/PersonAddTwoTone';
+import PeopleAltTwoToneIcon from '@mui/icons-material/PeopleAltTwoTone';
+import PinDropTwoToneIcon from '@mui/icons-material/PinDropTwoTone';
 
-import { Heart } from 'lucide-react';
-import { Trash2 } from 'lucide-react';
+import FavoriteTwoToneIcon from '@mui/icons-material/FavoriteTwoTone';
+import DeleteTwoToneIcon from '@mui/icons-material/DeleteTwoTone';
+import GroupTwoToneIcon from '@mui/icons-material/GroupTwoTone';
 import { colors } from '../../../common/constants/styles';
 import { useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { CheckCircle } from 'lucide-react';
-import { XCircle } from 'lucide-react';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CancelIcon from '@mui/icons-material/Cancel';
 // ==============================|| SOCIAL PROFILE - FOLLOWER CARD ||============================== //
 
 const ChildCard = ({
@@ -172,7 +173,7 @@ const ChildCard = ({
                 >
                   {filteredItem.status === 'Enabled' ||
                   filteredItem.status === '1' ? (
-                    <CheckCircle
+                    <CheckCircleIcon
                       sx={{
                         color: colors.success.main,
                         mr: '6px',
@@ -180,7 +181,7 @@ const ChildCard = ({
                       }}
                     />
                   ) : (
-                    <XCircle
+                    <CancelIcon
                       sx={{
                         color: colors.error.main,
                         mr: '6px',
@@ -189,7 +190,8 @@ const ChildCard = ({
                     />
                   )}
                 </Tooltip>
-                {/* <MapPin sx={{
+                {/* <PinDropTwoToneIcon
+                  sx={{
                     mr: '6px',
                     fontSize: '16px',
                     verticalAlign: 'text-top'
@@ -209,7 +211,7 @@ const ChildCard = ({
                   sx={{ mt: -0.75, mr: -0.75 }}
                   onClick={(e) => handleClick(e, filteredItem.uuid)}
                 >
-                  <MoreHorizontal
+                  <MoreHorizOutlinedIcon
                     fontSize="small"
                     sx={{
                       color: colors.primary[200],

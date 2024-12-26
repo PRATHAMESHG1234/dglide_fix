@@ -3,11 +3,11 @@ import { colors, COLORS } from '../../../common/constants/styles';
 import { Button, Grid, Menu, MenuItem } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { Trash2 } from 'lucide-react';
-import { Edit, Edit2 } from 'lucide-react';
+import DeleteForever from '@mui/icons-material/DeleteForever';
+import Edit from '@mui/icons-material/Edit';
 
-import { Eye } from 'lucide-react';
-import { MoreVertical } from 'lucide-react';
+import PreviewIcon from '@mui/icons-material/Preview';
+import MoreVert from '@mui/icons-material/MoreVert';
 
 import { Divider, Stack, Tooltip, Typography } from '@mui/joy';
 
@@ -21,9 +21,9 @@ import ListItemDecorator from '@mui/joy/ListItemDecorator';
 
 import MenuButton from '@mui/joy/MenuButton';
 import Chip from '../../../elements/Chip';
-import { MoreHorizontal } from 'lucide-react';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import Avatar from '../../../elements/Avatars';
-import { CheckCircle } from 'lucide-react';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ChildCard from './ChildCard';
 
 function GridCard({

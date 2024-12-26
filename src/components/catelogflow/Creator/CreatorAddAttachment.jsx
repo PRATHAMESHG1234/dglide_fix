@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Trash, Trash2 } from 'lucide-react';
-import { X } from 'lucide-react';
-import { DownloadCloud } from 'lucide-react';
-import { FileCheck } from 'lucide-react';
-import { XCircle } from 'lucide-react';
-import { File } from 'lucide-react';
-import { Eye } from 'lucide-react';
+import { DeleteForever } from '@mui/icons-material';
+import CloseIcon from '@mui/icons-material/Close';
+import DownloadIcon from '@mui/icons-material/CloudDownload';
+import FileIcon from '@mui/icons-material/FilePresentOutlined';
+import DeleteIcon from '@mui/icons-material/HighlightOff';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import PreviewIcon from '@mui/icons-material/Preview';
 import Modal from '@mui/joy/Modal';
 import {
   Box,
@@ -120,7 +120,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
             overflow: 'auto'
           }}
         >
-          <X
+          <CloseIcon
             onClick={() => closePreviewModal()}
             sx={{
               position: 'absolute',
@@ -367,7 +367,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             }}
                           />
                         ) : attachment.fileExtension === 'pdf' ? (
-                          <File
+                          <PictureAsPdfIcon
                             sx={{
                               fontSize: '50px',
                               marginRight: '7px',
@@ -392,7 +392,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             }}
                           />
                         ) : (
-                          <File
+                          <FileIcon
                             sx={{
                               color: 'lightgrey',
                               fontSize: '50px',
@@ -431,7 +431,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <Eye />
+                                <PreviewIcon />
                               </IconButton>
                             </Tooltip>
                           ) : null}
@@ -445,7 +445,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                 color: COLORS.PRIMARY
                               }}
                             >
-                              <DownloadCloud />
+                              <DownloadIcon />
                             </IconButton>
                           </Tooltip>
                           {catlogFlag === 'catlogFlagTrue' ? (
@@ -465,7 +465,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                   }
                                 }}
                               >
-                                <Trash2
+                                <DeleteForever
                                   sx={{
                                     color: 'darkred'
                                   }}
@@ -545,7 +545,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                               }}
                             />
                           ) : file.type === 'application/pdf' ? (
-                            <File
+                            <PictureAsPdfIcon
                               sx={{
                                 fontSize: '30px',
                                 marginRight: '7px',
@@ -573,7 +573,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           ) : (
                             file.type ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                              <File
+                              <FileIcon
                                 sx={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
@@ -601,7 +601,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           aria-label="delete"
                           onClick={() => deleteSelectedFileHandler(fileIndex)}
                         >
-                          <Trash
+                          <DeleteIcon
                             sx={{
                               color: 'darkred',
                               fontSize: '20px'

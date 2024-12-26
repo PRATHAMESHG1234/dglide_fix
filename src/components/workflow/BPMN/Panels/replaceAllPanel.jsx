@@ -1,9 +1,9 @@
 import { Button, Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import { PlusSquare, PlusCircle } from 'lucide-react';
+import AddBoxIcon from '@mui/icons-material/AddBox';
 import { colors } from '../../../../common/constants/styles';
-import { X } from 'lucide-react';
-import { AlertCircle } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
+import ErrorIcon from '@mui/icons-material/Error';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 function ReplaceallPanel({
@@ -78,7 +78,7 @@ function ReplaceallPanel({
             color: colors.grey[500]
           }}
         >
-          <X />
+          <CloseIcon />
         </IconButton>
         <Tooltip
           title="Output variable name: 'string', use it as id.out.string"
@@ -95,7 +95,7 @@ function ReplaceallPanel({
               color: colors.primary.dark
             }}
           >
-            <AlertCircle />
+            <ErrorIcon />
           </IconButton>
         </Tooltip>
         <div
@@ -136,7 +136,7 @@ function ReplaceallPanel({
                   minWidth: '170px'
                 }}
               />
-              <PlusSquare
+              <AddBoxIcon
                 sx={{
                   color: colors.primary.dark,
                   fontSize: '25px',

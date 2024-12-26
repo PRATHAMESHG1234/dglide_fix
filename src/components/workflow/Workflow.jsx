@@ -391,6 +391,7 @@ const Workflow = () => {
             {state.show && state.type === MODAL.delete && (
               <ConfirmationModal
                 open={state.show}
+                message={'Delete workflow'}
                 heading={`Are you sure you want to delete this Workflow ?`}
                 onConfirm={deleteWorkflowRecord}
                 onCancel={() => modalActionHandler(MODAL.cancel)}

@@ -5,7 +5,7 @@ import SelectField from '../../elements/SelectField';
 import TextArea from '../../elements/TextArea';
 import { Button } from '@/componentss/ui/button';
 import { COLORS } from '../../common/constants/styles';
-import { PlusSquare, PlusCircle } from 'lucide-react';
+import AddIcon from '@mui/icons-material/AddBox';
 import MultipleSelect from '../../elements/MultipleSelect';
 
 const UIRuleActionForm = ({
@@ -32,7 +32,7 @@ const UIRuleActionForm = ({
       <div className="flex justify-between">
         <InputLabel sx={{ fontSize: '0.875rem' }}>Actions</InputLabel>
         <Tooltip title="Add" variant="solid">
-          <PlusCircle
+          <AddIcon
             fontSize="medium"
             onClick={addActionsHandler}
             sx={{
@@ -61,8 +61,11 @@ const UIRuleActionForm = ({
                   name={`action`}
                   onChange={(e) => onChangeActionHandler(e, action)}
                   options={[
-                    { label: 'Display Action', value: 'displayAction' },
-                    { label: 'Validation Action', value: 'validationAction' }
+                    { label: 'Perform an Action', value: 'displayAction' },
+                    {
+                      label: 'Validate Form on Submission ',
+                      value: 'validationAction'
+                    }
                   ]}
                 />
 

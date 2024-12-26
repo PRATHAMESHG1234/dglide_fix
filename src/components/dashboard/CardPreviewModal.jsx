@@ -1,7 +1,7 @@
 import React from 'react';
 import IconButton from '@mui/joy/IconButton';
 import { Box, Modal, Typography } from '@mui/material';
-import { X } from 'lucide-react';
+import CloseIcon from '@mui/icons-material/Close';
 import { COLORS } from '../../common/constants/styles';
 
 const CardPreviewModal = ({ open, onClose, selectedItemData }) => {
@@ -33,7 +33,7 @@ const CardPreviewModal = ({ open, onClose, selectedItemData }) => {
               right: '10px'
             }}
           >
-            <X />
+            <CloseIcon />
           </IconButton>
           <h2 id="modal-modal-title">Card Preview</h2>
 

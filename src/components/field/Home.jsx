@@ -124,11 +124,12 @@ const Home = () => {
         {compile && (
           <ConfirmationModal
             open={compile}
-            heading="Are you sure you want to save & create table ?"
+            heading="Save & create table"
             message="This action will create table and columns"
             onConfirm={saveFieldsANdCreateTableHandler}
             onCancel={() => setCompile(false)}
             secondButtonText="Submit"
+            firstButtonText="Cancel"
           />
         )}
       </MainCard>

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Stack } from '@mui/material';
-import { DataGrid } from '@mui/x-data-grid';
-import { Edit, Edit2 } from 'lucide-react';
-import { Trash } from 'lucide-react';
-import { MODAL } from '../../../common/utils/modal-toggle';
-import Button from '../../../elements/Button';
+import React, { useEffect, useState } from "react";
+import { Box, Stack } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
+import { MODAL } from "../../../common/utils/modal-toggle";
+import Button from "../../../elements/Button";
 
 const GroupList = ({ users, modalActionHandler }) => {
   const [columns, setColumns] = useState([]);
@@ -14,7 +14,7 @@ const GroupList = ({ users, modalActionHandler }) => {
     if (users?.length > 0) {
       const keysData = Object.keys(users[0]);
       const headers = keysData
-        ?.filter((key) => key !== 'password' && key !== 'active')
+        ?.filter((key) => key !== "password" && key !== "active")
         ?.map((key) => {
           return { headerName: key, field: key, flex: 1 };
         });
@@ -22,7 +22,7 @@ const GroupList = ({ users, modalActionHandler }) => {
       const modified = users?.map((data) => {
         return {
           ...data,
-          id: data.userId
+          id: data.userId,
         };
       });
 
@@ -33,8 +33,8 @@ const GroupList = ({ users, modalActionHandler }) => {
   const fields = [
     ...columns,
     {
-      field: 'actions',
-      headerName: 'Actions',
+      field: "actions",
+      headerName: "Actions",
       width: 400,
       renderCell: (data) => {
         return (
@@ -48,10 +48,10 @@ const GroupList = ({ users, modalActionHandler }) => {
                   modalActionHandler(MODAL.edit, data?.row?.userId)
                 }
                 style={{
-                  borderRadius: 1
+                  borderRadius: 1,
                 }}
               >
-                <Edit2 />
+                <EditIcon />
               </Button>
               <Button
                 size="sm"
@@ -61,21 +61,21 @@ const GroupList = ({ users, modalActionHandler }) => {
                   modalActionHandler(MODAL.delete, data?.row?.userId)
                 }
                 style={{
-                  borderRadius: 1
+                  borderRadius: 1,
                 }}
               >
-                <Trash />
+                <DeleteOutlineIcon />
               </Button>
             </Stack>
           </>
         );
-      }
-    }
+      },
+    },
   ];
 
   return (
     <div className="mt-5">
-      <Box style={{ height: 'auto', padding: '5px', paddingTop: '10px' }}>
+      <Box style={{ height: "auto", padding: "5px", paddingTop: "10px" }}>
         <DataGrid
           rows={rows}
           columns={fields}

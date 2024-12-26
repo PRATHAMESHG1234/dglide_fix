@@ -1,7 +1,7 @@
 import React, { useEffect, useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Plus, PlusCircle } from 'lucide-react';
+import { Add } from '@mui/icons-material';
 import { FormLabel, Grid, Typography } from '@mui/material';
 
 import { colors, COLORS } from '../../../common/constants/styles';
@@ -23,6 +23,7 @@ import ChartModal from './ChartModal';
 import ListView from '../../shared/ListView';
 import ListTable from './ConfigListTable';
 import MainCard from '../../../elements/MainCard';
+import { Plus } from 'lucide-react';
 import { Separator } from '@/componentss/ui/separator';
 
 const Config = () => {
@@ -154,10 +155,12 @@ const Config = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this chart?`}
+          heading={`Delete chart`}
+          message="Are you sure you want to delete this chart?"
           onConfirm={deleteChartHandler}
           onCancel={() => chartModalChartHandler(MODAL.cancel)}
-          firstButtonText="Delete"
+          firstButtonText="Cancel"
+          secondButtonText="Confirm"
         />
       )}
     </>

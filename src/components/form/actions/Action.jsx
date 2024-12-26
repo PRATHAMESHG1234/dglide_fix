@@ -19,7 +19,7 @@ import ActionModal from './ActionModal';
 import ConfirmationModal from '../../shared/ConfirmationModal';
 import GridTableSimple from '../../../elements/GridTableSimple';
 import { fetchFormsByModuleId } from '../../../services/form';
-import { Plus, PlusCircle } from 'lucide-react';
+import { Plus } from 'lucide-react';
 
 const Action = () => {
   const dispatch = useDispatch();
@@ -189,10 +189,12 @@ const Action = () => {
       {state.show && state.type === MODAL.delete && (
         <ConfirmationModal
           open={state.show}
-          heading={`Are you sure you want to delete this action?`}
+          heading={`Delete this action?`}
+          message="Are you sure you want to delete this action?"
           onConfirm={deleteActionHandler}
           onCancel={() => actionModalActionHandler(MODAL.cancel)}
-          firstButtonText="Delete"
+          firstButtonText="Cancel"
+          secondButtonText="Confirm"
         />
       )}
     </>

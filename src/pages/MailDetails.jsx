@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 // third-party
 import 'react-quill/dist/quill.snow.css';
 
-import { Paperclip } from 'lucide-react';
+import AttachmentTwoToneIcon from '@mui/icons-material/AttachmentTwoTone';
 
 import moment from 'moment';
 import avatarImage from '../assets/users/user-1.png';
@@ -254,7 +254,7 @@ const MailDetails = ({
                       <div className="grid grid-cols-1 gap-6">
                         <div className="col-span-1">
                           <div className="flex items-center gap-2">
-                            <Paperclip fontSize="small" />
+                            <AttachmentTwoToneIcon fontSize="small" />
                             <p className="text-sm font-medium text-gray-600">
                               {attachments && attachments?.length}{' '}
                             </p>

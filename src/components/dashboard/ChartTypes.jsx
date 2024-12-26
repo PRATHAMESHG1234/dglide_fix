@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import { BarChart } from 'lucide-react';
-import { PieChart } from 'lucide-react';
-import { LineChart } from 'lucide-react';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import PieChartIcon from '@mui/icons-material/PieChart';
+import ShowChartIcon from '@mui/icons-material/ShowChart';
 import {
   ArcElement,
   BarElement,
@@ -274,15 +274,15 @@ const ChartTypes = ({ defaultSelectedRecords, chartData }) => {
 
   const chartTypes = [
     {
-      label: <BarChart sx={{ color: 'rgba(88, 150, 233, 0.69)' }} />,
+      label: <BarChartIcon sx={{ color: 'rgba(88, 150, 233, 0.69)' }} />,
       value: 'Bar'
     },
     {
-      label: <LineChart sx={{ color: 'rgba(155, 199, 132, 1)' }} />,
+      label: <ShowChartIcon sx={{ color: 'rgba(155, 199, 132, 1)' }} />,
       value: 'Line'
     },
     {
-      label: <PieChart sx={{ color: 'rgba(255, 159, 64, 0.79)' }} />,
+      label: <PieChartIcon sx={{ color: 'rgba(255, 159, 64, 0.79)' }} />,
       value: 'Pie'
     }
   ];

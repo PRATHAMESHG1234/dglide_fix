@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 
 // material-ui
 
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+
 import { Label } from '@/componentss/ui/label';
 import { Switch } from '@/componentss/ui/switch';
 
@@ -16,7 +18,7 @@ import {
 import { useState } from 'react';
 
 import { useSelector } from 'react-redux';
-import { Edit, Edit2 } from 'lucide-react';
+import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
 import { colors } from '../../common/constants/styles';
 
 const WorkflowCard = ({
@@ -61,7 +63,7 @@ const WorkflowCard = ({
         modalActionHandler('edit', items?.uuid);
         handleClose();
       },
-      icon: <Edit fontSize="small" color="primary" />,
+      icon: <ModeEditOutlineIcon fontSize="small" color="primary" />,
       label: <Label>Edit</Label>
     },
     {
@@ -70,7 +72,7 @@ const WorkflowCard = ({
         handleClose();
       },
       icon: (
-        <Trash2
+        <DeleteForeverIcon
           fontSize="small"
           color="primary"
           sx={{

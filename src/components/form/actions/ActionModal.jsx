@@ -27,11 +27,11 @@ const type = [
   {
     value: 'url',
     label: 'URL'
-  },
-  {
-    value: 'REST API',
-    label: 'REST API'
   }
+  // {
+  //   value: 'REST API',
+  //   label: 'REST API'
+  // }
 ];
 
 const visibilityOptions = [
