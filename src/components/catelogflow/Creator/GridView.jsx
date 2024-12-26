@@ -71,7 +71,7 @@ const GridView = ({
   return (
     <>
       <MainCard
-        sx={{
+        style={{
           width: '100%',
           height: '100%',
           overflow: 'auto',
@@ -86,7 +86,7 @@ const GridView = ({
           >
             <Grid item>
               <Typography
-                sx={{
+                style={{
                   fontSize: '1.25rem',
                   color:
                     currentTheme === 'Dark' ? colors.white : colors.grey[600],
@@ -117,7 +117,7 @@ const GridView = ({
                   </InputAdornment>
                 }
                 size="small"
-                sx={{
+                style={{
                   color:
                     currentTheme === 'Dark' ? colors.white : colors.grey[900]
                 }}
@@ -149,7 +149,7 @@ const GridView = ({
                 <Button
                   variant="text"
                   size="large"
-                  sx={{ color: colors.grey[900] }}
+                  style={{ color: colors.grey[900] }}
                   color="secondary"
                   endIcon={<ExpandMoreRoundedIcon />}
                   onClick={handleClick}

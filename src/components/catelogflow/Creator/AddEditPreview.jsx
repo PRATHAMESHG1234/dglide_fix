@@ -437,7 +437,7 @@
 //                 inputProps={{
 //                   autoComplete: 'new-password'
 //                 }}
-//                 sx={{
+//                 style={{
 //                   '& .MuiInputBase-root': {
 //                     height: '30px',
 //                     width: '100%',
@@ -467,7 +467,7 @@
 //                   arrow
 //                 >
 //                   <InfoIcon
-//                     sx={{ color: COLORS.GRAY, cursor: 'pointer' }}
+//                     style={{ color: COLORS.GRAY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -492,7 +492,7 @@
 //                     : formObj[field.name]?.split('T')[0] || ""
 //                 }
 //                 onChange={(e) => onFormValueChanged(e, field)}
-//                 sx={{
+//                 style={{
 //                   '& .MuiInputBase-root': {
 //                     height: '30px',
 //                     fontSize: '13px',
@@ -522,7 +522,7 @@
 //                   arrow
 //                 >
 //                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -536,7 +536,7 @@
 //                 {field.readOnly === true ? (
 //                   <div className="input-wrapper flex  flex-col ">
 //                     <FormLabel
-//                       sx={{
+//                       style={{
 //                         fontSize: '13px',
 //                         fontWeight: 'bold',
 //                         marginBottom: '8px'
@@ -594,7 +594,7 @@
 //                     arrow
 //                   >
 //                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -603,7 +603,7 @@
 //           } else {
 //             return (
 //               <div className="ReactQuill flex  flex-col  reactQuillExtra mb-4 ">
-//                 <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+//                 <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
 //                   {field.label}
 //                   {field.mandatory && <span className="text-danger"> *</span>}
 //                 </FormLabel>
@@ -636,7 +636,7 @@
 //                     arrow
 //                   >
 //                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -686,7 +686,7 @@
 //                   arrow
 //                 >
 //                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -738,7 +738,7 @@
 //                     arrow
 //                   >
 //                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -783,7 +783,7 @@
 //                     arrow
 //                   >
 //                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
@@ -828,7 +828,7 @@
 //                   arrow
 //                 >
 //                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -870,7 +870,7 @@
 //                   arrow
 //                 >
 //                   <InfoIcon
-//                     sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                   ></InfoIcon>
 //                 </Tooltip>
 //               )}
@@ -923,7 +923,7 @@
 //                       {...params}
 //                       variant="outlined"
 //                       placeholder=""
-//                       sx={{
+//                       style={{
 //                         '& .MuiInputBase-root': {
 //                           width: "100%",
 //                           height: '30px',
@@ -959,13 +959,13 @@
 //                     arrow
 //                   >
 //                     <InfoIcon
-//                       sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+//                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
 //                     ></InfoIcon>
 //                   </Tooltip>
 //                 )}
 //               </div>
 //               {!formObj[field.name] && field.mandatory && onClickSubmit && (
-//                 <Typography className="error" sx={{ height: "15px" }}>
+//                 <Typography className="error" style={{ height: "15px" }}>
 //                   {`${field.label}
 //           field can't be empty..!`}
 //                 </Typography>
@@ -1033,7 +1033,7 @@
 //                 // value={formObj[field.name]}
 //                 required
 //                 onChange={(e) => setBehalfUserData(e.target.value)}
-//                 sx={{ height: "30px" }}
+//                 style={{ height: "30px" }}
 //                 fieldstyle={{
 //                   width: '20vw',
 //                   minWidth: '200px',

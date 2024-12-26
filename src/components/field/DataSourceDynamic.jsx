@@ -451,7 +451,7 @@ const DataSourceDynamic = ({
         <div className="flex flex-col py-2">
           <div className="flex justify-evenly">
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': { fontSize: '13px' },
                 margin: 0.5
               }}
@@ -469,7 +469,7 @@ const DataSourceDynamic = ({
             />
 
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': { fontSize: '13px' },
                 margin: 0.5
               }}
@@ -499,7 +499,7 @@ const DataSourceDynamic = ({
               value: f.formInfoId
             };
           })}
-          sx={{
+          style={{
             height: '37.5px',
             minWidth: '180px',
             fontSize: '0.875rem',
@@ -540,7 +540,7 @@ const DataSourceDynamic = ({
                   value: f.fieldInfoId
                 };
               })}
-            sx={{
+            style={{
               height: '37.5px',
               minWidth: '180px',
               fontSize: '0.875rem',
@@ -580,7 +580,7 @@ const DataSourceDynamic = ({
                   value: f.value
                 };
               })}
-            sx={{
+            style={{
               height: '37.5px',
               minWidth: '180px',
               fontSize: '0.875rem',
@@ -617,7 +617,7 @@ const DataSourceDynamic = ({
             <AddIcon
               fontSize="medium"
               onClick={addCondition}
-              sx={{
+              style={{
                 color: COLORS.SECONDARY,
                 cursor: 'pointer'
               }}
@@ -640,7 +640,7 @@ const DataSourceDynamic = ({
                 {category === 'TableLookup' || category === 'activity' ? (
                   <div>
                     <FormControlLabel
-                      sx={{
+                      style={{
                         '& .MuiFormControlLabel-label': { fontSize: '13px' },
                         margin: 0
                       }}
@@ -655,7 +655,7 @@ const DataSourceDynamic = ({
                               condition
                             )
                           }
-                          sx={{
+                          style={{
                             '& .MuiSvgIcon-root': { fontSize: 18 }
                           }}
                           disabled={isDynamic && (index === 0 || index === 1)}
@@ -667,7 +667,7 @@ const DataSourceDynamic = ({
                 ) : (
                   <div>
                     <FormControlLabel
-                      sx={{
+                      style={{
                         '& .MuiFormControlLabel-label': { fontSize: '13px' },
                         margin: 0
                       }}
@@ -682,7 +682,7 @@ const DataSourceDynamic = ({
                               condition
                             )
                           }
-                          sx={{
+                          style={{
                             '& .MuiSvgIcon-root': { fontSize: 18 }
                           }}
                         />
@@ -700,7 +700,7 @@ const DataSourceDynamic = ({
                         deleteCondition(condition);
                       }
                     }}
-                    sx={{
+                    style={{
                       cursor:
                         isDynamic && (index === 0 || index === 1)
                           ? 'not-allowed'
@@ -728,7 +728,7 @@ const DataSourceDynamic = ({
                         value: f.fieldInfoId
                       };
                     })}
-                  sx={{
+                  style={{
                     height: '37.5px',
                     minWidth: '180px',
                     fontSize: '0.875rem',
@@ -758,7 +758,7 @@ const DataSourceDynamic = ({
                     handleLookupChange('operator', selectedValue, condition);
                   }}
                   options={operators.String || []}
-                  sx={{
+                  style={{
                     height: '37.5px',
                     minWidth: '180px',
                     fontSize: '0.875rem',
@@ -797,7 +797,7 @@ const DataSourceDynamic = ({
                         value: f.name
                       };
                     })}
-                    sx={{
+                    style={{
                       height: '37.5px',
                       minWidth: '180px',
                       fontSize: '0.875rem',
@@ -833,7 +833,7 @@ const DataSourceDynamic = ({
                     size="small"
                     variant="outlined"
                     type="text"
-                    sx={{
+                    style={{
                       '& .MuiInputBase-root': {
                         height: '37.5px',
                         fontSize: '0.875rem',

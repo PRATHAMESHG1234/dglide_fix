@@ -22,7 +22,7 @@ const ODD_OPACITY = 0.9;
 const FieldGroupList = ({ headers, items, onActionClick }) => {
   return (
     <TableContainer
-      sx={{
+      style={{
         cursor: 'pointer',
         maxHeight: 'calc(100vh - 350px)'
       }}
@@ -31,16 +31,16 @@ const FieldGroupList = ({ headers, items, onActionClick }) => {
         aria-label="simple table"
         stickyHeader
         padding="40px"
-        sx={{
+        style={{
           m: 0,
           '& .MuiTableRow-root:hover': {
             backgroundColor: alpha(COLORS.TERTIARY, ODD_OPACITY + 8)
           }
         }}
       >
-        <TableHead sx={{ padding: 1 }}>
+        <TableHead style={{ padding: 1 }}>
           <TableRow
-            sx={{
+            style={{
               '& .MuiTableCell-head': {
                 backgroundColor: COLORS.TERTIARY,
                 m: 1,
@@ -53,16 +53,16 @@ const FieldGroupList = ({ headers, items, onActionClick }) => {
             })}
           </TableRow>
         </TableHead>
-        <TableBody sx={{ bgcolor: COLORS.WHITE }}>
+        <TableBody style={{ bgcolor: COLORS.WHITE }}>
           {items?.map((item, index) => (
             <TableRow
               key={item.id}
-              sx={{
+              style={{
                 '&:last-child td , &:last-child th': { border: 0 }
               }}
             >
               <TableCell
-                sx={{
+                style={{
                   fontWeight: 'bold'
                 }}
               >
@@ -85,7 +85,7 @@ const FieldGroupList = ({ headers, items, onActionClick }) => {
                       }}
                     >
                       <Edit
-                        sx={{ color: COLORS.PRIMARY }}
+                        style={{ color: COLORS.PRIMARY }}
                         onClick={(e) => {
                           e.stopPropagation();
                           onActionClick(MODAL.edit, item.id);
@@ -105,7 +105,7 @@ const FieldGroupList = ({ headers, items, onActionClick }) => {
                       }}
                     >
                       <DeleteForever
-                        sx={{ color: 'danger' }}
+                        style={{ color: 'danger' }}
                         onClick={(e) => {
                           e.stopPropagation();
                           onActionClick(MODAL.delete, item.id);

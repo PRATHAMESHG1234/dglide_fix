@@ -94,7 +94,7 @@ const AttachFile = ({
         <Typography
           variant="body2"
           fontSize="15px"
-          sx={{
+          style={{
             fontWeight: 'bolder',
             color: COLORS.SECONDARY
           }}
@@ -105,7 +105,7 @@ const AttachFile = ({
       <div className="w-full px-2">
         <Typography
           fontSize="11px"
-          sx={{ color: COLORS.SECONDARY, fontWeight: 500 }}
+          style={{ color: COLORS.SECONDARY, fontWeight: 500 }}
         >
           Import your records effortlessly with a CSV file—just ensure your
           column headers match the required field names (such as Name, Email,
@@ -162,7 +162,7 @@ const AttachFile = ({
             <Chip
               className="mt-2 p-2"
               label="Select CSV File"
-              sx={{
+              style={{
                 backgroundColor: alpha(COLORS.PRIMARY, 0.7),
                 color: COLORS.WHITE,
                 fontWeight: 600,
@@ -189,7 +189,7 @@ const AttachFile = ({
       >
         <Typography
           fontSize="12px"
-          sx={{ color: COLORS.PRIMARY, fontWeight: 500, cursor: 'pointer' }}
+          style={{ color: COLORS.PRIMARY, fontWeight: 500, cursor: 'pointer' }}
         >
           Sample_File.csv
         </Typography>
@@ -211,7 +211,7 @@ const AttachFile = ({
             <Typography
               variant="body2"
               fontSize="13px"
-              sx={{
+              style={{
                 fontWeight: 'bolder'
               }}
             >
@@ -236,7 +236,7 @@ const AttachFile = ({
               }}
             >
               <DeleteForever
-                sx={{
+                style={{
                   color: 'darkred'
                 }}
               />

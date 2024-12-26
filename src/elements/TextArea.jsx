@@ -68,7 +68,7 @@ const TextArea = (props) => {
   return (
     <div className="input-wrapper" style={props.fieldstyle}>
       {/* <FormLabel
-        sx={{
+        style={{
           fontSize: '13.5px',
           ...props.labelstyle,
           paddingBottom: '0px'
@@ -89,7 +89,7 @@ const TextArea = (props) => {
         autoFocus={props?.autoFocus ? props?.autoFocus : false}
         placeholder={props.placeholder ? props.placeholder : ' '}
         {...props}
-        sx={{
+        style={{
           '& .MuiFormLabel-root': {
             fontSize: '0.875rem',
             color: currentTheme === 'Dark' ? colors.white : 'unset'
@@ -110,7 +110,7 @@ const TextArea = (props) => {
       <div style={{ height: '13px' }}>
         <Typography
           className={`${props?.validation?.type === 'info' ? 'text-warning' : 'text-danger'}`}
-          sx={{ fontSize: '11px' }}
+          style={{ fontSize: '11px' }}
         >
           {helperText}
         </Typography>

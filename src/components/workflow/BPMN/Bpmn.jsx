@@ -2111,7 +2111,7 @@ const BpmnNew = () => {
         }}
       >
         <FormLabel
-          sx={{
+          style={{
             fontSize: '16px',
             fontWeight: 'bold',
             color: currentTheme === 'Dark' ? colors.grey[700] : colors.grey[900]
@@ -2135,7 +2135,7 @@ const BpmnNew = () => {
             : null}
         </FormLabel>
         <div className="flex items-center">
-          <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+          <Box style={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
             <Tooltip title="Save WorkFlow Diagram">
               <Button disabled={disabledButton} onClick={downloadXml}>
                 Save

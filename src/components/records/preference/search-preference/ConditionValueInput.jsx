@@ -91,7 +91,7 @@ const ConditionValueInput = ({
                           fontSize: '0.875rem'
                         }
                       }}
-                      sx={{
+                      style={{
                         '& .MuiAutocomplete-input, & .MuiInputLabel-root': {
                           fontSize: '0.875rem'
                         },
@@ -106,7 +106,7 @@ const ConditionValueInput = ({
                           variant="outlined"
                           type={'text'}
                           {...params}
-                          sx={{
+                          style={{
                             '& .MuiInputBase-root': {
                               fontSize: '0.875rem',
                               height: '37.5px',

@@ -75,12 +75,12 @@ const WorkflowCard = ({
         <DeleteForeverIcon
           fontSize="small"
           color="primary"
-          sx={{
+          style={{
             color: colors.error.main
           }}
         />
       ),
-      label: <Label sx={{ color: 'red' }}>Delete</Label>
+      label: <Label style={{ color: 'red' }}>Delete</Label>
     }
   ];
 

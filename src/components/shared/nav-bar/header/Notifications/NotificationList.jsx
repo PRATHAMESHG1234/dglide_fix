@@ -69,7 +69,7 @@ const NotificationList = () => {
 
   return (
     <List
-      sx={{
+      style={{
         width: '100%',
         maxWidth: 330,
         py: 0,
@@ -88,7 +88,7 @@ const NotificationList = () => {
         }
       }}
     >
-      <Typography sx={{ ml: 7 }}>No notifications</Typography>
+      <Typography style={{ ml: 7 }}>No notifications</Typography>
     </List>
   );
 };

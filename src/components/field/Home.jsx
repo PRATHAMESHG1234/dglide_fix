@@ -75,7 +75,7 @@ const Home = () => {
   return (
     <>
       <MainCard
-        sx={{
+        style={{
           width: '100%',
           // minHeight: '60vh',
           height: 'calc(100vh - 65px)',

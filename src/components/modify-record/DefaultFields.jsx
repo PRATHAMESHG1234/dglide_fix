@@ -43,7 +43,7 @@ const DefaultFields = () => {
       }}
     >
       <FormLabel
-        sx={{
+        style={{
           fontSize: '13px',
           fontWeight: 500,
           color: '#797979',
@@ -75,7 +75,7 @@ const DefaultFields = () => {
 
                     readOnly: true
                   }}
-                  sx={{
+                  style={{
                     '& fieldset': {
                       border: 'none'
                     },
@@ -125,7 +125,7 @@ const DefaultFields = () => {
                   }}
                 >
                   <LinkIcon
-                    sx={{
+                    style={{
                       color: COLORS.BLUEGRAY,
                       cursor: 'pointer',
                       transform: 'rotate(-60deg)'

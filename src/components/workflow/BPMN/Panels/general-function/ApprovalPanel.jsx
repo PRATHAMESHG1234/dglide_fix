@@ -76,7 +76,7 @@ export const ApprovalPanel = ({
             {' '}
             <div className="flex flex-col justify-start">
               <Typography
-                sx={{
+                style={{
                   fontSize: '12px',
                   fontWeight: 600,
                   paddingBottom: '4px'
@@ -109,7 +109,7 @@ export const ApprovalPanel = ({
             {currentApprover?.condition == 'email' ? (
               <div className="flex flex-col justify-start">
                 <Typography
-                  sx={{
+                  style={{
                     fontSize: '12px',
                     fontWeight: 600,
                     paddingBottom: '4px'
@@ -142,7 +142,7 @@ export const ApprovalPanel = ({
               <div className="flex gap-2">
                 <div className="flex flex-col justify-start">
                   <Typography
-                    sx={{
+                    style={{
                       fontSize: '12px',
                       fontWeight: 600,
                       paddingBottom: '4px'
@@ -160,7 +160,7 @@ export const ApprovalPanel = ({
                       setApprovalValue(event.target.value, 'level');
                     }}
                     min="0"
-                    sx={{
+                    style={{
                       '& .MuiInputBase-root': {
                         height: '45px',
                         fontSize: '13px'
@@ -178,7 +178,7 @@ export const ApprovalPanel = ({
             ) : (
               <div className="flex flex-col justify-start">
                 <Typography
-                  sx={{
+                  style={{
                     fontSize: '12px',
                     fontWeight: 600,
                     paddingBottom: '4px'

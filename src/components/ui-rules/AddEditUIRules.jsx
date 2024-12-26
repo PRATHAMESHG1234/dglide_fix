@@ -525,13 +525,13 @@ const AddEditUIRules = ({
                     { label: 'Edit Record', value: 'editRecord' },
                     { label: 'Both New and Edit', value: 'both' }
                   ]}
-                  sx={{ paddingLeft: '1px' }}
+                  style={{ paddingLeft: '1px' }}
                 />
               </div>
 
               <div className="flex flex-col pt-2">
                 <div className="flex justify-between pb-2 pr-2">
-                  <Label sx={{ fontSize: '0.875rem' }}>Conditions</Label>
+                  <Label style={{ fontSize: '0.875rem' }}>Conditions</Label>
                   <Tooltip>
                     <TooltipTrigger asChild>
                       <div className="">

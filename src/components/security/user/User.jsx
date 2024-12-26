@@ -84,7 +84,7 @@ const User = () => {
       >
         <div className="flex items-center px-1">
           <Typography
-            sx={{
+            style={{
               fontSize: '18px',
               color: 'grey'
             }}
@@ -96,7 +96,7 @@ const User = () => {
         <div className="flex items-center">
           <Box
             onClick={() => modalActionHandler(MODAL.create)}
-            sx={{
+            style={{
               display: 'flex',
               gap: 1,
               flexWrap: 'wrap'

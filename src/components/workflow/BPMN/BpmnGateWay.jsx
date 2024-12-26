@@ -97,7 +97,7 @@ export const BpmnGateWay = ({
         </div>
         <Box
           className="flex flex-col gap-1"
-          sx={{
+          style={{
             borderRadius: '8px'
           }}
         >
@@ -120,7 +120,7 @@ export const BpmnGateWay = ({
                       variant="outlined"
                       type="text"
                       value={conditions.fieldName}
-                      sx={{
+                      style={{
                         width: '100%',
                         minWidth: '200px',
                         '& .MuiInputBase-root': {
@@ -132,7 +132,7 @@ export const BpmnGateWay = ({
                     />
                     <IconButton
                       className="mx-1"
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.primary[200],
                         '&:hover': {
@@ -149,7 +149,7 @@ export const BpmnGateWay = ({
                       }
                     >
                       <AddIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.primary.main,
                           '&:hover': {
@@ -201,7 +201,7 @@ export const BpmnGateWay = ({
                           ? true
                           : false
                       }
-                      sx={{
+                      style={{
                         width: '100%',
                         minWidth: '200px',
                         '& .MuiInputBase-root': {
@@ -212,7 +212,7 @@ export const BpmnGateWay = ({
                     />
                     <IconButton
                       className="mx-1"
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.primary[200],
                         '&:hover': {
@@ -229,7 +229,7 @@ export const BpmnGateWay = ({
                       }
                     >
                       <AddIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.primary.main,
                           '&:hover': {
@@ -244,7 +244,7 @@ export const BpmnGateWay = ({
               <div className="mt-2 flex items-center justify-center">
                 <Button
                   className="mx-1 my-2"
-                  sx={{
+                  style={{
                     width: '150px',
                     padding: '8px 10px',
                     backgroundColor: colors.primary[200],
@@ -333,7 +333,7 @@ export const BpmnGateWay = ({
               onChange={(e) => handleTextAreaChange(e)}
               // focused={false}
               // inputProps={{ readOnly: true }}
-              sx={{
+              style={{
                 bgcolor: COLORS.WHITE,
                 '& .MuiInputBase-root': {
                   fontSize: '13.5px'

@@ -134,7 +134,7 @@ export const DumpList = () => {
               <IconDownload
                 stroke={1.5}
                 color={colors.primary.main}
-                sx={{
+                style={{
                   color: COLORS.PRIMARY
                 }}
                 onClick={() => handleDownload(params.data)}

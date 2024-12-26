@@ -1,22 +1,22 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Button from "@mui/joy/Button";
-import Option from "@mui/joy/Option";
-import Select from "@mui/joy/Select";
-import Snackbar from "@mui/joy/Snackbar";
-import Stack from "@mui/joy/Stack";
+import Button from '@mui/joy/Button';
+import Option from '@mui/joy/Option';
+import Select from '@mui/joy/Select';
+import Snackbar from '@mui/joy/Snackbar';
+import Stack from '@mui/joy/Stack';
 
 export default function Snackbars() {
   const [open, setOpen] = useState(false);
-  const [variant, setVariant] = useState("outlined");
-  const [color, setColor] = useState("neutral");
+  const [variant, setVariant] = useState('outlined');
+  const [color, setColor] = useState('neutral');
 
   return (
     <Stack spacing={2} alignItems="center">
       <Select
         value={variant}
         onChange={(event, newValue) => setVariant(newValue)}
-        sx={{ minWidth: 160 }}
+        style={{ minWidth: 160 }}
       >
         <Option value="outlined">outlined</Option>
         <Option value="plain">plain</Option>
@@ -24,7 +24,7 @@ export default function Snackbars() {
         <Option value="solid">solid</Option>
       </Select>
       <Stack spacing={1} direction="row">
-        {["primary", "neutral", "danger", "success", "warning"]?.map(
+        {['primary', 'neutral', 'danger', 'success', 'warning']?.map(
           (currentColor) => (
             <Button
               key={currentColor}
@@ -47,7 +47,7 @@ export default function Snackbars() {
         variant={variant}
         color={color}
         onClose={(event, reason) => {
-          if (reason === "clickaway") {
+          if (reason === 'clickaway') {
             return;
           }
           setOpen(false);

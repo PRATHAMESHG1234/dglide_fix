@@ -75,7 +75,7 @@ const AddEditGroup = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Name"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -92,7 +92,7 @@ const AddEditGroup = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Distributions"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -109,7 +109,7 @@ const AddEditGroup = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Owner"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -128,7 +128,7 @@ const AddEditGroup = ({ state, onConfirm, onCancel }) => {
           value={form.description}
           placeholder="Description"
           onChange={setFormValue}
-          sx={{
+          style={{
             marginTop: '6px',
 
             '& .MuiInputBase-root': {

@@ -319,12 +319,12 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                 required
                 value={key === 'null' ? '' : key}
                 onChange={(e) => onHandleChange(e, shiftData[key])}
-                sx={{
+                style={{
                   maxWidth: '550px'
                 }}
               />
             ) : (
-              <Typography variant="h5" sx={{ fontWeight: '500' }}>
+              <Typography variant="h5" style={{ fontWeight: '500' }}>
                 {key}
               </Typography>
             )}
@@ -342,7 +342,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                             dayObj.ison === 'Yes' ||
                             dayObj.ison === true
                           }
-                          sx={{
+                          style={{
                             color: colors.secondary.main,
                             '& .Mui-checked': {
                               color: `${colors.secondary.main} !important`
@@ -369,7 +369,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                   <td>
                     <Typography
                       variant="h6"
-                      sx={{
+                      style={{
                         fontSize: '0.875rem',
                         width: '85px'
                       }}
@@ -464,7 +464,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                   <td>
                     <IconButton
                       className="mx-1 my-2"
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.primary[200],
                         '&:hover': {
@@ -474,7 +474,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                       onClick={() => addSlotes(dayObj, subIndex)} // Adding a new slot
                     >
                       <AddIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.primary.main,
                           '&:hover': {
@@ -499,7 +499,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                             dayObj.ison === 'Yes' ||
                             dayObj.ison === true
                           }
-                          sx={{
+                          style={{
                             color: colors.secondary.main,
                             '& .Mui-checked': {
                               color: `${colors.secondary.main} !important`
@@ -524,7 +524,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                   <td>
                     <Typography
                       variant="h6"
-                      sx={{
+                      style={{
                         fontSize: '0.875rem',
                         width: '85px'
                       }}
@@ -570,7 +570,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                         <td>
                           <IconButton
                             className="my-2 mx-1"
-                            sx={{
+                            style={{
                               padding: '0px',
                               backgroundColor: colors.primary[200],
                               '&:hover': {
@@ -580,7 +580,7 @@ export const AddEditShift = ({ fieldData, onSubmit, formId, newRecord }) => {
                             onClick={() => addSlotes(dayObj, i)} // Ensure this adds one slot
                           >
                             <AddIcon
-                              sx={{
+                              style={{
                                 fontSize: '25px',
                                 color: colors.primary.main,
                                 '&:hover': {

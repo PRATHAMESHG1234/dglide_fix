@@ -76,7 +76,7 @@ export const DateFetchPanel = ({
         <IconButton
           aria-label="close"
           onClick={closePanel}
-          sx={{
+          style={{
             position: 'absolute',
             right: 0,
             top: 0,
@@ -89,11 +89,11 @@ export const DateFetchPanel = ({
           title="Output variable name: 'datetime', use it as id.out.datetime"
           placement="top-start"
           arrow
-          sx={{ fontSize: '16px' }}
+          style={{ fontSize: '16px' }}
         >
           <IconButton
             aria-label="info"
-            sx={{
+            style={{
               position: 'absolute',
               right: 35,
               top: 0,
@@ -103,9 +103,9 @@ export const DateFetchPanel = ({
             <ErrorIcon />
           </IconButton>
         </Tooltip>
-        <div className="flex  flex-col ">
+        <div className="flex flex-col">
           <Typography
-            sx={{
+            style={{
               fontSize: '12px',
               fontWeight: 600,
               paddingBottom: '4px'
@@ -135,7 +135,7 @@ export const DateFetchPanel = ({
               endAdornment: (
                 <InputAdornment position="end">
                   <CalendarMonthIcon
-                    sx={{
+                    style={{
                       color: colors.primary.dark,
                       fontSize: '25px',
                       cursor: 'pointer'
@@ -150,7 +150,7 @@ export const DateFetchPanel = ({
                     }}
                   />
                   <AddBoxIcon
-                    sx={{
+                    style={{
                       color: colors.primary.dark,
                       fontSize: '25px',
                       cursor: 'pointer'
@@ -191,7 +191,7 @@ export const DateFetchPanel = ({
           </div>
         </div>
 
-        <div className="flex mt-4">
+        <div className="mt-4 flex">
           <Grid container spacing={2}>
             <Grid item>
               <Button

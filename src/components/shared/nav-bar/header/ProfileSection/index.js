@@ -185,7 +185,7 @@ const ProfileSection = () => {
   return (
     <>
       <Chip
-        sx={{
+        style={{
           height: '48px',
           alignItems: 'center',
           borderRadius: '27px',
@@ -216,7 +216,7 @@ const ProfileSection = () => {
         icon={
           <Avatar
             src={User1}
-            sx={{
+            style={{
               width: '34px',
               height: '34px',
               fontSize: '1.2rem',
@@ -267,7 +267,7 @@ const ProfileSection = () => {
                     content={false}
                     boxShadow
                     shadow={theme.shadows[16]}
-                    sx={{
+                    style={{
                       maxHeight: '250px',
                       backgroundColor:
                         currentTheme === 'Dark'
@@ -275,7 +275,7 @@ const ProfileSection = () => {
                           : colors.white
                     }}
                   >
-                    <Box sx={{ p: 2, pb: 0, zIndex: 3000 }}>
+                    <Box style={{ p: 2, pb: 0, zIndex: 3000 }}>
                       <Stack>
                         <Stack
                           direction="row"
@@ -283,7 +283,7 @@ const ProfileSection = () => {
                           alignItems="center"
                         >
                           <Typography
-                            sx={{
+                            style={{
                               fontSize: '1rem',
                               color:
                                 currentTheme === 'Dark'
@@ -296,7 +296,7 @@ const ProfileSection = () => {
                           </Typography>
                           <Typography
                             component="span"
-                            sx={{
+                            style={{
                               fontSize: '1rem',
                               color:
                                 currentTheme === 'Dark'
@@ -317,7 +317,7 @@ const ProfileSection = () => {
                           (role) => role.level === '1'
                         ) && (
                           <Typography
-                            sx={{
+                            style={{
                               fontSize: '0.75rem',
                               fontWeight: 400,
                               color:
@@ -331,7 +331,7 @@ const ProfileSection = () => {
                         )}
                       </Stack>
                       {/* <OutlinedInput
-                        sx={{
+                        style={{
                           width: '100%',
                           pr: 1,
                           pl: 2,
@@ -368,11 +368,11 @@ const ProfileSection = () => {
                         overflowX: 'hidden'
                       }}
                     >
-                      <Box sx={{ p: 2, pt: 1 }}>
+                      <Box style={{ p: 2, pt: 1 }}>
                         {/* <UpgradePlanCard /> */}
                         <Divider />
                         {/* <Card
-                          sx={{
+                          style={{
                             bgcolor:
                               currentTheme === 'Dark'
                                 ? colors.darkBackground
@@ -391,7 +391,7 @@ const ProfileSection = () => {
                                 >
                                   <Grid item>
                                     <Typography
-                                      sx={{
+                                      style={{
                                         fontSize: '0.875rem',
                                         fontWeight: 500,
                                         color:
@@ -423,7 +423,7 @@ const ProfileSection = () => {
                                 >
                                   <Grid item>
                                     <Typography
-                                      sx={{
+                                      style={{
                                         fontSize: '0.875rem',
                                         fontWeight: 500,
                                         color:
@@ -453,7 +453,7 @@ const ProfileSection = () => {
                         {approvalData &&
                           approvalData.map((approval) => (
                             <Card
-                              sx={{
+                              style={{
                                 bgcolor:
                                   currentTheme === 'Dark'
                                     ? colors.darkBackground
@@ -473,7 +473,7 @@ const ProfileSection = () => {
                                       <Grid item>
                                         <div className="flex flex-row">
                                           <Typography
-                                            sx={{
+                                            style={{
                                               fontSize: '0.875rem',
                                               fontWeight: 500,
                                               color:
@@ -485,7 +485,7 @@ const ProfileSection = () => {
                                             Approval Id
                                           </Typography>
                                           <Typography
-                                            sx={{
+                                            style={{
                                               marginLeft: '20px',
                                               fontSize: '0.875rem',
                                               color:
@@ -499,7 +499,7 @@ const ProfileSection = () => {
                                         </div>
                                         <div className="flex flex-row">
                                           <Typography
-                                            sx={{
+                                            style={{
                                               fontSize: '0.875rem',
                                               fontWeight: 500,
                                               color:
@@ -511,7 +511,7 @@ const ProfileSection = () => {
                                             Request Id
                                           </Typography>
                                           <Typography
-                                            sx={{
+                                            style={{
                                               fontSize: '0.875rem',
                                               marginLeft: '20px',
                                               color:
@@ -525,7 +525,7 @@ const ProfileSection = () => {
                                         </div>
                                         <div className="flex flex-row">
                                           <Typography
-                                            sx={{
+                                            style={{
                                               fontSize: '0.875rem',
                                               fontWeight: 500,
                                               color:
@@ -537,7 +537,7 @@ const ProfileSection = () => {
                                             Requester
                                           </Typography>
                                           <Typography
-                                            sx={{
+                                            style={{
                                               fontSize: '0.875rem',
                                               marginLeft: '20px',
                                               color:
@@ -554,7 +554,7 @@ const ProfileSection = () => {
                                   </Grid>
                                   <div className="flex justify-center">
                                     <Typography
-                                      sx={{
+                                      style={{
                                         fontSize: '0.875rem',
                                         fontWeight: 400,
                                         color:
@@ -576,7 +576,7 @@ const ProfileSection = () => {
                                     >
                                       {' '}
                                       <CancelIcon
-                                        sx={{
+                                        style={{
                                           color: colors.error.main,
                                           width: 16,
                                           height: 16,
@@ -591,7 +591,7 @@ const ProfileSection = () => {
                                       onClick={() => handleApprove(approval)}
                                     >
                                       <CheckCircleIcon
-                                        sx={{
+                                        style={{
                                           color: colors.success.main,
                                           width: 16,
                                           height: 16,
@@ -609,7 +609,7 @@ const ProfileSection = () => {
 
                         <List
                           component="nav"
-                          sx={{
+                          style={{
                             width: '100%',
                             maxWidth: 350,
                             minWidth: 300,
@@ -627,7 +627,7 @@ const ProfileSection = () => {
                           }}
                         >
                           <ListItemButton
-                            sx={{
+                            style={{
                               borderRadius: `${8}px`,
                               '&:hover': {
                                 backgroundColor:
@@ -660,7 +660,7 @@ const ProfileSection = () => {
                             <ListItemText
                               primary={
                                 <Typography
-                                  sx={{
+                                  style={{
                                     letterSpacing: '0em',
                                     fontWeight: 400,
                                     lineHeight: '1.5em',
@@ -677,7 +677,7 @@ const ProfileSection = () => {
                             />
                           </ListItemButton>{' '}
                           <ListItemButton
-                            sx={{
+                            style={{
                               borderRadius: `${8}px`,
                               '&:hover': {
                                 backgroundColor:
@@ -709,7 +709,7 @@ const ProfileSection = () => {
                             <ListItemText
                               primary={
                                 <Typography
-                                  sx={{
+                                  style={{
                                     letterSpacing: '0em',
                                     fontWeight: 400,
                                     lineHeight: '1.5em',
@@ -726,7 +726,7 @@ const ProfileSection = () => {
                             />
                           </ListItemButton>
                           {/* <ListItemButton
-                            sx={{
+                            style={{
                               borderRadius: `${8}px`,
                               '&:hover': {
                                 backgroundColor:
@@ -765,7 +765,7 @@ const ProfileSection = () => {
                                 >
                                   <Grid item>
                                     <Typography
-                                      sx={{
+                                      style={{
                                         letterSpacing: '0em',
                                         fontWeight: 400,
                                         lineHeight: '1.5em',
@@ -783,7 +783,7 @@ const ProfileSection = () => {
                                     <Chip
                                       label="02"
                                       size="small"
-                                      sx={{
+                                      style={{
                                         bgcolor: colors.warning.dark,
                                         color: colors.grey[900]
                                       }}
@@ -794,7 +794,7 @@ const ProfileSection = () => {
                             />
                           </ListItemButton> */}
                           <ListItemButton
-                            sx={{
+                            style={{
                               borderRadius: `${8}px`,
                               backgroundColor:
                                 currentTheme === 'Dark'
@@ -818,7 +818,7 @@ const ProfileSection = () => {
                               <IconLogout
                                 stroke={1.5}
                                 size="20px"
-                                sx={{
+                                style={{
                                   color:
                                     currentTheme === 'Dark'
                                       ? colors.secondary.main
@@ -830,7 +830,7 @@ const ProfileSection = () => {
                             <ListItemText
                               primary={
                                 <Typography
-                                  sx={{
+                                  style={{
                                     letterSpacing: '0em',
                                     fontWeight: 400,
                                     lineHeight: '1.5em',

@@ -305,13 +305,13 @@ const Property = ({ field, onFieldUpdated, fieldGroups, selectedFormId }) => {
                 No Username in Password{' '}
                 <Label
                   component="span"
-                  sx={{ color: colors.grey[600], fontSize: '0.875rem' }}
+                  style={{ color: colors.grey[600], fontSize: '0.875rem' }}
                 >
                   (Username exclusion)
                 </Label>
               </span>
             }
-            sx={{
+            style={{
               '& .MuiFormControlLabel-label': { fontSize: '0.875rem' },
               width: '90%'
             }}
@@ -331,13 +331,13 @@ const Property = ({ field, onFieldUpdated, fieldGroups, selectedFormId }) => {
                 Alphabet and Number{' '}
                 <Label
                   component="span"
-                  sx={{ color: colors.grey[600], fontSize: '0.875rem' }}
+                  style={{ color: colors.grey[600], fontSize: '0.875rem' }}
                 >
                   (Combination of letters and digits)
                 </Label>
               </span>
             }
-            sx={{
+            style={{
               '& .MuiFormControlLabel-label': { fontSize: '0.875rem' },
               width: '90%'
             }}
@@ -357,13 +357,13 @@ const Property = ({ field, onFieldUpdated, fieldGroups, selectedFormId }) => {
                 Mixed Case{' '}
                 <Label
                   component="span"
-                  sx={{ color: colors.grey[600], fontSize: '0.875rem' }}
+                  style={{ color: colors.grey[600], fontSize: '0.875rem' }}
                 >
                   (Both uppercase and lowercase letters)
                 </Label>
               </span>
             }
-            sx={{
+            style={{
               '& .MuiFormControlLabel-label': { fontSize: '0.875rem' },
               width: '90%'
             }}
@@ -383,13 +383,13 @@ const Property = ({ field, onFieldUpdated, fieldGroups, selectedFormId }) => {
                 Special Character{' '}
                 <Label
                   component="span"
-                  sx={{ color: colors.grey[600], fontSize: '0.875rem' }}
+                  style={{ color: colors.grey[600], fontSize: '0.875rem' }}
                 >
                   (Non-alphanumeric symbols)
                 </Label>
               </span>
             }
-            sx={{
+            style={{
               '& .MuiFormControlLabel-label': { fontSize: '0.875rem' },
               width: '90%'
             }}
@@ -518,7 +518,7 @@ const Property = ({ field, onFieldUpdated, fieldGroups, selectedFormId }) => {
                 />
               }
               label="Enable Password Policy"
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': {
                   fontSize: '0.875rem'
                 },

@@ -69,7 +69,7 @@ export const DateDiffPanel = ({
         <IconButton
           aria-label="close"
           onClick={closePanel}
-          sx={{
+          style={{
             position: 'absolute',
             right: 0,
             top: 0,
@@ -82,11 +82,11 @@ export const DateDiffPanel = ({
           title="Output variable name: 'datetime', use it as id.out.datetime"
           placement="top-start"
           arrow
-          sx={{ fontSize: '16px' }}
+          style={{ fontSize: '16px' }}
         >
           <IconButton
             aria-label="info"
-            sx={{
+            style={{
               position: 'absolute',
               right: 35,
               top: 0,
@@ -99,7 +99,7 @@ export const DateDiffPanel = ({
         <div className="flex flex-col">
           <div className="flex flex-col justify-start">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -130,7 +130,7 @@ export const DateDiffPanel = ({
                   endAdornment: (
                     <InputAdornment position="end">
                       <CalendarMonthIcon
-                        sx={{
+                        style={{
                           color: colors.primary.dark,
                           fontSize: '25px',
                           cursor: 'pointer'
@@ -145,7 +145,7 @@ export const DateDiffPanel = ({
                         }}
                       />
                       <AddBoxIcon
-                        sx={{
+                        style={{
                           color: colors.primary.dark,
                           fontSize: '25px',
                           cursor: 'pointer'
@@ -168,7 +168,7 @@ export const DateDiffPanel = ({
           &nbsp; &nbsp;
           <div className="flex flex-col justify-start">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -199,7 +199,7 @@ export const DateDiffPanel = ({
                   endAdornment: (
                     <InputAdornment position="end">
                       <CalendarMonthIcon
-                        sx={{
+                        style={{
                           color: colors.primary.dark,
                           fontSize: '25px',
                           cursor: 'pointer'
@@ -214,7 +214,7 @@ export const DateDiffPanel = ({
                         }}
                       />
                       <AddBoxIcon
-                        sx={{
+                        style={{
                           color: colors.primary.dark,
                           fontSize: '25px',
                           cursor: 'pointer'

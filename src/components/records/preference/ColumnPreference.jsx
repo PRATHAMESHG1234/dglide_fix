@@ -178,7 +178,7 @@ const ColumnPreference = ({
     >
       <Box
         className="mb-2 py-0"
-        sx={{
+        style={{
           backgroundColor:
             currentTheme === 'Dark' ? colors.darkLevel2 : colors.white
         }}
@@ -210,9 +210,9 @@ const ColumnPreference = ({
                           )}
                         >
                           <Box className="flex items-center">
-                            <DragIcon sx={{ color: COLORS.SECONDARY }} />
+                            <DragIcon style={{ color: COLORS.SECONDARY }} />
                             <FormControlLabel
-                              sx={{
+                              style={{
                                 '& .MuiFormControlLabel-label': {
                                   fontSize: '0.875rem',
                                   fontWeight: '500',
@@ -246,7 +246,7 @@ const ColumnPreference = ({
                                       disabled={defaultFields?.find(
                                         (f) => f.name === column?.name
                                       )}
-                                      sx={{
+                                      style={{
                                         color: colors.secondary.main,
                                         '& .Mui-checked': {
                                           color: defaultFields?.find(
@@ -265,7 +265,7 @@ const ColumnPreference = ({
                               }
                               label={
                                 <Typography
-                                  sx={{
+                                  style={{
                                     fontSize: '0.875rem',
                                     color: colors.grey[900],
                                     fontWeight: 500,

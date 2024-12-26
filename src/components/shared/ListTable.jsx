@@ -68,7 +68,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
             <TableCell>Name</TableCell>
 
             <TableCell>Status</TableCell>
-            <TableCell align="center" sx={{ pr: 3 }}>
+            <TableCell align="center" style={{ pr: 3 }}>
               Actions
             </TableCell>
           </TableRow>
@@ -80,7 +80,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                 hover
                 key={index}
                 onClick={() => onRowClick(row)}
-                sx={{
+                style={{
                   cursor: 'pointer'
                 }}
               >
@@ -89,7 +89,9 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                     <Grid item>
                       <Avatar
                         alt="User 1"
-                        sx={{ background: assignColorById(row?.moduleInfoId) }}
+                        style={{
+                          background: assignColorById(row?.moduleInfoId)
+                        }}
                         src={`${process.env.REACT_APP_STORAGE_URL}/${row?.logo}`}
                       >
                         {row?.displayName[0]?.toUpperCase()}
@@ -99,7 +101,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                       <Typography
                         align="left"
                         component="div"
-                        sx={{
+                        style={{
                           fontSize: '0.875rem',
                           fontWeight: 500,
                           color:
@@ -111,7 +113,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                         {row.displayName}{' '}
                         {row.active === true && (
                           <CheckCircleIcon
-                            sx={{
+                            style={{
                               color: colors.success.dark,
                               width: 14,
                               height: 14
@@ -121,7 +123,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                       </Typography>
                       <Typography
                         align="left"
-                        sx={{
+                        style={{
                           fontSize: '0.75rem',
                           fontWeight: 400,
                           color: colors.grey[500]
@@ -139,7 +141,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                     <Chip
                       label="Active"
                       size="small"
-                      sx={{
+                      style={{
                         background:
                           currentTheme === 'Dark'
                             ? colors.darkLevel1
@@ -152,7 +154,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                     <Chip
                       label="Rejected"
                       size="small"
-                      sx={{
+                      style={{
                         background: colors.orange.light + 80,
                         color: colors.orange.dark
                       }}
@@ -162,14 +164,14 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                     <Chip
                       label="Pending"
                       size="small"
-                      sx={{
+                      style={{
                         background: colors.warning.light,
                         color: colors.warning.dark
                       }}
                     />
                   )}
                 </TableCell>
-                <TableCell align="center" sx={{ pr: 3 }}>
+                <TableCell align="center" style={{ pr: 3 }}>
                   <Stack
                     direction="row"
                     justifyContent="center"
@@ -180,7 +182,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                         <Tooltip placement="top" title="Move">
                           <IconButton
                             color="primary"
-                            sx={{
+                            style={{
                               color: colors.warning.dark,
                               borderColor: colors.warning.main,
                               '&:hover ': { background: colors.warning.light }
@@ -191,13 +193,13 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                               onActionClick(MODAL.moveTo, row.id);
                             }}
                           >
-                            <MoveUpIcon sx={{ fontSize: '1.1rem' }} />
+                            <MoveUpIcon style={{ fontSize: '1.1rem' }} />
                           </IconButton>
                         </Tooltip>
                         <Tooltip placement="top" title="Add Action">
                           <IconButton
                             color="primary"
-                            sx={{
+                            style={{
                               color: colors.success.dark,
                               borderColor: colors.success.main,
                               '&:hover ': { background: colors.success.light }
@@ -208,7 +210,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                               navigate('/app/actions');
                             }}
                           >
-                            <AddCardIcon sx={{ fontSize: '1.1rem' }} />
+                            <AddCardIcon style={{ fontSize: '1.1rem' }} />
                           </IconButton>
                         </Tooltip>
                       </>
@@ -223,13 +225,13 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                           onActionClick(MODAL.edit, row.id);
                         }}
                       >
-                        <EditIcon sx={{ fontSize: '1.1rem' }} />
+                        <EditIcon style={{ fontSize: '1.1rem' }} />
                       </IconButton>
                     </Tooltip>
                     <Tooltip placement="top" title="Delete">
                       <IconButton
                         color="primary"
-                        sx={{
+                        style={{
                           color: colors.orange.dark,
                           borderColor: colors.orange.main,
                           '&:hover ': { background: colors.orange.light }
@@ -240,7 +242,7 @@ const ListTable = ({ headers, rows, onActionClick, onRowClick, type }) => {
                           onActionClick(MODAL.delete, row.id);
                         }}
                       >
-                        <DeleteForeverIcon sx={{ fontSize: '1.1rem' }} />
+                        <DeleteForeverIcon style={{ fontSize: '1.1rem' }} />
                       </IconButton>
                     </Tooltip>
                   </Stack>

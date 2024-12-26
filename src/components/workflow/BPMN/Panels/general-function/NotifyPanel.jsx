@@ -75,7 +75,7 @@ export const NotifyPanel = ({
             />
             <IconButton
               className="mx-1 my-2"
-              sx={{
+              style={{
                 padding: '0px',
                 backgroundColor: colors.primary[200],
                 '&:hover': {
@@ -85,7 +85,7 @@ export const NotifyPanel = ({
               onClick={() => addExpression('to', 'notify', notifyData.to)}
             >
               <AddIcon
-                sx={{
+                style={{
                   fontSize: '25px',
                   color: colors.primary.main,
                   '&:hover': {
@@ -109,7 +109,7 @@ export const NotifyPanel = ({
 
             <IconButton
               className="mx-1 my-2"
-              sx={{
+              style={{
                 padding: '0px',
                 backgroundColor: colors.primary[200],
                 '&:hover': {
@@ -119,7 +119,7 @@ export const NotifyPanel = ({
               onClick={() => addExpression('cc', 'notify', notifyData.cc)}
             >
               <AddIcon
-                sx={{
+                style={{
                   fontSize: '25px',
                   color: colors.primary.main,
                   '&:hover': {
@@ -143,7 +143,7 @@ export const NotifyPanel = ({
 
             <IconButton
               className="mx-1 my-2"
-              sx={{
+              style={{
                 padding: '0px',
                 backgroundColor: colors.primary[200],
                 '&:hover': {
@@ -153,7 +153,7 @@ export const NotifyPanel = ({
               onClick={() => addExpression('bcc', 'notify', notifyData.bcc)}
             >
               <AddIcon
-                sx={{
+                style={{
                   fontSize: '25px',
                   color: colors.primary.main,
                   '&:hover': {
@@ -176,7 +176,7 @@ export const NotifyPanel = ({
 
             <IconButton
               className="mx-1 my-2"
-              sx={{
+              style={{
                 padding: '0px',
                 backgroundColor: colors.primary[200],
                 '&:hover': {
@@ -188,7 +188,7 @@ export const NotifyPanel = ({
               }
             >
               <AddIcon
-                sx={{
+                style={{
                   fontSize: '25px',
                   color: colors.primary.main,
                   '&:hover': {
@@ -213,7 +213,7 @@ export const NotifyPanel = ({
 
             <IconButton
               className="mx-1 my-2"
-              sx={{
+              style={{
                 padding: '0px',
                 backgroundColor: colors.primary[200],
                 '&:hover': {
@@ -225,7 +225,7 @@ export const NotifyPanel = ({
               }
             >
               <AddIcon
-                sx={{
+                style={{
                   fontSize: '25px',
                   color: colors.primary.main,
                   '&:hover': {

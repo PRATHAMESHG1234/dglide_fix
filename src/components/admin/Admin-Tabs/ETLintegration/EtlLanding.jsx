@@ -134,7 +134,7 @@ export const EtlLanding = () => {
               value={subTabvalue}
               indicatorColor="primary"
               onChange={handleChange}
-              sx={{
+              style={{
                 mb: 3,
                 minHeight: 'auto',
                 '& button': {

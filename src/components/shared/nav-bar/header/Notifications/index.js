@@ -93,7 +93,7 @@ const NotificationSection = () => {
   return (
     <>
       <Box
-        sx={{
+        style={{
           ml: 2,
           mr: 3,
           [theme.breakpoints.down('md')]: {
@@ -107,13 +107,13 @@ const NotificationSection = () => {
           badgeContent={'0'}
           anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
           color={currentTheme === 'Dark' ? 'warning' : 'secondary'}
-          sx={{
+          style={{
             fontSize: '10px'
           }}
         >
           <Avatar
             variant="rounded"
-            sx={{
+            style={{
               cursor: 'pointer',
               borderRadius: '8px',
               width: '34px',
@@ -199,7 +199,7 @@ const NotificationSection = () => {
                           container
                           alignItems="center"
                           justifyContent="space-between"
-                          sx={{ pt: 2, px: 2 }}
+                          style={{ pt: 2, px: 2 }}
                         >
                           <Grid item>
                             <Stack direction="row" spacing={2}>
@@ -209,7 +209,7 @@ const NotificationSection = () => {
                               <Chip
                                 size="small"
                                 label="01"
-                                sx={{
+                                style={{
                                   color: colors.grey[900],
                                   bgcolor: colors.warning.dark
                                 }}
@@ -238,7 +238,7 @@ const NotificationSection = () => {
                         >
                           <Grid container direction="column" spacing={2}>
                             <Grid item xs={12}>
-                              <Box sx={{ px: 2, pt: 0.25 }}>
+                              <Box style={{ px: 2, pt: 0.25 }}>
                                 <TextField
                                   id="outlined-select-currency-native"
                                   select
@@ -261,7 +261,7 @@ const NotificationSection = () => {
                               </Box>
                             </Grid>
                             <Grid item xs={12} p={0}>
-                              <Divider sx={{ my: 0 }} />
+                              <Divider style={{ my: 0 }} />
                             </Grid>
                           </Grid>
                           <NotificationList />
@@ -269,7 +269,7 @@ const NotificationSection = () => {
                       </Grid>
                     </Grid>
                     <Divider />
-                    <CardActions sx={{ p: 1.25, justifyContent: 'center' }}>
+                    <CardActions style={{ p: 1.25, justifyContent: 'center' }}>
                       <Button size="small" disableElevation>
                         View All
                       </Button>

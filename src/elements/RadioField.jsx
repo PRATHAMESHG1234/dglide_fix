@@ -42,8 +42,8 @@ const RadioField = (props) => {
     setTouched(true);
   };
   return (
-    <FormControl sx={props.fieldstyle}>
-      <FormLabel sx={{ fontSize: '13.5px', ...props.labelstyle }}>
+    <FormControl style={props.fieldstyle}>
+      <FormLabel style={{ fontSize: '13.5px', ...props.labelstyle }}>
         {props.labelname}
         {props.required && <span className="text-danger"> *</span>}
       </FormLabel>
@@ -51,7 +51,7 @@ const RadioField = (props) => {
         {props.options?.map((option) => {
           return (
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': {
                   fontSize: '13px'
                 },
@@ -63,7 +63,7 @@ const RadioField = (props) => {
               onFocus={handleTouch}
               control={
                 <Radio
-                  sx={{
+                  style={{
                     '& .MuiSvgIcon-root': {
                       fontSize: 15
                     }
@@ -79,7 +79,7 @@ const RadioField = (props) => {
         <div style={{ height: '13px' }}>
           <Typography
             className={`${props?.validation?.type === 'info' ? 'text-warning' : 'text-danger'}`}
-            sx={{ fontSize: '11px' }}
+            style={{ fontSize: '11px' }}
           >
             {helperText}
           </Typography>

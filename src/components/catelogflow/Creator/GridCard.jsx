@@ -132,7 +132,7 @@ function GridCard({
             <Grid
               key={item.catelogflow_id}
               item
-              sx={{
+              style={{
                 backgroundColor:
                   currentTheme === 'Dark' ? colors.darkLevel2 : colors.white,
                 // margin: '0 0 10px 10px',
@@ -142,9 +142,9 @@ function GridCard({
                 width: '100%'
               }}
             >
-              <Grid container spacing={3} sx={{ paddingY: 1 }}>
+              <Grid container spacing={3} style={{ paddingY: 1 }}>
                 <Grid item>
-                  <Typography sx={{ fontWeight: 600, fontSize: '16px' }}>
+                  <Typography style={{ fontWeight: 600, fontSize: '16px' }}>
                     {item.category}
                   </Typography>
                 </Grid>
@@ -175,7 +175,7 @@ function GridCard({
                       onClick={() => handleShowMore(item.category)}
                       variant="outlined"
                       size="small"
-                      sx={{
+                      style={{
                         color: assignColorById(item?.catelogflow_id),
                         border: `solid 0.5px ${assignColorById(item?.catelogflow_id)}`,
                         '&:hover': {

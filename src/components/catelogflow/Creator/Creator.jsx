@@ -443,7 +443,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
             style={{ marginRight: '7px', color: 'grey' }}
           />
           <Typography
-            sx={{
+            style={{
               fontSize: '18px',
               color: COLORS.PRIMARY
             }}
@@ -459,7 +459,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
               variant="solid"
               type="submit"
               onClick={() => setCompile(true)}
-              sx={{
+              style={{
                 backgroundColor: COLORS.PRIMARY
               }}
             >
@@ -468,7 +468,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
 
             <Button
               className="close-icon"
-              sx={{
+              style={{
                 backgroundColor: COLORS.PRIMARY
               }}
               onClick={() => setCloseConfirmatn(true)}

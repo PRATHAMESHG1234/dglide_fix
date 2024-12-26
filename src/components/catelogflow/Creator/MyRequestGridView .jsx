@@ -76,14 +76,14 @@ const MyRequestGridView = ({
   }
   return (
     <>
-      <Grid container className="flex  flex-col   mt-3">
+      <Grid container className="mt-3 flex flex-col">
         <Grid className={`flex flex-row flex-wrap`}>
           {paginatedItems.map((filteredItem, index) => (
             <Card
               key={filteredItem.catalogFlowInfoId}
               variant="outlined"
               color=""
-              sx={{
+              style={{
                 gap: '0',
                 width: 280,
                 height: 120,
@@ -113,17 +113,17 @@ const MyRequestGridView = ({
                         ? filteredItem.logo
                         : '/static/images/avatar/1.jpg'
                     }
-                    sx={{
+                    style={{
                       backgroundColor: colors.warning.light,
                       color: colors.warning.dark
                     }}
                   >
                     <StorefrontTwoToneIcon fontSize="inherit" />
                   </Avatar>
-                  <div className="flex  flex-col  mx-2">
+                  <div className="mx-2 flex flex-col">
                     <Typography
                       level="title-lg"
-                      sx={{
+                      style={{
                         // color: COLORS.SECONDARY,
                         fontSize: '1rem',
                         color:
@@ -192,7 +192,7 @@ const MyRequestGridView = ({
             <Button
               variant="text"
               size="large"
-              sx={{ color: colors.grey[900] }}
+              style={{ color: colors.grey[900] }}
               color="inherit"
               endIcon={<ExpandMoreRoundedIcon />}
               onClick={handleClick}

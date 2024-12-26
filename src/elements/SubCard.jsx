@@ -35,7 +35,7 @@ const SubCard = React.forwardRef(
     return (
       <Card
         ref={ref}
-        sx={{
+        style={{
           border: '1px solid',
           backgroundColor:
             currentTheme === 'Dark' ? colors.darkLevel2 : colors.white,
@@ -55,10 +55,10 @@ const SubCard = React.forwardRef(
         {/* card header and action */}
         {!DarkTitle && title && (
           <CardHeader
-            sx={{ p: 2.5 }}
+            style={{ p: 2.5 }}
             title={
               <Typography
-                sx={{
+                style={{
                   fontSize: '1rem',
                   fontWeight: 500,
                   color:
@@ -73,10 +73,10 @@ const SubCard = React.forwardRef(
         )}
         {DarkTitle && title && (
           <CardHeader
-            sx={{ p: 2.5 }}
+            style={{ p: 2.5 }}
             title={
               <Typography
-                sx={{
+                style={{
                   fontSize: '1rem',
                   color: colors.grey[600],
                   fontWeight: 600
@@ -92,7 +92,7 @@ const SubCard = React.forwardRef(
         {/* content & header divider */}
         {title && (
           <Divider
-            sx={{
+            style={{
               opacity: 1,
               borderColor:
                 currentTheme === 'Dark'
@@ -105,7 +105,7 @@ const SubCard = React.forwardRef(
         {/* card content */}
         {content && children && (
           <CardContent
-            sx={{
+            style={{
               p: 2.5,
               ...contentSX,
               background:

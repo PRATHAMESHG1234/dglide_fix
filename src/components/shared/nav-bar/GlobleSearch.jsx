@@ -143,7 +143,7 @@ const GlobalSearch = () => {
         aria-labelledby={`simple-tab-${index}`}
         {...other}
       >
-        {value === index && <Box sx={{ p: 0 }}>{children}</Box>}
+        {value === index && <Box style={{ p: 0 }}>{children}</Box>}
       </div>
     );
   }
@@ -186,7 +186,7 @@ const GlobalSearch = () => {
                 indicatorColor="primary"
                 textColor="primary"
                 onChange={handleChange}
-                sx={{
+                style={{
                   mb: 3,
                   ml: 5,
                   minHeight: 'auto',

@@ -20,7 +20,7 @@ export const ApprovalDetail = ({
       <div className="felx-row flex">
         <Avatar
           alt="User 1"
-          sx={{
+          style={{
             color: currentTheme === 'Dark' ? colors.white : '',
             width: '50px',
             marginRight: '10px',
@@ -31,7 +31,7 @@ export const ApprovalDetail = ({
         <div>
           <div>Approval</div>
           <Typography
-            sx={{
+            style={{
               letterSpacing: '0em',
               fontWeight: 400,
               lineHeight: '1.5em',
@@ -64,7 +64,7 @@ export const ApprovalDetail = ({
       >
         <Box>
           <Typography
-            sx={{
+            style={{
               letterSpacing: '0em',
               fontWeight: 400,
               lineHeight: '1.5em',
@@ -75,7 +75,7 @@ export const ApprovalDetail = ({
             {`Approval ID : ${selectedIdData?.approval_id}`}
           </Typography>
           <Typography
-            sx={{
+            style={{
               letterSpacing: '0em',
               fontWeight: 400,
               lineHeight: '1.5em',
@@ -86,7 +86,7 @@ export const ApprovalDetail = ({
             {`Request : ${selectedIdData?.request_id}`}
           </Typography>
           <Typography
-            sx={{
+            style={{
               letterSpacing: '0em',
               fontWeight: 400,
               lineHeight: '1.5em',
@@ -97,7 +97,7 @@ export const ApprovalDetail = ({
             {`Requested User : ${selectedIdData?.requester_display}`}
           </Typography>
           <Typography
-            sx={{
+            style={{
               letterSpacing: '0em',
               fontWeight: 400,
               lineHeight: '1.5em',
@@ -109,7 +109,7 @@ export const ApprovalDetail = ({
           </Typography>
 
           <Typography
-            sx={{
+            style={{
               marginTop: '15px',
               letterSpacing: '0em',
               fontWeight: 500,
@@ -128,7 +128,7 @@ export const ApprovalDetail = ({
 
             return (
               <Typography
-                sx={{
+                style={{
                   letterSpacing: '0em',
                   lineHeight: '1.5em',
                   color:
@@ -141,7 +141,7 @@ export const ApprovalDetail = ({
             );
           })}
           <Typography
-            sx={{
+            style={{
               marginTop: '15px',
               letterSpacing: '0em',
               fontWeight: 500,
@@ -165,7 +165,7 @@ export const ApprovalDetail = ({
             >
               {' '}
               <CancelIcon
-                sx={{
+                style={{
                   color: colors.error.main,
                   width: 16,
                   height: 16,
@@ -180,7 +180,7 @@ export const ApprovalDetail = ({
               onClick={() => handleApprove(selectedIdData)}
             >
               <CheckCircleIcon
-                sx={{
+                style={{
                   color: colors.success.main,
                   width: 16,
                   height: 16,

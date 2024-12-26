@@ -31,7 +31,7 @@ const DetailViewModal = ({
     <Dialog
       open={state.show}
       onClose={onCancel}
-      sx={{
+      style={{
         '& .MuiDialog-container': {
           '& .MuiPaper-root': {
             width: '100%',
@@ -44,7 +44,7 @@ const DetailViewModal = ({
         <Stack spacing={1.5} direction="row" justifyContent="space-between">
           <Typography
             level="title-md"
-            sx={{
+            style={{
               color: COLORS.ORANGE
             }}
           >
@@ -70,10 +70,10 @@ const DetailViewModal = ({
                   }
                 }}
               >
-                <Edit sx={{ color: 'primary' }} />
+                <Edit style={{ color: 'primary' }} />
               </IconButton>
             </Tooltip>
-            <Stack spacing={1.5} direction="row" sx={{ zIndex: 1 }}>
+            <Stack spacing={1.5} direction="row" style={{ zIndex: 1 }}>
               <Dropdown>
                 <Tooltip title="more">
                   <MenuButton
@@ -89,7 +89,7 @@ const DetailViewModal = ({
                     <MoreHorizIcon />
                   </MenuButton>
                 </Tooltip>
-                <Menu placement="bottom-end" sx={{ zIndex: '11111' }}>
+                <Menu placement="bottom-end" style={{ zIndex: '11111' }}>
                   <MenuItem
                     onClick={() => onActionClick(MODAL.edit, state.selected.id)}
                   >
@@ -101,7 +101,7 @@ const DetailViewModal = ({
 
                   <ListDivider />
                   <MenuItem variant="soft" color="danger">
-                    <ListItemDecorator sx={{ color: 'inherit' }}>
+                    <ListItemDecorator style={{ color: 'inherit' }}>
                       <DeleteForever />
                     </ListItemDecorator>
                     Delete
@@ -122,7 +122,7 @@ const DetailViewModal = ({
                 }}
               >
                 <ClearIcon
-                  sx={{ color: COLORS.SECONDARY }}
+                  style={{ color: COLORS.SECONDARY }}
                   onClick={onCancel}
                 />
               </IconButton>
@@ -143,7 +143,7 @@ const DetailViewModal = ({
             <Stack spacing={3}>
               <Stack spacing={1.5} direction="row" width={'100%'}>
                 <Typography
-                  sx={{
+                  style={{
                     fontSize: '18px',
                     color: COLORS.SECONDARY
                   }}
@@ -155,7 +155,7 @@ const DetailViewModal = ({
               <Stack spacing={1.5} direction="row">
                 <Typography
                   level="title-sm"
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY,
                     width: '50%'
                   }}
@@ -169,7 +169,7 @@ const DetailViewModal = ({
                       ? state.selected.logo
                       : '/static/images/avatar/1.jpg'
                   }
-                  sx={{
+                  style={{
                     width: '25px !important',
                     height: '25px !important',
                     background: 'cover'
@@ -179,7 +179,7 @@ const DetailViewModal = ({
               <Stack spacing={1.5} direction="row">
                 <Typography
                   level="title-sm"
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY,
                     width: '50%'
                   }}
@@ -188,7 +188,7 @@ const DetailViewModal = ({
                 </Typography>
                 <Typography
                   level="title-sm"
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY
                   }}
                 >
@@ -200,7 +200,7 @@ const DetailViewModal = ({
               <Stack spacing={1.5} direction="row">
                 <Typography
                   level="title-sm"
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY,
                     width: '50%'
                   }}
@@ -224,7 +224,7 @@ const DetailViewModal = ({
               <Stack spacing={1.5}>
                 <Typography
                   level="title-sm"
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY,
                     width: '50%'
                   }}
@@ -234,7 +234,7 @@ const DetailViewModal = ({
                 <Divider />
 
                 <Typography
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY,
                     fontSize: '14px'
                   }}
@@ -246,22 +246,22 @@ const DetailViewModal = ({
           </DialogContent>
         </Box>
         <DialogActions>
-          <Stack gap={4} sx={{ width: '100%' }}>
+          <Stack gap={4} style={{ width: '100%' }}>
             <Button
               type="button"
               variant={'outlined'}
               fullWidth
-              sx={{ width: '100%' }}
+              style={{ width: '100%' }}
               onClick={goToFields}
             >
               Fields
             </Button>
           </Stack>
-          <Stack gap={4} sx={{ width: '100%' }}>
+          <Stack gap={4} style={{ width: '100%' }}>
             <Button
               type="button"
               fullWidth
-              sx={{ backgroundColor: COLORS.PRIMARY, width: '100%' }}
+              style={{ backgroundColor: COLORS.PRIMARY, width: '100%' }}
               onClick={() => goToPanel(state.selected)}
             >
               {type === 'module' ? 'Forms' : 'Records'}

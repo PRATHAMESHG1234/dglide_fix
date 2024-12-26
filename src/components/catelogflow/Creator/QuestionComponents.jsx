@@ -52,7 +52,7 @@ const QuestionComponent = ({
       case 'password':
       case 'number':
         return (
-          <div className=" mb-4">
+          <div className="mb-4">
             <TextField
               key={field.name}
               labelname={field.label}
@@ -70,7 +70,7 @@ const QuestionComponent = ({
               inputProps={{
                 autoComplete: 'new-password'
               }}
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '30px',
                   width: '100%',
@@ -100,7 +100,7 @@ const QuestionComponent = ({
                 arrow
               >
                 <InfoIcon
-                  sx={{ color: COLORS.GRAY, cursor: 'pointer' }}
+                  style={{ color: COLORS.GRAY, cursor: 'pointer' }}
                 ></InfoIcon>
               </Tooltip>
             )}
@@ -109,11 +109,11 @@ const QuestionComponent = ({
       case 'textarea':
         if (!field.variant || field.variant.toLowerCase() === 'plaintext') {
           return (
-            <div className="flex  flex-col -reverse">
+            <div className="-reverse flex flex-col">
               {field.readOnly === true ? (
-                <div className="input-wrapper flex  flex-col ">
+                <div className="input-wrapper flex flex-col">
                   <FormLabel
-                    sx={{
+                    style={{
                       fontSize: '13px',
                       fontWeight: 'bold',
                       marginBottom: '8px'
@@ -171,7 +171,7 @@ const QuestionComponent = ({
                   arrow
                 >
                   <InfoIcon
-                    sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                    style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                   ></InfoIcon>
                 </Tooltip>
               )}
@@ -179,8 +179,8 @@ const QuestionComponent = ({
           );
         } else {
           return (
-            <div className="ReactQuill flex  flex-col  reactQuillExtra mb-4 ">
-              <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+            <div className="ReactQuill reactQuillExtra mb-4 flex flex-col">
+              <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
                 {field.label}
                 {field.mandatory && <span className="text-danger"> *</span>}
               </FormLabel>
@@ -213,7 +213,7 @@ const QuestionComponent = ({
                   arrow
                 >
                   <InfoIcon
-                    sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                    style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                   ></InfoIcon>
                 </Tooltip>
               )}
@@ -231,7 +231,7 @@ const QuestionComponent = ({
         }
         return (
           <>
-            <div className=" mb-4">
+            <div className="mb-4">
               <RadioField
                 key={field.name}
                 submitFlag={onClickSubmit}
@@ -283,7 +283,7 @@ const QuestionComponent = ({
                 arrow
               >
                 <InfoIcon
-                  sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                  style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                 ></InfoIcon>
               </Tooltip>
             )}
@@ -301,7 +301,7 @@ const QuestionComponent = ({
         }
         if (!field.variant || field.variant.toLowerCase() === 'single') {
           return (
-            <div className=" mb-4">
+            <div className="mb-4">
               <SelectField
                 key={field.name}
                 labelname={field.label}
@@ -334,7 +334,7 @@ const QuestionComponent = ({
                   arrow
                 >
                   <InfoIcon
-                    sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                    style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                   ></InfoIcon>
                 </Tooltip>
               )}
@@ -399,13 +399,13 @@ const QuestionComponent = ({
                     arrow
                   >
                     <InfoIcon
-                      sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                      style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                     ></InfoIcon>
                   </Tooltip>
                 )}
               </div>
               {!formObj[field.name] && onClickSubmit && field.mandatory && (
-                <Typography className="error" sx={{ height: '15px' }}>
+                <Typography className="error" style={{ height: '15px' }}>
                   {`${field?.label} field can't be empty..!`}
                 </Typography>
               )}
@@ -422,7 +422,7 @@ const QuestionComponent = ({
           }
         }
         return (
-          <div className="flex mb-4" key={field.name}>
+          <div className="mb-4 flex" key={field.name}>
             <CheckboxField
               labelname={field.label}
               name={field.name}
@@ -449,7 +449,7 @@ const QuestionComponent = ({
                 arrow
               >
                 <InfoIcon
-                  sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                  style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                 ></InfoIcon>
               </Tooltip>
             )}
@@ -457,7 +457,7 @@ const QuestionComponent = ({
         );
       case 'date':
         return (
-          <div className="flex mb-4">
+          <div className="mb-4 flex">
             <TextField
               key={field.name}
               labelname={field.label}
@@ -473,7 +473,7 @@ const QuestionComponent = ({
                   : formObj[field.name]?.split('T')[0] || ''
               }
               onChange={(e) => onFormValueChanged(e, field)}
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '30px',
                   fontSize: '13px',
@@ -504,7 +504,7 @@ const QuestionComponent = ({
                 arrow
               >
                 <InfoIcon
-                  sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                  style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                 ></InfoIcon>
               </Tooltip>
             )}
@@ -513,7 +513,7 @@ const QuestionComponent = ({
 
       case 'lookup':
         return (
-          <div className=" mb-4">
+          <div className="mb-4">
             <SelectField
               key={field.name}
               labelname={field.label}
@@ -545,7 +545,7 @@ const QuestionComponent = ({
                 arrow
               >
                 <InfoIcon
-                  sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                  style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                 ></InfoIcon>
               </Tooltip>
             )}
@@ -603,7 +603,7 @@ const QuestionComponent = ({
                       {...params}
                       variant="outlined"
                       placeholder=""
-                      sx={{
+                      style={{
                         '& .MuiInputBase-root': {
                           width: '100%',
                           height: '30px',
@@ -638,13 +638,13 @@ const QuestionComponent = ({
                     arrow
                   >
                     <InfoIcon
-                      sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                      style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                     ></InfoIcon>
                   </Tooltip>
                 )}
               </div>
               {!formObj[field.name] && field.mandatory && onClickSubmit && (
-                <Typography className="error" sx={{ height: '15px' }}>
+                <Typography className="error" style={{ height: '15px' }}>
                   {`${field.label}
           field can't be empty..!`}
                 </Typography>
@@ -656,7 +656,7 @@ const QuestionComponent = ({
         return (
           <div className="mb-4">
             <FormLabel
-              sx={{ fontSize: '13px', fontWeight: 'bold', marginY: 0.3 }}
+              style={{ fontSize: '13px', fontWeight: 'bold', marginY: 0.3 }}
             >
               {field?.label}
               {field.mandatory && <span className="text-danger"> *</span>}
@@ -676,7 +676,7 @@ const QuestionComponent = ({
             {!(formObj[field.name] === true || formObj[field.name] === false) &&
               onClickSubmit &&
               field.mandatory && (
-                <Typography className="error" sx={{ height: '15px' }}>
+                <Typography className="error" style={{ height: '15px' }}>
                   {`${field?.label}
           field can't be empty..!`}
                 </Typography>

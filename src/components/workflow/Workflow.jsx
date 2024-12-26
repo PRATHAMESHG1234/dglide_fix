@@ -235,7 +235,7 @@ const Workflow = () => {
                 <Tooltip title="List view">
                   <ToggleButton
                     value="center"
-                    sx={{
+                    style={{
                       color:
                         currentView === 'List'
                           ? colors.primary.main
@@ -251,7 +251,7 @@ const Workflow = () => {
                 </Tooltip>
                 <Tooltip title="Grid view">
                   <ToggleButton
-                    sx={{
+                    style={{
                       color:
                         currentView === 'Grid'
                           ? colors.primary.main
@@ -275,7 +275,7 @@ const Workflow = () => {
                       disabled={selectedRows.length > 1}
                       variant="contained"
                       size="small"
-                      sx={{
+                      style={{
                         height: '36.6px',
                         fontSize: '0.75rem',
                         textTransform: 'none',
@@ -302,7 +302,7 @@ const Workflow = () => {
                     anchorEl={anchorEl}
                     onClose={handleClose}
                     open={menuOpen}
-                    sx={{
+                    style={{
                       top: '8px'
                     }}
                   >
@@ -311,7 +311,7 @@ const Workflow = () => {
                         modalActionHandler('edit', selectedRows[0]);
                         handleClose();
                       }}
-                      sx={{
+                      style={{
                         bgcolor: COLORS.LAVENDER
                       }}
                     >
@@ -323,7 +323,7 @@ const Workflow = () => {
                         modalActionHandler('delete', selectedRows[0]);
                         handleClose();
                       }}
-                      sx={{
+                      style={{
                         color: COLORS.RED,
                         bgcolor: COLORS.LAVENDER
                       }}

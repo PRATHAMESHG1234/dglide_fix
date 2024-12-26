@@ -64,7 +64,7 @@ const Avatar = ({ color, outline, size, sx, ...others }) => {
 
   return (
     <MuiAvatar
-      sx={{ ...colorSX, ...outlineSX, ...sizeSX, ...sx }}
+      style={{ ...colorSX, ...outlineSX, ...sizeSX, ...sx }}
       {...others}
     />
   );

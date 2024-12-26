@@ -61,13 +61,13 @@ const CardView = ({
                                   size: 'small'
                                 }
                               }}
-                              sx={{
+                              style={{
                                 // transform: "rotate(90deg)",
                                 padding: 0
                               }}
                             >
                               <MoreVert
-                                sx={{
+                                style={{
                                   color: COLORS.SECONDARY
                                 }}
                               />

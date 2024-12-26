@@ -104,7 +104,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
         aria-describedby="modal-description"
       >
         <Box
-          sx={{
+          style={{
             position: 'fixed',
             top: 0,
             left: 0,
@@ -122,7 +122,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
         >
           <CloseIcon
             onClick={() => closePreviewModal()}
-            sx={{
+            style={{
               position: 'absolute',
               top: 16,
               right: 16,
@@ -291,7 +291,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
               <Chip
                 className="p-2"
                 label=" Browse For File"
-                sx={{
+                style={{
                   backgroundColor: '#E8F2FF',
                   fontWeight: 500,
                   color: COLORS.SECONDARY
@@ -310,11 +310,11 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
         }}
       >
         {attachmentList.length > 0 && (
-          <TableContainer sx={{ cursor: 'default' }}>
+          <TableContainer style={{ cursor: 'default' }}>
             <Table
               aria-label="simple table"
               stickyHeader
-              sx={{
+              style={{
                 m: 0,
                 '& .MuiTableRow-root:hover': {
                   backgroundColor: alpha(COLORS.TERTIARY, ODD_OPACITY + 8)
@@ -324,7 +324,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
               {catlogFlag !== 'DocumentType' ? (
                 <TableHead>
                   <TableRow
-                    sx={{
+                    style={{
                       '& .MuiTableCell-head': {
                         backgroundColor: COLORS.TERTIARY
                       }
@@ -338,16 +338,16 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                   </TableRow>
                 </TableHead>
               ) : null}
-              <TableBody sx={{ cursor: 'default', height: '100px' }}>
+              <TableBody style={{ cursor: 'default', height: '100px' }}>
                 {attachmentList.map((attachment, i) => {
                   return (
                     <TableRow
-                      sx={{
+                      style={{
                         '&:last-child td , &:last-child th': { border: 0 }
                       }}
                     >
                       <TableCell
-                        sx={{
+                        style={{
                           padding: 0,
                           paddingLeft: 1,
                           cursor: 'pointer'
@@ -368,7 +368,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           />
                         ) : attachment.fileExtension === 'pdf' ? (
                           <PictureAsPdfIcon
-                            sx={{
+                            style={{
                               fontSize: '50px',
                               marginRight: '7px',
                               color: 'lightgrey'
@@ -393,7 +393,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           />
                         ) : (
                           <FileIcon
-                            sx={{
+                            style={{
                               color: 'lightgrey',
                               fontSize: '50px',
                               marginRight: '7px'
@@ -427,7 +427,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                 onClick={() =>
                                   previewAttachmentHandler(attachment)
                                 }
-                                sx={{
+                                style={{
                                   color: COLORS.PRIMARY
                                 }}
                               >
@@ -441,7 +441,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                               onClick={() =>
                                 downloadAttachmentHandler(attachment)
                               }
-                              sx={{
+                              style={{
                                 color: COLORS.PRIMARY
                               }}
                             >
@@ -466,7 +466,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                 }}
                               >
                                 <DeleteForever
-                                  sx={{
+                                  style={{
                                     color: 'darkred'
                                   }}
                                 />
@@ -546,7 +546,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             />
                           ) : file.type === 'application/pdf' ? (
                             <PictureAsPdfIcon
-                              sx={{
+                              style={{
                                 fontSize: '30px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -574,7 +574,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             file.type ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
                               <FileIcon
-                                sx={{
+                                style={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
                                   marginRight: '7px'
@@ -602,7 +602,7 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           onClick={() => deleteSelectedFileHandler(fileIndex)}
                         >
                           <DeleteIcon
-                            sx={{
+                            style={{
                               color: 'darkred',
                               fontSize: '20px'
                             }}

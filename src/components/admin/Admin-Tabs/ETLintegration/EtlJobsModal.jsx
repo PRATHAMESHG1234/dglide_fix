@@ -319,7 +319,7 @@ export const EtlJobsModal = ({
                       maxLength="2"
                     />
                     <Label
-                      sx={{
+                      style={{
                         color: 'red',
                         fontSize: '12px',
                         marginTop: '4px'
@@ -353,7 +353,7 @@ export const EtlJobsModal = ({
                       maxLength="2"
                     />
                     <Label
-                      sx={{
+                      style={{
                         color: 'red',
                         fontSize: '12px',
                         marginTop: '4px'
@@ -387,7 +387,7 @@ export const EtlJobsModal = ({
                       maxLength="2"
                     />
                     <Label
-                      sx={{
+                      style={{
                         color: 'red',
                         fontSize: '12px',
                         marginTop: '4px'

@@ -424,7 +424,7 @@ export const EditWorkFlow = ({
                       label="Days"
                       type="number"
                       value={dateTime.days}
-                      sx={{
+                      style={{
                         width: '93%',
                         marginTop: '2px',
                         '& .MuiInputBase-root': {
@@ -452,7 +452,7 @@ export const EditWorkFlow = ({
                       maxLength="2"
                     />
                     <Label
-                      sx={{
+                      style={{
                         color: 'red',
                         fontSize: '12px',
                         marginTop: '4px'
@@ -493,7 +493,7 @@ export const EditWorkFlow = ({
                     <Input
                       label="Minutes"
                       type="number"
-                      sx={{
+                      style={{
                         width: '93%',
                         marginTop: '2px',
                         '& .MuiInputBase-root': {
@@ -522,7 +522,7 @@ export const EditWorkFlow = ({
                       maxLength="2"
                     />
                     <Label
-                      sx={{
+                      style={{
                         color: 'red',
                         fontSize: '12px',
                         marginTop: '4px'

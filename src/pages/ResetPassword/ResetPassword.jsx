@@ -17,16 +17,16 @@ const ResetPassword = () => {
       container
       direction="column"
       justifyContent="flex-end"
-      sx={{ minHeight: '100vh' }}
+      style={{ minHeight: '100vh' }}
     >
       <Grid item xs={12}>
         <Grid
           container
           justifyContent="center"
           alignItems="center"
-          sx={{ minHeight: 'calc(100vh - 68px)' }}
+          style={{ minHeight: 'calc(100vh - 68px)' }}
         >
-          <Grid item sx={{ m: { xs: 1, sm: 3 }, mb: 0 }}>
+          <Grid item style={{ m: { xs: 1, sm: 3 }, mb: 0 }}>
             <AuthCardWrapper>
               <Grid
                 container
@@ -36,7 +36,7 @@ const ResetPassword = () => {
               >
                 <Grid
                   item
-                  sx={{
+                  style={{
                     mb: 3,
                     textDecoration: 'none',
                     display: 'flex',
@@ -47,7 +47,7 @@ const ResetPassword = () => {
                 >
                   <img src={Logo} height={26} alt="logo" />
                   <Typography
-                    sx={{
+                    style={{
                       fontFamily: 'Playwrite PE , cursive',
                       fontSize: '16px',
                       color: colors.secondary.main,
@@ -80,7 +80,7 @@ const ResetPassword = () => {
                         <Typography
                           color={colors.secondary.main}
                           gutterBottom
-                          sx={{
+                          style={{
                             fontSize: '1.5rem',
                             color: colors.secondary.main,
                             fontWeight: 700
@@ -89,7 +89,7 @@ const ResetPassword = () => {
                           Reset Password
                         </Typography>
                         <Typography
-                          sx={{
+                          style={{
                             color: colors.grey[600],
                             fontWeight: 400
                           }}
@@ -110,7 +110,7 @@ const ResetPassword = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} sx={{ m: 3, mt: 1 }}>
+      <Grid item xs={12} style={{ m: 3, mt: 1 }}>
         <AuthFooter />
       </Grid>
     </Grid>

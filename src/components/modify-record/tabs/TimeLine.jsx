@@ -143,7 +143,7 @@ const TimeLine = ({
                   <TimelineItem>
                     <TimelineOppositeContent>
                       <Typography
-                        sx={{
+                        style={{
                           letterSpacing: '0em',
                           fontWeight: 400,
                           lineHeight: '1.5em',
@@ -156,15 +156,15 @@ const TimeLine = ({
                       </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                      <TimelineDot sx={{ bgcolor: assignColorById(i) }}>
-                        <IconComponent sx={{ color: '#fff' }} />
+                      <TimelineDot style={{ bgcolor: assignColorById(i) }}>
+                        <IconComponent style={{ color: '#fff' }} />
                       </TimelineDot>
-                      <TimelineConnector sx={{ height: '50px' }} />
+                      <TimelineConnector style={{ height: '50px' }} />
                     </TimelineSeparator>
                     <TimelineContent>
                       <Paper
                         elevation={3}
-                        sx={paper}
+                        style={paper}
                         onClick={() => {
                           if (row.type === 'Outbound Email') {
                             onMailSelected(row?.id, tab);
@@ -182,7 +182,7 @@ const TimeLine = ({
                             <React.Fragment key={key}>
                               {index === 0 ? (
                                 <Typography
-                                  sx={{
+                                  style={{
                                     fontSize: '0.875rem',
                                     color: colors.grey[900],
                                     fontWeight: 500,
@@ -194,7 +194,7 @@ const TimeLine = ({
                                 </Typography>
                               ) : /<\/?[a-z][\s\S]*>/i.test(data[key]) ? (
                                 <Typography
-                                  sx={{
+                                  style={{
                                     fontSize: '0.875rem',
                                     fontFamily: 'Roboto, sans-serif'
                                   }}
@@ -255,7 +255,7 @@ const TimeLine = ({
                 <TimelineItem>
                   <TimelineOppositeContent>
                     <Typography
-                      sx={{
+                      style={{
                         letterSpacing: '0em',
                         fontWeight: 400,
                         lineHeight: '1.5em',
@@ -268,15 +268,15 @@ const TimeLine = ({
                     </Typography>
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineDot sx={{ bgcolor: assignColorById(i) }}>
-                      <IconComponent sx={{ color: '#fff' }} />
+                    <TimelineDot style={{ bgcolor: assignColorById(i) }}>
+                      <IconComponent style={{ color: '#fff' }} />
                     </TimelineDot>
-                    <TimelineConnector sx={{ height: '50px' }} />
+                    <TimelineConnector style={{ height: '50px' }} />
                   </TimelineSeparator>
                   <TimelineContent>
                     <Paper
                       elevation={3}
-                      sx={paper}
+                      style={paper}
                       onClick={() => {
                         onMailSelected(row?.id, tab);
                         setSelectedId(row?.id);
@@ -288,7 +288,7 @@ const TimeLine = ({
                           <React.Fragment key={key}>
                             {index === 0 ? (
                               <Typography
-                                sx={{
+                                style={{
                                   fontSize: '0.875rem',
                                   color: colors.grey[900],
                                   fontWeight: 500,
@@ -300,7 +300,7 @@ const TimeLine = ({
                               </Typography>
                             ) : /<\/?[a-z][\s\S]*>/i.test(data[key]) ? (
                               <Typography
-                                sx={{
+                                style={{
                                   fontSize: '0.875rem',
                                   fontFamily: 'Roboto, sans-serif'
                                 }}

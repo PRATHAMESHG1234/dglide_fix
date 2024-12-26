@@ -63,7 +63,7 @@ const CardPreviewModal = ({ open, onClose, selectedItemData }) => {
                         <Typography
                           variant="body2"
                           fontSize="30px"
-                          sx={{
+                          style={{
                             fontWeight: 'bolder'
                           }}
                         >

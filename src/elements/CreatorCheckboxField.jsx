@@ -12,16 +12,16 @@ export default function CheckboxField(props) {
   const isAnyOptionSelected = checkedLabels.length > 0;
 
   return (
-    <div className="input-wrapper" sx={props.fieldstyle}>
-      <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+    <div className="input-wrapper" style={props.fieldstyle}>
+      <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
         {props.labelname}
         {props.required && <span className="text-danger"> *</span>}
       </FormLabel>
-      <List sx={{ p: 0 }}>
+      <List style={{ p: 0 }}>
         {props.options?.map((opn, i) => {
           return (
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': {
                   fontSize: '13px'
                 },
@@ -36,7 +36,7 @@ export default function CheckboxField(props) {
                   value={opn.label}
                   {...props}
                   required={false}
-                  sx={{
+                  style={{
                     '& .MuiSvgIcon-root': { fontSize: 15 }
                   }}
                 />
@@ -46,7 +46,7 @@ export default function CheckboxField(props) {
         })}
       </List>
       {!isAnyOptionSelected && props.required && props.submitFlag && (
-        <Typography className="error" sx={{ height: '15px' }}>
+        <Typography className="error" style={{ height: '15px' }}>
           {`${props.labelname}
           field can't be empty..!`}
         </Typography>

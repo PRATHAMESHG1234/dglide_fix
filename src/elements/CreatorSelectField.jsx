@@ -18,8 +18,10 @@ const SelectField = (props) => {
   // };
   return (
     <div className="input-wrapper">
-      <FormControl sx={props.fieldstyle}>
-        <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold', marginY: 0.3 }}>
+      <FormControl style={props.fieldstyle}>
+        <FormLabel
+          style={{ fontSize: '13px', fontWeight: 'bold', marginY: 0.3 }}
+        >
           {props.labelname}
           {props.required && <span className="text-danger"> *</span>}
         </FormLabel>
@@ -29,7 +31,7 @@ const SelectField = (props) => {
           defaultValue=""
           {...props}
           required={false}
-          sx={{
+          style={{
             height: '30px',
             width: '100%',
             fontSize: '13px',
@@ -41,7 +43,7 @@ const SelectField = (props) => {
               <MenuItem
                 key={j}
                 value={opn.label || opn.value}
-                sx={{
+                style={{
                   fontSize: '13px'
                 }}
               >
@@ -52,7 +54,7 @@ const SelectField = (props) => {
         </Select>
       </FormControl>
       {!SelectedOption && props.required && props.submitFlag && (
-        <Typography className="error" sx={{ height: '15px' }}>
+        <Typography className="error" style={{ height: '15px' }}>
           {`${props.labelname}
           field can't be empty..!`}
         </Typography>

@@ -233,9 +233,9 @@ const CardSection = ({
         {data?.items?.filter(
           (item) => item?.type === 'card' && item?.result !== null
         ).length === 0 ? (
-          <Typography sx={{ color: colors.grey[500], fontSize: '16px' }}>
-            Select cards using the <CheckBoxIcon sx={{ fontSize: 'inherit' }} />{' '}
-            checkbox.
+          <Typography style={{ color: colors.grey[500], fontSize: '16px' }}>
+            Select cards using the{' '}
+            <CheckBoxIcon style={{ fontSize: 'inherit' }} /> checkbox.
           </Typography>
         ) : (
           data?.items?.length > 0 &&
@@ -269,7 +269,7 @@ const CardSection = ({
                                 item?.dashboardItemInfoId
                               )}
                               color={getColorByIndex(item?.dashboardItemInfoId)}
-                              sx={{}}
+                              style={{}}
                               // onClick={() => redirect(item)}
                               onCrossClick={() =>
                                 handleCrossIconClick(item.dashboardItemInfoId)
@@ -309,7 +309,7 @@ const CardSection = ({
               >
                 <UserCountCard
                   primary={'Loading'}
-                  secondary={<CircularProgress sx={{ color: 'inherit' }} />}
+                  secondary={<CircularProgress style={{ color: 'inherit' }} />}
                   iconPrimary={getIconByIndex(
                     loadingCard && currentItem.type.toLowerCase() === 'card'
                       ? currentItem?.dashboardItemInfoId

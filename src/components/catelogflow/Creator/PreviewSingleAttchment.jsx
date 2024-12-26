@@ -67,7 +67,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
         aria-describedby="modal-description"
       >
         <Box
-          sx={{
+          style={{
             position: 'fixed',
             top: 0,
             left: 0,
@@ -85,7 +85,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
         >
           <CloseIcon
             onClick={() => closePreviewModal()}
-            sx={{
+            style={{
               position: 'absolute',
               top: 16,
               right: 16,
@@ -142,10 +142,10 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
       }}
     >
       {attachmnetData && (
-        <div className="flex items-center" sx={{ cursor: 'default' }}>
+        <div className="flex items-center" style={{ cursor: 'default' }}>
           <div className="flex items-center p-2">
             <span
-              sx={{
+              style={{
                 padding: 0,
                 paddingLeft: 1,
                 cursor: 'pointer'
@@ -164,7 +164,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                 />
               ) : attachmnetData.fileExtension === 'pdf' ? (
                 <PictureAsPdfIcon
-                  sx={{
+                  style={{
                     fontSize: '50px',
                     marginRight: '30px',
                     color: 'lightgrey'
@@ -189,7 +189,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                 />
               ) : (
                 <FileIcon
-                  sx={{
+                  style={{
                     color: 'lightgrey',
                     fontSize: '50px',
                     marginRight: '30px'
@@ -221,7 +221,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                   <Tooltip title="Preview">
                     <IconButton
                       onClick={() => previewAttachmentHandler(attachmnetData)}
-                      sx={{
+                      style={{
                         color: COLORS.PRIMARY
                       }}
                     >
@@ -233,7 +233,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                 <Tooltip title="Download">
                   <IconButton
                     onClick={() => downloadAttachmentHandler(attachmnetData)}
-                    sx={{
+                    style={{
                       color: COLORS.PRIMARY
                     }}
                   >
@@ -258,7 +258,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                             }}
                           >
                             <DeleteForever
-                              sx={{
+                              style={{
                                 color: 'darkred'
                               }}
                             />

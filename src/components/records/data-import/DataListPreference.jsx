@@ -40,7 +40,7 @@ const DataListPreference = ({
   return (
     <div className="p-2">
       {fields?.map((field, index) => (
-        <div key={index} className="flex gap-2 ">
+        <div key={index} className="flex gap-2">
           <span
             style={{
               width: '40%',
@@ -52,7 +52,7 @@ const DataListPreference = ({
             {field.label}
           </span>
           <span style={{ width: '7%', color: COLORS.SECONDARY }}>
-            <ArrowIcon sx={{ fontSize: '15px' }} />
+            <ArrowIcon style={{ fontSize: '15px' }} />
           </span>
 
           <SelectField
@@ -60,7 +60,7 @@ const DataListPreference = ({
             value={fieldsData[field.name] || ''}
             onChange={(e) => onFormValueChanged(e, field)}
             options={headerKeys.map((h) => ({ label: h, value: h }))}
-            sx={{ height: '27px', fontSize: '14px', bgcolor: COLORS.WHITE }}
+            style={{ height: '27px', fontSize: '14px', bgcolor: COLORS.WHITE }}
             fieldstyle={{ width: '50%' }}
             labelstyle={{ fontWeight: '500' }}
           />

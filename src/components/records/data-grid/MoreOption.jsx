@@ -33,7 +33,7 @@ const MoreOption = ({ children }) => {
         className="border"
         onClick={handleClick}
         color={currentTheme === 'Dark' ? colors.darkTab : COLORS.SECONDARY}
-        sx={{
+        style={{
           width: '37px',
           backgroundColor:
             currentTheme === 'Light' ? COLORS.WHITE : colors.darkTab,
@@ -47,7 +47,7 @@ const MoreOption = ({ children }) => {
         anchorEl={anchorEl}
         onClose={handleClose}
         open={menuOpen}
-        sx={{
+        style={{
           top: '8px'
         }}
       >

@@ -45,15 +45,15 @@ export default function CheckboxField(props) {
   };
 
   return (
-    <FormControl sx={props.fieldstyle} className="w-full">
-      <FormLabel sx={{ fontSize: '13.5px', ...props.labelstyle }}>
+    <FormControl style={props.fieldstyle} className="w-full">
+      <FormLabel style={{ fontSize: '13.5px', ...props.labelstyle }}>
         {props.labelname}
         {props.required && <span className="text-danger"> *</span>}
       </FormLabel>
-      <List sx={{ p: 0 }}>
+      <List style={{ p: 0 }}>
         {props.options?.map((opn, i) => (
           <FormControlLabel
-            sx={{
+            style={{
               '& .MuiFormControlLabel-label': {
                 fontSize: '13px'
               },
@@ -66,7 +66,7 @@ export default function CheckboxField(props) {
               <Checkbox
                 checked={selectedOptions.includes(opn.value)}
                 onChange={() => handleCheckboxChange(opn.value)}
-                sx={{
+                style={{
                   '& .MuiSvgIcon-root': { fontSize: 15 }
                 }}
               />
@@ -78,7 +78,7 @@ export default function CheckboxField(props) {
         <div style={{ height: '13px' }}>
           <Typography
             className={`${props?.validation?.type === 'info' ? 'text-warning' : 'text-danger'}`}
-            sx={{ fontSize: '11px' }}
+            style={{ fontSize: '11px' }}
           >
             {helperText}
           </Typography>

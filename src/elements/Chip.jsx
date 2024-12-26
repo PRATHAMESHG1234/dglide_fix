@@ -221,7 +221,7 @@ const Chip = ({ chipcolor, disabled, sx = {}, variant, ...others }) => {
     SX = outlineSX;
   }
   SX = { ...SX, ...sx };
-  return <MuiChip {...others} sx={SX} />;
+  return <MuiChip {...others} style={SX} />;
 };
 
 Chip.propTypes = {

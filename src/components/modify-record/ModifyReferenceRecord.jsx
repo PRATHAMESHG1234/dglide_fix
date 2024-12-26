@@ -153,7 +153,7 @@ const ModifyReferenceRecord = ({
         {attachmentField && !showAttachmentField && (
           <Buttons
             variant="contained"
-            sx={{
+            style={{
               backgroundColor: colors.primary.light,
               color: colors.primary.main,
               boxShadow: 'none',

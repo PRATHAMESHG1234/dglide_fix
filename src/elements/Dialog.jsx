@@ -43,7 +43,7 @@ export default function Dialog({
         maxWidth={width}
         minHeight={'730px'}
         fullWidth
-        // sx={{ minWidth: '600px !important', minHeight: '130px !important' }}
+        // style={{ minWidth: '600px !important', minHeight: '130px !important' }}
         open={open}
         onClose={outsideClickClose ? () => setOpen(false) : null}
         aria-labelledby="responsive-dialog-title"
@@ -55,7 +55,7 @@ export default function Dialog({
             <IconButton
               aria-label="close"
               onClick={() => setOpen(false)}
-              sx={{
+              style={{
                 position: 'absolute',
                 right: 10,
                 top: 10,
@@ -73,10 +73,10 @@ export default function Dialog({
             </DialogContentText>
           </DialogContent>
           {bottonPostion === 'normal' ? (
-            <DialogActions sx={{ pr: 2.5 }}>
+            <DialogActions style={{ pr: 2.5 }}>
               {firstButtonText && (
                 <Button
-                  sx={{
+                  style={{
                     color: colors.error.dark,
                     textTransform: 'none',
                     fontSize: '0.875rem'
@@ -95,20 +95,20 @@ export default function Dialog({
                   variant={variant === 'delete' ? 'contained' : 'outlined'}
                   onClick={() => setOpen(false)}
                   size={variant === 'delete' ? 'small' : 'medium'}
-                  sx={{ textTransform: 'none' }}
+                  style={{ textTransform: 'none' }}
                 >
                   {secondButtonText}
                 </Button>
               )}
             </DialogActions>
           ) : (
-            <DialogActions sx={{ pr: 2.5 }}>
+            <DialogActions style={{ pr: 2.5 }}>
               {secondButtonText && (
                 <Button
                   variant={variant === 'delete' ? 'text' : 'outlined'}
                   onClick={() => setOpen(false)}
                   size={variant === 'delete' ? 'small' : 'medium'}
-                  sx={{
+                  style={{
                     color: colors.error.dark,
                     textTransform: 'none',
                     fontSize: '0.875rem'
@@ -119,7 +119,7 @@ export default function Dialog({
               )}
               {firstButtonText && (
                 <Button
-                  sx={{
+                  style={{
                     textTransform: 'none',
                     bgcolor: colors.primary.main,
                     '&:hover': {

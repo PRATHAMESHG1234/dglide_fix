@@ -46,7 +46,7 @@ const SectionList = ({
       <ListItemButton
         key={item.path}
         onClick={() => onNavigationHandler(item.path)}
-        sx={{
+        style={{
           '&:hover,&:active': {
             bgcolor:
               currentTheme === 'Dark' ? colors.darkTab : colors.primary.light,
@@ -86,7 +86,7 @@ const SectionList = ({
       <List>
         <ListItemButton
           onClick={() => setOpenAccordian(!openAccordian)}
-          sx={{
+          style={{
             '&:hover,&:active': {
               bgcolor:
                 currentTheme === 'Dark' ? colors.darkTab : colors.primary.light,
@@ -123,7 +123,7 @@ const SectionList = ({
         </ListItemButton>
 
         <Collapse in={openAccordian} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding sx={{ pl: 4 }}>
+          <List component="div" disablePadding style={{ pl: 4 }}>
             {items.map(
               (item) =>
                 item.path &&
@@ -135,7 +135,7 @@ const SectionList = ({
       </List>
       {isAdmin && (
         <Divider
-          sx={{ bgcolor: currentTheme === 'Dark' && colors.darkBackground }}
+          style={{ bgcolor: currentTheme === 'Dark' && colors.darkBackground }}
         />
       )}
     </>

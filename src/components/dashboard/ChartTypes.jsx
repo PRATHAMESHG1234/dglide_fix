@@ -274,15 +274,15 @@ const ChartTypes = ({ defaultSelectedRecords, chartData }) => {
 
   const chartTypes = [
     {
-      label: <BarChartIcon sx={{ color: 'rgba(88, 150, 233, 0.69)' }} />,
+      label: <BarChartIcon style={{ color: 'rgba(88, 150, 233, 0.69)' }} />,
       value: 'Bar'
     },
     {
-      label: <ShowChartIcon sx={{ color: 'rgba(155, 199, 132, 1)' }} />,
+      label: <ShowChartIcon style={{ color: 'rgba(155, 199, 132, 1)' }} />,
       value: 'Line'
     },
     {
-      label: <PieChartIcon sx={{ color: 'rgba(255, 159, 64, 0.79)' }} />,
+      label: <PieChartIcon style={{ color: 'rgba(255, 159, 64, 0.79)' }} />,
       value: 'Pie'
     }
   ];
@@ -320,7 +320,7 @@ const ChartTypes = ({ defaultSelectedRecords, chartData }) => {
           value={selectedChart || ''}
           onChange={(e) => setSelectedChart(e.target.value)}
           options={chartTypes}
-          sx={{ bgcolor: 'rgba(0,0,0,0)' }}
+          style={{ bgcolor: 'rgba(0,0,0,0)' }}
         />
       </div>
       {(selectedChart === 'Bar' && <Bar options={options} data={value} />) ||

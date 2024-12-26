@@ -160,7 +160,7 @@ const ColumnPreferenceX = ({
   return (
     <Box
       className="py-0"
-      sx={{
+      style={{
         backgroundColor:
           currentTheme === 'Dark' ? colors.darkLevel2 : colors.white,
         position: 'relative'
@@ -193,7 +193,7 @@ const ColumnPreferenceX = ({
                         )}
                       >
                         <div className="hover:bg-secondary-1/30 flex items-center gap-x-2 rounded-md py-1">
-                          {/* <DragIcon sx={{ color: COLORS.SECONDARY }} /> */}
+                          {/* <DragIcon style={{ color: COLORS.SECONDARY }} /> */}
                           <GripHorizontal
                             className={`${
                               defaultFields?.find(

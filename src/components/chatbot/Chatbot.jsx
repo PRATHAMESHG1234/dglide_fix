@@ -524,7 +524,7 @@ const MyChatbot = () => {
           <Tooltip title="Attachments">
             <IconButton
               onClick={() => setAttachmentPanel(!attachmentpanel)}
-              sx={{
+              style={{
                 height: '30px',
                 width: '30px',
                 color: COLORS.PRIMARY,
@@ -532,7 +532,7 @@ const MyChatbot = () => {
               }}
             >
               <AttachFileIcon
-                sx={{ transform: 'rotate(135deg)', color: 'inherit' }}
+                style={{ transform: 'rotate(135deg)', color: 'inherit' }}
               />
             </IconButton>
           </Tooltip>
@@ -560,7 +560,7 @@ const MyChatbot = () => {
           <div className="flex items-center justify-between">
             <Typography
               level="title-lg"
-              sx={{
+              style={{
                 color:
                   currentTheme === 'Dark' ? colors.grey[500] : COLORS.SECONDARY,
                 marginTop: '10px',
@@ -574,7 +574,7 @@ const MyChatbot = () => {
               <span className="flex">
                 <Button
                   className="close-icon"
-                  sx={{
+                  style={{
                     backgroundColor: COLORS.PRIMARY
                   }}
                   onClick={() => setMyReqestFlag(!myReqestFlag)}
@@ -595,7 +595,7 @@ const MyChatbot = () => {
                       <TextField
                         value={inputData}
                         onChange={(e) => setInputData(e.target.value)}
-                        sx={{
+                        style={{
                           '& .MuiInputBase-root': {
                             height: '40px',
                             fontSize: '15px',
@@ -617,7 +617,7 @@ const MyChatbot = () => {
                       />
                       <Button
                         className="close-icon-chatbot"
-                        sx={{
+                        style={{
                           backgroundColor: COLORS.PRIMARY
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
@@ -643,7 +643,7 @@ const MyChatbot = () => {
                         //     : formObj[field.name]?.split("T")[0]
                         // }
                         onChange={(e) => setInputData(e.target.value)}
-                        sx={{
+                        style={{
                           '& .MuiInputBase-root': {
                             height: '40px',
                             fontSize: '15px',
@@ -658,7 +658,7 @@ const MyChatbot = () => {
                       />
                       <Button
                         className="close-icon-chatbot"
-                        sx={{
+                        style={{
                           backgroundColor: COLORS.PRIMARY
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
@@ -680,7 +680,7 @@ const MyChatbot = () => {
 
                     return (
                       <li
-                        sx={{
+                        style={{
                           position: 'relative',
                           '&:hover .end-icon': {
                             opacity: 1
@@ -692,7 +692,7 @@ const MyChatbot = () => {
                       >
                         <Button
                           variant="outlined"
-                          sx={{
+                          style={{
                             borderRadius: '20px',
                             Padding: '8px 20px',
                             margin: '3px 0',
@@ -705,7 +705,7 @@ const MyChatbot = () => {
                           }}
                           endIcon={
                             <SendIcon
-                              sx={{
+                              style={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -730,7 +730,7 @@ const MyChatbot = () => {
                   return questions[countRef.current]?.lookupDropdownData.map(
                     (option, index) => (
                       <li
-                        sx={{
+                        style={{
                           position: 'relative',
                           '&:hover .end-icon': {
                             opacity: 1
@@ -742,7 +742,7 @@ const MyChatbot = () => {
                       >
                         <Button
                           variant="outlined"
-                          sx={{
+                          style={{
                             borderRadius: '20px',
                             Padding: '8px 20px',
                             margin: '3px 0',
@@ -755,7 +755,7 @@ const MyChatbot = () => {
                           }}
                           endIcon={
                             <SendIcon
-                              sx={{
+                              style={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -778,7 +778,7 @@ const MyChatbot = () => {
                   return questions[countRef.current]?.referenceDropdownData.map(
                     (option, index) => (
                       <li
-                        sx={{
+                        style={{
                           position: 'relative',
                           '&:hover .end-icon': {
                             opacity: 1
@@ -790,7 +790,7 @@ const MyChatbot = () => {
                       >
                         <Button
                           variant="outlined"
-                          sx={{
+                          style={{
                             borderRadius: '20px',
                             Padding: '8px 20px',
                             margin: '3px 0',
@@ -803,7 +803,7 @@ const MyChatbot = () => {
                           }}
                           endIcon={
                             <SendIcon
-                              sx={{
+                              style={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -858,7 +858,7 @@ const MyChatbot = () => {
                           />
                           <Button
                             className="close-icon"
-                            sx={{
+                            style={{
                               backgroundColor: COLORS.PRIMARY
                             }}
                             onClick={(e) => handleOptionSelect(e, {})}
@@ -887,7 +887,7 @@ const MyChatbot = () => {
                       />
                       <Button
                         className="close-icon"
-                        sx={{
+                        style={{
                           backgroundColor: COLORS.PRIMARY
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
@@ -950,7 +950,7 @@ const MyChatbot = () => {
         <div>
           <Typography
             level="title-lg"
-            sx={{
+            style={{
               color:
                 currentTheme === 'Dark' ? colors.grey[500] : COLORS.SECONDARY,
               margin: '10px 0',
@@ -975,7 +975,7 @@ const MyChatbot = () => {
           ))}
           <Button
             className="close-icon"
-            sx={{
+            style={{
               backgroundColor: COLORS.PRIMARY
             }}
             onClick={submitHandler}
@@ -988,7 +988,7 @@ const MyChatbot = () => {
         <div className="ticket-container">
           <div className="flex justify-end">
             <Button
-              sx={{
+              style={{
                 backgroundColor: COLORS.PRIMARY
               }}
               onClick={() => setTicketCard(false)}
@@ -1003,7 +1003,7 @@ const MyChatbot = () => {
           </div>
           <div className="flex">
             <Button
-              sx={{
+              style={{
                 margin: '0 10px',
                 Padding: '10px'
               }}
@@ -1011,7 +1011,7 @@ const MyChatbot = () => {
               Add worklog
             </Button>
             <Button
-              sx={{
+              style={{
                 margin: '0 10px'
               }}
             >

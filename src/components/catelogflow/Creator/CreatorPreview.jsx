@@ -96,7 +96,7 @@ const CreatorPreview = () => {
             style={{ marginRight: '7px', color: 'grey' }}
           />
           <Typography
-            sx={{
+            style={{
               fontSize: '18px',
               color: COLORS.PRIMARY
             }}
@@ -111,7 +111,7 @@ const CreatorPreview = () => {
             <Tooltip title="Attachments">
               <IconButton
                 onClick={() => setAttachmentPanel(!attachmentpanel)}
-                sx={{
+                style={{
                   height: '30px',
                   width: '30px',
                   color: COLORS.PRIMARY,
@@ -119,7 +119,7 @@ const CreatorPreview = () => {
                 }}
               >
                 <AttachFileIcon
-                  sx={{ transform: 'rotate(135deg)', color: 'inherit' }}
+                  style={{ transform: 'rotate(135deg)', color: 'inherit' }}
                 />
               </IconButton>
             </Tooltip>
@@ -127,7 +127,7 @@ const CreatorPreview = () => {
               tooltipTitle="Submit Request"
               form="normal"
               type="submit"
-              sx={{
+              style={{
                 backgroundColor: COLORS.PRIMARY
               }}
             >
@@ -173,7 +173,7 @@ const CreatorPreview = () => {
                   style={{ maxWidth: '800px' }}
                 >
                   <Box
-                    sx={{
+                    style={{
                       minHeight: 'calc(100vh - 263px)'
                     }}
                   >

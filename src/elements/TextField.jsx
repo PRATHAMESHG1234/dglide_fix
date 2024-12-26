@@ -98,7 +98,7 @@ const TextField = (props) => {
               InputLabelProps={{
                 shrink: true
               }}
-              sx={{
+              style={{
                 '& .MuiFormLabel-root': {
                   fontSize: '0.875rem',
                   bgcolor: colors.white
@@ -115,7 +115,10 @@ const TextField = (props) => {
                 endAdornment:
                   props.category === 'AutoIncrement' ? (
                     <Tooltip title="copy link" placement="top">
-                      <InputAdornment position="end" sx={{ cursor: 'pointer' }}>
+                      <InputAdornment
+                        position="end"
+                        style={{ cursor: 'pointer' }}
+                      >
                         <IconCopy
                           color={colors.primary.main}
                           size="20px"
@@ -147,7 +150,7 @@ const TextField = (props) => {
         <div style={{ height: '13px' }}>
           <Typography
             className={`${props?.validation?.type === 'info' ? 'text-warning' : 'text-danger'}`}
-            sx={{ fontSize: '11px' }}
+            style={{ fontSize: '11px' }}
           >
             {helperText}
           </Typography>

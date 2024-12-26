@@ -260,7 +260,7 @@ const RecordDashboard = () => {
       <div className="mb-3 flex justify-between">
         <div className="flex items-center px-1">
           <Typography
-            sx={{
+            style={{
               fontSize: '18px',
               color: COLORS.SECONDARY
             }}
@@ -279,7 +279,7 @@ const RecordDashboard = () => {
           </Button>
           <Button
             tooltipTitle="View More"
-            sx={{
+            style={{
               backgroundColor: COLORS.PRIMARY
             }}
           >
@@ -295,15 +295,19 @@ const RecordDashboard = () => {
           borderRadius: '10px'
         }}
       >
-        <Box sx={{ width: '100%', typography: 'body1' }}>
+        <Box style={{ width: '100%', typography: 'body1' }}>
           <TabContext value={value}>
             <Box
-              sx={{ borderBottom: 1, borderColor: 'divider', paddingTop: 1.2 }}
+              style={{
+                borderBottom: 1,
+                borderColor: 'divider',
+                paddingTop: 1.2
+              }}
             >
               <TabList
                 onChange={handleChange}
                 aria-label="lab API tabs example"
-                sx={{
+                style={{
                   '& .MuiTabs-indicator': {
                     backgroundColor: COLORS.PRIMARY
                   },
@@ -321,7 +325,7 @@ const RecordDashboard = () => {
                       <Badge
                         badgeContent={tab.content}
                         color={tab.badgeColor}
-                        sx={{ padding: 0.6 }}
+                        style={{ padding: 0.6 }}
                       >
                         {tab.label}
                       </Badge>
@@ -387,10 +391,14 @@ const TabInfo = ({ TabsData }) => {
                     }}
                   >
                     <RecordIcon
-                      sx={{ fontSize: '40px', color: '#0000001D', marginX: 2 }}
+                      style={{
+                        fontSize: '40px',
+                        color: '#0000001D',
+                        marginX: 2
+                      }}
                     />
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '18px',
                         color: COLORS.SECONDARY,
                         overflow: 'hidden',
@@ -412,7 +420,7 @@ const TabInfo = ({ TabsData }) => {
                   >
                     <Box>
                       <Typography
-                        sx={{
+                        style={{
                           fontSize: '14px',
                           color: '#0000004D'
                         }}
@@ -421,7 +429,7 @@ const TabInfo = ({ TabsData }) => {
                         Created at:
                       </Typography>
                       <Typography
-                        sx={{
+                        style={{
                           fontSize: '14px',
                           color: COLORS.SECONDARY
                         }}
@@ -430,7 +438,7 @@ const TabInfo = ({ TabsData }) => {
                         {val.createdAt}
                       </Typography>
                       <Typography
-                        sx={{
+                        style={{
                           fontSize: '14px',
                           color: '#0000004D',
                           mt: 1
@@ -440,7 +448,7 @@ const TabInfo = ({ TabsData }) => {
                         Owner
                       </Typography>
                       <Typography
-                        sx={{
+                        style={{
                           fontSize: '14px',
                           color: COLORS.SECONDARY
                         }}
@@ -459,7 +467,7 @@ const TabInfo = ({ TabsData }) => {
                     }}
                   >
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '14px',
                         color: '#0000004D'
                       }}
@@ -467,11 +475,11 @@ const TabInfo = ({ TabsData }) => {
                     >
                       Shared with
                     </Typography>
-                    <AvatarGroup sx={{ mt: 2 }}>
+                    <AvatarGroup style={{ mt: 2 }}>
                       <Avatar
                         alt="Remy Sharp"
                         src="/static/images/avatar/1.jpg"
-                        sx={{ width: 35, height: 35 }}
+                        style={{ width: 35, height: 35 }}
                         className="bg-danger"
                       >
                         {val.sharedWith}
@@ -480,7 +488,7 @@ const TabInfo = ({ TabsData }) => {
                       <Avatar
                         alt="Agnes Walker"
                         src="/static/images/avatar/4.jpg"
-                        sx={{ width: 35, height: 35 }}
+                        style={{ width: 35, height: 35 }}
                         className="bg-success"
                       />
                     </AvatarGroup>
@@ -494,7 +502,7 @@ const TabInfo = ({ TabsData }) => {
                     }}
                   >
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '15px',
                         color: COLORS.SECONDARY
                       }}
@@ -503,7 +511,7 @@ const TabInfo = ({ TabsData }) => {
                       {val.name}
                     </Typography>
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '14px',
                         color: '#0000004D'
                       }}
@@ -531,7 +539,7 @@ const TabInfo = ({ TabsData }) => {
                     >
                       <Reminder />
                       <Typography
-                        sx={{
+                        style={{
                           fontSize: '14px',
                           color: COLORS.PRIMARY,
                           paddingX: 1
@@ -552,7 +560,7 @@ const TabInfo = ({ TabsData }) => {
                   >
                     <Box className="flex items-start justify-center">
                       <Typography
-                        sx={{
+                        style={{
                           fontSize: '14px',
                           color: '#1cdc75',
                           paddingX: 1
@@ -562,11 +570,11 @@ const TabInfo = ({ TabsData }) => {
                         Signed
                       </Typography>
                       <CircleIcon
-                        sx={{ color: '#1cdc75', fontSize: '15px', mt: 0.3 }}
+                        style={{ color: '#1cdc75', fontSize: '15px', mt: 0.3 }}
                       />
                     </Box>
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '14px',
                         color: '#0000004D'
                       }}

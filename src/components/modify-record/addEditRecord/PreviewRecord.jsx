@@ -476,7 +476,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                 }}
                               >
                                 <FormLabel
-                                  sx={{
+                                  style={{
                                     fontSize: '14px',
                                     fontWeight: 'bolder'
                                   }}
@@ -491,7 +491,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                       >
                                         <span className="ps-1">
                                           <InfoIcon
-                                            sx={{
+                                            style={{
                                               fontSize: '18px',
                                               color: COLORS.PRIMARY
                                             }}
@@ -557,7 +557,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                       field.category === 'Password' &&
                                       'new-password'
                                   }}
-                                  sx={{
+                                  style={{
                                     '& fieldset': {
                                       border: 'none'
                                     },
@@ -658,7 +658,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                   (field.systemDefaultField && true) ||
                                   !field.editable
                               }}
-                              sx={{
+                              style={{
                                 '& fieldset': {
                                   border: 'none'
                                 },
@@ -748,7 +748,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                 ...opn,
                                 label: IconForOption && (
                                   <Box
-                                    sx={{
+                                    style={{
                                       fontSize: '16px',
                                       color: COLORS.PRIMARY
                                     }}
@@ -777,7 +777,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                   (field.systemDefaultField && true) ||
                                   !field.editable
                               }}
-                              sx={{
+                              style={{
                                 fontSize: '13px',
                                 borderRadius: '20px',
                                 '& fieldset': {
@@ -829,7 +829,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                 IconComponent: () => null,
                                 readOnly: field.systemDefaultField && true
                               }}
-                              sx={{
+                              style={{
                                 fontSize: '13px',
                                 borderRadius: '20px',
                                 '& fieldset': {
@@ -962,7 +962,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                   <Avatar value={formObj[name]} />
                                   <div className="flex flex-col gap-0">
                                     <FormLabel
-                                      sx={{
+                                      style={{
                                         fontSize: '13.5px',
                                         fontWeight: 'bold',
                                         cursor: 'inherit'
@@ -986,7 +986,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                   key={field.name}
                                 >
                                   <InputLabel
-                                    sx={{
+                                    style={{
                                       fontSize: '13.5px',
                                       fontWeight: 400
                                     }}
@@ -1010,7 +1010,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                     )}
                                   </InputLabel>
                                   <FormControl
-                                    sx={{
+                                    style={{
                                       minWidth: 180
                                     }}
                                   >
@@ -1026,7 +1026,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                         inputProps={{
                                           IconComponent: () => null
                                         }}
-                                        sx={{
+                                        style={{
                                           height: '35px',
                                           fontSize: '13px',
                                           bgcolor: COLORS.WHITE,
@@ -1048,7 +1048,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                               <MenuItem
                                                 key={j}
                                                 value={opn.value}
-                                                sx={{
+                                                style={{
                                                   fontSize: '13px',
                                                   display: 'none'
                                                 }}
@@ -1061,7 +1061,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                       </Select>
 
                                       <Add
-                                        sx={{
+                                        style={{
                                           border: `1px solid ${COLORS.GRAYSCALE}`,
                                           borderRadius: '0px 8px 8px 0px',
                                           borderLeft: 'none',
@@ -1102,7 +1102,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                               },
                               IconComponent: () => null
                             }}
-                            sx={{
+                            style={{
                               fontSize: '13px',
                               '& fieldset': {
                                 border: 'none'
@@ -1147,7 +1147,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                 },
                                 IconComponent: () => null
                               }}
-                              sx={{
+                              style={{
                                 fontSize: '13px',
                                 borderRadius: '20px',
                                 '& fieldset': {
@@ -1244,7 +1244,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                                 field.category === 'Password' &&
                                                 'new-password'
                                             }}
-                                            sx={{
+                                            style={{
                                               '& fieldset': {
                                                 border: 'none'
                                               },
@@ -1318,7 +1318,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
           open={openInfo.open}
           onClose={() => setOpenInfo({ open: false })}
           fullWidth
-          sx={{
+          style={{
             '& .MuiDialog-container': {
               '& .MuiPaper-root': {
                 width: '100%',
@@ -1349,7 +1349,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
             >
               <Avatar
                 value={openInfo.name}
-                sx={{
+                style={{
                   height: '65px',
                   width: '65px',
                   fontSize: '22px'
@@ -1371,7 +1371,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
             </div>
           </div>
 
-          <DialogContent sx={{ p: 0 }}>
+          <DialogContent style={{ p: 0 }}>
             {openInfo.name ? (
               <div className="flex flex-col items-center justify-center p-3 pt-0">
                 <label
@@ -1391,12 +1391,12 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                         onRefClick(openInfo.field);
                         setOpenInfo({ open: false });
                       }}
-                      sx={{
+                      style={{
                         height: '15px',
                         width: '15px'
                       }}
                     >
-                      <CreateIcon sx={{ fontSize: '16px' }} />
+                      <CreateIcon style={{ fontSize: '16px' }} />
                     </IconButton>
                   </Tooltip>
                 </label>
@@ -1406,7 +1406,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                 <div className="flex gap-2">
                   <Button
                     tooltipTitle={'mail'}
-                    sx={{
+                    style={{
                       backgroundColor: COLORS.PRIMARY
                     }}
                   >
@@ -1414,7 +1414,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                   </Button>
                   <Button
                     tooltipTitle={'call'}
-                    sx={{
+                    style={{
                       backgroundColor: COLORS.PRIMARY
                     }}
                   >
@@ -1441,7 +1441,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                     onRefClick(openInfo.field);
                     setOpenInfo({ open: false });
                   }}
-                  sx={{
+                  style={{
                     backgroundColor: COLORS.PRIMARY
                   }}
                 >

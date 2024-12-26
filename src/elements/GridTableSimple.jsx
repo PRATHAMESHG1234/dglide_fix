@@ -365,7 +365,7 @@ const GridTableSimple = ({
                         title="Close"
                         size="small"
                       >
-                        <X sx={{ fontSize: '18px' }} />
+                        <X style={{ fontSize: '18px' }} />
                       </Button>
                     </div>
                     <SelectField
@@ -385,7 +385,7 @@ const GridTableSimple = ({
                               : 'String'
                         ]
                       }
-                      sx={{
+                      style={{
                         height: '27.5px',
                         minWidth: '144px',
                         fontSize: '0.75rem',
@@ -411,7 +411,7 @@ const GridTableSimple = ({
                         }
                         options={filterPopUp?.options}
                         size={'small'}
-                        sx={{
+                        style={{
                           height: '27.5px',
                           minWidth: '144px',
                           fontSize: '0.75rem',
@@ -442,7 +442,7 @@ const GridTableSimple = ({
                         size="small"
                         fullWidth
                         variant="outlined"
-                        sx={{
+                        style={{
                           '& .MuiInputBase-root': {
                             height: '27.5px',
                             fontSize: '0.75rem'

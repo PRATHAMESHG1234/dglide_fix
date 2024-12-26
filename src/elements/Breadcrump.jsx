@@ -59,7 +59,7 @@ const Breadcrumbs = ({
         component={Link}
         to={navItem.url || '#'}
         color={index === navigation.length - 1 ? colors.grey[900] : 'inherit'}
-        sx={linkSX}
+        style={linkSX}
       >
         {icons && <ItemIcon style={iconStyle} />}
         {navItem.title}
@@ -70,7 +70,7 @@ const Breadcrumbs = ({
   let capitalizedPath = path.charAt(0).toUpperCase() + path.slice(1);
   return (
     <Card
-      sx={{
+      style={{
         marginBottom: card === false ? 0 : theme.spacing(3),
         background:
           card === false ? 'transparent' : theme.palette.background.default,
@@ -78,7 +78,7 @@ const Breadcrumbs = ({
       }}
       {...others}
     >
-      <Box sx={{ p: 2, pl: card === false ? 0 : 2, mt: '20px' }}>
+      <Box style={{ p: 2, pl: card === false ? 0 : 2, mt: '20px' }}>
         <Grid
           container
           direction={rightAlign ? 'row' : 'column'}
@@ -89,7 +89,7 @@ const Breadcrumbs = ({
           {title && !titleBottom && (
             <Grid item>
               <Typography
-                sx={{
+                style={{
                   fontSize: '1.25rem',
                   color: colors.grey[900],
                   fontWeight: 600
@@ -101,7 +101,7 @@ const Breadcrumbs = ({
           )}
           <Grid item mr="20px">
             <MuiBreadcrumbs
-              sx={{
+              style={{
                 '& .MuiBreadcrumbs-separator': {
                   width: 16,
                   ml: 1.25,
@@ -112,9 +112,14 @@ const Breadcrumbs = ({
               maxItems={maxItems || 8}
               separator={separatorIcon}
             >
-              <Typography component={Link} to="#" color="inherit" sx={linkSX}>
-                {icons && <HomeTwoToneIcon sx={iconStyle} />}
-                {icon && <HomeIcon sx={{ ...iconStyle, mr: 0 }} />}
+              <Typography
+                component={Link}
+                to="#"
+                color="inherit"
+                style={linkSX}
+              >
+                {icons && <HomeTwoToneIcon style={iconStyle} />}
+                {icon && <HomeIcon style={{ ...iconStyle, mr: 0 }} />}
                 {!icon && 'Dashboard'}
               </Typography>
               {breadcrumbItems}
@@ -123,7 +128,7 @@ const Breadcrumbs = ({
           {title && titleBottom && (
             <Grid item>
               <Typography
-                sx={{
+                style={{
                   fontSize: '1.25rem',
                   color: colors.grey[600],
                   fontWeight: 600
@@ -136,7 +141,7 @@ const Breadcrumbs = ({
         </Grid>
       </Box>
       {card === false && divider !== false && (
-        <Divider sx={{ borderColor: colors.primary.main, mb: 3 }} />
+        <Divider style={{ borderColor: colors.primary.main, mb: 3 }} />
       )}
     </Card>
   );

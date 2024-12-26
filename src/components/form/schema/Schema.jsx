@@ -75,13 +75,13 @@ const Schema = () => {
           height: '60px'
         }}
       >
-        <FormLabel sx={{ fontSize: '16px', fontWeight: 'bold' }}>
+        <FormLabel style={{ fontSize: '16px', fontWeight: 'bold' }}>
           Schema
         </FormLabel>
         <div className="flex items-center" onClick={() => submitHandler()}>
           <Button
             tooltipTitle={'Export Schema'}
-            sx={{
+            style={{
               backgroundColor: COLORS.PRIMARY
             }}
           >

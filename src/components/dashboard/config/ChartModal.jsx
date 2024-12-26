@@ -1266,7 +1266,7 @@ const ChartModal = ({ state, onCancel, onConfirm, onChartClick }) => {
           <div>
             <Grid
               item
-              sx={{ display: 'flex', columnGap: '10px', marginTop: '10px' }}
+              style={{ display: 'flex', columnGap: '10px', marginTop: '10px' }}
             ></Grid>
 
             <div className="flex gap-3">

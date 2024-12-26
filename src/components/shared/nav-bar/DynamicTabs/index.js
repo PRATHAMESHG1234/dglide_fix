@@ -117,7 +117,7 @@ export default function DynamicTabs({ children, components = {}, ...props }) {
         <MenuContainer innerRef={overflowRef}>
           <Avatar
             variant="rounded"
-            sx={{
+            style={{
               cursor: 'pointer',
               borderRadius: '8px',
               width: '34px',

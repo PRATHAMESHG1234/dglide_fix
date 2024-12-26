@@ -493,7 +493,7 @@ export const SlaPolicies = ({
                           label="Month"
                           type="number"
                           value={dateTime.month}
-                          sx={{
+                          style={{
                             width: '93%',
                             marginTop: '2px',
                             '& .MuiInputBase-root': {
@@ -528,7 +528,7 @@ export const SlaPolicies = ({
                           label="Days"
                           type="number"
                           value={dateTime.days}
-                          sx={{
+                          style={{
                             width: '93%',
                             marginTop: '2px',
                             '& .MuiInputBase-root': {

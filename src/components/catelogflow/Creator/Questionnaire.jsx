@@ -177,14 +177,14 @@ const Questionnaire = ({
                 color="secondary"
                 size="medium"
                 defaultChecked
-                sx={{
+                style={{
                   mx: '0'
                 }}
               />
             }
             onChange={(e) => onBehalfCustomer(e)}
           />
-          <FormLabel sx={{ fontSize: '15px', fontWeight: 'bold' }}>
+          <FormLabel style={{ fontSize: '15px', fontWeight: 'bold' }}>
             Would like to Submit request for you?
           </FormLabel>
         </div>
@@ -195,7 +195,7 @@ const Questionnaire = ({
             // value={formObj[field.name]}
             required
             onChange={(e) => setBehalfUserData(e.target.value)}
-            sx={{
+            style={{
               height: '30px',
               marginBottom: '18px',
               width: '98%',

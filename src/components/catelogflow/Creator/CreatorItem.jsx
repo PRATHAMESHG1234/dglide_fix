@@ -32,19 +32,19 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
                   {field.inDependent === false ? (
                     <>
                       <DragIndicatorIcon
-                        sx={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
+                        style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
                       />
                       <Icon
                         fontSize="22px"
                         name={field.category}
-                        sx={{ cursor: 'pointer' }}
+                        style={{ cursor: 'pointer' }}
                       />
                     </>
                   ) : (
                     <Icon
                       fontSize="22px"
                       name={field.category}
-                      sx={{ cursor: 'pointer' }}
+                      style={{ cursor: 'pointer' }}
                     />
                   )}
                 </>
@@ -77,7 +77,7 @@ const Item = ({ field, onSelect, onDelete, type, recordId }) => {
               ),
               disableUnderline: true
             }}
-            sx={{
+            style={{
               bgcolor: showStyle ? '#CCD0D780' : COLORS.WHITE,
               '& .MuiInputBase-root': {
                 height: '30px',

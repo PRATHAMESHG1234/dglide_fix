@@ -593,7 +593,7 @@ const ModifyRecord = () => {
                   });
                 }}
                 size={'small'}
-                sx={{
+                style={{
                   height: '30px',
                   fontSize: '0.75rem',
                   bgcolor: COLORS.WHITE,
@@ -751,7 +751,7 @@ const ModifyRecord = () => {
                 height: 'calc(100vh - 170px)'
               }}
             >
-              <CircularProgress sx={{ color: colors.primary.main }} />
+              <CircularProgress style={{ color: colors.primary.main }} />
             </div>
           ) : (
             <>

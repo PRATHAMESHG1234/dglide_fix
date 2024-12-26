@@ -31,7 +31,7 @@ const Accordions = ({
   }, [defaultExpandedId]);
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box style={{ width: '100%' }}>
       {data &&
         data.map((item) => (
           <MuiAccordion
@@ -53,7 +53,7 @@ const Accordions = ({
                   <ExpandMoreIcon />
                 )
               }
-              sx={{
+              style={{
                 color: theme.palette.mode === 'dark' ? 'grey.500' : 'grey.800',
                 fontWeight: 500
               }}

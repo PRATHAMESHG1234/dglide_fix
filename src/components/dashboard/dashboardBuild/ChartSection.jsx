@@ -143,9 +143,9 @@ const ChartSection = ({
               flexWrap: 'wrap'
             }}
           >
-            <Typography sx={{ color: colors.grey[500], fontSize: '16px' }}>
+            <Typography style={{ color: colors.grey[500], fontSize: '16px' }}>
               Select charts using the{' '}
-              <CheckBoxIcon sx={{ fontSize: 'inherit' }} /> checkbox.
+              <CheckBoxIcon style={{ fontSize: 'inherit' }} /> checkbox.
             </Typography>
           </Grid>
         ) : (

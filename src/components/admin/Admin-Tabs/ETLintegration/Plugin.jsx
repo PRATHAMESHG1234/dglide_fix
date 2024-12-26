@@ -211,7 +211,7 @@ export const Plugin = ({
                     </AvatarFallback>
                   </Avatar>
                   {/* <Avatar
-                    sx={{
+                    style={{
                       width: '70px',
                       height: '60px',
                       borderRadius: '8px',

@@ -102,7 +102,7 @@ export const TempaltePanel = ({
         <IconButton
           aria-label="close"
           onClick={closeTemplatePanel}
-          sx={{
+          style={{
             position: 'absolute',
             right: 10,
             top: 10,
@@ -112,7 +112,7 @@ export const TempaltePanel = ({
             cursor: 'pointer'
           }}
         >
-          <CloseIcon sx={{ fontSize: '15px' }} />
+          <CloseIcon style={{ fontSize: '15px' }} />
         </IconButton>
         <div
           style={{
@@ -188,7 +188,7 @@ export const TempaltePanel = ({
                   <td key={index} className="px-3">
                     <IconButton
                       className="mx-1"
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.primary[200],
                         '&:hover': {
@@ -200,7 +200,7 @@ export const TempaltePanel = ({
                       }
                     >
                       <AddIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.primary.main,
                           '&:hover': {
@@ -212,7 +212,7 @@ export const TempaltePanel = ({
 
                     <IconButton
                       className="mx-1"
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.secondary[200],
                         '&:hover': {
@@ -222,7 +222,7 @@ export const TempaltePanel = ({
                       onClick={() => removeSelectedField(item?.fieldInfoId)}
                     >
                       <RemoveIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.secondary.main,
                           '&:hover': {
@@ -246,17 +246,17 @@ export const TempaltePanel = ({
                 onClick={handleAddNewField}
               >
                 <IconButton
-                  sx={{
+                  style={{
                     marginY: '20px',
                     marginRight: '2px',
                     padding: '0px',
                     backgroundColor: 'lightgrey'
                   }}
                 >
-                  <Add sx={{ fontSize: '13px' }} />
+                  <Add style={{ fontSize: '13px' }} />
                 </IconButton>
                 <Typography
-                  sx={{
+                  style={{
                     fontSize: '10px',
                     cursor: 'pointer'
                     // marginTop: '20px'

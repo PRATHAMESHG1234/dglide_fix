@@ -113,11 +113,11 @@ const CatalogFlow = () => {
             style={{ height: '40px', borderBottom: '1px solid lightgrey' }}
           >
             {pathname === '/portal' ? (
-              <FormLabel sx={{ fontSize: '18px', fontWeight: 'bold' }}>
+              <FormLabel style={{ fontSize: '18px', fontWeight: 'bold' }}>
                 Request
               </FormLabel>
             ) : (
-              <FormLabel sx={{ fontSize: '18px', fontWeight: 'bold' }}>
+              <FormLabel style={{ fontSize: '18px', fontWeight: 'bold' }}>
                 Catalog Flow
               </FormLabel>
             )}

@@ -74,7 +74,7 @@ export const DateAddPanel = ({
         <IconButton
           aria-label="close"
           onClick={closePanel}
-          sx={{
+          style={{
             position: 'absolute',
             right: 0,
             top: 0,
@@ -87,11 +87,11 @@ export const DateAddPanel = ({
           title="Output variable name: 'datetime', use it as id.out.datetime"
           placement="top-start"
           arrow
-          sx={{ fontSize: '16px' }}
+          style={{ fontSize: '16px' }}
         >
           <IconButton
             aria-label="info"
-            sx={{
+            style={{
               position: 'absolute',
               right: 35,
               top: 0,
@@ -113,7 +113,7 @@ export const DateAddPanel = ({
         >
           <div className="mb-3 flex w-full flex-col justify-start">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -150,7 +150,7 @@ export const DateAddPanel = ({
                   endAdornment: (
                     <InputAdornment position="end">
                       <CalendarMonthIcon
-                        sx={{
+                        style={{
                           color: colors.primary.dark,
                           fontSize: '25px',
                           cursor: 'pointer'
@@ -165,7 +165,7 @@ export const DateAddPanel = ({
                         }}
                       />
                       <AddBoxIcon
-                        sx={{
+                        style={{
                           color: colors.primary.dark,
                           fontSize: '25px',
                           cursor: 'pointer'
@@ -187,7 +187,7 @@ export const DateAddPanel = ({
           </div>
           <div className="mb-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -214,7 +214,7 @@ export const DateAddPanel = ({
           &nbsp;
           <div className="mb-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -250,7 +250,7 @@ export const DateAddPanel = ({
           &nbsp;
           <div className="mb-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -286,7 +286,7 @@ export const DateAddPanel = ({
           &nbsp;
           <div className="mb-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -322,7 +322,7 @@ export const DateAddPanel = ({
           &nbsp;
           <div className="mb-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'

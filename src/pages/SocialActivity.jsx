@@ -2,12 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 
 // material-ui
-import {
-  CardContent,
-  CircularProgress,
-  Grid,
-  Typography
-} from '@mui/material';
+import { CardContent, CircularProgress, Grid, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import 'react-quill/dist/quill.snow.css';
 
@@ -51,7 +46,7 @@ const SocialActivity = ({ socialData, formId }) => {
 
   return (
     <MainCard
-      sx={{
+      style={{
         bgcolor: theme.palette.mode === 'dark' ? 'dark.main' : 'grey.50',
         height: '400px',
         overflowY: 'scroll'
@@ -59,7 +54,7 @@ const SocialActivity = ({ socialData, formId }) => {
     >
       {loading ? (
         <CardContent
-          sx={{
+          style={{
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -71,7 +66,7 @@ const SocialActivity = ({ socialData, formId }) => {
         </CardContent>
       ) : (
         <>
-          <CardContent sx={{ pt: 0 }}>
+          <CardContent style={{ pt: 0 }}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Grid container spacing={3}>
@@ -85,7 +80,7 @@ const SocialActivity = ({ socialData, formId }) => {
                       <Grid
                         item
                         xs={12}
-                        sx={{
+                        style={{
                           '& > p': {
                             ...theme.typography.body1,
                             marginBottom: 0
@@ -93,7 +88,7 @@ const SocialActivity = ({ socialData, formId }) => {
                         }}
                       >
                         <Typography
-                          sx={{
+                          style={{
                             letterSpacing: '0em',
                             fontWeight: 400,
                             lineHeight: '1.5em',

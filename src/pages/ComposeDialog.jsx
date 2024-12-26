@@ -318,7 +318,7 @@ const ComposeDialog = ({
         {' '}
         {open ? (
           <DialogContent
-            sx={{
+            style={{
               overflowY: 'auto',
               height: width === 'lg' ? '100vh' : 'auto'
             }}

@@ -89,7 +89,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
       open={open}
       onClose={close}
       fullWidth
-      sx={{
+      style={{
         '& .MuiDialog-container': {
           '& .MuiPaper-root': {
             width: '100%',
@@ -111,11 +111,11 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
       >
         <Tooltip title="Close" placement="bottom">
           <IconButton onClick={close}>
-            <CloseIcon fontSize="small" sx={{ color: COLORS.BLACK }} />
+            <CloseIcon fontSize="small" style={{ color: COLORS.BLACK }} />
           </IconButton>
         </Tooltip>
       </div>
-      <DialogContent sx={{ p: 2 }}>
+      <DialogContent style={{ p: 2 }}>
         <div
           className="border p-2"
           style={{ borderRadius: '10px', backgroundColor: COLORS.WHITE }}
@@ -126,7 +126,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
               height: '60px'
             }}
           >
-            <FormLabel sx={{ fontSize: '16px', fontWeight: 'bold' }}>
+            <FormLabel style={{ fontSize: '16px', fontWeight: 'bold' }}>
               Groups
             </FormLabel>
             <div

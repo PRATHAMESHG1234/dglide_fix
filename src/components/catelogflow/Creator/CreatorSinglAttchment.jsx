@@ -118,7 +118,7 @@ const CreatorSinglAttchment = ({
               <Stack className="mt-3 flex flex-row p-2 pt-0">
                 <div className="mx-3">
                   <FormLabel
-                    sx={{
+                    style={{
                       fontSize: '13.5px',
                       fontWeight: 500,
                       paddingBottom: '8px'
@@ -210,7 +210,7 @@ const CreatorSinglAttchment = ({
                                 ) : attachment.files?.type ===
                                   'application/pdf' ? (
                                   <PictureAsPdfIcon
-                                    sx={{
+                                    style={{
                                       fontSize: '30px',
                                       marginRight: '7px',
                                       color: 'lightgrey'
@@ -238,7 +238,7 @@ const CreatorSinglAttchment = ({
                                   attachment.files?.type ===
                                     'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
                                     <FileIcon
-                                      sx={{
+                                      style={{
                                         color: 'lightgrey',
                                         fontSize: '30px',
                                         marginRight: '7px'
@@ -270,7 +270,7 @@ const CreatorSinglAttchment = ({
                                 }
                               >
                                 <DeleteIcon
-                                  sx={{
+                                  style={{
                                     color: 'darkred',
                                     fontSize: '20px'
                                   }}

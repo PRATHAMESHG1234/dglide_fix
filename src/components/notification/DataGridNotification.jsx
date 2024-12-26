@@ -15,7 +15,7 @@ export const DataGridNotification = () => {
     <>
       {formname && (
         <SubCard
-          sx={{
+          style={{
             width: '100%',
             border: 'none',
             borderRadius: '8px',

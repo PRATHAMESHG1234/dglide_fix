@@ -242,7 +242,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
                   onClick={onImportFile}
                   icon={<UploadIcon />}
                   label="Upload Picture"
-                  sx={{
+                  style={{
                     height: '40px',
                     width: '160px',
                     fontSize: '15px',
@@ -269,14 +269,14 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             fullWidth
             value={logo ? logo.split('/').pop() : null}
             placeholder="No file Chosen"
-            sx={{
+            style={{
               '& .MuiInputBase-root': {
                 fontSize: '15px',
                 height: '40px'
               }
             }}
           />
-          <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+          <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
             Name
           </FormLabel>
           <TextField
@@ -289,7 +289,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             error={formik.touched.catalog && Boolean(formik.errors.catalog)}
             helperText={formik.touched.catalog && formik.errors.catalog}
             maxLength={40}
-            sx={{
+            style={{
               '& .MuiInputBase-root': {
                 fontSize: '15px',
                 height: '40px'
@@ -297,7 +297,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             }}
           />
           <FormLabel
-            sx={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
+            style={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
           >
             Category
           </FormLabel>
@@ -310,7 +310,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             error={formik.touched.category && Boolean(formik.errors.category)}
             helperText={formik.touched.category && formik.errors.category}
             name="category"
-            sx={{
+            style={{
               '& .MuiInputBase-root': {
                 fontSize: '15px',
                 height: '40px'
@@ -325,7 +325,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
               ))}
           </TextField>
           <FormLabel
-            sx={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
+            style={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
           >
             SubCategory
           </FormLabel>
@@ -340,7 +340,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             }
             helperText={formik.touched.subCategory && formik.errors.subCategory}
             name="subCategory"
-            sx={{
+            style={{
               '& .MuiInputBase-root': {
                 fontSize: '15px',
                 height: '40px'
@@ -355,7 +355,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
               ))}
           </TextField>
           <FormLabel
-            sx={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
+            style={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
           >
             Visibility
           </FormLabel>
@@ -370,7 +370,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             }
             helperText={formik.touched.visibility && formik.errors.visibility}
             name="visibility"
-            sx={{
+            style={{
               '& .MuiInputBase-root': {
                 fontSize: '15px',
                 height: '40px'
@@ -387,7 +387,11 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
           ) : (
             <>
               <FormLabel
-                sx={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
+                style={{
+                  fontSize: '13px',
+                  fontWeight: 'bold',
+                  marginTop: '10px'
+                }}
               >
                 Status
               </FormLabel>
@@ -400,7 +404,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
                 error={formik.touched.status && Boolean(formik.errors.status)}
                 helperText={formik.touched.status && formik.errors.status}
                 name="status"
-                sx={{
+                style={{
                   '& .MuiInputBase-root': {
                     fontSize: '15px',
                     height: '40px'
@@ -417,7 +421,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             </>
           )}
           <FormLabel
-            sx={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
+            style={{ fontSize: '13px', fontWeight: 'bold', marginTop: '10px' }}
           >
             Type
           </FormLabel>
@@ -434,7 +438,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
               formik.touched.categoryType && formik.errors.categoryType
             }
             name="categoryType"
-            sx={{
+            style={{
               '& .MuiInputBase-root': {
                 fontSize: '15px',
                 height: '40px'
@@ -464,7 +468,7 @@ export const EditCatalogFlow = ({ state, onConfirm, onCancel }) => {
             }
             label={
               <Typography
-                sx={{ fontSize: '11px' }}
+                style={{ fontSize: '11px' }}
                 color="textSecondary"
                 fontWeight="500"
               >

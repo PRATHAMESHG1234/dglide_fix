@@ -50,11 +50,11 @@ const Transitions = React.forwardRef(
       <Box ref={ref}>
         {type === 'grow' && (
           <Grow {...others}>
-            <Box sx={positionSX}>{children}</Box>
+            <Box style={positionSX}>{children}</Box>
           </Grow>
         )}
         {type === 'collapse' && (
-          <Collapse {...others} sx={positionSX}>
+          <Collapse {...others} style={positionSX}>
             {children}
           </Collapse>
         )}
@@ -67,7 +67,7 @@ const Transitions = React.forwardRef(
               exit: 400
             }}
           >
-            <Box sx={positionSX}>{children}</Box>
+            <Box style={positionSX}>{children}</Box>
           </Fade>
         )}
         {type === 'slide' && (
@@ -80,12 +80,12 @@ const Transitions = React.forwardRef(
             }}
             direction={direction}
           >
-            <Box sx={positionSX}>{children}</Box>
+            <Box style={positionSX}>{children}</Box>
           </Slide>
         )}
         {type === 'zoom' && (
           <Zoom {...others}>
-            <Box sx={positionSX}>{children}</Box>
+            <Box style={positionSX}>{children}</Box>
           </Zoom>
         )}
       </Box>

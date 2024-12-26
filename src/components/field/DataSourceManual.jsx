@@ -198,7 +198,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange }) => {
             <SquarePlus
               size={16}
               onClick={addOption}
-              sx={{
+              style={{
                 cursor: 'pointer'
               }}
             />

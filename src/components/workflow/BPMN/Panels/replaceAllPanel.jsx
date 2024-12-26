@@ -71,7 +71,7 @@ function ReplaceallPanel({
         <IconButton
           aria-label="close"
           onClick={closePanel}
-          sx={{
+          style={{
             position: 'absolute',
             right: 0,
             top: 0,
@@ -84,11 +84,11 @@ function ReplaceallPanel({
           title="Output variable name: 'string', use it as id.out.string"
           placement="top-start"
           arrow
-          sx={{ fontSize: '16px' }}
+          style={{ fontSize: '16px' }}
         >
           <IconButton
             aria-label="info"
-            sx={{
+            style={{
               position: 'absolute',
               right: 35,
               top: 0,
@@ -111,7 +111,7 @@ function ReplaceallPanel({
           &nbsp;
           <div className="flex flex-col justify-start">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -137,7 +137,7 @@ function ReplaceallPanel({
                 }}
               />
               <AddBoxIcon
-                sx={{
+                style={{
                   color: colors.primary.dark,
                   fontSize: '25px',
                   marginTop: '10px',
@@ -158,7 +158,7 @@ function ReplaceallPanel({
           </div>
           <div className="flex flex-col justify-start px-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'
@@ -187,7 +187,7 @@ function ReplaceallPanel({
           </div>
           <div className="flex flex-col justify-start px-3">
             <Typography
-              sx={{
+              style={{
                 fontSize: '12px',
                 fontWeight: 600,
                 paddingBottom: '4px'

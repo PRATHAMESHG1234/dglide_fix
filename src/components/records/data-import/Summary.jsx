@@ -63,7 +63,7 @@ const Summary = ({ summaryData }) => {
       className="p-1"
     >
       <TableContainer
-        sx={{
+        style={{
           cursor: 'default',
           maxHeight: 'calc(100vh - 275px)',
           border: '1px solid lightgrey',
@@ -77,16 +77,16 @@ const Summary = ({ summaryData }) => {
           aria-label="simple table"
           stickyHeader
           padding="40px"
-          sx={{
+          style={{
             m: 0,
             '& .MuiTableRow-root:hover': {
               backgroundColor: alpha(COLORS.TERTIARY, 0.08)
             }
           }}
         >
-          <TableHead sx={{ padding: 1 }}>
+          <TableHead style={{ padding: 1 }}>
             <TableRow
-              sx={{
+              style={{
                 '& .MuiTableCell-head': {
                   backgroundColor: COLORS.TERTIARY,
                   m: 1
@@ -101,24 +101,24 @@ const Summary = ({ summaryData }) => {
               </TableCell>
             </TableRow>
           </TableHead>
-          <TableBody sx={{ bgcolor: COLORS.WHITE }}>
+          <TableBody style={{ bgcolor: COLORS.WHITE }}>
             {tableData.map(([key, value], index) => (
               <TableRow
                 key={index}
-                sx={{
+                style={{
                   '&:last-child td , &:last-child th': { border: 0 },
                   color: COLORS.SECONDARY
                 }}
               >
                 <TableCell
-                  sx={{
+                  style={{
                     fontWeight: '500'
                   }}
                 >
                   {key}
                 </TableCell>
                 <TableCell
-                  sx={{
+                  style={{
                     fontWeight: '500'
                   }}
                 >

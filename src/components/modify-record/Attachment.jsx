@@ -131,7 +131,7 @@ const Attachment = ({
         aria-describedby="modal-description"
       >
         <Box
-          sx={{
+          style={{
             position: 'fixed',
             top: 0,
             left: 0,
@@ -149,7 +149,7 @@ const Attachment = ({
         >
           <CloseIcon
             onClick={() => closePreviewModal()}
-            sx={{
+            style={{
               position: 'absolute',
               top: 16,
               right: 16,

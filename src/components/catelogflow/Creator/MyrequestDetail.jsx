@@ -64,7 +64,7 @@ export const MyrequestDetail = () => {
         <div className="m-2 flex flex-wrap items-center justify-start px-3 py-1">
           <div className="mb-4">
             <TextField
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '35px',
                   fontSize: '13.5px',
@@ -88,7 +88,7 @@ export const MyrequestDetail = () => {
           </div>
           <div className="">
             <TextField
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '35px',
                   fontSize: '13.5px',
@@ -112,7 +112,7 @@ export const MyrequestDetail = () => {
           </div>
           <div className="">
             <TextField
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '35px',
                   fontSize: '13.5px',
@@ -135,7 +135,7 @@ export const MyrequestDetail = () => {
           </div>
           <div className="">
             <TextField
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '35px',
                   fontSize: '13.5px',
@@ -158,7 +158,7 @@ export const MyrequestDetail = () => {
           </div>
           <div className="">
             <TextField
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '35px',
                   fontSize: '13.5px',
@@ -183,7 +183,7 @@ export const MyrequestDetail = () => {
       )}
       <div className="flex">
         <Button
-          sx={{
+          style={{
             margin: '0px 5px',
             Padding: '10px'
           }}
@@ -192,7 +192,7 @@ export const MyrequestDetail = () => {
           Add worklog
         </Button>
         <Button
-          sx={{
+          style={{
             margin: '0px 10px'
           }}
           variant="outlined"
@@ -201,7 +201,7 @@ export const MyrequestDetail = () => {
         </Button>
         <Button
           variant="outlined"
-          sx={{
+          style={{
             margin: '0px 0px'
           }}
           className="my-2"

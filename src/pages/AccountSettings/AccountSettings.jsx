@@ -71,7 +71,7 @@ const AccountSettings = () => {
             value={value}
             indicatorColor="primary"
             onChange={handleChange}
-            sx={{
+            style={{
               mb: 3,
 
               minHeight: 'auto',
@@ -98,7 +98,7 @@ const AccountSettings = () => {
             variant="scrollable"
           >
             <Tab
-              sx={{
+              style={{
                 '&:hover': {
                   textDecoration: 'none'
                 },
@@ -114,7 +114,7 @@ const AccountSettings = () => {
             />
 
             <Tab
-              sx={{
+              style={{
                 '&:hover': {
                   textDecoration: 'none'
                 },
@@ -129,7 +129,7 @@ const AccountSettings = () => {
               {...a11yProps(1)}
             />
             <Tab
-              sx={{
+              style={{
                 '&:hover': {
                   textDecoration: 'none'
                 },

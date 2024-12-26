@@ -40,7 +40,7 @@ const List = ({
       <Grid container alignItems="center" justifyContent="space-between">
         <Grid item>
           <Typography
-            sx={{
+            style={{
               fontSize: '1.25rem',
               color: currentTheme === 'Dark' ? colors.white : colors.grey[900],
               fontWeight: 600

@@ -16,7 +16,7 @@ const TableDataGrid = ({ Selected, rows, columns }) => {
 
   return (
     <Box
-      sx={{
+      style={{
         height: 400,
         width: '100%',
         '& .MuiDataGrid-root': {

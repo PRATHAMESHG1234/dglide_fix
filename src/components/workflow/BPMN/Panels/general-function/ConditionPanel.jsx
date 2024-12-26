@@ -126,7 +126,7 @@ export const ConditionPanel = ({
                           condition
                         )
                       }
-                      sx={{
+                      style={{
                         '& .MuiInputBase-root': {
                           height: '35px',
                           fontSize: '13px'
@@ -141,7 +141,7 @@ export const ConditionPanel = ({
 
                     <IconButton
                       className="mx-1 my-2"
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.primary[200],
                         '&:hover': {
@@ -153,7 +153,7 @@ export const ConditionPanel = ({
                       }
                     >
                       <AddIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.primary.main,
                           '&:hover': {

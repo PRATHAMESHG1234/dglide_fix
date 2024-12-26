@@ -45,7 +45,7 @@ const timeOptions = [
     label: 'Custom',
     icon: (
       <CalendarIcon
-        sx={{ fontSize: '17px', position: 'absolute', right: 8, top: 13 }}
+        style={{ fontSize: '17px', position: 'absolute', right: 8, top: 13 }}
       />
     )
   },
@@ -124,7 +124,7 @@ const DataFilterByTimeStamp = ({
     <ToggleButton
       key={option.value}
       value={option.value}
-      sx={{
+      style={{
         minWidth: option.value === 'custom' ? '80px' : '60px',
         position: option.value === 'custom' ? 'relative' : 'initial',
         paddingRight: option.value === 'custom' ? '28px' : 'none',

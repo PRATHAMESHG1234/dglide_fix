@@ -81,7 +81,7 @@ const Template = () => {
         className="border-bottom flex items-center justify-between px-3"
         style={{ height: '60px' }}
       >
-        <FormLabel sx={{ fontSize: '16px', fontWeight: 'bold' }}>
+        <FormLabel style={{ fontSize: '16px', fontWeight: 'bold' }}>
           Template
         </FormLabel>
         <div className="flex items-center" onClick={addTemplateHandler}>
@@ -91,7 +91,7 @@ const Template = () => {
         </div>
       </div>
       <TableContainer
-        sx={{
+        style={{
           cursor: 'pointer',
           maxHeight: 'calc(100vh - 175px)'
         }}
@@ -100,16 +100,16 @@ const Template = () => {
           aria-label="simple table"
           stickyHeader
           padding="40px"
-          sx={{
+          style={{
             m: 0,
             '& .MuiTableRow-root:hover': {
               backgroundColor: alpha(COLORS.TERTIARY, 0.3)
             }
           }}
         >
-          <TableHead sx={{ padding: 1 }}>
+          <TableHead style={{ padding: 1 }}>
             <TableRow
-              sx={{
+              style={{
                 '& .MuiTableCell-head': {
                   backgroundColor: COLORS.TERTIARY,
                   m: 1
@@ -117,7 +117,7 @@ const Template = () => {
               }}
             >
               <TableCell
-                sx={{
+                style={{
                   fontWeight: 'bold'
                 }}
               >
@@ -134,12 +134,12 @@ const Template = () => {
             {templateData.map((template, index) => (
               <TableRow
                 key={index}
-                sx={{
+                style={{
                   '&:last-child td , &:last-child th': { border: 0 }
                 }}
               >
                 <TableCell
-                  sx={{
+                  style={{
                     fontWeight: 'bold'
                   }}
                 >
@@ -163,7 +163,7 @@ const Template = () => {
                         }}
                       >
                         <Edit
-                          sx={{ color: COLORS.PRIMARY }}
+                          style={{ color: COLORS.PRIMARY }}
                           onClick={(e) => {
                             e.stopPropagation();
                             setSelectedRecordAction({
@@ -186,7 +186,7 @@ const Template = () => {
                         }}
                       >
                         <DeleteForever
-                          sx={{ color: 'darkred' }}
+                          style={{ color: 'darkred' }}
                           onClick={(e) => {
                             e.stopPropagation();
                             setSelectedRecordAction({

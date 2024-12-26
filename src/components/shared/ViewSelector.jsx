@@ -27,7 +27,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
           variant="plain"
           startDecorator={
             <ViewHeadlineIcon
-              sx={{
+              style={{
                 color:
                   currentView === 'List'
                     ? colors.primary.main
@@ -38,7 +38,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
             />
           }
           onClick={() => dispatch(setCurrentView({ view: 'List' }))}
-          sx={{
+          style={{
             color:
               currentView === 'List'
                 ? colors.primary.main
@@ -72,7 +72,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
           variant="plain"
           startDecorator={
             <GridViewIcon
-              sx={{
+              style={{
                 color:
                   currentView === 'Grid'
                     ? colors.primary.main
@@ -81,7 +81,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
             />
           }
           onClick={() => dispatch(setCurrentView({ view: 'Grid' }))}
-          sx={{
+          style={{
             color:
               currentView === 'Grid'
                 ? colors.primary.main
@@ -120,7 +120,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
           >
             <Button
               tooltipTitle={`Add ${type}`}
-              sx={{
+              style={{
                 backgroundColor: COLORS.PRIMARY,
                 boxShadow:
                   '0px 3px 3px 0px #FFFFFF26 inset,0px -3px 3px 0px #00000026 inset,0px 8px 15px 0px #1177FF40'
@@ -138,7 +138,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
               <AnimateButton>
                 <Buttons
                   size="medium"
-                  sx={{
+                  style={{
                     backgroundColor: colors.primary.main,
                     color: colors.white,
                     fontSize: '0.875rem',
@@ -161,7 +161,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
           (currentView === 'Grid' || currentView === 'List') && (
             <div className="flex items-center" onClick={onCreateNew}>
               <Buttons
-                sx={{
+                style={{
                   backgroundColor: colors.primary.main,
                   color: colors.white,
                   fontSize: '0.875rem',

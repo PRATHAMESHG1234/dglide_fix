@@ -54,7 +54,7 @@
 //     >
 //       {value === index && (
 //         <Box
-//           sx={{
+//           style={{
 //             p: 0
 //           }}
 //         >
@@ -290,7 +290,7 @@
 //             }}
 //             orientation="vertical"
 //             variant="scrollable"
-//             sx={{
+//             style={{
 //               boxShadow: 'none',
 //               '& .MuiTabs-flexContainer': {
 //                 borderBottom: 'none'
@@ -334,12 +334,12 @@
 //             }}
 //           >
 //             <Tab
-//               sx={{ boxShadow: 'none' }}
+//               style={{ boxShadow: 'none' }}
 //               icon={<PersonOutlineTwoToneIcon />}
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.875rem',
 //                       fontWeight: 500,
 
@@ -351,7 +351,7 @@
 //                   </Typography>
 //                   <Typography
 //                     component="div"
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.75rem',
 //                       color: colors.grey[700],
 //                       fontWeight: 400,
@@ -369,7 +369,7 @@
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.875rem',
 //                       fontWeight: 500,
 
@@ -381,7 +381,7 @@
 //                   </Typography>
 //                   <Typography
 //                     component="div"
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.75rem',
 //                       color: colors.grey[700],
 //                       fontWeight: 400,
@@ -399,7 +399,7 @@
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.875rem',
 //                       fontWeight: 500,
 
@@ -411,7 +411,7 @@
 //                   </Typography>
 //                   <Typography
 //                     component="div"
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.75rem',
 //                       color: colors.grey[700],
 //                       fontWeight: 400,
@@ -429,7 +429,7 @@
 //               label={
 //                 <Grid container direction="column">
 //                   <Typography
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.875rem',
 //                       fontWeight: 500,
 
@@ -441,7 +441,7 @@
 //                   </Typography>
 //                   <Typography
 //                     component="div"
-//                     sx={{
+//                     style={{
 //                       fontSize: '0.75rem',
 //                       color: colors.grey[700],
 //                       fontWeight: 400,
@@ -460,7 +460,7 @@
 //         <Grid item xs={12} sm={12} md={9.3}>
 //           {currentForm ? (
 //             <SubCard
-//               sx={{
+//               style={{
 //                 // width: `calc(100vw - ${isOpen ? '610' : '440'}px)`,
 //                 width: '110%',
 //                 border: 'none',
@@ -532,7 +532,7 @@
 //                 </Grid>
 //               </TabPanel>
 //               <TabPanel value={value} index={3} >
-//                 <Box sx={{ width: '110%' }}>
+//                 <Box style={{ width: '110%' }}>
 //                 <ImportExportData/>
 //                 </Box>
 

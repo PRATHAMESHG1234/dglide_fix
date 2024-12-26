@@ -142,14 +142,14 @@ const Build = () => {
   //         <IconButton
   //           aria-label="edit"
   //           onClick={() => handleEditDashboard(params.row.dashboardInfoId)}
-  //           sx={{ color: COLORS.PRIMARY }}
+  //           style={{ color: COLORS.PRIMARY }}
   //         >
   //           <EditIcon />
   //         </IconButton>
   //         <IconButton
   //           aria-label="delete"
   //           onClick={() => handleDeleteDashboard(params.row.dashboardInfoId)}
-  //           sx={{ color: 'red' }}
+  //           style={{ color: 'red' }}
   //         >
   //           <DeleteIcon />
   //         </IconButton>

@@ -10,7 +10,7 @@ import MainCard from '../../elements/MainCard';
 
 const AuthCardWrapper = ({ children, ...other }) => (
   <MainCard
-    sx={{
+    style={{
       maxWidth: { xs: 400, lg: 475 },
       margin: { xs: 2.5, md: 3 },
       '& > *': {
@@ -21,7 +21,7 @@ const AuthCardWrapper = ({ children, ...other }) => (
     content={false}
     {...other}
   >
-    <Box sx={{ p: { xs: 2, sm: 3, xl: 5 } }}>{children}</Box>
+    <Box style={{ p: { xs: 2, sm: 3, xl: 5 } }}>{children}</Box>
   </MainCard>
 );
 

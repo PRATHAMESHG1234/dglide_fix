@@ -55,7 +55,7 @@ const RenameModal = ({ state, onConfirm, onCancel }) => {
           value={state?.selected?.displayName}
           focused={false}
           inputProps={{ readOnly: true }}
-          sx={{
+          style={{
             '& .MuiInputBase-root': {
               height: '40px',
               fontSize: '13px'
@@ -73,7 +73,7 @@ const RenameModal = ({ state, onConfirm, onCancel }) => {
           onChange={onNameChangeHandler}
           required={true}
           maxLength={40}
-          sx={{
+          style={{
             '& .MuiInputBase-root': {
               height: '40px',
               fontSize: '13px'

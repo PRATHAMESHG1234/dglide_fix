@@ -157,7 +157,7 @@ const DashboardPreview = ({
                               item?.dashboardItemInfoId
                             )}
                             color={getColorByIndex(item?.dashboardItemInfoId)}
-                            sx={{}}
+                            style={{}}
                             onClick={() => redirect(item)}
                             index={item?.dashboardItemInfoId}
                           />

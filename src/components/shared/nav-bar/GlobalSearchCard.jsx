@@ -32,7 +32,7 @@ export const GlobalSearchCard = ({ searchData }) => {
     <div style={{ overflowY: 'auto', maxHeight: '78vh', marginLeft: '20px' }}>
       <Grid>
         <Grid container justifyContent="space-between">
-          <Grid item sx={{ width: '50%' }}>
+          <Grid item style={{ width: '50%' }}>
             <div className="">
               {searchData &&
                 searchData.map((filteredData, subIndex) => {

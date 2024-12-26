@@ -20,7 +20,11 @@ const FailedPage = () => {
       textAlign="center"
       p={3}
     >
-      <Typography variant="h4" sx={{ color: colors.error.main }} gutterBottom>
+      <Typography
+        variant="h4"
+        style={{ color: colors.error.main }}
+        gutterBottom
+      >
         Oops! Something went wrong.
       </Typography>
       <Typography variant="body1" color="textSecondary" gutterBottom>
@@ -29,7 +33,7 @@ const FailedPage = () => {
       <Button
         variant="contained"
         onClick={handleGoBack}
-        sx={{
+        style={{
           mt: 2,
           bgcolor: colors.primary.main,
           textTransform: 'none',

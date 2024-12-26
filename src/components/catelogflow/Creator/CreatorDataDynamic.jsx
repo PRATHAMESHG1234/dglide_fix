@@ -150,12 +150,12 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
       </Typography>
 
       <div className="flex">
-        <FormControl fullWidth sx={{ bgcolor: COLORS.WHITE }}>
+        <FormControl fullWidth style={{ bgcolor: COLORS.WHITE }}>
           <Select
             name="formId"
             value={sourceValues?.formInfoId ?? ''}
             onChange={(e) => handleLookupChange(e.target.name, e.target.value)}
-            sx={{
+            style={{
               height: '30px',
               fontSize: '13px'
             }}
@@ -165,7 +165,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                 <MenuItem
                   key={app.formInfoId}
                   value={app.formInfoId}
-                  sx={{
+                  style={{
                     fontSize: '13px'
                   }}
                 >
@@ -175,12 +175,12 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
             })}
           </Select>
         </FormControl>
-        <FormControl fullWidth sx={{ marginLeft: 1, bgcolor: COLORS.WHITE }}>
+        <FormControl fullWidth style={{ marginLeft: 1, bgcolor: COLORS.WHITE }}>
           <Select
             name="fieldId"
             value={sourceValues?.fieldInfoId ?? ''}
             onChange={(e) => handleLookupChange(e.target.name, e.target.value)}
-            sx={{
+            style={{
               height: '30px',
               fontSize: '13px'
             }}
@@ -197,7 +197,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                   <MenuItem
                     key={column.fieldInfoId}
                     value={column.fieldInfoId}
-                    sx={{
+                    style={{
                       fontSize: '13px'
                     }}
                   >
@@ -219,7 +219,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
             <AddIcon
               fontSize="medium"
               onClick={addCondition}
-              sx={{
+              style={{
                 color: COLORS.SECONDARY,
                 cursor: 'pointer'
               }}
@@ -234,7 +234,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
               <div className="bg-light flex items-center justify-between p-1">
                 <div>
                   <FormControlLabel
-                    sx={{
+                    style={{
                       '& .MuiFormControlLabel-label': { fontSize: '13px' },
                       margin: 0
                     }}
@@ -249,7 +249,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                             condition
                           )
                         }
-                        sx={{
+                        style={{
                           '& .MuiSvgIcon-root': { fontSize: 18 }
                         }}
                       />
@@ -277,7 +277,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                         condition
                       )
                     }
-                    sx={{
+                    style={{
                       height: '30px',
                       fontSize: '13px',
                       margin: 1
@@ -294,7 +294,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                           <MenuItem
                             key={column.fieldInfoId}
                             value={column.fieldInfoId}
-                            sx={{
+                            style={{
                               fontSize: '13px'
                             }}
                           >
@@ -304,7 +304,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                       })}
                   </Select>
                 </FormControl>
-                <FormControl fullWidth sx={{ my: 1 }}>
+                <FormControl fullWidth style={{ my: 1 }}>
                   <SelectField
                     name="operator"
                     options={operators.String || []}
@@ -329,7 +329,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                           condition
                         )
                       }
-                      sx={{
+                      style={{
                         height: '30px',
                         fontSize: '13px',
                         margin: 1
@@ -340,7 +340,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                           <MenuItem
                             key={field.name}
                             value={field.field_name}
-                            sx={{
+                            style={{
                               fontSize: '13px'
                             }}
                           >
@@ -364,7 +364,7 @@ const DataSourceDynamic = ({ category, dynamicOptions, onOptionChange }) => {
                       }
                       type="text"
                       placeholder="value"
-                      sx={{
+                      style={{
                         '& .MuiInputBase-root': {
                           height: '30px',
                           fontSize: '13px'

@@ -47,7 +47,7 @@ export const SetValuePanel = ({
           <IconButton
             aria-label="close"
             onClick={closeSetVariableValue}
-            sx={{
+            style={{
               position: 'absolute',
               right: 10,
               top: 10,
@@ -57,7 +57,7 @@ export const SetValuePanel = ({
               cursor: 'pointer'
             }}
           >
-            <CloseIcon sx={{ fontSize: '15px' }} />
+            <CloseIcon style={{ fontSize: '15px' }} />
           </IconButton>
           {variableValue.columns.length > 0 && (
             <>
@@ -105,7 +105,7 @@ export const SetValuePanel = ({
                       >
                         <IconButton
                           className="mx-1 my-2"
-                          sx={{
+                          style={{
                             padding: '0px',
                             backgroundColor: colors.primary[200],
                             '&:hover': {
@@ -117,7 +117,7 @@ export const SetValuePanel = ({
                           }
                         >
                           <AddIcon
-                            sx={{
+                            style={{
                               fontSize: '25px',
                               color: colors.primary.main,
                               '&:hover': {
@@ -128,7 +128,7 @@ export const SetValuePanel = ({
                         </IconButton>
                         <IconButton
                           className="mx-1 my-2"
-                          sx={{
+                          style={{
                             padding: '0px',
                             backgroundColor: colors.secondary[200],
                             '&:hover': {
@@ -138,7 +138,7 @@ export const SetValuePanel = ({
                           onClick={() => removeVariable(index)}
                         >
                           <RemoveIcon
-                            sx={{
+                            style={{
                               fontSize: '25px',
                               color: colors.secondary.main,
                               '&:hover': {
@@ -161,17 +161,17 @@ export const SetValuePanel = ({
                       onClick={addVariable}
                     >
                       <IconButton
-                        sx={{
+                        style={{
                           marginY: '20px',
                           marginRight: '2px',
                           padding: '0px',
                           backgroundColor: 'lightgrey'
                         }}
                       >
-                        <Add sx={{ fontSize: '13px' }} />
+                        <Add style={{ fontSize: '13px' }} />
                       </IconButton>
                       <Typography
-                        sx={{ fontSize: '10px', cursor: 'pointer' }}
+                        style={{ fontSize: '10px', cursor: 'pointer' }}
                         color="textSecondary"
                         fontWeight="500"
                       >

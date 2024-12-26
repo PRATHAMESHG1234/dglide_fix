@@ -138,7 +138,7 @@ const ImportData = ({
               <Button
                 type="button"
                 variant="solid"
-                sx={{
+                style={{
                   background: COLORS.PRIMARY
                 }}
                 onClick={handleSubmit}
@@ -156,7 +156,7 @@ const ImportData = ({
                 type="button"
                 variant="solid"
                 disabled={!attachedFile}
-                sx={{
+                style={{
                   background: COLORS.PRIMARY
                 }}
                 onClick={() => setIsOpenPreferencePage(attachedFile)}
@@ -170,7 +170,7 @@ const ImportData = ({
               <Button
                 type="button"
                 variant="solid"
-                sx={{
+                style={{
                   background: COLORS.PRIMARY
                 }}
                 onClick={() => {

@@ -9,10 +9,9 @@ import {
 const RadioField = (props) => {
   const selectedValue = props.value;
 
-
   return (
-    <div className="input-wrapper" sx={props.fieldstyle}>
-      <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+    <div className="input-wrapper" style={props.fieldstyle}>
+      <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
         {props.labelname}
         {props.required && <span className="text-danger"> *</span>}
       </FormLabel>
@@ -20,7 +19,7 @@ const RadioField = (props) => {
         {props.options?.map((option) => {
           return (
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': {
                   fontSize: '13px'
                 },
@@ -31,7 +30,7 @@ const RadioField = (props) => {
               value={option.label}
               control={
                 <Radio
-                  sx={{
+                  style={{
                     '& .MuiSvgIcon-root': {
                       fontSize: 15
                     }
@@ -45,7 +44,7 @@ const RadioField = (props) => {
         })}
       </RadioGroup>
       {!selectedValue && props.submitFlag && props.required && (
-        <Typography className="error" sx={{ height: '15px' }}>
+        <Typography className="error" style={{ height: '15px' }}>
           {`${props.labelname}
           field can't be empty..!`}
         </Typography>

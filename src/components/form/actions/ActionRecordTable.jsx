@@ -48,8 +48,8 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
   }
 
   return (
-    <TableContainer sx={{ height: '100vh' }}>
-      <Table sx={{ mt: 0 }}>
+    <TableContainer style={{ height: '100vh' }}>
+      <Table style={{ mt: 0 }}>
         <TableHead>
           <TableRow>
             {headers?.map((header) => {
@@ -57,16 +57,16 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
             })}
           </TableRow>
         </TableHead>
-        <TableBody sx={{ bgcolor: COLORS.WHITE }}>
+        <TableBody style={{ bgcolor: COLORS.WHITE }}>
           {items?.map((item, index) => (
             <TableRow
               key={item.id}
-              sx={{
+              style={{
                 cursor: 'pointer'
               }}
             >
               <TableCell
-                sx={{
+                style={{
                   fontWeight: 'bold'
                 }}
               >
@@ -83,7 +83,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                     <Grid item>
                       <Avatar
                         alt="User 1"
-                        sx={{ background: assignColorById(item?.id) }}
+                        style={{ background: assignColorById(item?.id) }}
                         // src={`${process.env.REACT_APP_STORAGE_URL}/${row?.logo}`}
                       >
                         {item?.name[0]?.toUpperCase()}
@@ -93,7 +93,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       <Typography
                         align="left"
                         component="div"
-                        sx={{
+                        style={{
                           fontSize: '0.875rem',
                           fontWeight: 500,
                           color:
@@ -104,7 +104,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       >
                         {item?.name} {/* {row.active === true && ( */}
                         <CheckCircleIcon
-                          sx={{
+                          style={{
                             color: colors.success.dark,
                             width: 14,
                             height: 14
@@ -114,7 +114,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       </Typography>
                       <Typography
                         align="left"
-                        sx={{
+                        style={{
                           fontSize: '0.75rem',
                           fontWeight: 400,
                           color: colors.grey[500]
@@ -128,7 +128,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                 </Stack>
               </TableCell>
               <TableCell>
-                <Typography sx={{ fontSize: '0.875rem' }}>
+                <Typography style={{ fontSize: '0.875rem' }}>
                   {item?.type}
                 </Typography>
               </TableCell>
@@ -144,13 +144,13 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.edit, item.id);
                     }}
                   >
-                    <EditIcon sx={{ fontSize: '1.1rem' }} />
+                    <EditIcon style={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
                 <Tooltip placement="top" title="Delete">
                   <IconButton
                     color="primary"
-                    sx={{
+                    style={{
                       color: colors.orange.dark,
                       borderColor: colors.orange.main,
                       '&:hover ': { background: colors.orange.light }
@@ -161,7 +161,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.delete, item.id);
                     }}
                   >
-                    <DeleteForeverIcon sx={{ fontSize: '1.1rem' }} />
+                    <DeleteForeverIcon style={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
               </TableCell>

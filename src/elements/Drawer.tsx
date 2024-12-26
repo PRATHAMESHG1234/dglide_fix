@@ -18,7 +18,7 @@ const Drawer: React.FC<DrawerProps> = ({
 }) => {
   return (
     <Drawers
-      sx={{
+      style={{
         ml: open ? 3 : 0,
         flexShrink: 0,
         zIndex: 1200,

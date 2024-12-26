@@ -111,7 +111,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
         aria-describedby="modal-description"
       >
         <Box
-          sx={{
+          style={{
             position: 'fixed',
             top: 0,
             left: 0,
@@ -129,7 +129,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
         >
           <CloseIcon
             onClick={() => closePreviewModal()}
-            sx={{
+            style={{
               position: 'absolute',
               top: 16,
               right: 16,
@@ -299,7 +299,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
     <Box className="flex w-full flex-col pb-2">
       {type !== 'AddEditRecord' && (
         <FormLabel
-          sx={{
+          style={{
             fontSize: '13.5px',
             fontWeight: 500,
             paddingBottom: '2px'
@@ -356,7 +356,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
               <Chip
                 className="p-2"
                 label=" Browse For File"
-                sx={{
+                style={{
                   backgroundColor: '#E8F2FF',
                   fontWeight: 500,
                   color: COLORS.SECONDARY
@@ -375,11 +375,11 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
           }}
         >
           {attachmentList.length > 0 && (
-            <TableContainer sx={{ cursor: 'default' }}>
+            <TableContainer style={{ cursor: 'default' }}>
               <Table
                 aria-label="simple table"
                 stickyHeader
-                sx={{
+                style={{
                   m: 0,
                   '& .MuiTableRow-root:hover': {
                     backgroundColor: alpha(COLORS.TERTIARY, ODD_OPACITY + 8)
@@ -388,7 +388,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
               >
                 <TableHead>
                   <TableRow
-                    sx={{
+                    style={{
                       '& .MuiTableCell-head': {
                         backgroundColor: COLORS.TERTIARY
                       }
@@ -399,16 +399,16 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                     })}
                   </TableRow>
                 </TableHead>
-                <TableBody sx={{ cursor: 'default' }}>
+                <TableBody style={{ cursor: 'default' }}>
                   {attachmentList.map((attachment, i) => {
                     return (
                       <TableRow
-                        sx={{
+                        style={{
                           '&:last-child td , &:last-child th': { border: 0 }
                         }}
                       >
                         <TableCell
-                          sx={{
+                          style={{
                             padding: 0,
                             paddingLeft: 1
                           }}
@@ -428,7 +428,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             />
                           ) : attachment.fileExtension === 'pdf' ? (
                             <PictureAsPdfIcon
-                              sx={{
+                              style={{
                                 fontSize: '50px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -453,7 +453,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             />
                           ) : (
                             <FileIcon
-                              sx={{
+                              style={{
                                 color: 'lightgrey',
                                 fontSize: '50px',
                                 marginRight: '7px'
@@ -492,7 +492,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                 onClick={() =>
                                   previewAttachmentHandler(attachment)
                                 }
-                                sx={{
+                                style={{
                                   color: COLORS.PRIMARY
                                 }}
                               >
@@ -505,7 +505,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                 onClick={() =>
                                   downloadAttachmentHandler(attachment)
                                 }
-                                sx={{
+                                style={{
                                   color: COLORS.PRIMARY
                                 }}
                               >
@@ -530,7 +530,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                 }}
                               >
                                 <DeleteForever
-                                  sx={{
+                                  style={{
                                     color: 'darkred'
                                   }}
                                 />
@@ -609,7 +609,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                               />
                             ) : file.type === 'application/pdf' ? (
                               <PictureAsPdfIcon
-                                sx={{
+                                style={{
                                   fontSize: '30px',
                                   marginRight: '7px',
                                   color: 'lightgrey'
@@ -637,7 +637,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                               file.type ===
                                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
                                 <FileIcon
-                                  sx={{
+                                  style={{
                                     color: 'lightgrey',
                                     fontSize: '30px',
                                     marginRight: '7px'
@@ -665,7 +665,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             onClick={() => deleteSelectedFileHandler(fileIndex)}
                           >
                             <DeleteIcon
-                              sx={{
+                              style={{
                                 color: 'darkred',
                                 fontSize: '20px'
                               }}

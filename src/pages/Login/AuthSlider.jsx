@@ -31,7 +31,7 @@ const AuthSlider = ({ items }) => {
         >
           <Grid item>
             <Typography
-              sx={{
+              style={{
                 fontSize: '2.125rem',
                 color: colors.grey[900],
                 fontWeight: 700
@@ -42,7 +42,7 @@ const AuthSlider = ({ items }) => {
           </Grid>
           <Grid item>
             <Typography
-              sx={{
+              style={{
                 fontSize: '0.75rem',
                 fontWeight: 400,
                 color: colors.grey[900]

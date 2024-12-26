@@ -60,8 +60,8 @@ const TextArea = (props) => {
   // };
   return (
     <>
-      <div className="input-wrapper flex  flex-col " style={props.fieldstyle}>
-        <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+      <div className="input-wrapper flex flex-col" style={props.fieldstyle}>
+        <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
           {props.labelname}
           {props.required && <span className="text-danger"> *</span>}
         </FormLabel>
@@ -80,7 +80,7 @@ const TextArea = (props) => {
         />
       </div>
       {props.helpertext !== 'none' && props.submitFlag && props.required && (
-        <Typography className="error" sx={{ height: '15px' }}>
+        <Typography className="error" style={{ height: '15px' }}>
           {helperText}
         </Typography>
       )}

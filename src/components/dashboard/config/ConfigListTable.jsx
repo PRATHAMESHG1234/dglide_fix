@@ -121,13 +121,13 @@
 //             <TableCell>Sr No</TableCell>
 
 //             <TableCell>Name</TableCell>
-//             <TableCell align="center" sx={{ pr: 3 }}>
+//             <TableCell align="center" style={{ pr: 3 }}>
 //               Type
 //             </TableCell>
-//             <TableCell align="center" sx={{ pr: 3 }}>
+//             <TableCell align="center" style={{ pr: 3 }}>
 //               Form
 //             </TableCell>
-//             <TableCell align="center" sx={{ pr: 3 }}>
+//             <TableCell align="center" style={{ pr: 3 }}>
 //               Actions
 //             </TableCell>
 //           </TableRow>
@@ -139,12 +139,12 @@
 //                 hover
 //                 key={index}
 //                 // onClick={() => onRowClick(row)}
-//                 sx={{
+//                 style={{
 //                   cursor: "pointer",
 //                 }}
 //               >
 //                 <TableCell
-//                   sx={{
+//                   style={{
 //                     fontWeight: "bold",
 //                   }}
 //                 >
@@ -170,7 +170,7 @@
 //                         }}
 //                       >
 //                         <Edit
-//                           sx={{
+//                           style={{
 //                             color: COLORS.PRIMARY,
 //                           }}
 //                           onClick={(e) => {
@@ -193,7 +193,7 @@
 //                         }}
 //                       >
 //                         <DeleteForever
-//                           sx={{ color: "danger" }}
+//                           style={{ color: "danger" }}
 //                           onClick={(e) => {
 //                             e.stopPropagation();
 //                             onChartClick(MODAL.delete, row.id);

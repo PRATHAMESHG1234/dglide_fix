@@ -135,7 +135,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
             <IconCirclePlusFilled
               fontSize="medium"
               onClick={addOption}
-              sx={{
+              style={{
                 color: COLORS.SECONDARY,
                 cursor: 'pointer'
               }}
@@ -145,7 +145,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
       </div>
       <div>
         <div className="flex justify-end pb-1">
-          <Typography color={COLORS.SECONDARY} sx={{ fontSize: '13px' }}>
+          <Typography color={COLORS.SECONDARY} style={{ fontSize: '13px' }}>
             Select the default option by clicking the Radio button
           </Typography>
         </div>
@@ -167,7 +167,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                             >
                               <RadioCheckedIcon
                                 fontSize="medium"
-                                sx={{ color: COLORS.PRIMARY }}
+                                style={{ color: COLORS.PRIMARY }}
                               />
                             </IconButton>
                           ) : (
@@ -213,7 +213,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                           >
                             <RemoveIcon
                               fontSize="medium"
-                              sx={{
+                              style={{
                                 color: '#bc3c3c'
                               }}
                             />
@@ -223,7 +223,7 @@ const DataSourceManual = ({ staticOptions, onOptionChange, field, form }) => {
                     }}
                     value={option.label}
                     onChange={(e) => handleOptionChange(e.target.value, option)}
-                    sx={{
+                    style={{
                       bgcolor: COLORS.WHITE,
                       '& .MuiInputBase-root': {
                         height: '32px',

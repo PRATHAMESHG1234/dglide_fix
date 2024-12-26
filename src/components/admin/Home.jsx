@@ -79,7 +79,7 @@
 //                 rightAlign
 //               />
 //             }
-//             sx={{
+//             style={{
 //               minHeight: 'calc(100vh - 90px)',
 //               borderRadius: '8px',
 //               '& .MuiCardHeader-root': {

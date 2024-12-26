@@ -67,7 +67,7 @@ function UppercasePanel({
         <IconButton
           aria-label="close"
           onClick={closePanel}
-          sx={{
+          style={{
             position: 'absolute',
             right: 0,
             top: 0,
@@ -80,11 +80,11 @@ function UppercasePanel({
           title="Output variable name: 'string', use it as id.out.string"
           placement="top-start"
           arrow
-          sx={{ fontSize: '16px' }}
+          style={{ fontSize: '16px' }}
         >
           <IconButton
             aria-label="info"
-            sx={{
+            style={{
               position: 'absolute',
               right: 35,
               top: 0,
@@ -107,7 +107,7 @@ function UppercasePanel({
           &nbsp;
           <div className="flex flex-col justify-start">
             <Typography
-              sx={{
+              style={{
                 fontSize: '13px',
                 fontWeight: 400
               }}
@@ -131,7 +131,7 @@ function UppercasePanel({
                 }}
               />
               <AddBoxIcon
-                sx={{
+                style={{
                   color: colors.primary.dark,
                   fontSize: '25px',
                   position: 'absolute',

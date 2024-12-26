@@ -83,7 +83,7 @@ const AddEditUser = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="First Name"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -101,7 +101,7 @@ const AddEditUser = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Last Name"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -118,7 +118,7 @@ const AddEditUser = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Manager"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -135,7 +135,7 @@ const AddEditUser = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Email"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'
@@ -153,7 +153,7 @@ const AddEditUser = ({ state, onConfirm, onCancel }) => {
             required={true}
             maxLength={40}
             placeholder="Password"
-            sx={{
+            style={{
               marginTop: '6px',
               '& .MuiInputBase-root': {
                 fontSize: '15px'

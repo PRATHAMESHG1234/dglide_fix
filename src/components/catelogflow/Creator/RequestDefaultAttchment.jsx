@@ -90,7 +90,7 @@ const RequestDefaultAttachment = ({
         aria-describedby="modal-description"
       >
         <Box
-          sx={{
+          style={{
             position: 'fixed',
             top: 0,
             left: 0,
@@ -108,7 +108,7 @@ const RequestDefaultAttachment = ({
         >
           <CloseIcon
             onClick={() => closePreviewModal()}
-            sx={{
+            style={{
               position: 'absolute',
               top: 16,
               right: 16,
@@ -264,7 +264,7 @@ const RequestDefaultAttachment = ({
               <Chip
                 className="p-2"
                 label=" Browse For File"
-                sx={{
+                style={{
                   backgroundColor: '#E8F2FF',
                   fontWeight: 500,
                   color: COLORS.SECONDARY
@@ -283,11 +283,11 @@ const RequestDefaultAttachment = ({
         }}
       >
         {attachmentList.length > 0 && (
-          <TableContainer sx={{ cursor: 'default' }}>
+          <TableContainer style={{ cursor: 'default' }}>
             <Table
               aria-label="simple table"
               stickyHeader
-              sx={{
+              style={{
                 m: 0,
                 '& .MuiTableRow-root:hover': {
                   backgroundColor: alpha(COLORS.TERTIARY, ODD_OPACITY + 8)
@@ -297,7 +297,7 @@ const RequestDefaultAttachment = ({
               {catlogFlag !== 'DocumentType' ? (
                 <TableHead>
                   <TableRow
-                    sx={{
+                    style={{
                       '& .MuiTableCell-head': {
                         backgroundColor: COLORS.TERTIARY
                       }
@@ -311,16 +311,16 @@ const RequestDefaultAttachment = ({
                   </TableRow>
                 </TableHead>
               ) : null}
-              {/* <TableBody sx={{ cursor: 'default' }}>
+              {/* <TableBody style={{ cursor: 'default' }}>
                 {attachmentList.map((attachment, i) => {
                   return (
                     <TableRow
-                      sx={{
+                      style={{
                         '&:last-child td , &:last-child th': { border: 0 }
                       }}
                     >
                       <TableCell
-                        sx={{
+                        style={{
                           padding: 0,
                           paddingLeft: 1,
                           cursor: 'pointer'
@@ -341,7 +341,7 @@ const RequestDefaultAttachment = ({
                           />
                         ) : attachment.fileExtension === 'pdf' ? (
                           <PictureAsPdfIcon
-                            sx={{
+                            style={{
                               fontSize: '50px',
                               marginRight: '7px',
                               color: 'lightgrey'
@@ -366,7 +366,7 @@ const RequestDefaultAttachment = ({
                           />
                         ) : (
                           <FileIcon
-                            sx={{
+                            style={{
                               color: 'lightgrey',
                               fontSize: '50px',
                               marginRight: '7px'
@@ -400,7 +400,7 @@ const RequestDefaultAttachment = ({
                                 onClick={() =>
                                   previewAttachmentHandler(attachment)
                                 }
-                                sx={{
+                                style={{
                                   color: COLORS.PRIMARY
                                 }}
                               >
@@ -414,7 +414,7 @@ const RequestDefaultAttachment = ({
                               onClick={() =>
                                 downloadAttachmentHandler(attachment)
                               }
-                              sx={{
+                              style={{
                                 color: COLORS.PRIMARY
                               }}
                             >
@@ -439,7 +439,7 @@ const RequestDefaultAttachment = ({
                                 }}
                               >
                                 <DeleteForever
-                                  sx={{
+                                  style={{
                                     color: 'darkred'
                                   }}
                                 />
@@ -519,7 +519,7 @@ const RequestDefaultAttachment = ({
                             />
                           ) : file.fileContentType === 'application/pdf' ? (
                             <PictureAsPdfIcon
-                              sx={{
+                              style={{
                                 fontSize: '30px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -547,7 +547,7 @@ const RequestDefaultAttachment = ({
                             file.fileContentType ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
                               <FileIcon
-                                sx={{
+                                style={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
                                   marginRight: '7px'
@@ -575,7 +575,7 @@ const RequestDefaultAttachment = ({
                           onClick={() => deleteSelectedFileHandler(attachment)}
                         >
                           <DeleteIcon
-                            sx={{
+                            style={{
                               color: 'darkred',
                               fontSize: '20px'
                             }}

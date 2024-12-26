@@ -202,7 +202,7 @@ export const ArtificialInteligents = () => {
         <div className="catgory-ai">
           <FormControl fullWidth>
             <FormLabel
-              sx={{
+              style={{
                 fontSize: '15px',
                 paddingBottom: '5px'
               }}
@@ -236,7 +236,7 @@ export const ArtificialInteligents = () => {
                   return (
                     <>
                       <FormLabel
-                        sx={{
+                        style={{
                           fontSize: '15px',
                           paddingBottom: '5px'
                         }}
@@ -264,7 +264,7 @@ export const ArtificialInteligents = () => {
                   return (
                     <>
                       <FormLabel
-                        sx={{
+                        style={{
                           marginTop: '10px',
                           fontSize: '15px',
                           paddingBottom: '5px'
@@ -273,7 +273,7 @@ export const ArtificialInteligents = () => {
                         {key}
                       </FormLabel>
                       <TextField
-                        sx={{
+                        style={{
                           width: '500px',
                           '& .MuiInputBase-root': {
                             fontSize: '15px',
@@ -307,7 +307,7 @@ export const ArtificialInteligents = () => {
                 }
               }}
               pageSizeOptions={[5, 10]}
-              sx={{
+              style={{
                 // width: '100%',
                 '& .MuiDataGrid-columnHeader': {
                   fontSize: '14px',
@@ -338,7 +338,7 @@ export const ArtificialInteligents = () => {
                   <>
                     <div className="flex flex-col">
                       <FormLabel
-                        sx={{
+                        style={{
                           fontSize: '15px',
                           paddingBottom: '5px'
                         }}
@@ -347,7 +347,7 @@ export const ArtificialInteligents = () => {
                       </FormLabel>
                       <TextField
                         readonly
-                        sx={{
+                        style={{
                           width: '50%',
                           '& .MuiInputBase-root': {
                             fontSize: '15px',

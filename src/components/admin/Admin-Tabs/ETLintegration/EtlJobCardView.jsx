@@ -72,7 +72,7 @@ export const EtlJobCardView = ({
         width="100%"
       >
         <Card
-          sx={{
+          style={{
             p: 2,
             background:
               currentTheme === 'Dark' ? colors.darkLevel1 : colors.white,
@@ -108,7 +108,7 @@ export const EtlJobCardView = ({
                       }}
                       badgeContent={
                         <AccessTimeFilledIcon
-                          sx={{
+                          style={{
                             color: colors.success.main,
                             width: 19,
                             height: 19,
@@ -119,7 +119,7 @@ export const EtlJobCardView = ({
                     >
                       <Avatar
                         alt="User 1"
-                        sx={{
+                        style={{
                           backgroundColor: assignColorById(item?.id),
                           color: currentTheme === 'Dark' ? colors.white : '',
                           width: '50px',
@@ -127,7 +127,7 @@ export const EtlJobCardView = ({
                         }}
                         src={`${process.env.REACT_APP_STORAGE_URL}/${item?.logo}`}
                       >
-                        <Typography sx={{ fontSize: '24px' }}>
+                        <Typography style={{ fontSize: '24px' }}>
                           {item?.name?.charAt(0).toUpperCase()}
                         </Typography>
                       </Avatar>
@@ -135,7 +135,7 @@ export const EtlJobCardView = ({
                   ) : (
                     <Avatar
                       alt="User 1"
-                      sx={{
+                      style={{
                         backgroundColor: assignColorById(item?.id),
                         color: currentTheme === 'Dark' ? colors.white : '',
                         width: '50px',
@@ -143,14 +143,14 @@ export const EtlJobCardView = ({
                       }}
                       src={`${process.env.REACT_APP_STORAGE_URL}/${item?.logo}`}
                     >
-                      <Typography sx={{ fontSize: '24px' }}>
+                      <Typography style={{ fontSize: '24px' }}>
                         {item?.name?.charAt(0).toUpperCase()}
                       </Typography>
                     </Avatar>
                   )}
                   <Grid item xs={12}>
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '1.25rem',
                         color: colors.grey[900],
                         fontWeight: 600
@@ -160,7 +160,7 @@ export const EtlJobCardView = ({
                       {truncateAfterTwentyChars(item?.name, 50)}
                     </Typography>
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '0.75rem',
                         color: colors.grey[500],
                         fontWeight: 500
@@ -188,7 +188,7 @@ export const EtlJobCardView = ({
                 >
                   <IconButton
                     size="small"
-                    sx={{ mt: '5px', mr: -0.75 }}
+                    style={{ mt: '5px', mr: -0.75 }}
                     onClick={handleClick}
                   >
                     <MoreHorizOutlinedIcon
@@ -196,7 +196,7 @@ export const EtlJobCardView = ({
                       color="inherit"
                       aria-controls="menu-friend-card"
                       aria-haspopup="true"
-                      sx={{
+                      style={{
                         opacity: 0.6,
                         color: currentTheme === 'Dark' ? colors.white : ''
                       }}
@@ -225,7 +225,7 @@ export const EtlJobCardView = ({
                           handleClose();
                           setOpen(true);
                         }}
-                        sx={{
+                        style={{
                           '&:hover': {
                             backgroundColor: item.hoverColor
                           },
@@ -239,7 +239,7 @@ export const EtlJobCardView = ({
                           />
                         </ListItemIcon>
                         <Typography
-                          sx={{
+                          style={{
                             color: item.textColor,
                             fontSize: '14px'
                           }}
@@ -253,7 +253,7 @@ export const EtlJobCardView = ({
                           handleClose();
                           setOpen(true);
                         }}
-                        sx={{
+                        style={{
                           '&:hover': {
                             backgroundColor: item.hoverColor
                           },
@@ -265,13 +265,13 @@ export const EtlJobCardView = ({
                           <DeleteForeverIcon
                             fontSize="small"
                             color="primary"
-                            sx={{
+                            style={{
                               color: colors.error.main
                             }}
                           />
                         </ListItemIcon>
                         <Typography
-                          sx={{
+                          style={{
                             color: item.textColor,
                             fontSize: '14px'
                           }}
@@ -285,9 +285,9 @@ export const EtlJobCardView = ({
               </Grid>
             </Grid>
 
-            <Grid item xs={12} sx={{ height: '30px' }}>
+            <Grid item xs={12} style={{ height: '30px' }}>
               <Typography
-                sx={{
+                style={{
                   color: colors.grey[700],
                   fontSize: '0.75rem',
                   fontWeight: 400,

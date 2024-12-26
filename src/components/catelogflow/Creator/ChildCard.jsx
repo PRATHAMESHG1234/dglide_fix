@@ -91,7 +91,7 @@ const ChildCard = ({
 
   return (
     <Card
-      sx={{
+      style={{
         width: '250px',
         marginRight: '10px',
         marginBottom: '10px',
@@ -114,14 +114,14 @@ const ChildCard = ({
           <Grid container spacing={2}>
             <Grid item>
               <Avatar
-                sx={{
+                style={{
                   backgroundColor: assignColorById(index),
                   color: currentTheme === 'Dark' ? colors.white : colors.white
                 }}
                 alt="User 1"
                 src={`${process.env.REACT_APP_STORAGE_URL}/${filteredItem?.logo}`}
               >
-                <Typography sx={{ fontSize: '24px', color: colors.white }}>
+                <Typography style={{ fontSize: '24px', color: colors.white }}>
                   {filteredItem.catalog?.trim().charAt(0).toUpperCase()}
                 </Typography>
               </Avatar>
@@ -129,7 +129,7 @@ const ChildCard = ({
             <Grid item xs zeroMinWidth>
               <Typography
                 component="div"
-                sx={{
+                style={{
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
                   whiteSpace: 'nowrap',
@@ -150,7 +150,7 @@ const ChildCard = ({
                 ) : null}
               </Typography>
               <Typography
-                sx={{
+                style={{
                   mt: 0.25,
                   overflow: 'hidden',
                   textOverflow: 'ellipsis',
@@ -174,7 +174,7 @@ const ChildCard = ({
                   {filteredItem.status === 'Enabled' ||
                   filteredItem.status === '1' ? (
                     <CheckCircleIcon
-                      sx={{
+                      style={{
                         color: colors.success.main,
                         mr: '6px',
                         fontSize: '16px'
@@ -182,7 +182,7 @@ const ChildCard = ({
                     />
                   ) : (
                     <CancelIcon
-                      sx={{
+                      style={{
                         color: colors.error.main,
                         mr: '6px',
                         fontSize: '16px'
@@ -191,7 +191,7 @@ const ChildCard = ({
                   )}
                 </Tooltip>
                 {/* <PinDropTwoToneIcon
-                  sx={{
+                  style={{
                     mr: '6px',
                     fontSize: '16px',
                     verticalAlign: 'text-top'
@@ -208,12 +208,12 @@ const ChildCard = ({
               >
                 <IconButton
                   size="small"
-                  sx={{ mt: -0.75, mr: -0.75 }}
+                  style={{ mt: -0.75, mr: -0.75 }}
                   onClick={(e) => handleClick(e, filteredItem.uuid)}
                 >
                   <MoreHorizOutlinedIcon
                     fontSize="small"
-                    sx={{
+                    style={{
                       color: colors.primary[200],
                       cursor: 'pointer'
                     }}
@@ -241,7 +241,7 @@ const ChildCard = ({
                     <MenuItem
                       key={action}
                       onClick={() => handleMenuItemClick(handler, filteredItem)}
-                      sx={{
+                      style={{
                         border: `solid 0.5px ${colors.grey[100]}`,
                         color: colors.primary.main
                       }}

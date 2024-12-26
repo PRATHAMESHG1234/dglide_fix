@@ -141,7 +141,7 @@ export const ExpressionPanel = ({
                           // format="d/M/yyyy hh:mm:ss"
                           value={expression ? new Date(expression) : null}
                           format="d/M/yyyy hh:mm:ss"
-                          sx={{
+                          style={{
                             '& .MuiInputBase-root': {
                               fontSize: '0.875rem',
                               height: '38.5px',
@@ -244,7 +244,7 @@ export const ExpressionPanel = ({
                   {localStorageData.expressionIndex === 'payload' ? (
                     <IconButton
                       className="mx-2"
-                      sx={{
+                      style={{
                         borderRadius: '8px',
                         padding: '5px',
                         backgroundColor: colors.primary[200],

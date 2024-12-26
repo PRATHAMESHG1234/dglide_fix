@@ -39,7 +39,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
       open={open}
       maxWidth={maxWidth}
       fullWidth
-      sx={style}
+      style={style}
       PaperProps={{ sx: { borderRadius: '15px' } }}
     >
       <span
@@ -52,7 +52,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
       >
         <DialogTitle
           id="customized-dialog-title"
-          sx={{
+          style={{
             color: colors.secondary.main,
             fontWeight: '500',
             fontSize: '16px',
@@ -62,7 +62,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
           {Header.dialogTitle}
         </DialogTitle>
         <Box
-          sx={{
+          style={{
             position: 'absolute',
             right: 50,
             top: 8
@@ -74,7 +74,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
           <IconButton
             aria-label="close"
             onClick={close}
-            sx={{
+            style={{
               position: 'absolute',
               right: 8,
               top: 8,
@@ -112,7 +112,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
         >
           {actionButton && (
             <div
-              className="flex cursor-pointer absolute"
+              className="absolute flex cursor-pointer"
               onClick={actionButton}
               style={{
                 left: 18,
@@ -126,7 +126,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
                 label={
                   <>
                     <Add
-                      sx={{
+                      style={{
                         fontSize: '22px',
                         marginRight: '5px'
                       }}
@@ -142,7 +142,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
           <Button
             variant="outlined"
             onClick={clear}
-            sx={{
+            style={{
               color: colors.secondary.main,
               border: `solid 0.5px ${colors.secondary.main}`,
               BorderColor: colors.secondary.main,
@@ -160,7 +160,7 @@ const Dialog = ({ Header, children, Footer, style, footerNone }) => {
           <Button
             type="submit"
             variant="solid"
-            sx={{
+            style={{
               background: colors.secondary.main,
               color: colors.white,
               '&:hover': {

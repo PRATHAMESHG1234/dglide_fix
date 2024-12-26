@@ -1,0 +1,241 @@
+Starting JSX Component Replacement...
+Modified JSX components in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX components in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX components in: src/components/form/schema/Schema.jsx
+Modified JSX components in: src/components/records/data-import/AttachFile.jsx
+Modified JSX components in: src/components/records/data-grid/DataTable.jsx
+Modified JSX components in: src/components/modify-record/CardView.jsx
+Modified JSX components in: src/components/modify-record/AddAttachment.jsx
+Modified JSX components in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX components in: src/components/security/group/Group.jsx
+Modified JSX components in: src/components/security/user/User.jsx
+Modified JSX components in: src/components/admin/template/Template.jsx
+Modified JSX components in: src/components/shared/Dialog.jsx
+Modified JSX components in: src/components/shared/DetailViewModal.jsx
+Modified JSX components in: src/components/shared/ViewSelector.jsx
+Modified JSX components in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX components in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX components in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX components in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX components in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX components in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified JSX in 23 files.
+Starting JSX Component Replacement...
+Error processing src/components/UnderConstruction.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/AddEditModal.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/rename-form/RenameModal.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/field-group/FieldGroupList.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/field-group/FieldGroup.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/schema/Schema.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/schema/SchemaList.jsx: invalid group reference 1 at position 8
+Error processing src/components/form/actions/ActionRecordTable.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-import/AttachFile.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-import/DataListPreference.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/preference/ColumnPreference.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-grid/RecordDashboard.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-grid/DataTable.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-grid/ExecutionProcess.jsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-grid/ActionList.tsx: invalid group reference 1 at position 8
+Error processing src/components/records/data-grid/MoreOption.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/CardView.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/Attachment.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/DefaultFields.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/AddAttachment.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/ModifyReferenceRecord.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/tabs/TabsData.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/tabs/TimeLine.jsx: invalid group reference 1 at position 8
+Error processing src/components/modify-record/addEditRecord/PreviewRecord.jsx: invalid group reference 1 at position 8
+Error processing src/components/ui-rules/UIRuleActionForm.jsx: invalid group reference 1 at position 8
+Error processing src/components/security/group/GroupList.jsx: invalid group reference 1 at position 8
+Error processing src/components/security/group/Group.jsx: invalid group reference 1 at position 8
+Error processing src/components/security/user/UserList.jsx: invalid group reference 1 at position 8
+Error processing src/components/security/user/User.jsx: invalid group reference 1 at position 8
+Error processing src/components/chatbot/Chatbot.jsx: invalid group reference 1 at position 8
+Error processing src/components/articles/Articles.jsx: invalid group reference 1 at position 8
+Error processing src/components/articles/ArticlesCard.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/AddEditShift.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/VerticallPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/Home.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/Admin-Tabs/Operation.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/Admin-Tabs/UserProfile.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx: invalid group reference 1 at position 8
+Error processing src/components/admin/template/Template.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/Dialog.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/ListView.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/DetailViewModal.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/ViewSelector.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/ListTable.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/FilterPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/shared/nav-bar/header/ProfileSection/index.js: invalid group reference 1 at position 8
+Error processing src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js: invalid group reference 1 at position 8
+Error processing src/components/shared/nav-bar/DynamicTabs/index.js: invalid group reference 1 at position 8
+Error processing src/components/field/OptionFieldIcon.jsx: invalid group reference 1 at position 8
+Error processing src/components/field/DataSourceDynamic.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/CardPreviewModal.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/ChartTypes.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/TablePreviewModal.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/ChartList.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/DataFilterByTimeStamp.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/DashboardPreview.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/config/ChartModal.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/config/SearchCondition.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/config/ConfigListTable.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/config/Config.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/dashboardBuild/CardSection.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/dashboardBuild/CreateDashboard.jsx: invalid group reference 1 at position 8
+Error processing src/components/dashboard/dashboardBuild/ChartSection.jsx: invalid group reference 1 at position 8
+Error processing src/components/import-Export/ExportGridView .jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/WorkflowCard.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/BpmnGateWay.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Bpmn.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/BpmnRestApi.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/uppercasePanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/matchesPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/substringPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/replacePanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/DateAddPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/Issubstringpanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/lowercasePanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/lengthPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/templatePanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/trimPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/concatPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/DateDiffPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/InsertPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/replaceAllPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/DateFetchPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/general-function/ApprovalPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx: invalid group reference 1 at position 8
+Error processing src/components/sortable-tree/TreeNode.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/EditCatlogFlow.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/ChildCard.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/QuestionComponents.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/PreviewSingleAttchment.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorProperty.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorDataDynamic.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorSinglAttchment.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/Creator.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/GridView.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorItem.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorAddAttachment.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/MyrequestDetail.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/MyRequestGridView .jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorDataSourceManual.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/RequestDefaultAttchment.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/GridCard.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/AddEditPreview.jsx: invalid group reference 1 at position 8
+Error processing src/components/catelogflow/Creator/CreatorPreview.jsx: invalid group reference 1 at position 8
+Error processing src/elements/Breadcrump.jsx: invalid group reference 1 at position 8
+Error processing src/elements/Dialog.jsx: invalid group reference 1 at position 8
+Error processing src/elements/GridTable.jsx: invalid group reference 1 at position 8
+Error processing src/elements/BasicAccordion.jsx: invalid group reference 1 at position 8
+Error processing src/elements/Accordion.jsx: invalid group reference 1 at position 8
+Error processing src/pages/MailDetails.jsx: invalid group reference 1 at position 8
+Error processing src/pages/ComposeDialog.jsx: invalid group reference 1 at position 8
+Error processing src/pages/AttachmentCard.jsx: invalid group reference 1 at position 8
+Error processing src/pages/ModifyRecord.jsx: invalid group reference 1 at position 8
+Error processing src/pages/ResetPassword/AuthResetPassword.jsx: invalid group reference 1 at position 8
+Completed! Modified JSX in 0 files.
+Starting JSX Component Replacement...
+Modified JSX components in: src/components/UnderConstruction.jsx
+Modified JSX components in: src/components/form/AddEditModal.jsx
+Modified JSX components in: src/components/form/rename-form/RenameModal.jsx
+Modified JSX components in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX components in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX components in: src/components/form/schema/Schema.jsx
+Modified JSX components in: src/components/form/actions/ActionRecordTable.jsx
+Modified JSX components in: src/components/records/data-import/AttachFile.jsx
+Modified JSX components in: src/components/records/preference/ColumnPreference.jsx
+Modified JSX components in: src/components/records/data-grid/RecordDashboard.jsx
+Modified JSX components in: src/components/records/data-grid/DataTable.jsx
+Modified JSX components in: src/components/records/data-grid/ExecutionProcess.jsx
+Modified JSX components in: src/components/records/data-grid/ActionList.tsx
+Modified JSX components in: src/components/modify-record/CardView.jsx
+Modified JSX components in: src/components/modify-record/Attachment.jsx
+Modified JSX components in: src/components/modify-record/AddAttachment.jsx
+Modified JSX components in: src/components/modify-record/ModifyReferenceRecord.jsx
+Modified JSX components in: src/components/modify-record/tabs/TabsData.jsx
+Modified JSX components in: src/components/modify-record/tabs/TimeLine.jsx
+Modified JSX components in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX components in: src/components/ui-rules/UIRuleActionForm.jsx
+Modified JSX components in: src/components/security/group/GroupList.jsx
+Modified JSX components in: src/components/security/group/Group.jsx
+Modified JSX components in: src/components/security/user/UserList.jsx
+Modified JSX components in: src/components/security/user/User.jsx
+Modified JSX components in: src/components/chatbot/Chatbot.jsx
+Modified JSX components in: src/components/articles/ArticlesCard.jsx
+Modified JSX components in: src/components/admin/AddEditShift.jsx
+Modified JSX components in: src/components/admin/VerticallPanel.jsx
+Modified JSX components in: src/components/admin/Admin-Tabs/Operation.jsx
+Modified JSX components in: src/components/admin/Admin-Tabs/UserProfile.jsx
+Modified JSX components in: src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx
+Modified JSX components in: src/components/admin/template/Template.jsx
+Modified JSX components in: src/components/shared/Dialog.jsx
+Modified JSX components in: src/components/shared/DetailViewModal.jsx
+Modified JSX components in: src/components/shared/ViewSelector.jsx
+Modified JSX components in: src/components/shared/ListTable.jsx
+Modified JSX components in: src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js
+Modified JSX components in: src/components/field/DataSourceDynamic.jsx
+Modified JSX components in: src/components/dashboard/CardPreviewModal.jsx
+Modified JSX components in: src/components/dashboard/TablePreviewModal.jsx
+Modified JSX components in: src/components/dashboard/ChartList.jsx
+Modified JSX components in: src/components/dashboard/DashboardPreview.jsx
+Modified JSX components in: src/components/dashboard/config/ChartModal.jsx
+Modified JSX components in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX components in: src/components/dashboard/config/Config.jsx
+Modified JSX components in: src/components/dashboard/dashboardBuild/CardSection.jsx
+Modified JSX components in: src/components/dashboard/dashboardBuild/CreateDashboard.jsx
+Modified JSX components in: src/components/dashboard/dashboardBuild/ChartSection.jsx
+Modified JSX components in: src/components/import-Export/ExportGridView .jsx
+Modified JSX components in: src/components/workflow/WorkflowCard.jsx
+Modified JSX components in: src/components/workflow/BPMN/BpmnGateWay.jsx
+Modified JSX components in: src/components/workflow/BPMN/Bpmn.jsx
+Modified JSX components in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/uppercasePanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/matchesPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/substringPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/replacePanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/DateAddPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/Issubstringpanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/lowercasePanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/lengthPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/trimPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/concatPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/DateDiffPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/InsertPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/replaceAllPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/DateFetchPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/ApprovalPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx
+Modified JSX components in: src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx
+Modified JSX components in: src/components/sortable-tree/TreeNode.jsx
+Modified JSX components in: src/components/catelogflow/EditCatlogFlow.jsx
+Modified JSX components in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX components in: src/components/catelogflow/Creator/CreatorProperty.jsx
+Modified JSX components in: src/components/catelogflow/Creator/CreatorDataDynamic.jsx
+Modified JSX components in: src/components/catelogflow/Creator/Creator.jsx
+Modified JSX components in: src/components/catelogflow/Creator/GridView.jsx
+Modified JSX components in: src/components/catelogflow/Creator/CreatorItem.jsx
+Modified JSX components in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX components in: src/components/catelogflow/Creator/MyrequestDetail.jsx
+Modified JSX components in: src/components/catelogflow/Creator/MyRequestGridView .jsx
+Modified JSX components in: src/components/catelogflow/Creator/CreatorDataSourceManual.jsx
+Modified JSX components in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX components in: src/components/catelogflow/Creator/GridCard.jsx
+Modified JSX components in: src/elements/GridTable.jsx
+Modified JSX components in: src/pages/MailDetails.jsx
+Modified JSX components in: src/pages/ComposeDialog.jsx
+Modified JSX components in: src/pages/ModifyRecord.jsx
+Modified JSX components in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified JSX in 94 files.

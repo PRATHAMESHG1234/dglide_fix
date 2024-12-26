@@ -114,7 +114,7 @@ const RestApi = ({
               <Stack
                 spacing={1}
                 fullWidth
-                sx={{
+                style={{
                   display: 'flex',
                   width: '100%',
                   marginTop: '10px'
@@ -142,7 +142,7 @@ const RestApi = ({
                     onChange={(e) =>
                       handleChange('url', e.target.value, restApiObj)
                     }
-                    sx={{
+                    style={{
                       '& .MuiInputBase-root': {
                         height: '35px',
                         fontSize: '13.5px'
@@ -156,7 +156,7 @@ const RestApi = ({
                   />
                   <IconButton
                     className="mx-1"
-                    sx={{
+                    style={{
                       padding: '0px',
                       backgroundColor: colors.primary[200],
                       '&:hover': {
@@ -168,7 +168,7 @@ const RestApi = ({
                     }
                   >
                     <AddIcon
-                      sx={{
+                      style={{
                         fontSize: '25px',
                         color: colors.primary.main,
                         '&:hover': {
@@ -195,7 +195,7 @@ const RestApi = ({
                   }
                   label={
                     <Typography
-                      sx={{ fontSize: '12px' }}
+                      style={{ fontSize: '12px' }}
                       color="textSecondary"
                       fontWeight="500"
                     >
@@ -227,7 +227,7 @@ const RestApi = ({
                           onChange={(e) =>
                             handleChange('apiKey', e.target.value, restApiObj)
                           }
-                          sx={{
+                          style={{
                             '& .MuiInputBase-root': {
                               height: '35px',
                               fontSize: '13.5px'
@@ -241,7 +241,7 @@ const RestApi = ({
                         />
                         <IconButton
                           className="mx-1"
-                          sx={{
+                          style={{
                             padding: '0px',
                             backgroundColor: colors.primary[200],
                             '&:hover': {
@@ -257,7 +257,7 @@ const RestApi = ({
                           }
                         >
                           <AddIcon
-                            sx={{
+                            style={{
                               fontSize: '25px',
                               color: colors.primary.main,
                               '&:hover': {
@@ -280,7 +280,7 @@ const RestApi = ({
                           onChange={(e) =>
                             handleChange('userName', e.target.value, restApiObj)
                           }
-                          sx={{
+                          style={{
                             '& .MuiInputBase-root': {
                               height: '35px',
                               fontSize: '13.5px'
@@ -300,7 +300,7 @@ const RestApi = ({
                           onChange={(e) =>
                             handleChange('password', e.target.value, restApiObj)
                           }
-                          sx={{
+                          style={{
                             '& .MuiInputBase-root': {
                               height: '35px',
                               fontSize: '13.5px'
@@ -318,7 +318,7 @@ const RestApi = ({
                 )}
 
                 <FormControlLabel
-                  sx={{ marginBottom: '8px' }}
+                  style={{ marginBottom: '8px' }}
                   control={
                     <Switch
                       checked={restApiObj.isRequireHeader}
@@ -333,7 +333,7 @@ const RestApi = ({
                   }
                   label={
                     <Typography
-                      sx={{ fontSize: '12px' }}
+                      style={{ fontSize: '12px' }}
                       color="textSecondary"
                       fontWeight="500"
                     >
@@ -360,7 +360,7 @@ const RestApi = ({
                     />
                     <IconButton
                       className=" "
-                      sx={{
+                      style={{
                         padding: '0px',
                         backgroundColor: colors.primary[200],
                         '&:hover': {
@@ -376,7 +376,7 @@ const RestApi = ({
                       }
                     >
                       <AddIcon
-                        sx={{
+                        style={{
                           fontSize: '25px',
                           color: colors.primary.main,
                           '&:hover': {
@@ -416,7 +416,7 @@ const RestApi = ({
                   />
                   <IconButton
                     // className="mt-4 mx-2 "
-                    sx={{
+                    style={{
                       padding: '0px',
                       backgroundColor: colors.primary[200],
                       '&:hover': {
@@ -432,7 +432,7 @@ const RestApi = ({
                     }
                   >
                     <AddIcon
-                      sx={{
+                      style={{
                         fontSize: '25px',
                         color: colors.primary.main,
                         '&:hover': {
@@ -497,7 +497,7 @@ const RestApi = ({
                             //     fldObj.fieldDataId
                             //   )
                             // }
-                            sx={{
+                            style={{
                               '& .MuiInputBase-root': {
                                 height: '35px',
                                 fontSize: '13.5px'
@@ -514,7 +514,7 @@ const RestApi = ({
                           <div>
                             <IconButton
                               // className="mt-4"
-                              sx={{
+                              style={{
                                 padding: '0px',
                                 backgroundColor: colors.primary[200],
                                 '&:hover': {
@@ -532,7 +532,7 @@ const RestApi = ({
                               }}
                             >
                               <AddIcon
-                                sx={{
+                                style={{
                                   fontSize: '25px',
                                   color: colors.primary.main,
                                   '&:hover': {
@@ -576,17 +576,17 @@ const RestApi = ({
                           }
                         >
                           <IconButton
-                            sx={{
+                            style={{
                               marginY: '20px',
                               marginRight: '2px',
                               padding: '0px',
                               backgroundColor: 'lightgrey'
                             }}
                           >
-                            <Add sx={{ fontSize: '13px' }} />
+                            <Add style={{ fontSize: '13px' }} />
                           </IconButton>
                           <Typography
-                            sx={{ fontSize: '10px', cursor: 'pointer' }}
+                            style={{ fontSize: '10px', cursor: 'pointer' }}
                             color="textSecondary"
                             fontWeight="500"
                           >
@@ -616,7 +616,7 @@ const RestApi = ({
                 }
                 label={
                   <Typography
-                    sx={{ fontSize: "11px" }}
+                    style={{ fontSize: "11px" }}
                     color="textSecondary"
                     fontWeight="500"
                   >

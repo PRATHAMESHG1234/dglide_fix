@@ -133,9 +133,9 @@ const MultipleSelect = (props) => {
     }
   };
   return (
-    <FormControl sx={{ width: '100%' }} size="small">
+    <FormControl style={{ width: '100%' }} size="small">
       {props.labelname && (
-        <InputLabel shrink sx={inputLabelStyles} id={props.labelname}>
+        <InputLabel shrink style={inputLabelStyles} id={props.labelname}>
           {props.labelname}
           {props.required && <span className="text-danger">*</span>}
         </InputLabel>
@@ -184,10 +184,10 @@ const MultipleSelect = (props) => {
             }}
           >
             {props.options?.map((opn, j) => (
-              <MenuItem key={j} value={opn.value} sx={menuItemStyles}>
+              <MenuItem key={j} value={opn.value} style={menuItemStyles}>
                 <Checkbox
                   checked={selectedItems?.indexOf(opn.value) > -1}
-                  sx={{
+                  style={{
                     '& .MuiSvgIcon-root': { fontSize: 18 }
                   }}
                 />
@@ -217,7 +217,7 @@ const MultipleSelect = (props) => {
         <div style={{ height: '13px' }}>
           <Typography
             className={`${props?.validation?.type === 'info' ? 'text-warning' : 'text-danger'}`}
-            sx={{ fontSize: '11px' }}
+            style={{ fontSize: '11px' }}
           >
             {helperText}
           </Typography>

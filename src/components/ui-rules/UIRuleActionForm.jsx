@@ -30,12 +30,12 @@ const UIRuleActionForm = ({
   return (
     <div className="flex flex-col">
       <div className="flex justify-between">
-        <InputLabel sx={{ fontSize: '0.875rem' }}>Actions</InputLabel>
+        <InputLabel style={{ fontSize: '0.875rem' }}>Actions</InputLabel>
         <Tooltip title="Add" variant="solid">
           <AddIcon
             fontSize="medium"
             onClick={addActionsHandler}
-            sx={{
+            style={{
               color: COLORS.SECONDARY,
               cursor: 'pointer'
             }}

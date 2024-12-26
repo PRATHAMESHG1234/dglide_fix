@@ -42,13 +42,13 @@ export const PluginList = ({
                   {plugin.name}
                 </Label>
                 {/* <div className="flex  items-center ">
-                  <Typography sx={{ color: '#383A41', fontSize: '12px' }}>
+                  <Typography style={{ color: '#383A41', fontSize: '12px' }}>
                     {pluginTypeList.find((o) => o.value === plugin.type)?.label}
                   </Typography>
                   <span>
                     {plugin.isConfigured === true ? (
                       <CheckCircleIcon
-                        sx={{
+                        style={{
                           color: colors.success.main,
                           width: 16,
                           height: 16,
@@ -57,7 +57,7 @@ export const PluginList = ({
                       />
                     ) : (
                       <CancelIcon
-                        sx={{
+                        style={{
                           color: colors.error.main,
                           width: 16,
                           height: 16,

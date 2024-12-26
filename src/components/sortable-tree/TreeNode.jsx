@@ -134,7 +134,7 @@ const TreeNode = ({
                 onChange={(e) => setEditedText(e.target.value)}
                 variant="outlined"
                 size="small"
-                sx={{
+                style={{
                   '& .MuiInputBase-root': {
                     height: '30px',
                     fontSize: '13.5px',

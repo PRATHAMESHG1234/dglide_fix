@@ -1,0 +1,631 @@
+Starting JSX Usage Replacement...
+Error processing src/components/UnderConstruction.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/AddEditModal.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/rename-form/RenameModal.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/field-group/FieldGroupList.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/field-group/FieldGroup.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/schema/Schema.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/schema/SchemaList.jsx: look-behind requires fixed-width pattern
+Error processing src/components/form/actions/ActionRecordTable.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-import/AttachFile.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-import/DataListPreference.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/preference/ColumnPreference.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-grid/RecordDashboard.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-grid/DataTable.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-grid/ExecutionProcess.jsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-grid/ActionList.tsx: look-behind requires fixed-width pattern
+Error processing src/components/records/data-grid/MoreOption.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/CardView.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/Attachment.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/DefaultFields.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/AddAttachment.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/ModifyReferenceRecord.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/tabs/TabsData.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/tabs/TimeLine.jsx: look-behind requires fixed-width pattern
+Error processing src/components/modify-record/addEditRecord/PreviewRecord.jsx: look-behind requires fixed-width pattern
+Error processing src/components/ui-rules/UIRuleActionForm.jsx: look-behind requires fixed-width pattern
+Error processing src/components/security/group/GroupList.jsx: look-behind requires fixed-width pattern
+Error processing src/components/security/group/Group.jsx: look-behind requires fixed-width pattern
+Error processing src/components/security/user/UserList.jsx: look-behind requires fixed-width pattern
+Error processing src/components/security/user/User.jsx: look-behind requires fixed-width pattern
+Error processing src/components/chatbot/Chatbot.jsx: look-behind requires fixed-width pattern
+Error processing src/components/articles/Articles.jsx: look-behind requires fixed-width pattern
+Error processing src/components/articles/ArticlesCard.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/AddEditShift.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/VerticallPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/Home.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/Admin-Tabs/Operation.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/Admin-Tabs/UserProfile.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx: look-behind requires fixed-width pattern
+Error processing src/components/admin/template/Template.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/Dialog.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/ListView.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/DetailViewModal.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/ViewSelector.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/ListTable.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/FilterPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/shared/nav-bar/header/ProfileSection/index.js: look-behind requires fixed-width pattern
+Error processing src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js: look-behind requires fixed-width pattern
+Error processing src/components/shared/nav-bar/DynamicTabs/index.js: look-behind requires fixed-width pattern
+Error processing src/components/field/OptionFieldIcon.jsx: look-behind requires fixed-width pattern
+Error processing src/components/field/DataSourceDynamic.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/CardPreviewModal.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/ChartTypes.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/TablePreviewModal.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/ChartList.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/DataFilterByTimeStamp.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/DashboardPreview.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/config/ChartModal.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/config/SearchCondition.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/config/ConfigListTable.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/config/Config.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/dashboardBuild/CardSection.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/dashboardBuild/CreateDashboard.jsx: look-behind requires fixed-width pattern
+Error processing src/components/dashboard/dashboardBuild/ChartSection.jsx: look-behind requires fixed-width pattern
+Error processing src/components/import-Export/ExportGridView .jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/WorkflowCard.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/BpmnGateWay.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Bpmn.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/BpmnRestApi.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/uppercasePanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/matchesPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/substringPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/replacePanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/DateAddPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/Issubstringpanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/lowercasePanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/lengthPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/templatePanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/trimPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/concatPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/DateDiffPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/InsertPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/replaceAllPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/DateFetchPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/general-function/ApprovalPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx: look-behind requires fixed-width pattern
+Error processing src/components/sortable-tree/TreeNode.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/EditCatlogFlow.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/ChildCard.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/QuestionComponents.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/PreviewSingleAttchment.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorProperty.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorDataDynamic.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorSinglAttchment.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/Creator.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/GridView.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorItem.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorAddAttachment.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/MyrequestDetail.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/MyRequestGridView .jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorDataSourceManual.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/RequestDefaultAttchment.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/GridCard.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/AddEditPreview.jsx: look-behind requires fixed-width pattern
+Error processing src/components/catelogflow/Creator/CreatorPreview.jsx: look-behind requires fixed-width pattern
+Error processing src/elements/Breadcrump.jsx: look-behind requires fixed-width pattern
+Error processing src/elements/Dialog.jsx: look-behind requires fixed-width pattern
+Error processing src/elements/GridTable.jsx: look-behind requires fixed-width pattern
+Error processing src/elements/BasicAccordion.jsx: look-behind requires fixed-width pattern
+Error processing src/elements/Accordion.jsx: look-behind requires fixed-width pattern
+Error processing src/pages/MailDetails.jsx: look-behind requires fixed-width pattern
+Error processing src/pages/ComposeDialog.jsx: look-behind requires fixed-width pattern
+Error processing src/pages/AttachmentCard.jsx: look-behind requires fixed-width pattern
+Error processing src/pages/ModifyRecord.jsx: look-behind requires fixed-width pattern
+Error processing src/pages/ResetPassword/AuthResetPassword.jsx: look-behind requires fixed-width pattern
+Completed! Modified 0 files.
+Starting JSX Usage Replacement...
+Modified JSX in: src/components/UnderConstruction.jsx
+Modified JSX in: src/components/form/AddEditModal.jsx
+Modified JSX in: src/components/form/rename-form/RenameModal.jsx
+Modified JSX in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX in: src/components/form/schema/Schema.jsx
+Modified JSX in: src/components/form/actions/ActionRecordTable.jsx
+Modified JSX in: src/components/records/data-import/AttachFile.jsx
+Modified JSX in: src/components/records/data-import/DataListPreference.jsx
+Modified JSX in: src/components/records/preference/ColumnPreference.jsx
+Modified JSX in: src/components/records/data-grid/RecordDashboard.jsx
+Modified JSX in: src/components/records/data-grid/DataTable.jsx
+Modified JSX in: src/components/records/data-grid/ExecutionProcess.jsx
+Modified JSX in: src/components/records/data-grid/ActionList.tsx
+Modified JSX in: src/components/records/data-grid/MoreOption.jsx
+Modified JSX in: src/components/modify-record/CardView.jsx
+Modified JSX in: src/components/modify-record/Attachment.jsx
+Modified JSX in: src/components/modify-record/DefaultFields.jsx
+Modified JSX in: src/components/modify-record/AddAttachment.jsx
+Modified JSX in: src/components/modify-record/ModifyReferenceRecord.jsx
+Modified JSX in: src/components/modify-record/tabs/TabsData.jsx
+Modified JSX in: src/components/modify-record/tabs/TimeLine.jsx
+Modified JSX in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX in: src/components/ui-rules/UIRuleActionForm.jsx
+Modified JSX in: src/components/security/group/GroupList.jsx
+Modified JSX in: src/components/security/group/Group.jsx
+Modified JSX in: src/components/security/user/UserList.jsx
+Modified JSX in: src/components/security/user/User.jsx
+Modified JSX in: src/components/chatbot/Chatbot.jsx
+Modified JSX in: src/components/articles/Articles.jsx
+Modified JSX in: src/components/articles/ArticlesCard.jsx
+Modified JSX in: src/components/admin/AddEditShift.jsx
+Modified JSX in: src/components/admin/VerticallPanel.jsx
+Modified JSX in: src/components/admin/Home.jsx
+Modified JSX in: src/components/admin/Admin-Tabs/Operation.jsx
+Modified JSX in: src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx
+Modified JSX in: src/components/admin/template/Template.jsx
+Modified JSX in: src/components/shared/Dialog.jsx
+Modified JSX in: src/components/shared/ListView.jsx
+Modified JSX in: src/components/shared/DetailViewModal.jsx
+Modified JSX in: src/components/shared/ViewSelector.jsx
+Modified JSX in: src/components/shared/ListTable.jsx
+Modified JSX in: src/components/shared/FilterPanel.jsx
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/index.js
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js
+Modified JSX in: src/components/shared/nav-bar/DynamicTabs/index.js
+Modified JSX in: src/components/field/OptionFieldIcon.jsx
+Modified JSX in: src/components/field/DataSourceDynamic.jsx
+Modified JSX in: src/components/dashboard/CardPreviewModal.jsx
+Modified JSX in: src/components/dashboard/ChartTypes.jsx
+Modified JSX in: src/components/dashboard/TablePreviewModal.jsx
+Modified JSX in: src/components/dashboard/ChartList.jsx
+Modified JSX in: src/components/dashboard/DataFilterByTimeStamp.jsx
+Modified JSX in: src/components/dashboard/DashboardPreview.jsx
+Modified JSX in: src/components/dashboard/config/ChartModal.jsx
+Modified JSX in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX in: src/components/dashboard/config/Config.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/CardSection.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/CreateDashboard.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/ChartSection.jsx
+Modified JSX in: src/components/import-Export/ExportGridView .jsx
+Modified JSX in: src/components/workflow/WorkflowCard.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnGateWay.jsx
+Modified JSX in: src/components/workflow/BPMN/Bpmn.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/uppercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/matchesPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/substringPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replacePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateAddPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/Issubstringpanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lowercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lengthPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/trimPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/concatPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateDiffPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/InsertPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replaceAllPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateFetchPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ApprovalPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx
+Modified JSX in: src/components/sortable-tree/TreeNode.jsx
+Modified JSX in: src/components/catelogflow/EditCatlogFlow.jsx
+Modified JSX in: src/components/catelogflow/Creator/ChildCard.jsx
+Modified JSX in: src/components/catelogflow/Creator/QuestionComponents.jsx
+Modified JSX in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorProperty.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataDynamic.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorSinglAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/Creator.jsx
+Modified JSX in: src/components/catelogflow/Creator/GridView.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorItem.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX in: src/components/catelogflow/Creator/MyrequestDetail.jsx
+Modified JSX in: src/components/catelogflow/Creator/MyRequestGridView .jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataSourceManual.jsx
+Modified JSX in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/GridCard.jsx
+Modified JSX in: src/components/catelogflow/Creator/AddEditPreview.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorPreview.jsx
+Modified JSX in: src/elements/Breadcrump.jsx
+Modified JSX in: src/elements/Dialog.jsx
+Modified JSX in: src/elements/GridTable.jsx
+Modified JSX in: src/elements/BasicAccordion.jsx
+Modified JSX in: src/elements/Accordion.jsx
+Modified JSX in: src/pages/MailDetails.jsx
+Modified JSX in: src/pages/ComposeDialog.jsx
+Modified JSX in: src/pages/ModifyRecord.jsx
+Modified JSX in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified 114 files.
+Starting JSX Usage Replacement...
+Modified JSX in: src/components/UnderConstruction.jsx
+Modified JSX in: src/components/form/rename-form/RenameModal.jsx
+Modified JSX in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX in: src/components/form/schema/Schema.jsx
+Modified JSX in: src/components/form/actions/ActionRecordTable.jsx
+Modified JSX in: src/components/records/data-import/AttachFile.jsx
+Modified JSX in: src/components/records/data-import/DataListPreference.jsx
+Modified JSX in: src/components/records/preference/ColumnPreference.jsx
+Modified JSX in: src/components/records/data-grid/RecordDashboard.jsx
+Modified JSX in: src/components/records/data-grid/DataTable.jsx
+Modified JSX in: src/components/records/data-grid/ExecutionProcess.jsx
+Modified JSX in: src/components/records/data-grid/ActionList.tsx
+Modified JSX in: src/components/records/data-grid/MoreOption.jsx
+Modified JSX in: src/components/modify-record/CardView.jsx
+Modified JSX in: src/components/modify-record/Attachment.jsx
+Modified JSX in: src/components/modify-record/DefaultFields.jsx
+Modified JSX in: src/components/modify-record/AddAttachment.jsx
+Modified JSX in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX in: src/components/ui-rules/UIRuleActionForm.jsx
+Modified JSX in: src/components/security/group/GroupList.jsx
+Modified JSX in: src/components/security/group/Group.jsx
+Modified JSX in: src/components/security/user/UserList.jsx
+Modified JSX in: src/components/security/user/User.jsx
+Modified JSX in: src/components/chatbot/Chatbot.jsx
+Modified JSX in: src/components/articles/Articles.jsx
+Modified JSX in: src/components/admin/AddEditShift.jsx
+Modified JSX in: src/components/admin/VerticallPanel.jsx
+Modified JSX in: src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx
+Modified JSX in: src/components/admin/template/Template.jsx
+Modified JSX in: src/components/shared/Dialog.jsx
+Modified JSX in: src/components/shared/DetailViewModal.jsx
+Modified JSX in: src/components/shared/ViewSelector.jsx
+Modified JSX in: src/components/shared/ListTable.jsx
+Modified JSX in: src/components/shared/FilterPanel.jsx
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/index.js
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js
+Modified JSX in: src/components/shared/nav-bar/DynamicTabs/index.js
+Modified JSX in: src/components/field/OptionFieldIcon.jsx
+Modified JSX in: src/components/field/DataSourceDynamic.jsx
+Modified JSX in: src/components/dashboard/CardPreviewModal.jsx
+Modified JSX in: src/components/dashboard/ChartTypes.jsx
+Modified JSX in: src/components/dashboard/TablePreviewModal.jsx
+Modified JSX in: src/components/dashboard/DataFilterByTimeStamp.jsx
+Modified JSX in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/CardSection.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/ChartSection.jsx
+Modified JSX in: src/components/import-Export/ExportGridView .jsx
+Modified JSX in: src/components/workflow/WorkflowCard.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnGateWay.jsx
+Modified JSX in: src/components/workflow/BPMN/Bpmn.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/uppercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/matchesPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/substringPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replacePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateAddPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/Issubstringpanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lowercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lengthPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/trimPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/concatPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateDiffPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/InsertPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replaceAllPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateFetchPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx
+Modified JSX in: src/components/sortable-tree/TreeNode.jsx
+Modified JSX in: src/components/catelogflow/EditCatlogFlow.jsx
+Modified JSX in: src/components/catelogflow/Creator/ChildCard.jsx
+Modified JSX in: src/components/catelogflow/Creator/QuestionComponents.jsx
+Modified JSX in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorProperty.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataDynamic.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorSinglAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/Creator.jsx
+Modified JSX in: src/components/catelogflow/Creator/GridView.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorItem.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX in: src/components/catelogflow/Creator/MyRequestGridView .jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataSourceManual.jsx
+Modified JSX in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/AddEditPreview.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorPreview.jsx
+Modified JSX in: src/elements/Breadcrump.jsx
+Modified JSX in: src/elements/Dialog.jsx
+Modified JSX in: src/elements/GridTable.jsx
+Modified JSX in: src/elements/BasicAccordion.jsx
+Modified JSX in: src/elements/Accordion.jsx
+Modified JSX in: src/pages/MailDetails.jsx
+Modified JSX in: src/pages/ModifyRecord.jsx
+Modified JSX in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified 97 files.
+Starting JSX Usage Replacement...
+Modified JSX in: src/components/UnderConstruction.jsx
+Modified JSX in: src/components/form/rename-form/RenameModal.jsx
+Modified JSX in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX in: src/components/form/schema/Schema.jsx
+Modified JSX in: src/components/form/actions/ActionRecordTable.jsx
+Modified JSX in: src/components/records/data-import/AttachFile.jsx
+Modified JSX in: src/components/records/data-import/DataListPreference.jsx
+Modified JSX in: src/components/records/preference/ColumnPreference.jsx
+Modified JSX in: src/components/records/data-grid/RecordDashboard.jsx
+Modified JSX in: src/components/records/data-grid/DataTable.jsx
+Modified JSX in: src/components/records/data-grid/ExecutionProcess.jsx
+Modified JSX in: src/components/records/data-grid/ActionList.tsx
+Modified JSX in: src/components/records/data-grid/MoreOption.jsx
+Modified JSX in: src/components/modify-record/CardView.jsx
+Modified JSX in: src/components/modify-record/Attachment.jsx
+Modified JSX in: src/components/modify-record/DefaultFields.jsx
+Modified JSX in: src/components/modify-record/AddAttachment.jsx
+Modified JSX in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX in: src/components/ui-rules/UIRuleActionForm.jsx
+Modified JSX in: src/components/security/group/GroupList.jsx
+Modified JSX in: src/components/security/group/Group.jsx
+Modified JSX in: src/components/security/user/UserList.jsx
+Modified JSX in: src/components/security/user/User.jsx
+Modified JSX in: src/components/chatbot/Chatbot.jsx
+Modified JSX in: src/components/articles/Articles.jsx
+Modified JSX in: src/components/admin/AddEditShift.jsx
+Modified JSX in: src/components/admin/VerticallPanel.jsx
+Modified JSX in: src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx
+Modified JSX in: src/components/admin/template/Template.jsx
+Modified JSX in: src/components/shared/Dialog.jsx
+Modified JSX in: src/components/shared/DetailViewModal.jsx
+Modified JSX in: src/components/shared/ViewSelector.jsx
+Modified JSX in: src/components/shared/ListTable.jsx
+Modified JSX in: src/components/shared/FilterPanel.jsx
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/index.js
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js
+Modified JSX in: src/components/shared/nav-bar/DynamicTabs/index.js
+Modified JSX in: src/components/field/OptionFieldIcon.jsx
+Modified JSX in: src/components/field/DataSourceDynamic.jsx
+Modified JSX in: src/components/dashboard/CardPreviewModal.jsx
+Modified JSX in: src/components/dashboard/ChartTypes.jsx
+Modified JSX in: src/components/dashboard/TablePreviewModal.jsx
+Modified JSX in: src/components/dashboard/DataFilterByTimeStamp.jsx
+Modified JSX in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/CardSection.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/ChartSection.jsx
+Modified JSX in: src/components/import-Export/ExportGridView .jsx
+Modified JSX in: src/components/workflow/WorkflowCard.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnGateWay.jsx
+Modified JSX in: src/components/workflow/BPMN/Bpmn.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/uppercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/matchesPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/substringPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replacePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateAddPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/Issubstringpanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lowercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lengthPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/trimPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/concatPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateDiffPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/InsertPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replaceAllPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateFetchPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx
+Modified JSX in: src/components/sortable-tree/TreeNode.jsx
+Modified JSX in: src/components/catelogflow/EditCatlogFlow.jsx
+Modified JSX in: src/components/catelogflow/Creator/ChildCard.jsx
+Modified JSX in: src/components/catelogflow/Creator/QuestionComponents.jsx
+Modified JSX in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorProperty.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataDynamic.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorSinglAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/Creator.jsx
+Modified JSX in: src/components/catelogflow/Creator/GridView.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorItem.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX in: src/components/catelogflow/Creator/MyRequestGridView .jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataSourceManual.jsx
+Modified JSX in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/AddEditPreview.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorPreview.jsx
+Modified JSX in: src/elements/Breadcrump.jsx
+Modified JSX in: src/elements/Dialog.jsx
+Modified JSX in: src/elements/GridTable.jsx
+Modified JSX in: src/elements/BasicAccordion.jsx
+Modified JSX in: src/elements/Accordion.jsx
+Modified JSX in: src/pages/MailDetails.jsx
+Modified JSX in: src/pages/ModifyRecord.jsx
+Modified JSX in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified 97 files.
+Starting JSX Usage Replacement...
+Modified JSX in: src/components/UnderConstruction.jsx
+Modified JSX in: src/components/form/rename-form/RenameModal.jsx
+Modified JSX in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX in: src/components/form/schema/Schema.jsx
+Modified JSX in: src/components/form/actions/ActionRecordTable.jsx
+Modified JSX in: src/components/records/data-import/AttachFile.jsx
+Modified JSX in: src/components/records/data-import/DataListPreference.jsx
+Modified JSX in: src/components/records/preference/ColumnPreference.jsx
+Modified JSX in: src/components/records/data-grid/RecordDashboard.jsx
+Modified JSX in: src/components/records/data-grid/DataTable.jsx
+Modified JSX in: src/components/records/data-grid/ExecutionProcess.jsx
+Modified JSX in: src/components/records/data-grid/ActionList.tsx
+Modified JSX in: src/components/records/data-grid/MoreOption.jsx
+Modified JSX in: src/components/modify-record/CardView.jsx
+Modified JSX in: src/components/modify-record/Attachment.jsx
+Modified JSX in: src/components/modify-record/DefaultFields.jsx
+Modified JSX in: src/components/modify-record/AddAttachment.jsx
+Modified JSX in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX in: src/components/ui-rules/UIRuleActionForm.jsx
+Modified JSX in: src/components/security/group/GroupList.jsx
+Modified JSX in: src/components/security/group/Group.jsx
+Modified JSX in: src/components/security/user/UserList.jsx
+Modified JSX in: src/components/security/user/User.jsx
+Modified JSX in: src/components/chatbot/Chatbot.jsx
+Modified JSX in: src/components/articles/Articles.jsx
+Modified JSX in: src/components/admin/AddEditShift.jsx
+Modified JSX in: src/components/admin/VerticallPanel.jsx
+Modified JSX in: src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx
+Modified JSX in: src/components/admin/template/Template.jsx
+Modified JSX in: src/components/shared/Dialog.jsx
+Modified JSX in: src/components/shared/DetailViewModal.jsx
+Modified JSX in: src/components/shared/ViewSelector.jsx
+Modified JSX in: src/components/shared/ListTable.jsx
+Modified JSX in: src/components/shared/FilterPanel.jsx
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/index.js
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js
+Modified JSX in: src/components/shared/nav-bar/DynamicTabs/index.js
+Modified JSX in: src/components/field/OptionFieldIcon.jsx
+Modified JSX in: src/components/field/DataSourceDynamic.jsx
+Modified JSX in: src/components/dashboard/CardPreviewModal.jsx
+Modified JSX in: src/components/dashboard/ChartTypes.jsx
+Modified JSX in: src/components/dashboard/TablePreviewModal.jsx
+Modified JSX in: src/components/dashboard/DataFilterByTimeStamp.jsx
+Modified JSX in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/CardSection.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/ChartSection.jsx
+Modified JSX in: src/components/import-Export/ExportGridView .jsx
+Modified JSX in: src/components/workflow/WorkflowCard.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnGateWay.jsx
+Modified JSX in: src/components/workflow/BPMN/Bpmn.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/uppercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/matchesPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/substringPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replacePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateAddPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/Issubstringpanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lowercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lengthPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/trimPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/concatPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateDiffPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/InsertPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replaceAllPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateFetchPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx
+Modified JSX in: src/components/sortable-tree/TreeNode.jsx
+Modified JSX in: src/components/catelogflow/EditCatlogFlow.jsx
+Modified JSX in: src/components/catelogflow/Creator/ChildCard.jsx
+Modified JSX in: src/components/catelogflow/Creator/QuestionComponents.jsx
+Modified JSX in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorProperty.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataDynamic.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorSinglAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/Creator.jsx
+Modified JSX in: src/components/catelogflow/Creator/GridView.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorItem.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX in: src/components/catelogflow/Creator/MyRequestGridView .jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataSourceManual.jsx
+Modified JSX in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/AddEditPreview.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorPreview.jsx
+Modified JSX in: src/elements/Breadcrump.jsx
+Modified JSX in: src/elements/Dialog.jsx
+Modified JSX in: src/elements/GridTable.jsx
+Modified JSX in: src/elements/BasicAccordion.jsx
+Modified JSX in: src/elements/Accordion.jsx
+Modified JSX in: src/pages/MailDetails.jsx
+Modified JSX in: src/pages/ModifyRecord.jsx
+Modified JSX in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified 97 files.
+Starting JSX Usage Replacement...
+Modified JSX in: src/components/UnderConstruction.jsx
+Modified JSX in: src/components/form/rename-form/RenameModal.jsx
+Modified JSX in: src/components/form/field-group/FieldGroupList.jsx
+Modified JSX in: src/components/form/field-group/FieldGroup.jsx
+Modified JSX in: src/components/form/schema/Schema.jsx
+Modified JSX in: src/components/form/actions/ActionRecordTable.jsx
+Modified JSX in: src/components/records/data-import/AttachFile.jsx
+Modified JSX in: src/components/records/data-import/DataListPreference.jsx
+Modified JSX in: src/components/records/preference/ColumnPreference.jsx
+Modified JSX in: src/components/records/data-grid/RecordDashboard.jsx
+Modified JSX in: src/components/records/data-grid/DataTable.jsx
+Modified JSX in: src/components/records/data-grid/ExecutionProcess.jsx
+Modified JSX in: src/components/records/data-grid/ActionList.tsx
+Modified JSX in: src/components/records/data-grid/MoreOption.jsx
+Modified JSX in: src/components/modify-record/CardView.jsx
+Modified JSX in: src/components/modify-record/Attachment.jsx
+Modified JSX in: src/components/modify-record/DefaultFields.jsx
+Modified JSX in: src/components/modify-record/AddAttachment.jsx
+Modified JSX in: src/components/modify-record/addEditRecord/PreviewRecord.jsx
+Modified JSX in: src/components/ui-rules/UIRuleActionForm.jsx
+Modified JSX in: src/components/security/group/GroupList.jsx
+Modified JSX in: src/components/security/group/Group.jsx
+Modified JSX in: src/components/security/user/UserList.jsx
+Modified JSX in: src/components/security/user/User.jsx
+Modified JSX in: src/components/chatbot/Chatbot.jsx
+Modified JSX in: src/components/admin/AddEditShift.jsx
+Modified JSX in: src/components/admin/VerticallPanel.jsx
+Modified JSX in: src/components/admin/Admin-Tabs/ETLintegration/EtlJobCardView.jsx
+Modified JSX in: src/components/admin/template/Template.jsx
+Modified JSX in: src/components/shared/Dialog.jsx
+Modified JSX in: src/components/shared/DetailViewModal.jsx
+Modified JSX in: src/components/shared/ViewSelector.jsx
+Modified JSX in: src/components/shared/ListTable.jsx
+Modified JSX in: src/components/shared/FilterPanel.jsx
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/index.js
+Modified JSX in: src/components/shared/nav-bar/header/ProfileSection/ApprovalDetail.js
+Modified JSX in: src/components/shared/nav-bar/DynamicTabs/index.js
+Modified JSX in: src/components/field/OptionFieldIcon.jsx
+Modified JSX in: src/components/field/DataSourceDynamic.jsx
+Modified JSX in: src/components/dashboard/CardPreviewModal.jsx
+Modified JSX in: src/components/dashboard/ChartTypes.jsx
+Modified JSX in: src/components/dashboard/TablePreviewModal.jsx
+Modified JSX in: src/components/dashboard/DataFilterByTimeStamp.jsx
+Modified JSX in: src/components/dashboard/config/ConfigListTable.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/CardSection.jsx
+Modified JSX in: src/components/dashboard/dashboardBuild/ChartSection.jsx
+Modified JSX in: src/components/import-Export/ExportGridView .jsx
+Modified JSX in: src/components/workflow/WorkflowCard.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnGateWay.jsx
+Modified JSX in: src/components/workflow/BPMN/Bpmn.jsx
+Modified JSX in: src/components/workflow/BPMN/BpmnRestApi.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/uppercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/matchesPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/substringPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replacePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateAddPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/Issubstringpanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lowercasePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/lengthPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/templatePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/trimPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/concatPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateDiffPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/InsertPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/replaceAllPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/DateFetchPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/OperationPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/NotifyPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/SetValuePanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ConditionPanel.jsx
+Modified JSX in: src/components/workflow/BPMN/Panels/general-function/ExpressionPanel.jsx
+Modified JSX in: src/components/sortable-tree/TreeNode.jsx
+Modified JSX in: src/components/catelogflow/EditCatlogFlow.jsx
+Modified JSX in: src/components/catelogflow/Creator/ChildCard.jsx
+Modified JSX in: src/components/catelogflow/Creator/QuestionComponents.jsx
+Modified JSX in: src/components/catelogflow/Creator/PreviewSingleAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorProperty.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataDynamic.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorSinglAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/Creator.jsx
+Modified JSX in: src/components/catelogflow/Creator/GridView.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorItem.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorAddAttachment.jsx
+Modified JSX in: src/components/catelogflow/Creator/MyRequestGridView .jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorDataSourceManual.jsx
+Modified JSX in: src/components/catelogflow/Creator/RequestDefaultAttchment.jsx
+Modified JSX in: src/components/catelogflow/Creator/AddEditPreview.jsx
+Modified JSX in: src/components/catelogflow/Creator/CreatorPreview.jsx
+Modified JSX in: src/elements/Breadcrump.jsx
+Modified JSX in: src/elements/Dialog.jsx
+Modified JSX in: src/elements/GridTable.jsx
+Modified JSX in: src/elements/BasicAccordion.jsx
+Modified JSX in: src/elements/Accordion.jsx
+Modified JSX in: src/pages/MailDetails.jsx
+Modified JSX in: src/pages/ModifyRecord.jsx
+Modified JSX in: src/pages/ResetPassword/AuthResetPassword.jsx
+Completed! Modified 96 files.

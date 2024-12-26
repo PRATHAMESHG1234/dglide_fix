@@ -101,7 +101,7 @@ export const ObjectLanding = ({
               e.stopPropagation();
               onDelete(params?.data);
             }}
-            sx={{ color: 'red' }}
+            style={{ color: 'red' }}
           >
             <IconTrash />
           </IconButton> */}

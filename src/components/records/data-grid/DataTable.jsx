@@ -102,7 +102,7 @@ export const MyDataTable = ({
     return (
       <GridToolbarContainer>
         <Box
-          sx={{
+          style={{
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -117,7 +117,7 @@ export const MyDataTable = ({
                 : '1px solid #212330'
           }}
         >
-          <FormLabel sx={{ fontSize: '18px', fontWeight: 'bold' }}>
+          <FormLabel style={{ fontSize: '18px', fontWeight: 'bold' }}>
             {pathname === '/workflow'
               ? 'Workflow'
               : pathname === '/catalogflow'
@@ -136,9 +136,11 @@ export const MyDataTable = ({
                   aria-controls="simple-menu"
                   aria-haspopup="true"
                   onClick={handleClick}
-                  endDecorator={<ArrowDropDownIcon sx={{ color: 'inherit' }} />}
+                  endDecorator={
+                    <ArrowDropDownIcon style={{ color: 'inherit' }} />
+                  }
                   color={COLORS.SECONDARY}
-                  sx={{
+                  style={{
                     backgroundColor:
                       currentTheme === 'Light'
                         ? '#e0eeff'
@@ -160,7 +162,7 @@ export const MyDataTable = ({
                 anchorEl={anchorEl}
                 onClose={handleClose}
                 open={menuOpen}
-                sx={{
+                style={{
                   top: pathname === '/workflow' ? '115px' : '180px',
                   left:
                     pathname === '/workflow'
@@ -180,13 +182,13 @@ export const MyDataTable = ({
                   </MenuItem>
                 ) : null}
                 <MenuItem
-                  sx={{
+                  style={{
                     color: COLORS.RED,
                     bgcolor: selectedRows[0] && COLORS.LAVENDER
                   }}
                   onClick={() => handleChangeAction('delete')}
                 >
-                  <ListItemDecorator sx={{ color: 'inherit' }}>
+                  <ListItemDecorator style={{ color: 'inherit' }}>
                     <DeleteForever />
                   </ListItemDecorator>
                   Delete
@@ -208,7 +210,7 @@ export const MyDataTable = ({
             {pathname !== '/workflow' || pathname === '/catalogflow' ? (
               <Button
                 onClick={() => modalActionHandler(MODAL.create)}
-                sx={{
+                style={{
                   backgroundColor: COLORS.PRIMARY,
                   height: '35px'
                 }}
@@ -226,9 +228,9 @@ export const MyDataTable = ({
                   }}
                   onClick={() => setShowColumnPreference(true)}
                 >
-                  <ViewWeekIcon sx={{ fontSize: '18px' }} />
+                  <ViewWeekIcon style={{ fontSize: '18px' }} />
                   <Typography
-                    sx={{
+                    style={{
                       color: COLORS.PRIMARY,
                       fontSize: '13px',
                       fontWeight: 500
@@ -281,7 +283,7 @@ export const MyDataTable = ({
       }}
     >
       <Box
-        sx={{
+        style={{
           height: style?.height,
           backgroundColor: currentTheme === 'Light' ? COLORS.WHITE : '#2A2D3D',
           width: '100%'
@@ -301,7 +303,7 @@ export const MyDataTable = ({
           onSortModelChange={handleSortModelChange}
           onRowDoubleClick={onRowDoubleClick}
           onRowSelectionModelChange={setSelectedRows}
-          sx={{
+          style={{
             [`& .${gridClasses.row}.odd`]: {
               backgroundColor:
                 currentTheme === 'Light'

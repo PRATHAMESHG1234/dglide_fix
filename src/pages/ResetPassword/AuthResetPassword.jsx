@@ -121,7 +121,7 @@ const AuthResetPassword = ({ ...others }) => {
           <FormControl
             fullWidth
             error={Boolean(touched.password && errors.password)}
-            sx={{
+            style={{
               borderRadius: '8px',
               marginTop: 1,
               marginBottom: 1,
@@ -158,7 +158,7 @@ const AuthResetPassword = ({ ...others }) => {
                 handleChange(e);
                 changePassword(e.target.value);
               }}
-              sx={{ borderRadius: '8px' }}
+              style={{ borderRadius: '8px' }}
               endAdornment={
                 <InputAdornment position="end">
                   <IconButton
@@ -184,12 +184,12 @@ const AuthResetPassword = ({ ...others }) => {
           )}
           {strength !== 0 && (
             <FormControl fullWidth>
-              <Box sx={{ mb: 2 }}>
+              <Box style={{ mb: 2 }}>
                 <Grid container spacing={2} alignItems="center">
                   <Grid item>
                     <Box
                       style={{ backgroundColor: level?.color }}
-                      sx={{
+                      style={{
                         width: 85,
                         height: 8,
                         borderRadius: '7px'
@@ -198,7 +198,7 @@ const AuthResetPassword = ({ ...others }) => {
                   </Grid>
                   <Grid item>
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '0.875rem',
                         fontWeight: 500,
                         color: colors.grey[900]
@@ -216,7 +216,7 @@ const AuthResetPassword = ({ ...others }) => {
           <FormControl
             fullWidth
             error={Boolean(touched.confirmPassword && errors.confirmPassword)}
-            sx={{
+            style={{
               marginTop: 1,
               marginBottom: 1,
               '& > label': {
@@ -250,7 +250,7 @@ const AuthResetPassword = ({ ...others }) => {
               onBlur={handleBlur}
               onChange={handleChange}
               inputProps={{}}
-              sx={{ borderRadius: '8px' }}
+              style={{ borderRadius: '8px' }}
             />
           </FormControl>
 
@@ -267,7 +267,7 @@ const AuthResetPassword = ({ ...others }) => {
 
           {errors.submit && (
             <Box
-              sx={{
+              style={{
                 mt: 3
               }}
             >
@@ -275,7 +275,7 @@ const AuthResetPassword = ({ ...others }) => {
             </Box>
           )}
           <Box
-            sx={{
+            style={{
               mt: 1
             }}
           >
@@ -287,7 +287,7 @@ const AuthResetPassword = ({ ...others }) => {
                 size="large"
                 type="submit"
                 variant="contained"
-                sx={{
+                style={{
                   backgroundColor: colors.secondary.main,
                   textTransform: 'none',
                   '&:hover': {

@@ -27,7 +27,7 @@ const Selector = ({ onFieldAdded, type }) => {
                     key={field.category}
                     className="flex flex-col items-center justify-center p-2 shadow-sm"
                     onClick={() => onFieldAdded(field)}
-                    sx={{
+                    style={{
                       height: '110px',
                       width: '110px',
                       backgroundColor: 'rgb(255, 255, 255)',
@@ -38,7 +38,7 @@ const Selector = ({ onFieldAdded, type }) => {
                     <Icon name={field.category} fontSize="30px" />
                     <Typography
                       level="body-xs"
-                      sx={{ mt: 0.2, color: COLORS.SECONDARY }}
+                      style={{ mt: 0.2, color: COLORS.SECONDARY }}
                     >
                       {field.label}
                     </Typography>
@@ -56,7 +56,7 @@ const Selector = ({ onFieldAdded, type }) => {
                     key={field.category}
                     className="flex flex-col items-center justify-center p-2 shadow-sm"
                     onClick={() => onFieldAdded(field)}
-                    sx={{
+                    style={{
                       height: '110px',
                       width: '110px',
                       backgroundColor: 'rgb(255, 255, 255)',
@@ -67,7 +67,7 @@ const Selector = ({ onFieldAdded, type }) => {
                     <Icon name={field.category} fontSize="30px" />
                     <Typography
                       level="body-xs"
-                      sx={{ mt: 0.2, color: COLORS.SECONDARY }}
+                      style={{ mt: 0.2, color: COLORS.SECONDARY }}
                     >
                       {field.label}
                     </Typography>

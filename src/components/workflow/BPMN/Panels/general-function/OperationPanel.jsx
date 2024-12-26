@@ -187,7 +187,7 @@ export const OperationPanel = ({
                         {operationEvent !== 'Select' ? (
                           <IconButton
                             className="mx-1"
-                            sx={{
+                            style={{
                               padding: '0px',
                               backgroundColor: colors.primary[200],
                               '&:hover': {
@@ -199,7 +199,7 @@ export const OperationPanel = ({
                             }
                           >
                             <AddIcon
-                              sx={{
+                              style={{
                                 fontSize: '25px',
                                 color: colors.primary.main,
                                 '&:hover': {
@@ -212,7 +212,7 @@ export const OperationPanel = ({
 
                         <IconButton
                           className="mx-1"
-                          sx={{
+                          style={{
                             padding: '0px',
                             backgroundColor: colors.secondary[200],
                             '&:hover': {
@@ -222,7 +222,7 @@ export const OperationPanel = ({
                           onClick={() => removeSelectedField(item?.fieldInfoId)}
                         >
                           <RemoveIcon
-                            sx={{
+                            style={{
                               fontSize: '25px',
                               color: colors.secondary.main,
                               '&:hover': {
@@ -248,17 +248,17 @@ export const OperationPanel = ({
                     onClick={handleAddNewField}
                   >
                     <IconButton
-                      sx={{
+                      style={{
                         marginY: '20px',
                         marginRight: '2px',
                         padding: '0px',
                         backgroundColor: 'lightgrey'
                       }}
                     >
-                      <Add sx={{ fontSize: '13px' }} />
+                      <Add style={{ fontSize: '13px' }} />
                     </IconButton>
                     <Typography
-                      sx={{
+                      style={{
                         fontSize: '10px',
                         cursor: 'pointer'
                         // marginTop: '20px'

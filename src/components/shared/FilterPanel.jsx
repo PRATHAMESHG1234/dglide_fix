@@ -27,7 +27,7 @@ const FilterPanel = () => {
           }}
         >
           <div className="flex items-center">
-            <SearchIcon sx={{ color: COLORS.SECONDARY }} />
+            <SearchIcon style={{ color: COLORS.SECONDARY }} />
             <h6
               style={{
                 color: 'grey',
@@ -40,13 +40,15 @@ const FilterPanel = () => {
               Search
             </h6>
           </div>
-          <HighlightOffIcon sx={{ color: COLORS.SECONDARY }} />
+          <HighlightOffIcon style={{ color: COLORS.SECONDARY }} />
         </form>
 
         <Button
           variant="plain"
-          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
-          sx={{
+          endDecorator={
+            <ArrowDropDownIcon style={{ color: COLORS.SECONDARY }} />
+          }
+          style={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
             boxShadow: '0px 0px 4px 0px #00000040'
@@ -56,8 +58,10 @@ const FilterPanel = () => {
         </Button>
         <Button
           variant="plain"
-          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
-          sx={{
+          endDecorator={
+            <ArrowDropDownIcon style={{ color: COLORS.SECONDARY }} />
+          }
+          style={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
             boxShadow: '0px 0px 4px 0px #00000040'
@@ -67,8 +71,10 @@ const FilterPanel = () => {
         </Button>
         <Button
           variant="plain"
-          endDecorator={<ArrowDropDownIcon sx={{ color: COLORS.SECONDARY }} />}
-          sx={{
+          endDecorator={
+            <ArrowDropDownIcon style={{ color: COLORS.SECONDARY }} />
+          }
+          style={{
             backgroundColor: COLORS.WHITE,
             color: 'black',
             boxShadow: '0px 0px 4px 0px #00000040'
@@ -80,13 +86,17 @@ const FilterPanel = () => {
       <Stack spacing={2} direction="row">
         <Button
           variant="plain"
-          startDecorator={<CheckCircleIcon sx={{ color: COLORS.SECONDARY }} />}
+          startDecorator={
+            <CheckCircleIcon style={{ color: COLORS.SECONDARY }} />
+          }
         >
           All Task
         </Button>
         <Button
           variant="plain"
-          startDecorator={<ArrowUpwardIcon sx={{ color: COLORS.SECONDARY }} />}
+          startDecorator={
+            <ArrowUpwardIcon style={{ color: COLORS.SECONDARY }} />
+          }
         >
           By Name
         </Button>

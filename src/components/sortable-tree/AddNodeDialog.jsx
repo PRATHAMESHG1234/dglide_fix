@@ -47,7 +47,7 @@ const AddNodeDialog = ({ initialNodeText, onSave, onCancel }) => {
           onChange={(e) => setNodeText(e.target.value)}
           autoFocus
           fullwidth
-          sx={{
+          style={{
             '& .MuiInputBase-root': {
               height: '35px',
               fontSize: '13.5px',

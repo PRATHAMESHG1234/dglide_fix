@@ -638,7 +638,7 @@ const DataTableTabs = ({
         aria-labelledby={`simple-tab-${index}`}
         {...other}
       >
-        {value === index && <Box sx={{ p: 0 }}>{children}</Box>}
+        {value === index && <Box style={{ p: 0 }}>{children}</Box>}
       </div>
     );
   }
@@ -789,7 +789,7 @@ const DataTableTabs = ({
             variant="scrollable"
             indicatorColor="primary"
             onChange={handleChangeTab}
-            sx={{
+            style={{
               fontSize: '0.875rem',
               mb: 2,
               minHeight: 'auto',
@@ -823,7 +823,7 @@ const DataTableTabs = ({
               key={0}
               label={
                 <Typography
-                  sx={{
+                  style={{
                     display: 'flex',
                     fontWeight: 500,
                     fontSize: '0.875rem'
@@ -833,7 +833,7 @@ const DataTableTabs = ({
                 </Typography>
               }
               {...a11yProps(0)}
-              sx={{ textTransform: 'none' }}
+              style={{ textTransform: 'none' }}
             />
 
             {referenceLookupTabs?.map((tab, index) => {
@@ -847,7 +847,7 @@ const DataTableTabs = ({
                   to="#"
                   label={
                     <Typography
-                      sx={{
+                      style={{
                         display: 'flex',
                         fontWeight: 500,
                         fontSize: '0.875rem'
@@ -862,7 +862,7 @@ const DataTableTabs = ({
                             0
                           }
                           size="small"
-                          sx={{
+                          style={{
                             color: '#047eae',
                             background: colors.primary.light,
                             ml: 1.3
@@ -872,7 +872,7 @@ const DataTableTabs = ({
                     </Typography>
                   }
                   {...a11yProps(index + 1)}
-                  sx={{ textTransform: 'none' }}
+                  style={{ textTransform: 'none' }}
                 />
               );
             })}

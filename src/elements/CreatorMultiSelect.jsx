@@ -36,8 +36,8 @@ const MultipleSelect = (props) => {
   };
   return (
     <div className="input-wrapper">
-      <FormControl sx={props.fieldstyle}>
-        <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+      <FormControl style={props.fieldstyle}>
+        <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
           {props.labelname}
           {props.required && <span className="text-danger"> *</span>}
         </FormLabel>
@@ -56,7 +56,7 @@ const MultipleSelect = (props) => {
               .map((item) => item.label);
             return result.join(', ');
           }}
-          sx={{
+          style={{
             width: '100%',
             height: '30px',
             fontSize: '13px',
@@ -67,7 +67,7 @@ const MultipleSelect = (props) => {
             <MenuItem
               key={j}
               value={opn.label}
-              sx={{
+              style={{
                 width: '100%',
                 fontSize: '13px',
                 paddingY: 0
@@ -75,7 +75,7 @@ const MultipleSelect = (props) => {
             >
               <Checkbox
                 checked={selectedItems.indexOf(opn.label) > -1}
-                sx={{
+                style={{
                   '& .MuiSvgIcon-root': { fontSize: 18 }
                 }}
               />

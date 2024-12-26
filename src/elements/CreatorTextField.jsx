@@ -32,7 +32,7 @@ const TextField = (props) => {
 
   return (
     <div className="input-wrapper" style={props.fieldstyle}>
-      <FormLabel sx={{ fontSize: '13px', fontWeight: 'bold' }}>
+      <FormLabel style={{ fontSize: '13px', fontWeight: 'bold' }}>
         {props.labelname}
         {props.required && <span className="text-danger"> *</span>}
       </FormLabel>
@@ -47,7 +47,7 @@ const TextField = (props) => {
         required={false}
       />
       {/* {helperText !== "" && props.submitFlag && props.required && (
-        <Typography className="error" sx={{ height: "15px" }}>
+        <Typography className="error" style={{ height: "15px" }}>
           {helperText}
         </Typography>
       )} */}

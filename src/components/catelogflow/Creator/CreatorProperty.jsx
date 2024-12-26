@@ -442,7 +442,7 @@ const Property = ({
               name="label"
               onChange={onFormValueChanged}
               value={form.label}
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '30px',
                   fontSize: '13px'
@@ -471,7 +471,7 @@ const Property = ({
               placeholder="Text"
               onChange={onFormValueChanged}
               value={form.prependText}
-              sx={{
+              style={{
                 bgcolor: COLORS.WHITE,
                 '& .MuiInputBase-root': {
                   height: '30px',
@@ -495,7 +495,7 @@ const Property = ({
               maxLength={256}
               value={form.defaultText || ''}
               onChange={onFormValueChanged}
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '30px',
                   fontSize: '13px'
@@ -517,7 +517,7 @@ const Property = ({
           </Typography>
           <div className="flex justify-evenly">
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': { fontSize: '13px' },
                 margin: 0.5
               }}
@@ -533,7 +533,7 @@ const Property = ({
             />
 
             <FormControlLabel
-              sx={{
+              style={{
                 '& .MuiFormControlLabel-label': { fontSize: '13px' },
                 margin: 0.5
               }}
@@ -549,7 +549,7 @@ const Property = ({
             />
             {field.category === 'TextArea' && (
               <FormControlLabel
-                sx={{
+                style={{
                   '& .MuiFormControlLabel-label': { fontSize: '13px' },
                   margin: 0.5
                 }}
@@ -565,14 +565,14 @@ const Property = ({
               />
             )}
 
-            <FormControl sx={{ bgcolor: COLORS.WHITE, width: '100px' }}>
+            <FormControl style={{ bgcolor: COLORS.WHITE, width: '100px' }}>
               <Typography level="title-sm">Select Validation</Typography>
               <Select
                 name="validation"
                 id="demo-select-parent1"
                 value={form.validation}
                 onChange={onFormValueChanged}
-                sx={{
+                style={{
                   height: '30px',
                   fontSize: '13px',
                   margin: 1
@@ -601,7 +601,7 @@ const Property = ({
                 name="readOnlyText"
                 onChange={onFormValueChanged}
                 value={form.readOnlyText}
-                sx={{
+                style={{
                   bgcolor: COLORS.WHITE,
                   '& .MuiInputBase-root': {
                     height: '30px',
@@ -622,7 +622,7 @@ const Property = ({
               name="instruction"
               onChange={onFormValueChanged}
               value={form.instruction}
-              sx={{
+              style={{
                 '& .MuiInputBase-root': {
                   height: '30px',
                   fontSize: '13px'
@@ -647,7 +647,7 @@ const Property = ({
                 name="variant"
                 value={form.variant}
                 onChange={onFormValueChanged}
-                sx={{
+                style={{
                   height: '30px',
                   fontSize: '13px',
                   bgcolor: COLORS.WHITE
@@ -658,7 +658,7 @@ const Property = ({
                     <MenuItem
                       key={variant.name}
                       value={variant.name}
-                      sx={{
+                      style={{
                         fontSize: '13px'
                       }}
                     >
@@ -684,7 +684,7 @@ const Property = ({
                 <AddIcon
                   fontSize="medium"
                   onClick={addCondition}
-                  sx={{
+                  style={{
                     color: COLORS.SECONDARY,
                     cursor: 'pointer'
                   }}
@@ -717,7 +717,10 @@ const Property = ({
                         >
                           Options
                         </Typography>
-                        <FormControl fullWidth sx={{ bgcolor: COLORS.WHITE }}>
+                        <FormControl
+                          fullWidth
+                          style={{ bgcolor: COLORS.WHITE }}
+                        >
                           {/* first dropdown */}
                           <Select
                             id="demo-simple-select"
@@ -725,7 +728,7 @@ const Property = ({
                             onChange={(event) => {
                               handleSelectOption(event, condition, i, 'value');
                             }}
-                            sx={{
+                            style={{
                               height: '30px',
                               fontSize: '13px',
                               margin: '8px 0 10px 7px'
@@ -750,7 +753,7 @@ const Property = ({
                             </Typography>
                             <FormControl
                               fullWidth
-                              sx={{ bgcolor: COLORS.WHITE }}
+                              style={{ bgcolor: COLORS.WHITE }}
                             >
                               <Select
                                 id="demo-multiple-name"
@@ -765,7 +768,7 @@ const Property = ({
                                     'fieldName'
                                   )
                                 }
-                                sx={{
+                                style={{
                                   height: '30px',
                                   fontSize: '13px',
                                   margin: '8px 7px 10px 0px'
@@ -789,7 +792,7 @@ const Property = ({
                         // <div>
                         // <FormControl
                         //   fullWidth
-                        //   sx={{ bgcolor: COLORS.WHITE, width: '60%' }}
+                        //   style={{ bgcolor: COLORS.WHITE, width: '60%' }}
                         // >
                         //   <Select
                         //     id="demo-simple-select"
@@ -797,7 +800,7 @@ const Property = ({
                         //     onChange={(event) => {
                         //       handleSelectOption(event, condition, i, 'fieldName');
                         //     }}
-                        //     sx={{
+                        //     style={{
                         //       height: '30px',
                         //       fontSize: '13px',
                         //       margin: 1
@@ -821,7 +824,7 @@ const Property = ({
         <div className="flex justify-start">
           <Button
             type="button"
-            sx={{
+            style={{
               backgroundColor: COLORS.PRIMARY
             }}
             onClick={applyChange}
@@ -829,7 +832,7 @@ const Property = ({
             Apply
           </Button>
           <Button
-            sx={{
+            style={{
               backgroundColor: COLORS.PRIMARY,
               marginLeft: '10px'
             }}

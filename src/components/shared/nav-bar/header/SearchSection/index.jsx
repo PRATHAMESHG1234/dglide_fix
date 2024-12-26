@@ -251,7 +251,7 @@ function SeachSection() {
                 </div>
               </div>
               <Separator className="mb-4 h-1" />
-              <div sx={{ py: 2 }}>
+              <div style={{ py: 2 }}>
                 <div>
                   <div
                     className={`overflow-y-scroll ${recordData.hits?.length > 0 ? 'h-[50vh]' : 'h-auto'}`}

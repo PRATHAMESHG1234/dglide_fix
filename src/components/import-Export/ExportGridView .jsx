@@ -97,7 +97,7 @@
 //               key={filteredItem.catalogFlowInfoId}
 //               variant="outlined"
 //               color=""
-//               sx={{
+//               style={{
 //                 gap: "0",
 //                 width: 280,
 //                 height: 120,
@@ -111,7 +111,7 @@
 //             >
 //               {selectedCard.includes(filteredItem.uuid) && (
 //                 <CheckCircleIcon
-//                   sx={{
+//                   style={{
 //                     position: "absolute",
 //                     top: 8,
 //                     right: 8,
@@ -134,7 +134,7 @@
 //                   <Avatar
 //                     variant="rounded"
 //                     src={`${process.env.REACT_APP_STORAGE_URL}/${filteredItem.logo}`}
-//                     sx={{
+//                     style={{
 //                       backgroundColor: colors.warning.light,
 //                       color: colors.warning.dark,
 //                     }}
@@ -144,7 +144,7 @@
 //                   <div className="flex  flex-col  mx-2">
 //                     <Typography
 //                       level="title-lg"
-//                       sx={{
+//                       style={{
 //                         // color: COLORS.SECONDARY,
 //                         fontSize: "1rem",
 //                         color:
@@ -250,7 +250,7 @@
 //             <Button
 //               variant="text"
 //               size="large"
-//               sx={{ color: colors.grey[900] }}
+//               style={{ color: colors.grey[900] }}
 //               color="inherit"
 //               endIcon={<ExpandMoreRoundedIcon />}
 //               onClick={handleClick}
