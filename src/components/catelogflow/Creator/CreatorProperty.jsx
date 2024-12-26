@@ -1,5 +1,5 @@
 import { memo, useEffect, useState } from 'react';
-import AddIcon from '@mui/icons-material/AddBox';
+import { PackagePlus, PlusCircle } from 'lucide-react';
 import { Divider, FormControl, Typography } from '@mui/joy';
 import {
   Checkbox,
@@ -17,10 +17,10 @@ import TextField from '../../../elements/CreatorTextField';
 import DataSourceDynamic from './CreatorDataDynamic';
 import { COLORS } from '../../../common/constants/styles';
 import DataSourceManual from './CreatorDataSourceManual';
-import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
+import { Trash } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { Button } from '@/componentss/ui/button';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import DefaultTextField from '../../../elements/CreatorDefaultTextField';
 
 const Property = ({
@@ -681,7 +681,7 @@ const Property = ({
               </Typography>
 
               <Tooltip title="Add" variant="solid">
-                <AddIcon
+                <PlusCircle
                   fontSize="medium"
                   onClick={addCondition}
                   style={{
@@ -701,7 +701,7 @@ const Property = ({
                   >
                     <div className="bg-light flex items-center justify-end p-1">
                       <Tooltip title="Delete">
-                        <DeleteOutlinedIcon
+                        <Trash
                           className="pointer"
                           color="error"
                           onClick={() => deleteCondition(condition, i)}

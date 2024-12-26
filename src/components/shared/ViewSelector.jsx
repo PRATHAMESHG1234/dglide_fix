@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './ViewSelecter.css';
-import Add from '@mui/icons-material/Add';
-import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
-import GridViewIcon from '@mui/icons-material/GridView';
+import { Plus, PlusCircle } from 'lucide-react';
+import { List } from 'lucide-react';
+import { LayoutGrid } from 'lucide-react';
 import { Button as Buttons, Stack, Tooltip } from '@mui/material';
 
 import { COLORS, colors } from '../../common/constants/styles';
@@ -26,7 +26,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
         <Button
           variant="plain"
           startDecorator={
-            <ViewHeadlineIcon
+            <List
               style={{
                 color:
                   currentView === 'List'
@@ -71,7 +71,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
         <Button
           variant="plain"
           startDecorator={
-            <GridViewIcon
+            <LayoutGrid
               style={{
                 color:
                   currentView === 'Grid'
@@ -150,7 +150,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
                     textTransform: 'none'
                   }}
                 >
-                  <Add />
+                  <Plus />
                 </Buttons>
               </AnimateButton>
             </Tooltip>
@@ -173,7 +173,7 @@ const ViewSelector = ({ onCreateNew, type }) => {
                   textTransform: 'none'
                 }}
               >
-                <Add />
+                <Plus />
               </Buttons>
             </div>
           )

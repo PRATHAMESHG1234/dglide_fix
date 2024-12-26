@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { ChevronDown } from 'lucide-react';
 
 import {
   Accordion,
@@ -693,7 +693,7 @@ const ModifyRecord = () => {
           onChange={(e, expanded) => handleAccordionChange(asset, expanded)}
         >
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={<ChevronDown />}
             aria-controls="panel1-content"
             id="panel1-header"
             style={{

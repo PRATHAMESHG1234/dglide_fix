@@ -19,12 +19,12 @@ import ConfirmationModal from '../../shared/ConfirmationModal';
 import { fetchCatalogFlow } from '../../../services/catalogFlow';
 import { updateCatalogFlow } from '../../../redux/slices/catalogFlowSlice';
 import { useNavigate } from 'react-router-dom';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import Property from './CreatorProperty';
-import { ChevronRight } from '@mui/icons-material';
+import { ChevronRight } from 'lucide-react';
 import { optionUniqeUId } from '../../../common/utils/helpers';
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { ArrowLeft } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import CreatorAddAttachment from './CreatorAddAttachment';
 import { notify } from '../../../hooks/toastUtils';
 
@@ -391,9 +391,9 @@ export const Creator = ({ catalogFlowInfoId }) => {
                         <label style={{ marginLeft: '28px', fontSize: '13px' }}>
                           {field.child?.length > 0 &&
                           field?.collapsed === true ? (
-                            <KeyboardArrowDownIcon
+                            <ChevronDown
                               onClick={() => handleToggle(field)}
-                            ></KeyboardArrowDownIcon>
+                            ></ChevronDown>
                           ) : (
                             <ChevronRight
                               onClick={() => handleToggle(field)}
@@ -438,7 +438,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
       <div className="mx-3 mb-3 flex justify-between">
         <div className="flex items-center px-1">
           {' '}
-          <KeyboardBackspaceIcon
+          <ArrowLeft
             onClick={() => navigate(-1)}
             style={{ marginRight: '7px', color: 'grey' }}
           />
@@ -473,7 +473,7 @@ export const Creator = ({ catalogFlowInfoId }) => {
               }}
               onClick={() => setCloseConfirmatn(true)}
             >
-              <CloseIcon />
+              <X />
             </Button>
           </Stack>
         </div>

@@ -13,15 +13,14 @@ import {
   Typography
 } from '@mui/material';
 import { useState, useEffect } from 'react';
-import SearchIcon from '@mui/icons-material/Search';
+import { Search } from 'lucide-react';
 import { fetchRecords } from '../../services/table';
 import { colors } from '../../common/constants/styles';
 import MainCard from '../../elements/MainCard';
 import { useSelector } from 'react-redux';
 import { IconSearch } from '@tabler/icons-react';
-import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
+import { ChevronDown } from 'lucide-react';
 import { Input } from '@/componentss/ui/input';
-import { Search } from 'lucide-react';
 const Articles = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [allArticle, setAllArticle] = useState(true);

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { fetchConfigDetail } from '../../../services/chart';
 
 import { Grid, Typography } from '@mui/material';
-import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import { CheckSquare } from 'lucide-react';
 
 import { COLORS, colors } from '../../../common/constants/styles';
 import ChartCard from '../ChartCard';
@@ -145,7 +145,7 @@ const ChartSection = ({
           >
             <Typography style={{ color: colors.grey[500], fontSize: '16px' }}>
               Select charts using the{' '}
-              <CheckBoxIcon style={{ fontSize: 'inherit' }} /> checkbox.
+              <CheckSquare style={{ fontSize: 'inherit' }} /> checkbox.
             </Typography>
           </Grid>
         ) : (

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import CancelIcon from '@mui/icons-material/CancelOutlined';
+import { XCircle } from 'lucide-react';
 import { IconUserScan } from '@tabler/icons-react';
 
 import { colors } from '../../common/constants/styles';

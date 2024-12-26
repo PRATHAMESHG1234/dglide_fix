@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { Add, DeleteForever } from '@mui/icons-material';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import Edit from '@mui/icons-material/Edit';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { Plus, PlusCircle, Trash2 } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import { ListItemDecorator } from '@mui/joy';
 import { Box, FormLabel, Menu, MenuItem, Typography } from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
@@ -15,7 +15,7 @@ import {
   GridToolbarDensitySelector,
   gridClasses
 } from '@mui/x-data-grid';
-import ViewWeekIcon from '@mui/icons-material/ViewWeek';
+import { Calendar } from 'lucide-react';
 
 import { colors, COLORS } from '../../../common/constants/styles';
 import { MODAL } from '../../../common/utils/modal-toggle';
@@ -136,9 +136,7 @@ export const MyDataTable = ({
                   aria-controls="simple-menu"
                   aria-haspopup="true"
                   onClick={handleClick}
-                  endDecorator={
-                    <ArrowDropDownIcon style={{ color: 'inherit' }} />
-                  }
+                  endDecorator={<ChevronDown style={{ color: 'inherit' }} />}
                   color={COLORS.SECONDARY}
                   style={{
                     backgroundColor:
@@ -176,7 +174,7 @@ export const MyDataTable = ({
                     onClick={() => handleChangeAction('edit')}
                   >
                     <ListItemDecorator>
-                      <Edit />
+                      <Edit2 />
                     </ListItemDecorator>
                     Edit
                   </MenuItem>
@@ -189,7 +187,7 @@ export const MyDataTable = ({
                   onClick={() => handleChangeAction('delete')}
                 >
                   <ListItemDecorator style={{ color: 'inherit' }}>
-                    <DeleteForever />
+                    <Trash2 />
                   </ListItemDecorator>
                   Delete
                 </MenuItem>
@@ -200,7 +198,7 @@ export const MyDataTable = ({
                     onClick={() => handleChangeAction('preview')}
                   >
                     <ListItemDecorator>
-                      <PreviewIcon />
+                      <Eye />
                     </ListItemDecorator>
                     Preview
                   </MenuItem>
@@ -215,7 +213,7 @@ export const MyDataTable = ({
                   height: '35px'
                 }}
               >
-                <Add />
+                <Plus />
               </Button>
             ) : null}
 
@@ -228,7 +226,7 @@ export const MyDataTable = ({
                   }}
                   onClick={() => setShowColumnPreference(true)}
                 >
-                  <ViewWeekIcon style={{ fontSize: '18px' }} />
+                  <Calendar style={{ fontSize: '18px' }} />
                   <Typography
                     style={{
                       color: COLORS.PRIMARY,

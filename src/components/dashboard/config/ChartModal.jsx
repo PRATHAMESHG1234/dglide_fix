@@ -21,7 +21,7 @@ import {
 } from '../../../services/field';
 import { fetchFormsByModuleId } from '../../../services/form';
 import Dialog from '../../shared/Dialog';
-import ClearIcon from '@mui/icons-material/Clear';
+import { X } from 'lucide-react';
 import { fetchConfigDetail, getPreviewDetail } from '../../../services/chart';
 import {
   buildChart,
@@ -31,10 +31,10 @@ import {
 } from '../ChartJson';
 import Chart from 'chart.js/auto';
 
-import MonetizationOnTwoToneIcon from '@mui/icons-material/MonetizationOnTwoTone';
-import AccountCircleTwoTone from '@mui/icons-material/AccountCircleTwoTone';
-import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
-import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
+import { DollarSign } from 'lucide-react';
+import { UserCircle } from 'lucide-react';
+import { FileText } from 'lucide-react';
+import { Landmark } from 'lucide-react';
 import ConfigItemDisplay from './ConfigItemDisplay';
 import FormConfiguration from './FormConfiguration';
 import SearchCondition from './SearchCondition';

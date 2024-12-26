@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { DeleteForever } from '@mui/icons-material';
-import CloseIcon from '@mui/icons-material/Close';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
-import FileIcon from '@mui/icons-material/FilePresentOutlined';
-import DeleteIcon from '@mui/icons-material/HighlightOff';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { Trash } from 'lucide-react';
+import { X } from 'lucide-react';
+import { DownloadCloud } from 'lucide-react';
+import { FileCheck } from 'lucide-react';
+import { XCircle } from 'lucide-react';
+import { File } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import Modal from '@mui/joy/Modal';
 import {
   Box,
@@ -106,8 +106,7 @@ const RequestDefaultAttachment = ({
             overflow: 'auto'
           }}
         >
-          <CloseIcon
-            onClick={() => closePreviewModal()}
+          <X onClick={() => closePreviewModal()}
             style={{
               position: 'absolute',
               top: 16,
@@ -340,8 +339,7 @@ const RequestDefaultAttachment = ({
                             }}
                           />
                         ) : attachment.fileExtension === 'pdf' ? (
-                          <PictureAsPdfIcon
-                            style={{
+                          <File style={{
                               fontSize: '50px',
                               marginRight: '7px',
                               color: 'lightgrey'
@@ -365,8 +363,7 @@ const RequestDefaultAttachment = ({
                             }}
                           />
                         ) : (
-                          <FileIcon
-                            style={{
+                          <File style={{
                               color: 'lightgrey',
                               fontSize: '50px',
                               marginRight: '7px'
@@ -404,7 +401,7 @@ const RequestDefaultAttachment = ({
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <PreviewIcon />
+                                <Eye />
                               </IconButton>
                             </Tooltip>
                           ) : null}
@@ -418,7 +415,7 @@ const RequestDefaultAttachment = ({
                                 color: COLORS.PRIMARY
                               }}
                             >
-                              <DownloadIcon />
+                              <DownloadCloud />
                             </IconButton>
                           </Tooltip>
                           {catlogFlag !== 'DocumentType' ? (
@@ -438,8 +435,7 @@ const RequestDefaultAttachment = ({
                                   }
                                 }}
                               >
-                                <DeleteForever
-                                  style={{
+                                <Trash2 style={{
                                     color: 'darkred'
                                   }}
                                 />
@@ -518,8 +514,7 @@ const RequestDefaultAttachment = ({
                               }}
                             />
                           ) : file.fileContentType === 'application/pdf' ? (
-                            <PictureAsPdfIcon
-                              style={{
+                            <File style={{
                                 fontSize: '30px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -546,8 +541,7 @@ const RequestDefaultAttachment = ({
                           ) : (
                             file.fileContentType ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                              <FileIcon
-                                style={{
+                              <File style={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
                                   marginRight: '7px'
@@ -574,8 +568,7 @@ const RequestDefaultAttachment = ({
                           aria-label="delete"
                           onClick={() => deleteSelectedFileHandler(attachment)}
                         >
-                          <DeleteIcon
-                            style={{
+                          <Trash style={{
                               color: 'darkred',
                               fontSize: '20px'
                             }}

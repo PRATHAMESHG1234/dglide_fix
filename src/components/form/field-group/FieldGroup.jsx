@@ -1,7 +1,7 @@
 import { useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Add } from '@mui/icons-material';
+import { Plus, PlusCircle } from 'lucide-react';
 import {
   Dialog,
   DialogContent,
@@ -24,7 +24,7 @@ import {
   deleteFieldGroup,
   updateFieldGroup
 } from '../../../redux/slices/fieldGroupSlice';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import FieldGroupList from './FieldGroupList';
 
 const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
@@ -111,7 +111,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
       >
         <Tooltip title="Close" placement="bottom">
           <IconButton onClick={close}>
-            <CloseIcon fontSize="small" style={{ color: COLORS.BLACK }} />
+            <X fontSize="small" style={{ color: COLORS.BLACK }} />
           </IconButton>
         </Tooltip>
       </div>
@@ -134,7 +134,7 @@ const FieldGroup = ({ open, close, fieldGroups, selectedFormDetails }) => {
               onClick={() => modalActionHandler(MODAL.create)}
             >
               <Button tooltipTitle={'Add Group'}>
-                <Add /> Add group
+                <Plus /> Add group
               </Button>
             </div>
           </div>

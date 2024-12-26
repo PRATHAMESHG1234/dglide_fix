@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import SyncAltIcon from '@mui/icons-material/SyncAlt';
+import { ArrowLeftRight } from 'lucide-react';
 import { Box } from '@mui/material';
 
 import { COLORS } from '../../../common/constants/styles';
@@ -64,7 +64,7 @@ const RenameModal = ({ state, onConfirm, onCancel }) => {
             input: { cursor: 'no-drop' }
           }}
         />
-        <SyncAltIcon className="pt-1" />
+        <ArrowLeftRight className="pt-1" />
         <TextField
           labelname="Updated Name"
           placeholder="Enter New Name"

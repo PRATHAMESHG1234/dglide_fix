@@ -12,7 +12,7 @@ import { getRoundRectPath } from 'bpmn-js/lib/draw/BpmnRenderUtil';
 
 import { is } from 'bpmn-js/lib/util/ModelUtil';
 import { colors } from '../../../../../../../common/constants/styles';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 
 // import { isNil } from 'min-dash';
 

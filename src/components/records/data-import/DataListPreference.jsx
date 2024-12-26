@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import SelectField from '../../../elements/SelectField';
-import ArrowIcon from '@mui/icons-material/East';
+import { ArrowRight } from 'lucide-react';
 import { COLORS } from '../../../common/constants/styles';
 
 const DataListPreference = ({
@@ -52,7 +52,7 @@ const DataListPreference = ({
             {field.label}
           </span>
           <span style={{ width: '7%', color: COLORS.SECONDARY }}>
-            <ArrowIcon style={{ fontSize: '15px' }} />
+            <ArrowRight style={{ fontSize: '15px' }} />
           </span>
 
           <SelectField

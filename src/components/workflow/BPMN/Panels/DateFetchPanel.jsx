@@ -8,12 +8,12 @@ import {
   Typography
 } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
-import AddBoxIcon from '@mui/icons-material/AddBox';
+import { PackagePlus } from 'lucide-react';
 import { colors } from '../../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
-import ErrorIcon from '@mui/icons-material/Error';
+import { X } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useLocalStorage } from '../custom/useLocalStorage';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonthOutlined';
+import { Calendar } from 'lucide-react';
 
 export const DateFetchPanel = ({
   addExpression,
@@ -83,7 +83,7 @@ export const DateFetchPanel = ({
             color: colors.grey[500]
           }}
         >
-          <CloseIcon />
+          <X />
         </IconButton>
         <Tooltip
           title="Output variable name: 'datetime', use it as id.out.datetime"
@@ -100,7 +100,7 @@ export const DateFetchPanel = ({
               color: colors.primary.dark
             }}
           >
-            <ErrorIcon />
+            <AlertCircle />
           </IconButton>
         </Tooltip>
         <div className="flex flex-col">
@@ -134,8 +134,7 @@ export const DateFetchPanel = ({
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
-                  <CalendarMonthIcon
-                    style={{
+                  <Calendar style={{
                       color: colors.primary.dark,
                       fontSize: '25px',
                       cursor: 'pointer'
@@ -149,8 +148,7 @@ export const DateFetchPanel = ({
                       setDatePickerShow(true);
                     }}
                   />
-                  <AddBoxIcon
-                    style={{
+                  <PackagePlus style={{
                       color: colors.primary.dark,
                       fontSize: '25px',
                       cursor: 'pointer'

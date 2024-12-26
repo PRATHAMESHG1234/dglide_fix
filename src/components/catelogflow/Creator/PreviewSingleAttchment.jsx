@@ -13,15 +13,15 @@ import {
   Box
 } from '@mui/material';
 import { COLORS } from '../../../common/constants/styles';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
-import FileIcon from '@mui/icons-material/FilePresentOutlined';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { DownloadCloud } from 'lucide-react';
+import { FileCheck } from 'lucide-react';
+import { File } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import { BsFiletypeXlsx } from 'react-icons/bs';
 import { FaFileCsv } from 'react-icons/fa';
 import '../../modify-record/Attachment.css';
 import Modal from '@mui/joy/Modal';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 
 const ODD_OPACITY = 0.5;
 
@@ -83,8 +83,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
             overflow: 'auto'
           }}
         >
-          <CloseIcon
-            onClick={() => closePreviewModal()}
+          <X onClick={() => closePreviewModal()}
             style={{
               position: 'absolute',
               top: 16,
@@ -163,8 +162,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                   }}
                 />
               ) : attachmnetData.fileExtension === 'pdf' ? (
-                <PictureAsPdfIcon
-                  style={{
+                <File style={{
                     fontSize: '50px',
                     marginRight: '30px',
                     color: 'lightgrey'
@@ -188,8 +186,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                   }}
                 />
               ) : (
-                <FileIcon
-                  style={{
+                <File style={{
                     color: 'lightgrey',
                     fontSize: '50px',
                     marginRight: '30px'
@@ -225,7 +222,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                         color: COLORS.PRIMARY
                       }}
                     >
-                      <PreviewIcon />
+                      <Eye />
                     </IconButton>
                   </Tooltip>
                 ) : null}
@@ -237,7 +234,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                       color: COLORS.PRIMARY
                     }}
                   >
-                    <DownloadIcon />
+                    <DownloadCloud />
                   </IconButton>
                 </Tooltip>
                 {/* {catlogFlag !== 'DocumentType' ? (
@@ -257,8 +254,7 @@ export const PreviewSingleAttchment = ({ attachmnetData, catlogFlag }) => {
                               }
                             }}
                           >
-                            <DeleteForever
-                              style={{
+                            <Trash2 style={{
                                 color: 'darkred'
                               }}
                             />

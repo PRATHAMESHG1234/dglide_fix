@@ -1,4 +1,4 @@
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { ChevronDown } from 'lucide-react';
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -9,7 +9,7 @@ export default function BasicAccordion() {
     <div>
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ChevronDown />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -24,7 +24,7 @@ export default function BasicAccordion() {
       </Accordion>
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ChevronDown />}
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
@@ -39,7 +39,7 @@ export default function BasicAccordion() {
       </Accordion>
       <Accordion disabled>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ChevronDown />}
           aria-controls="panel3a-content"
           id="panel3a-header"
         >

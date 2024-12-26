@@ -1,11 +1,11 @@
 // import { useEffect, useState } from "react";
 
-// import DeleteForever from "@mui/icons-material/DeleteForever";
-// import Edit from "@mui/icons-material/Edit";
-// import PreviewIcon from "@mui/icons-material/Preview";
-// import MoreVert from "@mui/icons-material/MoreVert";
+// import { Trash2 } from 'lucide-react';
+// import { Edit,Edit2 } from 'lucide-react';
+// import { Eye } from 'lucide-react';
+// import { MoreVertical } from 'lucide-react';
 // import { Divider, Stack, Tooltip, Typography } from "@mui/joy";
-// import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+// import { CheckCircle } from 'lucide-react';
 // import Box from "@mui/joy/Box";
 // import Card from "@mui/joy/Card";
 // import CardActions from "@mui/joy/CardActions";
@@ -21,8 +21,8 @@
 // import { Avatar, Button, Chip, Grid, Pagination } from "@mui/material";
 // import { useLocation, useNavigate } from "react-router-dom";
 // import { useSelector } from "react-redux";
-// import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
-// import StorefrontTwoToneIcon from "@mui/icons-material/StorefrontTwoTone";
+// import { ChevronDown } from 'lucide-react';
+// import { Store } from 'lucide-react';
 
 // import {
 //   IconUserCircle,
@@ -110,8 +110,7 @@
 //               onClick={() => handleCardSelect(filteredItem.uuid)}
 //             >
 //               {selectedCard.includes(filteredItem.uuid) && (
-//                 <CheckCircleIcon
-//                   style={{
+//                 <CheckCircle //                   style={{
 //                     position: "absolute",
 //                     top: 8,
 //                     right: 8,
@@ -139,7 +138,7 @@
 //                       color: colors.warning.dark,
 //                     }}
 //                   >
-//                     <StorefrontTwoToneIcon fontSize="inherit" />
+//                     <Store fontSize="inherit" />
 //                   </Avatar>
 //                   <div className="flex  flex-col  mx-2">
 //                     <Typography
@@ -252,7 +251,7 @@
 //               size="large"
 //               style={{ color: colors.grey[900] }}
 //               color="inherit"
-//               endIcon={<ExpandMoreRoundedIcon />}
+//               endIcon={<ChevronDown />}
 //               onClick={handleClick}
 //             >
 //               {rowsPerPage} Rows

@@ -7,10 +7,10 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { colors } from '../../../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
-import { Add } from '@mui/icons-material';
+import { PlusCircle, X } from 'lucide-react';
+import { Minus } from 'lucide-react';
+import { Plus } from 'lucide-react';
+
 import { Typography } from '@mui/joy';
 import { useLocalStorage } from '../../custom/useLocalStorage';
 
@@ -57,7 +57,7 @@ export const SetValuePanel = ({
               cursor: 'pointer'
             }}
           >
-            <CloseIcon style={{ fontSize: '15px' }} />
+            <X style={{ fontSize: '15px' }} />
           </IconButton>
           {variableValue.columns.length > 0 && (
             <>
@@ -116,7 +116,7 @@ export const SetValuePanel = ({
                             addExpression(index, 'setValue', item.value)
                           }
                         >
-                          <AddIcon
+                          <PlusCircle
                             style={{
                               fontSize: '25px',
                               color: colors.primary.main,
@@ -137,7 +137,7 @@ export const SetValuePanel = ({
                           }}
                           onClick={() => removeVariable(index)}
                         >
-                          <RemoveIcon
+                          <Minus
                             style={{
                               fontSize: '25px',
                               color: colors.secondary.main,
@@ -168,7 +168,7 @@ export const SetValuePanel = ({
                           backgroundColor: 'lightgrey'
                         }}
                       >
-                        <Add style={{ fontSize: '13px' }} />
+                        <Plus style={{ fontSize: '13px' }} />
                       </IconButton>
                       <Typography
                         style={{ fontSize: '10px', cursor: 'pointer' }}

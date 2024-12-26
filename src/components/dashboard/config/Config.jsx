@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { Add } from '@mui/icons-material';
 import { FormLabel, Grid, Typography } from '@mui/material';
 
 import { colors, COLORS } from '../../../common/constants/styles';
@@ -23,7 +22,7 @@ import ChartModal from './ChartModal';
 import ListView from '../../shared/ListView';
 import ListTable from './ConfigListTable';
 import MainCard from '../../../elements/MainCard';
-import { Plus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
 import { Separator } from '@/componentss/ui/separator';
 
 const Config = () => {

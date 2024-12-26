@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Box, Stack } from "@mui/material";
-import { DataGrid } from "@mui/x-data-grid";
-import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import EditIcon from "@mui/icons-material/Edit";
-import { MODAL } from "../../../common/utils/modal-toggle";
-import Button from "../../../elements/Button";
+import React, { useEffect, useState } from 'react';
+import { Box, Stack } from '@mui/material';
+import { DataGrid } from '@mui/x-data-grid';
+import { Trash } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
+import { MODAL } from '../../../common/utils/modal-toggle';
+import Button from '../../../elements/Button';
 
 const GroupList = ({ groups, modalActionHandler }) => {
   const [columns, setColumns] = useState([]);
@@ -20,7 +20,7 @@ const GroupList = ({ groups, modalActionHandler }) => {
       const modified = groups?.map((data) => {
         return {
           ...data,
-          id: data.groupId,
+          id: data.groupId
         };
       });
 
@@ -31,8 +31,8 @@ const GroupList = ({ groups, modalActionHandler }) => {
   const fields = [
     ...columns,
     {
-      field: "actions",
-      headerName: "Actions",
+      field: 'actions',
+      headerName: 'Actions',
       width: 400,
       renderCell: (data) => {
         return (
@@ -46,10 +46,10 @@ const GroupList = ({ groups, modalActionHandler }) => {
                   modalActionHandler(MODAL.edit, data?.row?.groupId)
                 }
                 style={{
-                  borderRadius: 1,
+                  borderRadius: 1
                 }}
               >
-                <EditIcon />
+                <Edit2 />
               </Button>
               <Button
                 size="sm"
@@ -59,21 +59,21 @@ const GroupList = ({ groups, modalActionHandler }) => {
                   modalActionHandler(MODAL.delete, data?.row?.groupId)
                 }
                 style={{
-                  borderRadius: 1,
+                  borderRadius: 1
                 }}
               >
-                <DeleteOutlineIcon />
+                <Trash />
               </Button>
             </Stack>
           </>
         );
-      },
-    },
+      }
+    }
   ];
 
   return (
     <div className="mt-5">
-      <Box style={{ height: "auto", padding: "5px", paddingTop: "10px" }}>
+      <Box style={{ height: 'auto', padding: '5px', paddingTop: '10px' }}>
         <DataGrid
           rows={rows}
           columns={fields}

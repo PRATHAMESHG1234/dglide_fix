@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import Reminder from '@mui/icons-material/AlarmOutlined';
-import CircleIcon from '@mui/icons-material/Circle';
-import RecordIcon from '@mui/icons-material/DescriptionOutlined';
-import Filter from '@mui/icons-material/Tune';
+import { Alarm } from 'lucide-react';
+import { Circle } from 'lucide-react';
+import { FileText } from 'lucide-react';
+import { Settings } from 'lucide-react';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
@@ -390,8 +390,7 @@ const TabInfo = ({ TabsData }) => {
                       width: '20%'
                     }}
                   >
-                    <RecordIcon
-                      style={{
+                    <Video style={{
                         fontSize: '40px',
                         color: '#0000001D',
                         marginX: 2
@@ -569,8 +568,7 @@ const TabInfo = ({ TabsData }) => {
                       >
                         Signed
                       </Typography>
-                      <CircleIcon
-                        style={{ color: '#1cdc75', fontSize: '15px', mt: 0.3 }}
+                      <Circle style={{ color: '#1cdc75', fontSize: '15px', mt: 0.3 }}
                       />
                     </Box>
                     <Typography

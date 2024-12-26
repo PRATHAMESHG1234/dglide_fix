@@ -2,8 +2,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import RefreshIcon from '@mui/icons-material/Refresh';
-import SendIcon from '@mui/icons-material/Send';
+import { RefreshCcw } from 'lucide-react';
+import { Send } from 'lucide-react';
 import {
   FormControlLabel,
   IconButton,
@@ -31,10 +31,10 @@ import CreatorSinglAttchment from '../catelogflow/Creator/CreatorSinglAttchment'
 import { fetchRecords, updateTableRecord } from '../../services/table';
 import MyRequestGridView from '../catelogflow/Creator/MyRequestGridView ';
 // import { fetchRecords } from '../../redux/slices/tableSlice';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { Paperclip } from 'lucide-react';
 import RequestDefaultAttachment from '../catelogflow/Creator/RequestDefaultAttchment';
-import { Padding } from '@mui/icons-material';
-import CloseIcon from '@mui/icons-material/Close';
+import { Box } from 'lucide-react';
+import { X } from 'lucide-react';
 
 let rootIndex = 0;
 
@@ -519,7 +519,7 @@ const MyChatbot = () => {
       <div className="chat-history">
         {/* <div className="flex  justify-between chatbot-header">
           <Button onClick={RefreshBot}>
-            <RefreshIcon></RefreshIcon>
+            <RefreshCcw></RefreshIcon>
           </Button>
           <Tooltip title="Attachments">
             <IconButton
@@ -531,8 +531,7 @@ const MyChatbot = () => {
                 border: '1px solid #1976d1'
               }}
             >
-              <AttachFileIcon
-                style={{ transform: 'rotate(135deg)', color: 'inherit' }}
+              <Paperclip style={{ transform: 'rotate(135deg)', color: 'inherit' }}
               />
             </IconButton>
           </Tooltip>
@@ -622,7 +621,7 @@ const MyChatbot = () => {
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
                       >
-                        <SendIcon />
+                        <Send />
                       </Button>
                     </li>
                   );
@@ -663,7 +662,7 @@ const MyChatbot = () => {
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
                       >
-                        <SendIcon />
+                        <Send />
                       </Button>
                     </li>
                   );
@@ -704,8 +703,7 @@ const MyChatbot = () => {
                             }
                           }}
                           endIcon={
-                            <SendIcon
-                              style={{
+                            <Send style={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -754,8 +752,7 @@ const MyChatbot = () => {
                             }
                           }}
                           endIcon={
-                            <SendIcon
-                              style={{
+                            <Send style={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -802,8 +799,7 @@ const MyChatbot = () => {
                             }
                           }}
                           endIcon={
-                            <SendIcon
-                              style={{
+                            <Send style={{
                                 position: 'absolute',
                                 right: '16px',
                                 top: '50%',
@@ -863,7 +859,7 @@ const MyChatbot = () => {
                             }}
                             onClick={(e) => handleOptionSelect(e, {})}
                           >
-                            <SendIcon />
+                            <Send />
                           </Button>
                         </>
                       )}
@@ -892,7 +888,7 @@ const MyChatbot = () => {
                         }}
                         onClick={(e) => handleOptionSelect(e, {})}
                       >
-                        <SendIcon />
+                        <Send />
                       </Button>
                     </li>
                   );
@@ -993,7 +989,7 @@ const MyChatbot = () => {
               }}
               onClick={() => setTicketCard(false)}
             >
-              <CloseIcon />
+              <X />
             </Button>
           </div>
           <div className="">

@@ -10,7 +10,7 @@ import {
   TableHead,
   TableRow
 } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 
 const TablePreviewModal = ({ open, onClose, selectedItemData }) => {
   return (
@@ -47,7 +47,7 @@ const TablePreviewModal = ({ open, onClose, selectedItemData }) => {
               zIndex: 999
             }}
           >
-            <CloseIcon />
+            <X />
           </IconButton>
 
           <h2 id="modal-modal-title">Table Preview</h2>

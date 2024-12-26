@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 import { Box, Tooltip } from '@mui/joy';
 import BpmnModeler from 'bpmn-js/lib/Modeler';
 import { FormLabel } from '@mui/material';
@@ -2147,7 +2147,7 @@ const BpmnNew = () => {
                 onClick={() => navigate('/workflow')}
                 variant="outline"
               >
-                <CloseIcon />
+                <X />
               </Button>
             </Tooltip>
           </Box>

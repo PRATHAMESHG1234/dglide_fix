@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useReducer, useState } from 'react';
-import Add from '@mui/icons-material/Add';
+import { Plus, PlusCircle } from 'lucide-react';
 import { Box, Typography } from '@mui/joy';
 import { useDispatch, useSelector } from 'react-redux';
 import { Tooltip } from '@mui/material';
@@ -104,7 +104,7 @@ const User = () => {
           >
             <Tooltip title="Add User">
               <Button>
-                <Add />
+                <Plus />
               </Button>
             </Tooltip>
           </Box>

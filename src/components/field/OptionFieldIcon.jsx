@@ -1,23 +1,23 @@
-import EmailIcon from '@mui/icons-material/EmailOutlined';
-import WebIcon from '@mui/icons-material/LanguageOutlined';
-import WalkInIcon from '@mui/icons-material/DirectionsWalkOutlined';
-import PhoneIcon from '@mui/icons-material/PhoneOutlined';
-import SocialIcon from '@mui/icons-material/Diversity2Outlined';
-import APIIcon from '@mui/icons-material/CloudSyncOutlined';
+import { Footprints, Mail, Webhook } from 'lucide-react';
+import { Globe } from 'lucide-react';
+import { Walk } from 'lucide-react';
+import { Phone } from 'lucide-react';
+import { Users } from 'lucide-react';
+import { Sync } from 'lucide-react';
 const style = {
   fontSize: 'inherit',
   color: 'inherit'
 };
 export const IconForOption = {
-  email: <EmailIcon style={style} />,
+  email: <Mail style={style} />,
 
-  phone: <PhoneIcon style={style} />,
+  phone: <Phone style={style} />,
 
-  walkIn: <WalkInIcon style={style} />,
+  walkIn: <Footprints style={style} />,
 
-  web: <WebIcon style={style} />,
+  web: <Globe style={style} />,
 
-  API: <APIIcon style={style} />,
+  API: <Webhook style={style} />,
 
-  social: <SocialIcon style={style} />
+  social: <Users style={style} />
 };

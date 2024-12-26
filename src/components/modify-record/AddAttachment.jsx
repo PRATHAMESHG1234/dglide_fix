@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { DeleteForever } from '@mui/icons-material';
-import CloseIcon from '@mui/icons-material/Close';
-import DownloadIcon from '@mui/icons-material/CloudDownload';
-import FileIcon from '@mui/icons-material/FilePresentOutlined';
-import DeleteIcon from '@mui/icons-material/HighlightOff';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import PreviewIcon from '@mui/icons-material/Preview';
+import { Trash } from 'lucide-react';
+import { X } from 'lucide-react';
+import { DownloadCloud } from 'lucide-react';
+import { FileCheck } from 'lucide-react';
+import { XCircle } from 'lucide-react';
+import { File } from 'lucide-react';
+import { Eye } from 'lucide-react';
 import Modal from '@mui/joy/Modal';
 import {
   Box,
@@ -127,8 +127,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
             overflow: 'auto'
           }}
         >
-          <CloseIcon
-            onClick={() => closePreviewModal()}
+          <X onClick={() => closePreviewModal()}
             style={{
               position: 'absolute',
               top: 16,
@@ -427,8 +426,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                               }}
                             />
                           ) : attachment.fileExtension === 'pdf' ? (
-                            <PictureAsPdfIcon
-                              style={{
+                            <File style={{
                                 fontSize: '50px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -452,8 +450,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                               }}
                             />
                           ) : (
-                            <FileIcon
-                              style={{
+                            <File style={{
                                 color: 'lightgrey',
                                 fontSize: '50px',
                                 marginRight: '7px'
@@ -496,7 +493,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <PreviewIcon />
+                                <Eye />
                               </IconButton>
                             </Tooltip>
 
@@ -509,7 +506,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                   color: COLORS.PRIMARY
                                 }}
                               >
-                                <DownloadIcon />
+                                <DownloadCloud />
                               </IconButton>
                             </Tooltip>
 
@@ -529,8 +526,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                   }
                                 }}
                               >
-                                <DeleteForever
-                                  style={{
+                                <Trash2 style={{
                                     color: 'darkred'
                                   }}
                                 />
@@ -608,8 +604,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                                 }}
                               />
                             ) : file.type === 'application/pdf' ? (
-                              <PictureAsPdfIcon
-                                style={{
+                              <File style={{
                                   fontSize: '30px',
                                   marginRight: '7px',
                                   color: 'lightgrey'
@@ -636,8 +631,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             ) : (
                               file.type ===
                                 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                                <FileIcon
-                                  style={{
+                                <File style={{
                                     color: 'lightgrey',
                                     fontSize: '30px',
                                     marginRight: '7px'
@@ -664,8 +658,7 @@ const AddAttachment = ({ attachmentTab, selectedRecordId, form, type }) => {
                             aria-label="delete"
                             onClick={() => deleteSelectedFileHandler(fileIndex)}
                           >
-                            <DeleteIcon
-                              style={{
+                            <Trash style={{
                                 color: 'darkred',
                                 fontSize: '20px'
                               }}

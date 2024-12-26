@@ -9,7 +9,7 @@ import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 
 // assets
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { ChevronDown } from 'lucide-react';
 
 // ==============================|| ACCORDION ||============================== //
 
@@ -50,7 +50,7 @@ const Accordions = ({
                 expandIcon || expandIcon === false ? (
                   expandIcon
                 ) : (
-                  <ExpandMoreIcon />
+                  <ChevronDown />
                 )
               }
               style={{

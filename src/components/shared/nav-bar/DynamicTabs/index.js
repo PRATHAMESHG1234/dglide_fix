@@ -4,7 +4,7 @@ import defaultComponents from './components';
 import useOnClickOutside from './useOnClickOutside';
 import { color } from 'framer-motion';
 import { COLORS, colors } from '../../../../common/constants/styles';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { MoreHorizontal } from 'lucide-react';
 import { Avatar } from '@mui/material';
 import { useSelector } from 'react-redux';
 export default function DynamicTabs({ children, components = {}, ...props }) {
@@ -140,7 +140,7 @@ export default function DynamicTabs({ children, components = {}, ...props }) {
             color="inherit"
           >
             {' '}
-            <MoreHorizIcon stroke={1.5} size="20px" />
+            <MoreHorizontal stroke={1.5} size="20px" />
           </Avatar>
 
           {menuIsOpen && (

@@ -18,7 +18,7 @@ import {
 } from '@mui/material';
 import DialogModal from '@mui/material/Dialog';
 import { colors, COLORS } from '../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
+import { X } from 'lucide-react';
 
 export const ExecutionProcess = ({ onCancel, actionModal }) => {
   const { tableRecord } = useSelector((state) => state.table);
@@ -210,7 +210,7 @@ export const ExecutionProcess = ({ onCancel, actionModal }) => {
                     : COLORS.WHITESMOKE
               }}
             >
-              <CloseIcon />
+              <X />
             </IconButton>
           </Tooltip>
         </span>

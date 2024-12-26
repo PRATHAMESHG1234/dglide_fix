@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import SplitPane, { Pane } from 'split-pane-react';
 
-import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import { ArrowLeft } from 'lucide-react';
 import {
   Box,
   CircularProgress,
@@ -22,7 +22,7 @@ import {
   fetchFieldLookupValues
 } from '../../../services/catalogFlow';
 // import AddEditPreview from './AddEditPreview';
-import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { Paperclip } from 'lucide-react';
 import { catalogType } from '../../../common/utils/fields';
 import Questionnaire from './Questionnaire';
 import { generateChild } from '../../../common/utils/helpers';
@@ -91,8 +91,7 @@ const CreatorPreview = () => {
     <>
       <div className="mb-3 flex justify-between">
         <div className="flex items-center px-1">
-          <KeyboardBackspaceIcon
-            onClick={() => navigate(-1)}
+          <ArrowLeft onClick={() => navigate(-1)}
             style={{ marginRight: '7px', color: 'grey' }}
           />
           <Typography
@@ -118,8 +117,7 @@ const CreatorPreview = () => {
                   border: '1px solid #1976d1'
                 }}
               >
-                <AttachFileIcon
-                  style={{ transform: 'rotate(135deg)', color: 'inherit' }}
+                <Paperclip style={{ transform: 'rotate(135deg)', color: 'inherit' }}
                 />
               </IconButton>
             </Tooltip>

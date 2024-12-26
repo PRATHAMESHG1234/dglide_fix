@@ -5,7 +5,7 @@ import 'react-quill/dist/quill.snow.css';
 import { useSelector } from 'react-redux';
 import './AddEditRecord.css';
 
-import Add from '@mui/icons-material/Add';
+import { Plus, PlusCircle } from 'lucide-react';
 import {
   Autocomplete,
   Box,
@@ -42,15 +42,15 @@ import { createTableRecord } from '../../../redux/slices/tableSlice';
 import { useDispatch } from 'react-redux';
 import { fetchFieldGroups } from '../../../redux/slices/fieldGroupSlice';
 
-import InfoIcon from '@mui/icons-material/InfoOutlined';
+import { Info } from 'lucide-react';
 import DefaultFields from '../DefaultFields';
 import Avatar from '../../../elements/Avatar';
 import { IconForOption } from '../../field/OptionFieldIcon';
 import { Button } from '@/componentss/ui/button';
-import CloseIcon from '@mui/icons-material/Close';
-import EmailIcon from '@mui/icons-material/EmailOutlined';
-import CallIcon from '@mui/icons-material/CallOutlined';
-import CreateIcon from '@mui/icons-material/CreateOutlined';
+import { X } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { PhoneCall } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { catalogType } from '../../../common/utils/fields';
 import CreatorAddAttachment from '../../catelogflow/Creator/CreatorAddAttachment';
 import { PreviewSingleAttchment } from '../../catelogflow/Creator/PreviewSingleAttchment';
@@ -490,7 +490,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                         TransitionComponent={Zoom}
                                       >
                                         <span className="ps-1">
-                                          <InfoIcon
+                                          <Info
                                             style={{
                                               fontSize: '18px',
                                               color: COLORS.PRIMARY
@@ -1060,7 +1060,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                                         )}
                                       </Select>
 
-                                      <Add
+                                      <Plus
                                         style={{
                                           border: `1px solid ${COLORS.GRAYSCALE}`,
                                           borderRadius: '0px 8px 8px 0px',
@@ -1365,7 +1365,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
             >
               <Tooltip title="Close" placement="bottom">
                 <IconButton onClick={() => setOpenInfo(false)}>
-                  <CloseIcon fontSize="small" />
+                  <X fontSize="small" />
                 </IconButton>
               </Tooltip>
             </div>
@@ -1396,7 +1396,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                         width: '15px'
                       }}
                     >
-                      <CreateIcon style={{ fontSize: '16px' }} />
+                      <Edit2 style={{ fontSize: '16px' }} />
                     </IconButton>
                   </Tooltip>
                 </label>
@@ -1410,7 +1410,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                       backgroundColor: COLORS.PRIMARY
                     }}
                   >
-                    <EmailIcon />
+                    <Mail />
                   </Button>
                   <Button
                     tooltipTitle={'call'}
@@ -1418,7 +1418,7 @@ const PreviewRecord = ({ formId, fieldData, fieldValues, onSubmit }) => {
                       backgroundColor: COLORS.PRIMARY
                     }}
                   >
-                    <CallIcon />
+                    <PhoneCall />
                   </Button>
                 </div>
               </div>

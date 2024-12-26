@@ -7,10 +7,10 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { COLORS, colors } from '../../../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
-import { Add } from '@mui/icons-material';
+import { X } from 'lucide-react';
+import { Minus } from 'lucide-react';
+import { Plus, PlusCircle } from 'lucide-react';
+
 import { Typography } from '@mui/joy';
 import { useLocalStorage } from '../../custom/useLocalStorage';
 

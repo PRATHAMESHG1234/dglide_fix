@@ -56,8 +56,8 @@ import {
   fetchRecordById
 } from '../../../../../services/table';
 import { ApprovalDetail } from './ApprovalDetail';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import CancelIcon from '@mui/icons-material/Cancel';
+import { CheckCircle } from 'lucide-react';
+import { XCircle } from 'lucide-react';
 import { updateFormData } from '../../../../../redux/slices/formSlice';
 import { FaLink } from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md';
@@ -575,8 +575,7 @@ const ProfileSection = () => {
                                       color="error"
                                     >
                                       {' '}
-                                      <CancelIcon
-                                        style={{
+                                      <XCircle style={{
                                           color: colors.error.main,
                                           width: 16,
                                           height: 16,
@@ -590,8 +589,7 @@ const ProfileSection = () => {
                                       color="success"
                                       onClick={() => handleApprove(approval)}
                                     >
-                                      <CheckCircleIcon
-                                        style={{
+                                      <CheckCircle style={{
                                           color: colors.success.main,
                                           width: 16,
                                           height: 16,

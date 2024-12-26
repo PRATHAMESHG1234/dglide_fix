@@ -10,7 +10,6 @@ import {
   TooltipContent,
   TooltipTrigger
 } from '@/componentss/ui/tooltip';
-import SortIcon from '@mui/icons-material/UnfoldMore';
 
 import { AgGridReact } from 'ag-grid-react';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -18,9 +17,9 @@ import ColumnPreferenceX from '../components/records/preference/ColumnPreference
 import { colors } from '../common/constants/styles';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import FilterListIcon from '@mui/icons-material/FilterList';
-import ArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import ArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import { ArrowDown, ArrowUp, Filter, ListFilter } from 'lucide-react';
+import { ChevronsUp } from 'lucide-react';
+import { ChevronsDown } from 'lucide-react';
 import { Dropdown } from '@/componentss/ui/dropdown';
 // import 'ag-grid-community/styles/ag-grid.css';
 // import 'ag-grid-community/styles/ag-theme-quartz.css';
@@ -195,10 +194,7 @@ const GridTable = ({
               return (
                 <Tooltip>
                   <TooltipTrigger>
-                    <ArrowUpIcon
-                      fontSize="18px"
-                      style={{ marginLeft: '5px' }}
-                    />
+                    <ArrowUp fontSize="18px" style={{ marginLeft: '5px' }} />
                   </TooltipTrigger>
                   <TooltipContent>Sort Asc</TooltipContent>
                 </Tooltip>
@@ -207,10 +203,7 @@ const GridTable = ({
               return (
                 <Tooltip>
                   <TooltipTrigger>
-                    <ArrowDownIcon
-                      fontSize="18px"
-                      style={{ marginLeft: '5px' }}
-                    />
+                    <ArrowDown fontSize="18px" style={{ marginLeft: '5px' }} />
                   </TooltipTrigger>
                   <TooltipContent>Sort desc</TooltipContent>
                 </Tooltip>
@@ -219,7 +212,7 @@ const GridTable = ({
               return (
                 <Tooltip>
                   <TooltipTrigger>
-                    <SortIcon fontSize="18px" style={{ marginLeft: '5px' }} />
+                    <ListFilter fontSize="12px" style={{ marginLeft: '5px' }} />
                   </TooltipTrigger>
                   <TooltipContent>Sort</TooltipContent>
                 </Tooltip>
@@ -229,10 +222,10 @@ const GridTable = ({
         </span>
         <Tooltip>
           <TooltipTrigger>
-            <FilterListIcon
+            <Filter
               ref={iconRef}
               onClick={handleClick}
-              fontSize="18px"
+              fontSize="12px"
               style={{ marginLeft: '5px', cursor: 'pointer' }}
             />
           </TooltipTrigger>

@@ -1,9 +1,9 @@
 import { Button, Grid, IconButton, Tooltip, Typography } from '@mui/material';
 import React, { useState } from 'react';
-import AddBoxIcon from '@mui/icons-material/AddBox';
+import { PackagePlus } from 'lucide-react';
 import { colors } from '../../../../common/constants/styles';
-import CloseIcon from '@mui/icons-material/Close';
-import ErrorIcon from '@mui/icons-material/Error';
+import { X } from 'lucide-react';
+import { AlertCircle } from 'lucide-react';
 import { useLocalStorage } from '../custom/useLocalStorage';
 
 function IssubstringPanel({
@@ -77,7 +77,7 @@ function IssubstringPanel({
             color: colors.grey[500]
           }}
         >
-          <CloseIcon />
+          <X />
         </IconButton>
         <Tooltip
           title="Output variable name: 'string', use it as id.out.string"
@@ -94,7 +94,7 @@ function IssubstringPanel({
               color: colors.primary.dark
             }}
           >
-            <ErrorIcon />
+            <AlertCircle />
           </IconButton>
         </Tooltip>
         <div
@@ -133,8 +133,7 @@ function IssubstringPanel({
                   minWidth: '170px'
                 }}
               />
-              <AddBoxIcon
-                style={{
+              <PackagePlus style={{
                   color: colors.primary.dark,
                   fontSize: '25px',
                   position: 'absolute',

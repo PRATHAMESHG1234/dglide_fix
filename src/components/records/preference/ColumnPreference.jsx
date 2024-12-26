@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { DragDropContext, Draggable } from 'react-beautiful-dnd';
 
 //MUI
-import DragIcon from '@mui/icons-material/DragIndicator';
+import { GripHorizontal } from 'lucide-react';
 import { Box } from '@mui/joy';
 import { FormControlLabel, Switch, Tooltip, Typography } from '@mui/material';
 
@@ -210,7 +210,9 @@ const ColumnPreference = ({
                           )}
                         >
                           <Box className="flex items-center">
-                            <DragIcon style={{ color: COLORS.SECONDARY }} />
+                            <GripHorizontal
+                              style={{ color: COLORS.SECONDARY }}
+                            />
                             <FormControlLabel
                               style={{
                                 '& .MuiFormControlLabel-label': {

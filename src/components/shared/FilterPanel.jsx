@@ -1,8 +1,8 @@
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-import SearchIcon from '@mui/icons-material/Search';
+import { ChevronDown } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
+import { XCircle } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { Stack } from '@mui/material';
 
 import { Button } from '@/componentss/ui/button';
@@ -27,7 +27,7 @@ const FilterPanel = () => {
           }}
         >
           <div className="flex items-center">
-            <SearchIcon style={{ color: COLORS.SECONDARY }} />
+            <Search style={{ color: COLORS.SECONDARY }} />
             <h6
               style={{
                 color: 'grey',
@@ -40,13 +40,13 @@ const FilterPanel = () => {
               Search
             </h6>
           </div>
-          <HighlightOffIcon style={{ color: COLORS.SECONDARY }} />
+          <XCircle style={{ color: COLORS.SECONDARY }} />
         </form>
 
         <Button
           variant="plain"
           endDecorator={
-            <ArrowDropDownIcon style={{ color: COLORS.SECONDARY }} />
+            <ChevronDown style={{ color: COLORS.SECONDARY }} />
           }
           style={{
             backgroundColor: COLORS.WHITE,
@@ -59,7 +59,7 @@ const FilterPanel = () => {
         <Button
           variant="plain"
           endDecorator={
-            <ArrowDropDownIcon style={{ color: COLORS.SECONDARY }} />
+            <ChevronDown style={{ color: COLORS.SECONDARY }} />
           }
           style={{
             backgroundColor: COLORS.WHITE,
@@ -72,7 +72,7 @@ const FilterPanel = () => {
         <Button
           variant="plain"
           endDecorator={
-            <ArrowDropDownIcon style={{ color: COLORS.SECONDARY }} />
+            <ChevronDown style={{ color: COLORS.SECONDARY }} />
           }
           style={{
             backgroundColor: COLORS.WHITE,
@@ -87,7 +87,7 @@ const FilterPanel = () => {
         <Button
           variant="plain"
           startDecorator={
-            <CheckCircleIcon style={{ color: COLORS.SECONDARY }} />
+            <CheckCircle style={{ color: COLORS.SECONDARY }} />
           }
         >
           All Task
@@ -95,7 +95,7 @@ const FilterPanel = () => {
         <Button
           variant="plain"
           startDecorator={
-            <ArrowUpwardIcon style={{ color: COLORS.SECONDARY }} />
+            <ArrowUp style={{ color: COLORS.SECONDARY }} />
           }
         >
           By Name

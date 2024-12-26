@@ -16,7 +16,7 @@ import MultipleSelect from '../../../elements/CreatorMultiSelect';
 import SelectField from '../../../elements/CreatorSelectField';
 import RadioField from '../../../elements/CreatorRadioField';
 import CheckboxField from '../../../elements/CreatorCheckboxField';
-import InfoIcon from '@mui/icons-material/Info';
+import { Info } from 'lucide-react';
 import ReactQuill, { Quill } from 'react-quill';
 import { Textarea } from '@mui/joy';
 import TextArea from '../../../elements/CreatorTextArea';
@@ -99,9 +99,7 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
-                  style={{ color: COLORS.GRAY, cursor: 'pointer' }}
-                ></InfoIcon>
+                <Info style={{ color: COLORS.GRAY, cursor: 'pointer' }}></Info>
               </Tooltip>
             )}
           </div>
@@ -170,9 +168,9 @@ const QuestionComponent = ({
                   }
                   arrow
                 >
-                  <InfoIcon
+                  <Info
                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                  ></InfoIcon>
+                  ></Info>
                 </Tooltip>
               )}
             </div>
@@ -212,9 +210,9 @@ const QuestionComponent = ({
                   }
                   arrow
                 >
-                  <InfoIcon
+                  <Info
                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                  ></InfoIcon>
+                  ></Info>
                 </Tooltip>
               )}
             </div>
@@ -282,9 +280,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </>
@@ -333,9 +331,9 @@ const QuestionComponent = ({
                   }
                   arrow
                 >
-                  <InfoIcon
+                  <Info
                     style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                  ></InfoIcon>
+                  ></Info>
                 </Tooltip>
               )}
               {field.options.map((option) => (
@@ -398,9 +396,9 @@ const QuestionComponent = ({
                     }
                     arrow
                   >
-                    <InfoIcon
+                    <Info
                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                    ></InfoIcon>
+                    ></Info>
                   </Tooltip>
                 )}
               </div>
@@ -448,9 +446,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </div>
@@ -503,9 +501,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </div>
@@ -544,9 +542,9 @@ const QuestionComponent = ({
                 }
                 arrow
               >
-                <InfoIcon
+                <Info
                   style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                ></InfoIcon>
+                ></Info>
               </Tooltip>
             )}
           </div>
@@ -637,9 +635,9 @@ const QuestionComponent = ({
                     }
                     arrow
                   >
-                    <InfoIcon
+                    <Info
                       style={{ color: COLORS.SECONDARY, cursor: 'pointer' }}
-                    ></InfoIcon>
+                    ></Info>
                   </Tooltip>
                 )}
               </div>

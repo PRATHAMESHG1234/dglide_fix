@@ -1,7 +1,7 @@
 import './FieldGroup.css';
 
-import DeleteForever from '@mui/icons-material/DeleteForever';
-import Edit from '@mui/icons-material/Edit';
+import { Trash2 } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {
@@ -84,7 +84,7 @@ const FieldGroupList = ({ headers, items, onActionClick }) => {
                         }
                       }}
                     >
-                      <Edit
+                      <Edit2
                         style={{ color: COLORS.PRIMARY }}
                         onClick={(e) => {
                           e.stopPropagation();
@@ -104,7 +104,7 @@ const FieldGroupList = ({ headers, items, onActionClick }) => {
                         }
                       }}
                     >
-                      <DeleteForever
+                      <Trash2
                         style={{ color: 'danger' }}
                         onClick={(e) => {
                           e.stopPropagation();

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
-import ModeEditOutlineIcon from '@mui/icons-material/ModeEditOutline';
-import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
+import { Clock } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
+import { MoreHorizontal } from 'lucide-react';
 import {
   Avatar,
   Badge,
@@ -107,7 +107,7 @@ export const EtlJobCardView = ({
                         horizontal: 'right'
                       }}
                       badgeContent={
-                        <AccessTimeFilledIcon
+                        <Clock
                           style={{
                             color: colors.success.main,
                             width: 19,
@@ -191,7 +191,7 @@ export const EtlJobCardView = ({
                     style={{ mt: '5px', mr: -0.75 }}
                     onClick={handleClick}
                   >
-                    <MoreHorizOutlinedIcon
+                    <MoreHorizontal
                       fontSize="small"
                       color="inherit"
                       aria-controls="menu-friend-card"
@@ -233,10 +233,7 @@ export const EtlJobCardView = ({
                         }}
                       >
                         <ListItemIcon>
-                          <ModeEditOutlineIcon
-                            fontSize="small"
-                            color="primary"
-                          />
+                          <Edit fontSize="small" color="primary" />
                         </ListItemIcon>
                         <Typography
                           style={{
@@ -262,8 +259,7 @@ export const EtlJobCardView = ({
                       >
                         <ListItemIcon>
                           {' '}
-                          <DeleteForeverIcon
-                            fontSize="small"
+                          <Trash2 fontSize="small"
                             color="primary"
                             style={{
                               color: colors.error.main

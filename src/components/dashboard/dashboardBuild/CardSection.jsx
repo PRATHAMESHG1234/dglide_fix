@@ -5,11 +5,11 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 
-import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
-import AccountCircleTwoTone from '@mui/icons-material/AccountCircleTwoTone';
-import CheckBoxIcon from '@mui/icons-material/CheckBox';
-import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
-import MonetizationOnTwoToneIcon from '@mui/icons-material/MonetizationOnTwoTone';
+import { Landmark } from 'lucide-react';
+import { UserCircle } from 'lucide-react';
+import { CheckSquare } from 'lucide-react';
+import { FileText } from 'lucide-react';
+import { DollarSign } from 'lucide-react';
 import { CircularProgress, Typography } from '@mui/material';
 
 import { COLORS, colors } from '../../../common/constants/styles';
@@ -235,7 +235,7 @@ const CardSection = ({
         ).length === 0 ? (
           <Typography style={{ color: colors.grey[500], fontSize: '16px' }}>
             Select cards using the{' '}
-            <CheckBoxIcon style={{ fontSize: 'inherit' }} /> checkbox.
+            <CheckSquare style={{ fontSize: 'inherit' }} /> checkbox.
           </Typography>
         ) : (
           data?.items?.length > 0 &&

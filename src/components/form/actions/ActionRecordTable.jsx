@@ -1,7 +1,7 @@
 import './Action.css';
 
-import DeleteForever from '@mui/icons-material/DeleteForever';
-import Edit from '@mui/icons-material/Edit';
+import { Trash2 } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
 import { Stack, Tooltip } from '@mui/joy';
 import IconButton from '@mui/joy/IconButton';
 import {
@@ -20,9 +20,9 @@ import { colors, COLORS } from '../../../common/constants/styles';
 import { MODAL } from '../../../common/utils/modal-toggle';
 import { useSelector } from 'react-redux';
 import Avatar from '../../../elements/Avatars';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import { CheckCircle } from 'lucide-react';
+import { Edit, Edit2 } from 'lucide-react';
+import { Trash2 } from 'lucide-react';
 
 const ODD_OPACITY = 0.9;
 
@@ -103,7 +103,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                         }}
                       >
                         {item?.name} {/* {row.active === true && ( */}
-                        <CheckCircleIcon
+                        <CheckCircle
                           style={{
                             color: colors.success.dark,
                             width: 14,
@@ -144,7 +144,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.edit, item.id);
                     }}
                   >
-                    <EditIcon style={{ fontSize: '1.1rem' }} />
+                    <Edit2 style={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
                 <Tooltip placement="top" title="Delete">
@@ -161,7 +161,7 @@ const ActionRecordTable = ({ headers, items, onActionClick }) => {
                       onActionClick(MODAL.delete, item.id);
                     }}
                   >
-                    <DeleteForeverIcon style={{ fontSize: '1.1rem' }} />
+                    <Trash2 style={{ fontSize: '1.1rem' }} />
                   </IconButton>
                 </Tooltip>
               </TableCell>
