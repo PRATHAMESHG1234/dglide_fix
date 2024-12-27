@@ -40,7 +40,7 @@ const MoreOption = ({ children }) => {
           color: 'inherit'
         }}
       >
-        <More fontSize="medium" />
+        <MoreVertical fontSize="medium" />
       </IconButton>
       <Menu
         keepMounted

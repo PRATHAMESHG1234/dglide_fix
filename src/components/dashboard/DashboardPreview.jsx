@@ -98,12 +98,7 @@ const DashboardPreview = ({
       }
     });
   };
-  const icons = [
-    AccountCircleTwoTone,
-    DescriptionTwoToneIcon,
-    MonetizationOnTwoToneIcon,
-    AccountBalanceRoundedIcon
-  ];
+  const icons = [UserCircle, FileText, DollarSign, Landmark];
 
   const color = [colors.primary.main];
   const getIconByIndex = (index) => {

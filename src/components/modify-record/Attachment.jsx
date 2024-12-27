@@ -24,7 +24,7 @@ import {
   Typography,
   alpha
 } from '@mui/material';
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { X } from 'lucide-react';
 import { File } from 'lucide-react';
 import Modal from '@mui/joy/Modal';

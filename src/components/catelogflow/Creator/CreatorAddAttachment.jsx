@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { X } from 'lucide-react';
 import { DownloadCloud } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
@@ -120,7 +120,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
             overflow: 'auto'
           }}
         >
-          <X onClick={() => closePreviewModal()}
+          <X
+            onClick={() => closePreviewModal()}
             style={{
               position: 'absolute',
               top: 16,
@@ -366,7 +367,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             }}
                           />
                         ) : attachment.fileExtension === 'pdf' ? (
-                          <File style={{
+                          <File
+                            style={{
                               fontSize: '50px',
                               marginRight: '7px',
                               color: 'lightgrey'
@@ -390,7 +392,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                             }}
                           />
                         ) : (
-                          <File style={{
+                          <File
+                            style={{
                               color: 'lightgrey',
                               fontSize: '50px',
                               marginRight: '7px'
@@ -462,7 +465,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                                   }
                                 }}
                               >
-                                <Trash2 style={{
+                                <Trash2
+                                  style={{
                                     color: 'darkred'
                                   }}
                                 />
@@ -541,7 +545,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                               }}
                             />
                           ) : file.type === 'application/pdf' ? (
-                            <File style={{
+                            <File
+                              style={{
                                 fontSize: '30px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -568,7 +573,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           ) : (
                             file.type ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                              <File style={{
+                              <File
+                                style={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
                                   marginRight: '7px'
@@ -595,7 +601,8 @@ const CreatorAddAttachment = ({ selectedRecordId, catlogFlag }) => {
                           aria-label="delete"
                           onClick={() => deleteSelectedFileHandler(fileIndex)}
                         >
-                          <Trash style={{
+                          <Trash
+                            style={{
                               color: 'darkred',
                               fontSize: '20px'
                             }}

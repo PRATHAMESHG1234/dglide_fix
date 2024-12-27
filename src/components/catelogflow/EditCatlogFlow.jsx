@@ -13,7 +13,7 @@ import {
 import Dialog from '../shared/Dialog';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import { CloudUpload } from 'lucide-react';
+import { CloudUpload, Upload } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 import { MODAL } from '../../common/utils/modal-toggle';
 import { COLORS } from '../../common/constants/styles';

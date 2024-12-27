@@ -1,5 +1,5 @@
 import { PackagePlus, PlusCircle } from 'lucide-react';
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { Typography } from '@mui/joy';
 import {
   Checkbox,

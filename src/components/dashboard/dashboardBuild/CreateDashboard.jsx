@@ -25,7 +25,7 @@ import TableRecordSection from './TableRecordSection';
 import './CreateDashboard.css';
 import Loader from '../../shared/Loader';
 
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import TableDataGrid from '../../../elements/TableDataGrid';
 import ChartSection from './ChartSection';
 import { Input } from '@/componentss/ui/input';

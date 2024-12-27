@@ -15,7 +15,7 @@ import TextArea from '../../../elements/TextArea';
 import RadioField from '../../../elements/RadioField';
 import TextField from '../../../elements/TextField';
 import SelectField from '../../../elements/SelectField';
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { Button } from '@/componentss/ui/button';
 

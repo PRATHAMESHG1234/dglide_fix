@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import '../../modify-record/Attachment.css';
-import { XCircle } from 'lucide-react';
+import { Trash, XCircle } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
 import { Paperclip } from 'lucide-react';
 
@@ -209,7 +209,8 @@ const CreatorSinglAttchment = ({
                                   />
                                 ) : attachment.files?.type ===
                                   'application/pdf' ? (
-                                  <File style={{
+                                  <File
+                                    style={{
                                       fontSize: '30px',
                                       marginRight: '7px',
                                       color: 'lightgrey'
@@ -236,7 +237,8 @@ const CreatorSinglAttchment = ({
                                 ) : (
                                   attachment.files?.type ===
                                     'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                                    <File style={{
+                                    <File
+                                      style={{
                                         color: 'lightgrey',
                                         fontSize: '30px',
                                         marginRight: '7px'
@@ -267,7 +269,8 @@ const CreatorSinglAttchment = ({
                                   )
                                 }
                               >
-                                <Trash style={{
+                                <Trash
+                                  style={{
                                     color: 'darkred',
                                     fontSize: '20px'
                                   }}

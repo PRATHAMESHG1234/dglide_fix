@@ -115,12 +115,7 @@ const ChartModal = ({ state, onCancel, onConfirm, onChartClick }) => {
     }
   };
 
-  const icons = [
-    AccountCircleTwoTone,
-    DescriptionTwoToneIcon,
-    MonetizationOnTwoToneIcon,
-    AccountBalanceRoundedIcon
-  ];
+  const icons = [UserCircle, FileText, DollarSign, Landmark];
 
   const color = ['#2196F3', '#673AB7', '#00C853', '#FFC107', '#F44336'];
   const getIconByIndex = (index) => {

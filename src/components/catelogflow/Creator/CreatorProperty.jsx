@@ -17,7 +17,7 @@ import TextField from '../../../elements/CreatorTextField';
 import DataSourceDynamic from './CreatorDataDynamic';
 import { COLORS } from '../../../common/constants/styles';
 import DataSourceManual from './CreatorDataSourceManual';
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { Button } from '@/componentss/ui/button';
 import { X } from 'lucide-react';

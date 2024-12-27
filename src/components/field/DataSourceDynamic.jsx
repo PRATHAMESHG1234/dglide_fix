@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { PackagePlus } from 'lucide-react';
-import { Trash } from 'lucide-react';
+import { PackagePlus, PlusCircle } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { Typography } from '@mui/joy';
 import { Checkbox, FormControlLabel, Tooltip } from '@mui/material';
 
@@ -614,7 +614,8 @@ const DataSourceDynamic = ({
           </Typography>
 
           <Tooltip title="Add" variant="solid">
-            <PlusCircle fontSize="medium"
+            <PlusCircle
+              fontSize="medium"
               onClick={addCondition}
               style={{
                 color: COLORS.SECONDARY,
@@ -691,7 +692,8 @@ const DataSourceDynamic = ({
                   </div>
                 )}
                 <Tooltip title="Delete">
-                  <Trash className="pointer"
+                  <Trash
+                    className="pointer"
                     color="error"
                     onClick={() => {
                       if (!(isDynamic && (index === 0 || index === 1))) {

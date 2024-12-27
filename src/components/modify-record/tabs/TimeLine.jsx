@@ -42,7 +42,7 @@ const TimeLine = ({
   const [selectedId, setSelectedId] = useState(null);
 
   const color = ['#673AB7', '#2196F3'];
-  const icons = [LaptopMacIcon, RepeatIcon];
+  const icons = [Monitor, Repeat];
   function assignColorById(id) {
     const colorIndex = id % color.length;
     const assignedColor = color[colorIndex];

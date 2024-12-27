@@ -1,10 +1,9 @@
 import React from 'react';
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import SelectField from '../../../elements/SelectField';
 import ConditionValueInput from '../../records/preference/search-preference/ConditionValueInput';
 import { colors } from '../../../common/constants/styles';
 import { Dropdown } from '@/componentss/ui/dropdown';
-import { Trash2 } from 'lucide-react';
 const SearchCondition = ({
   condition,
   index,

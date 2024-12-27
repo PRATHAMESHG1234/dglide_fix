@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { GripHorizontal } from 'lucide-react';
 import { TextField } from '@mui/material';
 

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { Trash } from 'lucide-react';
+import { Trash, Trash2 } from 'lucide-react';
 import { X } from 'lucide-react';
 import { DownloadCloud } from 'lucide-react';
 import { FileCheck } from 'lucide-react';
@@ -106,7 +106,8 @@ const RequestDefaultAttachment = ({
             overflow: 'auto'
           }}
         >
-          <X onClick={() => closePreviewModal()}
+          <X
+            onClick={() => closePreviewModal()}
             style={{
               position: 'absolute',
               top: 16,
@@ -514,7 +515,8 @@ const RequestDefaultAttachment = ({
                               }}
                             />
                           ) : file.fileContentType === 'application/pdf' ? (
-                            <File style={{
+                            <File
+                              style={{
                                 fontSize: '30px',
                                 marginRight: '7px',
                                 color: 'lightgrey'
@@ -541,7 +543,8 @@ const RequestDefaultAttachment = ({
                           ) : (
                             file.fileContentType ===
                               'application/vnd.openxmlformats-officedocument.wordprocessingml.document' && (
-                              <File style={{
+                              <File
+                                style={{
                                   color: 'lightgrey',
                                   fontSize: '30px',
                                   marginRight: '7px'
@@ -568,7 +571,8 @@ const RequestDefaultAttachment = ({
                           aria-label="delete"
                           onClick={() => deleteSelectedFileHandler(attachment)}
                         >
-                          <Trash style={{
+                          <Trash
+                            style={{
                               color: 'darkred',
                               fontSize: '20px'
                             }}
